@@ -7,19 +7,19 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://yourusername.github.io/omnitrends/about.html</loc>
+        <loc>https://yourusername.github.io/omnitrends/pages/about.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yourusername.github.io/omnitrends/contact.html</loc>
+        <loc>https://yourusername.github.io/omnitrends/pages/contact.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yourusername.github.io/omnitrends/privacy.html</loc>
+        <loc>https://yourusername.github.io/omnitrends/pages/privacy.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
