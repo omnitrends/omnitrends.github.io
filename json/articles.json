@@ -1,0 +1,35 @@
+[
+    {
+        "id": "the-ai-revolution-how-artificial-intelligence-is-reshaping-industries-in-2024",
+        "title": "The AI Revolution: How Artificial Intelligence is Reshaping Industries in 2024",
+        "category": "Technology",
+        "date": "2025-08-01",
+        "dateFormatted": "01 August 2025",
+        "excerpt": "Explore how AI is transforming healthcare, finance, and education, creating new opportunities and challenges for businesses worldwide.",
+        "image": "the-ai-revolution-how-artificial-intelligence-is-reshaping-industries-in-2024.jpg",
+        "url": "articles/the-ai-revolution-how-artificial-intelligence-is-reshaping-industries-in-2024.html",
+        "featured": true
+    },
+    {
+        "id": "the-complete-guide-to-sustainable-living-in-2024",
+        "title": "The Complete Guide to Sustainable Living in 2024",
+        "category": "Lifestyle",
+        "date": "2025-08-01",
+        "dateFormatted": "01 August 2025",
+        "excerpt": "Discover practical tips and strategies for reducing your environmental footprint while maintaining a comfortable lifestyle.",
+        "image": "the-complete-guide-to-sustainable-living-in-2024.jpg",
+        "url": "articles/the-complete-guide-to-sustainable-living-in-2024.html",
+        "featured": true
+    },
+    {
+        "id": "remote-work-evolution-trends-shaping-the-future-of-employment",
+        "title": "Remote Work Evolution: Trends Shaping the Future of Employment",
+        "category": "Business",
+        "date": "2025-08-01",
+        "dateFormatted": "01 August 2025",
+        "excerpt": "Analyze the latest remote work trends and their impact on productivity, company culture, and work-life balance.",
+        "image": "remote-work-evolution-trends-shaping-the-future-of-employment.jpg",
+        "url": "articles/remote-work-evolution-trends-shaping-the-future-of-employment.html",
+        "featured": true
+    }
+]

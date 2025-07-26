@@ -1,119 +1,33 @@
 // ===== ARTICLES DATA AND MANAGEMENT =====
 
-// Articles database - This would typically come from a CMS or API
-const articlesData = [
-    {
-        id: 'ai-revolution-2024',
-        title: 'The AI Revolution: How Artificial Intelligence is Reshaping Industries in 2024',
-        category: 'Technology',
-        date: '2025-08-01',
-        dateFormatted: '01 August 2025',
-        excerpt: 'Explore how AI is transforming healthcare, finance, and education, creating new opportunities and challenges for businesses worldwide.',
-        image: 'ai-revolution-2024.jpg',
-        url: 'articles/ai-revolution-2024.html',
-        featured: true
-    },
-    {
-        id: 'sustainable-living-guide',
-        title: 'The Complete Guide to Sustainable Living in 2024',
-        category: 'Lifestyle',
-        date: '2025-08-01',
-        dateFormatted: '01 August 2025',
-        excerpt: 'Discover practical tips and strategies for reducing your environmental footprint while maintaining a comfortable lifestyle.',
-        image: 'sustainable-living-guide.jpg',
-        url: 'articles/sustainable-living-guide.html',
-        featured: true
-    },
-    {
-        id: 'remote-work-trends',
-        title: 'Remote Work Evolution: Trends Shaping the Future of Employment',
-        category: 'Business',
-        date: '2025-08-01',
-        dateFormatted: '01 August 2025',
-        excerpt: 'Analyze the latest remote work trends and their impact on productivity, company culture, and work-life balance.',
-        image: 'remote-work-trends.jpg',
-        url: 'articles/remote-work-trends.html',
-        featured: true
-    },
-    // Example additional articles to demonstrate multiple articles in a category
-    {
-        id: 'tech-trends-2025',
-        title: 'Top Technology Trends to Watch in 2025',
-        category: 'Technology',
-        date: '2025-07-28',
-        dateFormatted: '28 July 2025',
-        excerpt: 'Discover the emerging technology trends that will define 2025, from quantum computing to advanced robotics.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'cybersecurity-guide',
-        title: 'Essential Cybersecurity Practices for Modern Businesses',
-        category: 'Technology',
-        date: '2025-07-25',
-        dateFormatted: '25 July 2025',
-        excerpt: 'Learn about the latest cybersecurity threats and how to protect your business with proven security strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'digital-transformation',
-        title: 'Digital Transformation: A Complete Guide for Enterprises',
-        category: 'Technology',
-        date: '2025-07-20',
-        dateFormatted: '20 July 2025',
-        excerpt: 'Navigate the digital transformation journey with expert insights and practical implementation strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'digital-transformation',
-        title: 'Digital Transformation: A Complete Guide for Enterprises',
-        category: 'Business',
-        date: '2025-07-20',
-        dateFormatted: '20 July 2025',
-        excerpt: 'Navigate the digital transformation journey with expert insights and practical implementation strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'digital-transformation',
-        title: 'Digital Transformation: A Complete Guide for Enterprises',
-        category: 'Business',
-        date: '2025-07-20',
-        dateFormatted: '20 July 2025',
-        excerpt: 'Navigate the digital transformation journey with expert insights and practical implementation strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'digital-transformation',
-        title: 'Digital Transformation: A Complete Guide for Enterprises',
-        category: 'Business',
-        date: '2025-07-20',
-        dateFormatted: '20 July 2025',
-        excerpt: 'Navigate the digital transformation journey with expert insights and practical implementation strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
-    },
-    {
-        id: 'digital-transformation',
-        title: 'Digital Transformation: A Complete Guide for Enterprises',
-        category: 'Business',
-        date: '2025-07-20',
-        dateFormatted: '20 July 2025',
-        excerpt: 'Navigate the digital transformation journey with expert insights and practical implementation strategies.',
-        image: 'ai-revolution-2024.jpg', // Reusing existing image for demo
-        url: '#', // Placeholder URL
-        featured: false
+// Articles database - loaded from JSON file
+let articlesData = [];
+
+/**
+ * Load articles data from JSON file
+ * @returns {Promise<Array>} Promise that resolves to articles array
+ */
+async function loadArticlesData() {
+    try {
+        // Determine the correct path based on current location
+        const currentPath = window.location.pathname;
+        const isInCategory = currentPath.includes('/category/');
+        const jsonPath = isInCategory ? '../json/articles.json' : 'json/articles.json';
+        
+        const response = await fetch(jsonPath);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        articlesData = data;
+        return data;
+    } catch (error) {
+        console.error('Error loading articles data:', error);
+        // Fallback to empty array if loading fails
+        articlesData = [];
+        return [];
     }
-];
+}
 
 // Categories configuration
 const categoriesConfig = {
@@ -390,7 +304,10 @@ function updateSearchFunctionality() {
 /**
  * Initialize articles functionality based on current page
  */
-function initializeArticles() {
+async function initializeArticles() {
+    // Load articles data first
+    await loadArticlesData();
+    
     // Initialize based on current page
     initializeCategoryPage();
     initializeIndexPage();
@@ -411,6 +328,7 @@ if (document.readyState === 'loading') {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         articlesData,
+        loadArticlesData,
         categoriesConfig,
         getArticlesByCategory,
         getLatestArticles,
