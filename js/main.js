@@ -199,75 +199,7 @@ if (document.querySelector('.article-content')) {
 }
 
 // ===== SEARCH FUNCTIONALITY =====
-function initializeSearch() {
-    const searchInput = document.getElementById('search-input');
-    const searchResults = document.getElementById('search-results');
-    
-    if (!searchInput || !searchResults) return;
-    
-    // This would typically connect to a search API or static search index
-    // For now, we'll implement a simple client-side search
-    const articles = [
-        {
-            title: "The AI Revolution: How Artificial Intelligence is Reshaping Industries in 2024",
-            url: "articles/ai-revolution-2024.html",
-            excerpt: "Explore how AI is transforming healthcare, finance, and education...",
-            category: "Technology"
-        },
-        {
-            title: "The Complete Guide to Sustainable Living in 2024",
-            url: "articles/sustainable-living-guide.html",
-            excerpt: "Discover practical tips and strategies for reducing your environmental footprint...",
-            category: "Lifestyle"
-        },
-        {
-            title: "Remote Work Evolution: Trends Shaping the Future of Employment",
-            url: "articles/remote-work-trends.html",
-            excerpt: "Analyze the latest remote work trends and their impact on productivity...",
-            category: "Business"
-        }
-    ];
-    
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
-        
-        if (query.length < 2) {
-            searchResults.innerHTML = '';
-            searchResults.style.display = 'none';
-            return;
-        }
-        
-        const filteredArticles = articles.filter(article => 
-            article.title.toLowerCase().includes(query) ||
-            article.excerpt.toLowerCase().includes(query) ||
-            article.category.toLowerCase().includes(query)
-        );
-        
-        if (filteredArticles.length > 0) {
-            searchResults.innerHTML = filteredArticles.map(article => `
-                <div class="search-result">
-                    <h4><a href="${article.url}">${article.title}</a></h4>
-                    <p>${article.excerpt}</p>
-                    <span class="search-category">${article.category}</span>
-                </div>
-            `).join('');
-            searchResults.style.display = 'block';
-        } else {
-            searchResults.innerHTML = '<div class="search-result">No articles found.</div>';
-            searchResults.style.display = 'block';
-        }
-    });
-    
-    // Close search results when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-            searchResults.style.display = 'none';
-        }
-    });
-}
-
-// Initialize search if elements exist
-document.addEventListener('DOMContentLoaded', initializeSearch);
+// Search functionality is now handled in articles.js
 
 // ===== PERFORMANCE OPTIMIZATION =====
 // Preload critical resources
