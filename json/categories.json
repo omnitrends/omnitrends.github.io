@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "name": "Technology",
+      "slug": "technology",
+      "description": "Explore the latest technology trends, innovations, and insights. Stay updated with cutting-edge developments in AI, software, hardware, and digital transformation.",
+      "keywords": "technology, tech trends, artificial intelligence, innovation, digital transformation, software, hardware"
+    },
+    {
+      "name": "Lifestyle",
+      "slug": "lifestyle", 
+      "description": "Discover lifestyle trends, wellness tips, and practical advice for better living. From health and fitness to personal development and life balance.",
+      "keywords": "lifestyle, wellness, health, fitness, personal development, life balance, self-care"
+    },
+    {
+      "name": "Business",
+      "slug": "business",
+      "description": "Stay informed about business trends, entrepreneurship, and market insights. Learn about leadership, strategy, and industry developments.",
+      "keywords": "business, entrepreneurship, leadership, strategy, market trends, industry insights"
+    },
+    {
+      "name": "Innovation",
+      "slug": "innovation",
+      "description": "Explore groundbreaking innovations and creative solutions shaping the future. From startups to scientific breakthroughs.",
+      "keywords": "innovation, creativity, breakthroughs, startups, future technology, scientific discoveries"
+    },
+    {
+      "name": "News",
+      "slug": "news",
+      "description": "Stay updated with the latest breaking news, current events, and important developments from around the world.",
+      "keywords": "news, breaking news, current events, world news, updates, headlines"
+    },
+    {
+      "name": "Health",
+      "slug": "health",
+      "description": "Discover health and wellness insights, medical breakthroughs, fitness trends, and practical tips for maintaining a healthy lifestyle.",
+      "keywords": "health, wellness, medical, fitness, nutrition, mental health, healthcare"
+    },
+    {
+      "name": "Entertainment",
+      "slug": "entertainment",
+      "description": "Get the latest entertainment news, celebrity updates, movie reviews, music trends, and pop culture insights.",
+      "keywords": "entertainment, movies, music, celebrities, pop culture, reviews, shows"
+    },
+    {
+      "name": "Finance",
+      "slug": "finance",
+      "description": "Learn about personal finance, investment strategies, market analysis, and economic trends to make informed financial decisions.",
+      "keywords": "finance, investment, money, economics, financial planning, market analysis"
+    },
+    {
+      "name": "Science",
+      "slug": "science",
+      "description": "Explore scientific discoveries, research breakthroughs, environmental science, and innovations that advance human knowledge.",
+      "keywords": "science, research, discoveries, environment, climate, space exploration, scientific breakthroughs"
+    },
+    {
+      "name": "Travel",
+      "slug": "travel",
+      "description": "Find travel inspiration, destination guides, adventure stories, and practical tips for exploring the world.",
+      "keywords": "travel, destinations, adventure, tourism, travel tips, exploration, vacation"
+    },
+    {
+      "name": "Food",
+      "slug": "food",
+      "description": "Explore culinary trends, recipes, food culture, cooking tips, and dining experiences from around the globe.",
+      "keywords": "food, cooking, recipes, culinary, dining, cuisine, nutrition, gastronomy"
+    },
+    {
+      "name": "Sports",
+      "slug": "sports",
+      "description": "Stay updated with sports news, athletic performance insights, fitness routines, and analysis from the world of sports.",
+      "keywords": "sports, athletics, fitness, exercise, sports news, performance, training"
+    }
+  ]
+}

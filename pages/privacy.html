@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <title>Privacy Policy | OmniTrends</title>
 </head>
@@ -28,7 +28,7 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
-                <a href="index.html" class="nav__logo">
+                <a href="../index.html" class="nav__logo">
                     <h1>OmniTrends</h1>
                 </a>
             </div>
@@ -36,13 +36,35 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="../index.html" class="nav__link">Home</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Categories <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../category/technology.html" class="nav__dropdown-link">Technology</a></li>
+                            <li><a href="../category/lifestyle.html" class="nav__dropdown-link">Lifestyle</a></li>
+                            <li><a href="../category/business.html" class="nav__dropdown-link">Business</a></li>
+                            <li><a href="../category/innovation.html" class="nav__dropdown-link">Innovation</a></li>
+                            <li><a href="../category/news.html" class="nav__dropdown-link">News</a></li>
+                            <li><a href="../category/health.html" class="nav__dropdown-link">Health</a></li>
+                            <li><a href="../category/entertainment.html" class="nav__dropdown-link">Entertainment</a></li>
+                            <li><a href="../category/finance.html" class="nav__dropdown-link">Finance</a></li>
+                            <li><a href="../category/science.html" class="nav__dropdown-link">Science</a></li>
+
+                            <li><a href="../category/travel.html" class="nav__dropdown-link">Travel</a></li>
+                            <li><a href="../category/food.html" class="nav__dropdown-link">Food</a></li>
+                            <li><a href="../category/sports.html" class="nav__dropdown-link">Sports</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Pages <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="about.html" class="nav__dropdown-link">About</a></li>
+                            <li><a href="contact.html" class="nav__dropdown-link">Contact</a></li>
+                            <li><a href="privacy.html" class="nav__dropdown-link nav__link--active">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
+                            <li><a href="disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -55,13 +77,22 @@
         </nav>
     </header>
 
-    <!-- Privacy Policy Content -->
+    <!-- Privacy Policy Hero -->
     <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Privacy Policy</h1>
+                    <p class="hero__description">Learn how we collect, use, and protect your personal information.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Content -->
         <section style="padding: 4rem 0;">
             <div class="container">
                 <div class="article-content">
-                    <h1>Privacy Policy</h1>
-                    <p><em>Last updated: January 1, 2024</em></p>
+                    <p><em>Last updated: 01 August 2025</em></p>
 
                     <p>At OmniTrends, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
 
@@ -172,7 +203,7 @@
                     <h2>Contact Us</h2>
                     <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
                     <ul>
-                        <li>Email: privacy@omnitrends.com</li>
+                        <li>Email: <a href="mailto:kumar.ujjawal247@gmail.com">kumar.ujjawal247@gmail.com</a></li>
                         <li>Contact Form: <a href="contact.html">Contact Us</a></li>
                     </ul>
 
@@ -199,6 +230,8 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 
@@ -214,12 +247,12 @@
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 OmniTrends. All rights reserved.</p>
+                <p>&copy; 2025 OmniTrends. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

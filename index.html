@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="OmniTrends - Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.">
     <meta name="keywords" content="trends, technology, lifestyle, innovation, blog, insights">
     <meta name="author" content="OmniTrends">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="OmniTrends">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/omnitrends/">
+    <meta property="og:url" content="https://omnitrends.github.io/">
     <meta property="og:title" content="OmniTrends - Latest Trends & Insights">
     <meta property="og:description" content="Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.">
-    <meta property="og:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="og:image" content="https://omnitrends.github.io/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourusername.github.io/omnitrends/">
+    <meta property="twitter:url" content="https://omnitrends.github.io/">
     <meta property="twitter:title" content="OmniTrends - Latest Trends & Insights">
     <meta property="twitter:description" content="Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.">
-    <meta property="twitter:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="twitter:image" content="https://omnitrends.github.io/images/og-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -33,6 +41,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -49,10 +61,10 @@
         "@type": "WebSite",
         "name": "OmniTrends",
         "description": "Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.",
-        "url": "https://yourusername.github.io/omnitrends/",
+        "url": "https://omnitrends.github.io/",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://yourusername.github.io/omnitrends/search?q={search_term_string}",
+            "target": "https://omnitrends.github.io/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }
@@ -73,11 +85,32 @@
                     <li class="nav__item">
                         <a href="index.html" class="nav__link nav__link--active">Home</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Categories <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="category/technology.html" class="nav__dropdown-link">Technology</a></li>
+                            <li><a href="category/lifestyle.html" class="nav__dropdown-link">Lifestyle</a></li>
+                            <li><a href="category/business.html" class="nav__dropdown-link">Business</a></li>
+                            <li><a href="category/innovation.html" class="nav__dropdown-link">Innovation</a></li>
+                            <li><a href="category/news.html" class="nav__dropdown-link">News</a></li>
+                            <li><a href="category/health.html" class="nav__dropdown-link">Health</a></li>
+                            <li><a href="category/entertainment.html" class="nav__dropdown-link">Entertainment</a></li>
+                            <li><a href="category/finance.html" class="nav__dropdown-link">Finance</a></li>
+                            <li><a href="category/science.html" class="nav__dropdown-link">Science</a></li>
+                            <li><a href="category/travel.html" class="nav__dropdown-link">Travel</a></li>
+                            <li><a href="category/food.html" class="nav__dropdown-link">Food</a></li>
+                            <li><a href="category/sports.html" class="nav__dropdown-link">Sports</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Pages <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="pages/about.html" class="nav__dropdown-link">About</a></li>
+                            <li><a href="pages/contact.html" class="nav__dropdown-link">Contact</a></li>
+                            <li><a href="pages/privacy.html" class="nav__dropdown-link">Privacy Policy</a></li>
+                            <li><a href="pages/terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
+                            <li><a href="pages/disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -114,7 +147,7 @@
                     <div class="article-card__content">
                         <div class="article-card__meta">
                             <span class="article-card__category">Technology</span>
-                            <time class="article-card__date" datetime="2024-01-15">January 15, 2024</time>
+                            <time class="article-card__date" datetime="2025-08-01">01 August 2025</time>
                         </div>
                         <h3 class="article-card__title">
                             <a href="articles/ai-revolution-2024.html">The AI Revolution: How Artificial Intelligence is Reshaping Industries in 2024</a>
@@ -132,7 +165,7 @@
                     <div class="article-card__content">
                         <div class="article-card__meta">
                             <span class="article-card__category">Lifestyle</span>
-                            <time class="article-card__date" datetime="2024-01-12">January 12, 2024</time>
+                            <time class="article-card__date" datetime="2025-08-01">01 August 2025</time>
                         </div>
                         <h3 class="article-card__title">
                             <a href="articles/sustainable-living-guide.html">The Complete Guide to Sustainable Living in 2024</a>
@@ -150,7 +183,7 @@
                     <div class="article-card__content">
                         <div class="article-card__meta">
                             <span class="article-card__category">Business</span>
-                            <time class="article-card__date" datetime="2024-01-10">January 10, 2024</time>
+                            <time class="article-card__date" datetime="2025-08-01">01 August 2025</time>
                         </div>
                         <h3 class="article-card__title">
                             <a href="articles/remote-work-trends.html">Remote Work Evolution: Trends Shaping the Future of Employment</a>
@@ -163,19 +196,7 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter__content">
-                <h2 class="newsletter__title">Stay Updated</h2>
-                <p class="newsletter__description">Get the latest trends and insights delivered to your inbox.</p>
-                <form class="newsletter__form">
-                    <input type="email" class="newsletter__input" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn--primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -193,22 +214,32 @@
                         <li><a href="pages/about.html">About</a></li>
                         <li><a href="pages/contact.html">Contact</a></li>
                         <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms & Conditions</a></li>
+                        <li><a href="pages/disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Categories</h4>
                     <ul class="footer__links">
-                        <li><a href="#technology">Technology</a></li>
-                        <li><a href="#lifestyle">Lifestyle</a></li>
-                        <li><a href="#business">Business</a></li>
-                        <li><a href="#innovation">Innovation</a></li>
+                        <li><a href="category/technology.html">Technology</a></li>
+                        <li><a href="category/lifestyle.html">Lifestyle</a></li>
+                        <li><a href="category/business.html">Business</a></li>
+                        <li><a href="category/innovation.html">Innovation</a></li>
+                        <li><a href="category/news.html">News</a></li>
+                        <li><a href="category/health.html">Health</a></li>
+                        <li><a href="category/entertainment.html">Entertainment</a></li>
+                        <li><a href="category/finance.html">Finance</a></li>
+                        <li><a href="category/science.html">Science</a></li>
+                        <li><a href="category/travel.html">Travel</a></li>
+                        <li><a href="category/food.html">Food</a></li>
+                        <li><a href="category/sports.html">Sports</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 OmniTrends. All rights reserved.</p>
+                <p>&copy; 2025 OmniTrends. All rights reserved.</p>
             </div>
         </div>
     </footer>

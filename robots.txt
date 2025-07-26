@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yourusername.github.io/omnitrends/sitemap.xml
+Sitemap: https://omnitrends.github.io/sitemap.xml
 
 # Disallow admin or private areas (if any)
 # Disallow: /admin/

@@ -8,8 +8,8 @@ if (navToggle && navMenu) {
         navToggle.classList.toggle('active');
     });
 
-    // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav__link');
+    // Close menu when clicking on a link (but not dropdown toggles)
+    const navLinks = document.querySelectorAll('.nav__link:not(.nav__dropdown-toggle)');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('show');
@@ -25,6 +25,58 @@ if (navToggle && navMenu) {
         }
     });
 }
+
+// ===== DROPDOWN NAVIGATION =====
+const dropdownToggles = document.querySelectorAll('.nav__dropdown-toggle');
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // For mobile view
+        if (window.innerWidth <= 768) {
+            const dropdown = toggle.closest('.nav__dropdown');
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.nav__dropdown.active').forEach(activeDropdown => {
+                if (activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active', !isActive);
+        }
+    });
+});
+
+// Close dropdown when clicking on dropdown links in mobile
+const dropdownLinks = document.querySelectorAll('.nav__dropdown-link');
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            // Close mobile menu
+            navMenu.classList.remove('show');
+            navToggle.classList.remove('active');
+            
+            // Close all dropdowns
+            document.querySelectorAll('.nav__dropdown.active').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Handle window resize to reset mobile dropdown states
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        // Reset mobile dropdown states on desktop
+        document.querySelectorAll('.nav__dropdown.active').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+});
 
 // ===== NEWSLETTER FORM =====
 const newsletterForm = document.querySelector('.newsletter__form');
@@ -317,3 +369,59 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+// ===== MOBILE OPTIMIZATIONS =====
+// Prevent zoom on input focus for iOS
+if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+    document.querySelectorAll('input, textarea, select').forEach(input => {
+        input.addEventListener('focus', () => {
+            input.style.fontSize = '16px';
+        });
+        input.addEventListener('blur', () => {
+            input.style.fontSize = '';
+        });
+    });
+}
+
+// Improve mobile scroll performance
+let ticking = false;
+function updateScrollPosition() {
+    // Any scroll-related updates here
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        requestAnimationFrame(updateScrollPosition);
+        ticking = true;
+    }
+});
+
+// Add passive event listeners for better performance
+const addPassiveEventListener = (element, event, handler) => {
+    element.addEventListener(event, handler, { passive: true });
+};
+
+// Use passive listeners for scroll and touch events
+document.querySelectorAll('.article-card').forEach(card => {
+    addPassiveEventListener(card, 'touchstart', () => {});
+});
+
+// Optimize images for mobile
+function optimizeImagesForMobile() {
+    if (window.innerWidth <= 768) {
+        document.querySelectorAll('img').forEach(img => {
+            // Add loading="lazy" if not already present
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
+            
+            // Add decoding="async" for better performance
+            img.setAttribute('decoding', 'async');
+        });
+    }
+}
+
+// Run on load and resize
+window.addEventListener('load', optimizeImagesForMobile);
+window.addEventListener('resize', optimizeImagesForMobile);

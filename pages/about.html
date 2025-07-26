@@ -9,17 +9,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/omnitrends/about.html">
+    <meta property="og:url" content="https://omnitrends.github.io/about.html">
     <meta property="og:title" content="About OmniTrends - Latest Trends & Insights">
     <meta property="og:description" content="Learn about OmniTrends - your trusted source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.">
-    <meta property="og:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="og:image" content="https://omnitrends.github.io/images/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourusername.github.io/omnitrends/about.html">
+    <meta property="twitter:url" content="https://omnitrends.github.io/about.html">
     <meta property="twitter:title" content="About OmniTrends - Latest Trends & Insights">
     <meta property="twitter:description" content="Learn about OmniTrends - your trusted source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.">
-    <meta property="twitter:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="twitter:image" content="https://omnitrends.github.io/images/og-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <title>About OmniTrends - Latest Trends & Insights</title>
 </head>
@@ -42,7 +42,7 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
-                <a href="index.html" class="nav__logo">
+                <a href="../index.html" class="nav__logo">
                     <h1>OmniTrends</h1>
                 </a>
             </div>
@@ -50,13 +50,26 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="../index.html" class="nav__link">Home</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link nav__link--active">About</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Categories <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../#technology" class="nav__dropdown-link">Technology</a></li>
+                            <li><a href="../#lifestyle" class="nav__dropdown-link">Lifestyle</a></li>
+                            <li><a href="../#business" class="nav__dropdown-link">Business</a></li>
+                            <li><a href="../#innovation" class="nav__dropdown-link">Innovation</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Pages <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="about.html" class="nav__dropdown-link nav__link--active">About</a></li>
+                            <li><a href="contact.html" class="nav__dropdown-link">Contact</a></li>
+                            <li><a href="privacy.html" class="nav__dropdown-link">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
+                            <li><a href="disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -185,27 +198,37 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Categories</h4>
                     <ul class="footer__links">
-                        <li><a href="#technology">Technology</a></li>
-                        <li><a href="#lifestyle">Lifestyle</a></li>
-                        <li><a href="#business">Business</a></li>
-                        <li><a href="#innovation">Innovation</a></li>
+                        <li><a href="../category/technology.html">Technology</a></li>
+                        <li><a href="../category/lifestyle.html">Lifestyle</a></li>
+                        <li><a href="../category/business.html">Business</a></li>
+                        <li><a href="../category/innovation.html">Innovation</a></li>
+                        <li><a href="../category/news.html">News</a></li>
+                        <li><a href="../category/health.html">Health</a></li>
+                        <li><a href="../category/entertainment.html">Entertainment</a></li>
+                        <li><a href="../category/finance.html">Finance</a></li>
+                        <li><a href="../category/science.html">Science</a></li>
+                        <li><a href="../category/travel.html">Travel</a></li>
+                        <li><a href="../category/food.html">Food</a></li>
+                        <li><a href="../category/sports.html">Sports</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 OmniTrends. All rights reserved.</p>
+                <p>&copy; 2025 OmniTrends. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

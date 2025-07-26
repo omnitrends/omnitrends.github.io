@@ -9,17 +9,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/omnitrends/contact.html">
+    <meta property="og:url" content="https://omnitrends.github.io/contact.html">
     <meta property="og:title" content="Contact OmniTrends - Get in Touch">
     <meta property="og:description" content="Get in touch with OmniTrends. Contact us for collaborations, feedback, or questions about trends and insights.">
-    <meta property="og:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="og:image" content="https://omnitrends.github.io/images/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourusername.github.io/omnitrends/contact.html">
+    <meta property="twitter:url" content="https://omnitrends.github.io/contact.html">
     <meta property="twitter:title" content="Contact OmniTrends - Get in Touch">
     <meta property="twitter:description" content="Get in touch with OmniTrends. Contact us for collaborations, feedback, or questions about trends and insights.">
-    <meta property="twitter:image" content="https://yourusername.github.io/omnitrends/images/og-image.jpg">
+    <meta property="twitter:image" content="https://omnitrends.github.io/images/og-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <title>Contact OmniTrends - Get in Touch</title>
     
@@ -127,7 +127,7 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
-                <a href="index.html" class="nav__logo">
+                <a href="../index.html" class="nav__logo">
                     <h1>OmniTrends</h1>
                 </a>
             </div>
@@ -135,13 +135,35 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="../index.html" class="nav__link">Home</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Categories <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../category/technology.html" class="nav__dropdown-link">Technology</a></li>
+                            <li><a href="../category/lifestyle.html" class="nav__dropdown-link">Lifestyle</a></li>
+                            <li><a href="../category/business.html" class="nav__dropdown-link">Business</a></li>
+                            <li><a href="../category/innovation.html" class="nav__dropdown-link">Innovation</a></li>
+                            <li><a href="../category/news.html" class="nav__dropdown-link">News</a></li>
+                            <li><a href="../category/health.html" class="nav__dropdown-link">Health</a></li>
+                            <li><a href="../category/entertainment.html" class="nav__dropdown-link">Entertainment</a></li>
+                            <li><a href="../category/finance.html" class="nav__dropdown-link">Finance</a></li>
+                            <li><a href="../category/science.html" class="nav__dropdown-link">Science</a></li>
+
+                            <li><a href="../category/travel.html" class="nav__dropdown-link">Travel</a></li>
+                            <li><a href="../category/food.html" class="nav__dropdown-link">Food</a></li>
+                            <li><a href="../category/sports.html" class="nav__dropdown-link">Sports</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">Pages <span class="nav__arrow">▼</span></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="about.html" class="nav__dropdown-link">About</a></li>
+                            <li><a href="contact.html" class="nav__dropdown-link nav__link--active">Contact</a></li>
+                            <li><a href="privacy.html" class="nav__dropdown-link">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
+                            <li><a href="disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -172,7 +194,7 @@
                     <div class="contact-card">
                         <div class="contact-icon">📧</div>
                         <h3>Email Us</h3>
-                        <p>hello@omnitrends.com</p>
+                        <p><a href="mailto:kumar.ujjawal247@gmail.com" style="color: var(--primary-color); text-decoration: underline;">kumar.ujjawal247@gmail.com</a></p>
                     </div>
                     
                     <div class="contact-card">
@@ -190,44 +212,26 @@
             </div>
         </section>
 
-        <!-- Contact Form -->
+        <!-- Contact Message -->
         <section style="padding: 4rem 0;">
             <div class="container">
-                <h2 class="section__title">Send Us a Message</h2>
-                
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Full Name *</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
+                <h2 class="section__title">Get in Touch</h2>
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <p style="font-size: var(--font-size-lg); color: var(--text-light); margin-bottom: var(--spacing-xl);">
+                        For any inquiries, collaborations, feedback, or questions, please feel free to reach out to us directly via email.
+                    </p>
+                    <div style="background: var(--bg-light); padding: var(--spacing-2xl); border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
+                        <h3 style="margin-bottom: var(--spacing-md); color: var(--text-color);">Contact Email</h3>
+                        <p style="font-size: var(--font-size-xl); font-weight: 600;">
+                            <a href="mailto:kumar.ujjawal247@gmail.com" style="color: var(--primary-color); text-decoration: none;">
+                                kumar.ujjawal247@gmail.com
+                            </a>
+                        </p>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-light);">
+                            We typically respond within 24 hours
+                        </p>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email Address *</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject *</label>
-                        <select id="subject" name="subject" class="form-select" required>
-                            <option value="">Select a subject</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="collaboration">Collaboration</option>
-                            <option value="guest-post">Guest Post</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="technical">Technical Issue</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message *</label>
-                        <textarea id="message" name="message" class="form-textarea" placeholder="Tell us more about your inquiry..." required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <button type="submit" class="btn btn--primary" style="width: 100%; padding: var(--spacing-md);">Send Message</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
 
@@ -271,6 +275,8 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 
@@ -286,29 +292,12 @@
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 OmniTrends. All rights reserved.</p>
+                <p>&copy; 2025 OmniTrends. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script>
-        // Contact form handling
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to a server
-            // For now, we'll just show a success message
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            
-            // Reset form
-            this.reset();
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
