@@ -304,6 +304,10 @@ def move_image(slug):
     
     if os.path.exists(temp_image_path):
         try:
+            # Ensure the images directory exists
+            images_dir = os.path.dirname(target_image_path)
+            os.makedirs(images_dir, exist_ok=True)
+            
             # Open the JPG image
             with Image.open(temp_image_path) as img:
                 # Convert and save as WebP
@@ -357,6 +361,10 @@ def update_articles_json(article_data, slug):
         article['featured'] = i < 9
     
     # Write back to file
+    # Ensure the json directory exists
+    json_dir = os.path.dirname(articles_json_path)
+    os.makedirs(json_dir, exist_ok=True)
+    
     with open(articles_json_path, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=4, ensure_ascii=False)
     
@@ -394,6 +402,11 @@ def main():
         
         # Write HTML file
         html_file_path = os.path.join(script_dir, "..", "articles", f"{slug}.html")
+        
+        # Ensure the articles directory exists
+        articles_dir = os.path.dirname(html_file_path)
+        os.makedirs(articles_dir, exist_ok=True)
+        
         with open(html_file_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
         print(f"HTML file created: {html_file_path}")

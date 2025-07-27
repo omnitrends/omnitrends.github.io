@@ -11,6 +11,7 @@ beautifulsoup4>=4.12.0
 google-generativeai>=0.8.0
 google-ai-generativelanguage>=0.6.0
 protobuf>=4.21.0
+google-genai>=1.27.0
 
 # Image processing
 Pillow>=10.0.0
