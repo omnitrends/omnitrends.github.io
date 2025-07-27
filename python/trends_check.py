@@ -16,6 +16,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import json
 from datetime import datetime
 
@@ -55,14 +56,16 @@ class GoogleTrendsScraper:
         chrome_options.add_argument("--window-size=1920,1080")
         
         try:
-            self.driver = webdriver.Chrome(options=chrome_options)
+            # Use webdriver-manager to automatically download and setup ChromeDriver
+            service = Service(ChromeDriverManager().install())
+            self.driver = webdriver.Chrome(service=service, options=chrome_options)
             
             # Execute script to remove webdriver property
             self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
             
         except Exception as e:
             print(f"Error setting up Chrome driver: {e}")
-            print("Make sure ChromeDriver is installed and in PATH")
+            print("Make sure Chrome browser is installed")
             raise
     
     def random_delay(self, min_seconds=1, max_seconds=3):

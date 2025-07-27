@@ -35,9 +35,11 @@ jobs:
         sudo apt-get install -y google-chrome-stable
 
     - name: Setup ChromeDriver
-      uses: nanasess/setup-chromedriver@v2
-      with:
-        chromedriver-version: 'latest'
+      run: |
+        # ChromeDriver will be automatically managed by webdriver-manager in the Python scripts
+        # Just ensure Chrome is available and add it to PATH
+        which google-chrome || echo "Chrome not found"
+        google-chrome --version
 
     - name: Install Python dependencies
       run: |
