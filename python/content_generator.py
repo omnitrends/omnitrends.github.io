@@ -7,7 +7,16 @@ import sys
 import time
 from datetime import datetime
 from dotenv import load_dotenv
-import google.generativeai as genai
+
+# Try to import Google Generative AI with better error handling
+try:
+    import google.generativeai as genai
+    print("Google Generative AI imported successfully")
+except ImportError as e:
+    print(f"Error importing Google Generative AI: {e}")
+    print("Please ensure google-generativeai is installed: pip install google-generativeai")
+    sys.exit(1)
+
 from PIL import Image
 from io import BytesIO
 import PIL.Image

@@ -45,14 +45,33 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r python/requirements.txt
+        
+    - name: Verify and fix Google Generative AI installation
+      run: |
+        # Try to import the package
+        if ! python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')" 2>/dev/null; then
+          echo "Initial import failed, trying to reinstall..."
+          pip uninstall -y google-generativeai
+          pip install --no-cache-dir google-generativeai>=0.8.0
+          pip install --no-cache-dir google-ai-generativelanguage
+        fi
+        
+        # Verify installation
+        python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')"
+        pip show google-generativeai
 
     - name: Set up environment variables
       run: |
         echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
 
-    - name: Create temp directory
+    - name: Create and verify temp directory
       run: |
         mkdir -p temp
+        echo "Temp directory created"
+        ls -la temp/
+        echo "Current working directory: $(pwd)"
+        echo "Directory structure:"
+        find . -type d -name temp -exec ls -la {} \;
 
     - name: Configure Git
       run: |
@@ -67,35 +86,32 @@ jobs:
       run: |
         python python/trends_check.py
         echo "trends_check.py completed"
+        echo "=== Workspace status after trends_check ==="
         ls -la temp/ || echo "temp directory not found"
+        pwd
       env:
         DISPLAY: :99
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-    - name: Commit and push after trends_check
-      run: |
-        git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after trends_check - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after trends_check"
-        else
-          echo "No changes to commit after trends_check"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: Pull latest changes before search_articles
-      run: |
-        git pull origin main
+    - name: Upload temp directory as artifact (after trends_check)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: temp-after-trends-check
+        path: temp/
+        retention-days: 1
 
     - name: Run search_articles.py
       run: |
+        echo "=== Workspace status before search_articles ==="
+        ls -la temp/ || echo "temp directory not found"
         python python/search_articles.py
         echo "search_articles.py completed"
+        echo "=== Workspace status after search_articles ==="
         ls -la temp/ || echo "temp directory not found"
         if [ -f "temp/article_analysis.json" ]; then
           echo "article_analysis.json created successfully"
+          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
           head -10 temp/article_analysis.json
         else
           echo "ERROR: article_analysis.json not found!"
@@ -104,121 +120,135 @@ jobs:
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-    - name: Commit and push after search_articles
-      run: |
-        git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after search_articles - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after search_articles"
-        else
-          echo "No changes to commit after search_articles"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+    - name: Upload temp directory as artifact (after search_articles)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: temp-after-search-articles
+        path: temp/
+        retention-days: 1
 
-    - name: Pull latest changes before content_generator
+    - name: Verify temp directory persistence
       run: |
-        git pull origin main
+        echo "=== Verifying temp directory persistence ==="
+        ls -la temp/ || echo "temp directory not found"
+        if [ -f "temp/article_analysis.json" ]; then
+          echo "✓ article_analysis.json still exists"
+          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
+          echo "File content preview:"
+          head -5 temp/article_analysis.json
+        else
+          echo "✗ article_analysis.json missing!"
+          echo "This indicates a workspace persistence issue."
+          echo "Current directory contents:"
+          ls -la
+          echo "Temp directory status:"
+          ls -la temp/ || echo "temp directory does not exist"
+          
+          # Create temp directory if it doesn't exist
+          mkdir -p temp
+          
+          # This shouldn't happen in the same job, but if it does, we need to fail
+          echo "ERROR: Workspace persistence failed. This should not happen within the same job."
+          exit 1
+        fi
 
     - name: Run content_generator.py
       run: |
-        echo "Loading articles..."
+        echo "=== Workspace status before content_generator ==="
+        ls -la temp/ || echo "temp directory not found"
         if [ -f "temp/article_analysis.json" ]; then
-          echo "article_analysis.json found, proceeding with content generation"
+          echo "✓ article_analysis.json found, proceeding with content generation"
+          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
         else
-          echo "ERROR: article_analysis.json not found!"
-          ls -la temp/ || echo "temp directory not found"
+          echo "✗ ERROR: article_analysis.json not found!"
+          echo "Current directory contents:"
+          ls -la
+          echo "Temp directory contents:"
+          ls -la temp/ || echo "temp directory does not exist"
           exit 1
         fi
         python python/content_generator.py
         echo "content_generator.py completed"
+        echo "=== Workspace status after content_generator ==="
+        ls -la temp/ || echo "temp directory not found"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-    - name: Commit and push after content_generator
-      run: |
-        git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after content_generator - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after content_generator"
-        else
-          echo "No changes to commit after content_generator"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: Pull latest changes before html_generator
-      run: |
-        git pull origin main
+    - name: Upload temp directory as artifact (after content_generator)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: temp-after-content-generator
+        path: temp/
+        retention-days: 1
 
     - name: Run html_generator.py
       run: |
+        echo "=== Workspace status before html_generator ==="
+        ls -la temp/ || echo "temp directory not found"
         python python/html_generator.py
         echo "html_generator.py completed"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-    - name: Commit and push after html_generator
-      run: |
-        git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after html_generator - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after html_generator"
-        else
-          echo "No changes to commit after html_generator"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: Pull latest changes before clear_temp
-      run: |
-        git pull origin main
-
     - name: Run clear_temp.py
       run: |
+        echo "=== Workspace status before clear_temp ==="
+        ls -la temp/ || echo "temp directory not found"
         python python/clear_temp.py
         echo "clear_temp.py completed"
-
-    - name: Commit and push after clear_temp
-      run: |
-        git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after clear_temp - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after clear_temp"
-        else
-          echo "No changes to commit after clear_temp"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: Pull latest changes before sitemap_generator
-      run: |
-        git pull origin main
+        echo "=== Workspace status after clear_temp ==="
+        ls -la temp/ || echo "temp directory not found"
 
     - name: Run sitemap_generator.py
       run: |
         python python/sitemap_generator.py
         echo "sitemap_generator.py completed"
 
-    - name: Commit and push after sitemap_generator
+    - name: Check for changes and commit
+      id: check_changes
       run: |
         git add -A
-        if ! git diff --staged --quiet; then
-          git commit -m "Update after sitemap_generator - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
-          echo "Changes committed and pushed after sitemap_generator"
+        if git diff --staged --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "No changes to commit"
         else
-          echo "No changes to commit after sitemap_generator"
+          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected, preparing to commit"
+          git status --porcelain
         fi
+
+    - name: Commit and push all changes
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git commit -m "Auto-generated content update - $(date '+%Y-%m-%d %H:%M:%S')"
+        git push origin main
+        echo "All changes committed and pushed successfully"
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Upload final workspace as artifact
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: final-workspace
+        path: |
+          temp/
+          articles/
+          json/
+          images/
+          category/
+          index.html
+          sitemap.xml
+        retention-days: 7
 
     - name: Final status check
       run: |
         echo "Content generation workflow completed successfully!"
-        echo "All scripts have been executed and changes committed individually."
-        git log --oneline -5
+        if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+          echo "Changes were committed and pushed to the repository."
+        else
+          echo "No changes were made to the repository."
+        fi
+        echo "Artifacts have been uploaded for debugging purposes."
