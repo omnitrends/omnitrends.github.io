@@ -39,7 +39,7 @@ class ArticleSearcher:
             raise ValueError("GEMINI_API_KEY not found in .env file")
         
         genai.configure(api_key=gemini_api_key)
-        self.model = genai.GenerativeModel('gemini-2.0-flash')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Set up headers for web scraping
         self.headers = {
@@ -526,7 +526,7 @@ class ArticleSearcher:
             Write the article now:
             """
             
-            print("Analyzing article with Gemini Flash 2.0...")
+            print("Analyzing article with Gemini Flash 2.5...")
             response = self.model.generate_content(prompt)
             
             # Add 60 second delay after Gemini API call
