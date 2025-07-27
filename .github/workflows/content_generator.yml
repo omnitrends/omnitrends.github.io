@@ -1,0 +1,132 @@
+name: Content Generator
+
+on:
+  schedule:
+    # Run every 4 hours
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.PAT_TOKEN }}
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget unzip xvfb
+        
+        # Install Chrome
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        
+        # Install ChromeDriver
+        CHROME_VERSION=$(google-chrome --version | cut -d " " -f3 | cut -d "." -f1)
+        CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION}")
+        wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+        sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
+        sudo chmod +x /usr/local/bin/chromedriver
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r python/requirements.txt
+
+    - name: Set up environment variables
+      run: |
+        echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
+
+    - name: Create temp directory
+      run: |
+        mkdir -p temp
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "Content Generator Bot"
+        git config --global user.email "action@github.com"
+
+    - name: Pull latest changes
+      run: |
+        git pull origin main
+
+    - name: Run trends_check.py
+      run: |
+        cd python
+        python trends_check.py
+      env:
+        DISPLAY: :99
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Run search_articles.py
+      run: |
+        cd python
+        python search_articles.py
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Run content_generator.py
+      run: |
+        cd python
+        python content_generator.py
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Run html_generator.py
+      run: |
+        cd python
+        python html_generator.py
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Run clear_temp.py
+      run: |
+        cd python
+        python clear_temp.py
+
+    - name: Run sitemap_generator.py
+      run: |
+        cd python
+        python sitemap_generator.py
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git add -A
+        if git diff --staged --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "No changes to commit"
+        else
+          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected"
+        fi
+
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git commit -m "Auto-generated content update - $(date '+%Y-%m-%d %H:%M:%S')"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Display completion message
+      run: |
+        echo "Content generation workflow completed successfully!"
+        if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+          echo "Changes were committed and pushed to the repository."
+        else
+          echo "No changes were made to the repository."
+        fi

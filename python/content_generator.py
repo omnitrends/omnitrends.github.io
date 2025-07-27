@@ -173,7 +173,7 @@ Generate ONLY the markdown article content, no explanations or meta-text."""
     return response.text
 
 def get_random_image():
-    """Get a random image from temp folder"""
+    """Get the image with largest dimensions from temp folder"""
     image_patterns = ['temp/*.png', 'temp/*.jpg', 'temp/*.jpeg']
     all_images = []
     
@@ -183,7 +183,29 @@ def get_random_image():
     if not all_images:
         raise FileNotFoundError("No images found in temp folder")
     
-    return random.choice(all_images)
+    # Calculate dimensions for each image
+    image_dimensions = []
+    for image_path in all_images:
+        try:
+            with Image.open(image_path) as img:
+                width, height = img.size
+                dimension_product = width * height
+                image_dimensions.append((image_path, dimension_product))
+        except Exception as e:
+            print(f"Warning: Could not process image {image_path}: {e}")
+            continue
+    
+    if not image_dimensions:
+        raise FileNotFoundError("No valid images found in temp folder")
+    
+    # Find the maximum dimension product
+    max_dimension = max(image_dimensions, key=lambda x: x[1])[1]
+    
+    # Get all images with the maximum dimension product
+    max_dimension_images = [img_path for img_path, dim in image_dimensions if dim == max_dimension]
+    
+    # If multiple images have the same max dimensions, choose randomly
+    return random.choice(max_dimension_images)
 
 def generate_new_image(source_image_path):
     """Generate a new image using Gemini image-to-image generation"""
