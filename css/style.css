@@ -323,6 +323,63 @@ ul {
     gap: var(--spacing-2xl);
 }
 
+/* Category page specific grid - 3 columns layout */
+.category-page .articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+/* Load more button styles */
+.load-more-container {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+}
+
+.load-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.load-more-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.load-more-btn:disabled {
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.load-more-btn .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+.load-more-btn.loading .spinner {
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .article-card {
     background-color: var(--bg-color);
     border-radius: var(--border-radius-lg);
@@ -644,6 +701,11 @@ ul {
     .articles-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     }
+    
+    /* Category page responsive - 2 columns on tablets */
+    .category-page .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -743,6 +805,11 @@ ul {
     .articles-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
+    }
+    
+    /* Category page responsive - 1 column on mobile */
+    .category-page .articles-grid {
+        grid-template-columns: 1fr;
     }
     
     .newsletter__form {

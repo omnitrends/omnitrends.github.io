@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-07-27T16:05:32.206142",
+  "location": "India",
+  "timeframe": "Last 4 hours",
+  "filter_criteria": "English language + Active status only",
+  "sort_order": "Descending by search volume",
+  "total_filtered_trends": 13,
+  "trends": [
+    {
+      "rank": 1,
+      "trend_name": "vissel kobe vs barcelona",
+      "search_volume": "50000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 3,
+      "trend_name": "kerala lottery result",
+      "search_volume": "10000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 2,
+      "trend_name": "iim cat 2025 notification",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 7,
+      "trend_name": "youtube youtube",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 4,
+      "trend_name": "socolive",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 5,
+      "trend_name": "hera pheri 3",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 6,
+      "trend_name": "joan garcía",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 8,
+      "trend_name": "tcs",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 10,
+      "trend_name": "bengaluru",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 9,
+      "trend_name": "roony bardghji",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 11,
+      "trend_name": "mom",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 12,
+      "trend_name": "fc barcelona vs vissel kobe",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 13,
+      "trend_name": "jawan",
+      "search_volume": "200+",
+      "active_status": "Active"
+    }
+  ]
+}
