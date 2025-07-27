@@ -1,1 +1,124 @@
-{}
+{
+  "timestamp": "2025-07-27T18:53:00.594289",
+  "location": "India",
+  "timeframe": "Last 4 hours",
+  "filter_criteria": "English language + Active status only",
+  "sort_order": "Descending by search volume",
+  "total_filtered_trends": 19,
+  "trends": [
+    {
+      "rank": 1,
+      "trend_name": "ind vs eng 5th test",
+      "search_volume": "20000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 2,
+      "trend_name": "n jagadeesan",
+      "search_volume": "20000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 3,
+      "trend_name": "ravi bopara",
+      "search_volume": "10000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 4,
+      "trend_name": "england vs spain",
+      "search_volume": "10000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 5,
+      "trend_name": "laughter chefs season 1 winner",
+      "search_volume": "10000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 6,
+      "trend_name": "moeen ali",
+      "search_volume": "5000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 7,
+      "trend_name": "são paulo vs fluminense",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 8,
+      "trend_name": "uppsc ro aro",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 9,
+      "trend_name": "irfan pathan",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 10,
+      "trend_name": "ambati rayudu",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 11,
+      "trend_name": "ravindra jadeja stats",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 12,
+      "trend_name": "mohit suri wife",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 13,
+      "trend_name": "yusuf pathan",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 14,
+      "trend_name": "luis diaz",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 15,
+      "trend_name": "dulquer salmaan",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 16,
+      "trend_name": "kullu",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 17,
+      "trend_name": "true detective",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 18,
+      "trend_name": "chloe kelly",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 19,
+      "trend_name": "kill",
+      "search_volume": "200+",
+      "active_status": "Active"
+    }
+  ]
+}
