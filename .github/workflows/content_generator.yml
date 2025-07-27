@@ -52,8 +52,8 @@ jobs:
         if ! python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')" 2>/dev/null; then
           echo "Initial import failed, trying to reinstall..."
           pip uninstall -y google-generativeai google-genai google-ai-generativelanguage
-          pip install --no-cache-dir google-generativeai>=0.8.0
-          pip install --no-cache-dir google-ai-generativelanguage>=0.6.18
+          pip install --no-cache-dir google-generativeai>=0.8.5
+          pip install --no-cache-dir google-ai-generativelanguage>=0.6.15
         fi
         
         # Verify installation
