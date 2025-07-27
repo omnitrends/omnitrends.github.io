@@ -83,6 +83,258 @@ class ArticleSearcher:
             self.driver.quit()
             self.driver = None
     
+    def _load_more_bing_results(self):
+        """Scroll down to load more dynamic content from Bing"""
+        try:
+            print("Loading more results by scrolling...")
+            initial_height = self.driver.execute_script("return document.body.scrollHeight")
+            
+            # Scroll down in multiple steps to trigger dynamic loading
+            for i in range(5):  # Try scrolling 5 times
+                # Scroll to bottom
+                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(2)  # Wait for content to load
+                
+                # Check if new content loaded
+                new_height = self.driver.execute_script("return document.body.scrollHeight")
+                if new_height == initial_height:
+                    break  # No more content loaded
+                
+                initial_height = new_height
+                print(f"Scrolled {i+1}/5 - New content loaded")
+            
+            # Final wait for any last content
+            time.sleep(2)
+            print("Dynamic content loading completed")
+            
+        except Exception as e:
+            print(f"Error loading more results: {e}")
+            # Continue anyway
+
+    def _matches_query(self, title, query):
+        """Check if title matches query with flexible matching"""
+        if not title or not query:
+            return False
+        
+        title_lower = title.lower()
+        query_lower = query.lower()
+        
+        # Direct match
+        if query_lower in title_lower:
+            return True
+        
+        # Split query into words and check if most words are present
+        query_words = query_lower.split()
+        if len(query_words) > 1:
+            matches = sum(1 for word in query_words if word in title_lower)
+            # Require at least 60% of query words to match
+            return matches >= len(query_words) * 0.6
+        
+        return False
+
+    def _extract_bing_articles_method1(self, query, max_articles):
+        """Extract articles using standard news card selectors"""
+        articles = []
+        try:
+            selectors = [".news-card", ".newsitem", ".news-item"]
+            all_news_cards = []
+            
+            for selector in selectors:
+                cards = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                if cards:
+                    print(f"Method 1: Found {len(cards)} articles with selector {selector}")
+                    all_news_cards.extend(cards)
+                    break
+            
+            for i, card in enumerate(all_news_cards):
+                if len(articles) >= max_articles:
+                    break
+                
+                try:
+                    # Try multiple title selectors
+                    title = ""
+                    title_selectors = [".title", "h3", "h4", "a[title]", ".headline"]
+                    for title_sel in title_selectors:
+                        try:
+                            title_element = card.find_element(By.CSS_SELECTOR, title_sel)
+                            title = title_element.text.strip() or title_element.get_attribute("title") or ""
+                            if title:
+                                break
+                        except:
+                            continue
+                    
+                    # More flexible keyword matching
+                    if not title or not self._matches_query(title, query):
+                        continue
+                    
+                    # Extract URL
+                    url = ""
+                    try:
+                        link_element = card.find_element(By.CSS_SELECTOR, "a")
+                        url = link_element.get_attribute("href")
+                    except:
+                        continue
+                    
+                    # Extract source
+                    source = "Bing News"
+                    source_selectors = [".source", ".attribution", ".publisher", ".cite"]
+                    for source_sel in source_selectors:
+                        try:
+                            source_element = card.find_element(By.CSS_SELECTOR, source_sel)
+                            source = source_element.text.strip()
+                            if source:
+                                break
+                        except:
+                            continue
+                    
+                    # Extract snippet
+                    snippet = ""
+                    snippet_selectors = [".snippet", ".description", ".summary", ".abstract"]
+                    for snippet_sel in snippet_selectors:
+                        try:
+                            snippet_element = card.find_element(By.CSS_SELECTOR, snippet_sel)
+                            snippet = snippet_element.text.strip()
+                            if snippet:
+                                break
+                        except:
+                            continue
+                    
+                    # Extract image
+                    image_url = ""
+                    try:
+                        img_element = card.find_element(By.CSS_SELECTOR, "img")
+                        image_url = img_element.get_attribute("src") or img_element.get_attribute("data-src") or ""
+                    except:
+                        pass
+                    
+                    articles.append({
+                        'title': title,
+                        'link': url,
+                        'source': source,
+                        'time': 'Recent',
+                        'snippet': snippet,
+                        'image_url': image_url
+                    })
+                    
+                    print(f"✓ Method 1 - Found article {len(articles)}: {title[:50]}...")
+                    
+                except Exception as e:
+                    continue
+                    
+        except Exception as e:
+            print(f"Error in method 1: {e}")
+        
+        return articles
+
+    def _extract_bing_articles_method2(self, query, max_articles):
+        """Extract articles using data attributes and alternative selectors"""
+        articles = []
+        try:
+            selectors = ["[data-module='NewsArticle']", "article", ".algocore", ".na_cnt"]
+            all_items = []
+            
+            for selector in selectors:
+                items = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                if items:
+                    print(f"Method 2: Found {len(items)} articles with selector {selector}")
+                    all_items.extend(items)
+                    if len(all_items) > 20:  # Don't get too many
+                        break
+                        
+            for i, item in enumerate(all_items[:max_articles * 3]):  # Search more than needed
+                if len(articles) >= max_articles:
+                    break
+                
+                try:
+                    # Find title and link
+                    title = ""
+                    url = ""
+                    
+                    # Try to find clickable title link
+                    title_links = item.find_elements(By.CSS_SELECTOR, "a")
+                    for link in title_links:
+                        title_text = link.text.strip() or link.get_attribute("title") or ""
+                        link_url = link.get_attribute("href") or ""
+                        
+                        if title_text and link_url and self._matches_query(title_text, query):
+                            title = title_text
+                            url = link_url
+                            break
+                    
+                    if not title or not url:
+                        continue
+                    
+                    # Extract image
+                    image_url = ""
+                    try:
+                        img_element = item.find_element(By.CSS_SELECTOR, "img")
+                        image_url = img_element.get_attribute("src") or img_element.get_attribute("data-src") or ""
+                    except:
+                        pass
+                    
+                    articles.append({
+                        'title': title,
+                        'link': url,
+                        'source': 'Bing News',
+                        'time': 'Recent',
+                        'snippet': '',
+                        'image_url': image_url
+                    })
+                    
+                    print(f"✓ Method 2 - Found article {len(articles)}: {title[:50]}...")
+                    
+                except Exception as e:
+                    continue
+                    
+        except Exception as e:
+            print(f"Error in method 2: {e}")
+        
+        return articles
+
+    def _extract_bing_articles_fallback(self, query, max_articles):
+        """Fallback method - extract any links that might be articles"""
+        articles = []
+        try:
+            print("Method 3: Using fallback approach - searching all links...")
+            
+            # Get all links on the page
+            all_links = self.driver.find_elements(By.CSS_SELECTOR, "a")
+            print(f"Method 3: Found {len(all_links)} total links on page")
+            
+            for link in all_links:
+                if len(articles) >= max_articles:
+                    break
+                
+                try:
+                    title = link.text.strip() or link.get_attribute("title") or ""
+                    url = link.get_attribute("href") or ""
+                    
+                    # Filter for news-like URLs and titles containing query
+                    if (title and url and 
+                        self._matches_query(title, query) and
+                        len(title) > 20 and  # Reasonable title length
+                        any(domain in url.lower() for domain in ['news', 'article', 'story', '.com', '.in']) and
+                        not any(skip in url.lower() for skip in ['javascript:', 'mailto:', '#', 'bing.com/search'])):
+                        
+                        articles.append({
+                            'title': title,
+                            'link': url,
+                            'source': 'Web Search',
+                            'time': 'Recent',
+                            'snippet': '',
+                            'image_url': ''
+                        })
+                        
+                        print(f"✓ Method 3 - Found article {len(articles)}: {title[:50]}...")
+                        
+                except Exception as e:
+                    continue
+                    
+        except Exception as e:
+            print(f"Error in method 3: {e}")
+        
+        return articles
+    
     def download_image(self, image_url, filename):
         """Download and save image from URL or data URI"""
         try:
@@ -191,8 +443,68 @@ class ArticleSearcher:
         
         return selected_articles[:actual_num_articles]
     
+    def check_keyword_exists(self, keyword):
+        """Check if a keyword already exists in articles.json"""
+        articles_json_path = "d:\\Coding\\omnitrends.github.io\\json\\articles.json"
+        
+        try:
+            with open(articles_json_path, 'r', encoding='utf-8') as f:
+                articles = json.load(f)
+            
+            # Check if any article has this keyword (case-insensitive)
+            keyword_lower = keyword.lower()
+            for article in articles:
+                if article.get('keyword', '').lower() == keyword_lower:
+                    return True
+            
+            return False
+            
+        except FileNotFoundError:
+            print(f"Articles file not found: {articles_json_path}")
+            return False
+        except json.JSONDecodeError:
+            print(f"Invalid JSON in articles file: {articles_json_path}")
+            return False
+        except Exception as e:
+            print(f"Error reading articles file: {e}")
+            return False
+
+    def get_next_available_trend(self):
+        """Get the next trend that doesn't already exist in articles.json"""
+        json_path = "d:\\Coding\\omnitrends.github.io\\json\\latest_trends.json"
+        
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            trends = data.get('trends', [])
+            # Sort trends by rank to process them in order
+            trends.sort(key=lambda x: x.get('rank', float('inf')))
+            
+            for trend in trends:
+                trend_name = trend.get('trend_name')
+                if trend_name:
+                    if not self.check_keyword_exists(trend_name):
+                        print(f"Found available trend: {trend_name} (Rank: {trend.get('rank')})")
+                        return trend_name
+                    else:
+                        print(f"Skipping trend: {trend_name} (already exists in articles.json)")
+            
+            print("No new trends found - all trends already exist in articles.json")
+            return None
+            
+        except FileNotFoundError:
+            print(f"File not found: {json_path}")
+            return None
+        except json.JSONDecodeError:
+            print(f"Invalid JSON in file: {json_path}")
+            return None
+        except Exception as e:
+            print(f"Error reading trends file: {e}")
+            return None
+
     def get_top_trend(self):
-        """Get the trend with rank 1 from latest_trends.json"""
+        """Get the trend with rank 1 from latest_trends.json (kept for backward compatibility)"""
         json_path = "d:\\Coding\\omnitrends.github.io\\json\\latest_trends.json"
         
         try:
@@ -236,141 +548,58 @@ class ArticleSearcher:
             # Navigate to Bing News
             self.driver.get(bing_url)
             
-            # Wait for results to load
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".news-card"))
-            )
+            # Wait for any news results to load with multiple selector options
+            selectors_to_try = [
+                ".news-card",
+                "[data-module='NewsArticle']", 
+                ".newsitem",
+                ".news-item",
+                "article",
+                ".contentArea .na_cnt",
+                ".algocore"
+            ]
             
-            # Find news articles - we'll search through more results until we get enough matching articles
-            articles = []
-            all_news_cards = self.driver.find_elements(By.CSS_SELECTOR, ".news-card")
-            
-            print(f"Found {len(all_news_cards)} total articles on the page")
-            print(f"Searching for at least {num_articles} articles containing keyword '{query}'...")
-            
-            # Search through articles until we have enough matching ones
-            for i, card in enumerate(all_news_cards):
+            results_loaded = False
+            for selector in selectors_to_try:
                 try:
-                    # Extract title
-                    title_element = card.find_element(By.CSS_SELECTOR, ".title")
-                    title = title_element.text.strip()
-                    
-                    # Check if title contains the keyword (case-insensitive)
-                    if query.lower() not in title.lower():
-                        print(f"Skipping article {i+1}: Title doesn't contain keyword '{query}' - {title[:50]}...")
-                        continue
-                    
-                    # Extract URL
-                    link_element = card.find_element(By.CSS_SELECTOR, "a")
-                    url = link_element.get_attribute("href")
-                    
-                    # Extract source (try different selectors)
-                    source = "Unknown Source"
-                    try:
-                        source_element = card.find_element(By.CSS_SELECTOR, ".source")
-                        source = source_element.text.strip()
-                    except:
-                        try:
-                            source_element = card.find_element(By.CSS_SELECTOR, ".attribution")
-                            source = source_element.text.strip()
-                        except:
-                            pass
-                    
-                    # Extract snippet/preview
-                    snippet = ""
-                    try:
-                        snippet_element = card.find_element(By.CSS_SELECTOR, ".snippet")
-                        snippet = snippet_element.text.strip()
-                    except:
-                        try:
-                            snippet_element = card.find_element(By.CSS_SELECTOR, ".description")
-                            snippet = snippet_element.text.strip()
-                        except:
-                            pass
-                    
-                    # Extract featured image
-                    image_url = ""
-                    try:
-                        # Try different selectors for images
-                        img_element = card.find_element(By.CSS_SELECTOR, "img")
-                        image_url = img_element.get_attribute("src")
-                        if not image_url:
-                            image_url = img_element.get_attribute("data-src")
-                    except:
-                        try:
-                            # Alternative selector
-                            img_element = card.find_element(By.CSS_SELECTOR, ".news-card-image img")
-                            image_url = img_element.get_attribute("src")
-                        except:
-                            pass
-                    
-                    articles.append({
-                        'title': title,
-                        'link': url,
-                        'source': source,
-                        'time': 'Recent',
-                        'snippet': snippet,
-                        'image_url': image_url
-                    })
-                    
-                    print(f"✓ Found matching article {len(articles)}: {title[:50]}...")
-                    
-                    # Check if we have enough articles
-                    if len(articles) >= max_search:
-                        print(f"Reached maximum search limit of {max_search} matching articles")
-                        break
-                    
-                except Exception as e:
-                    print(f"Error extracting article {i+1}: {e}")
+                    WebDriverWait(self.driver, 5).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                    )
+                    print(f"Found results using selector: {selector}")
+                    results_loaded = True
+                    break
+                except:
                     continue
             
-            if len(articles) < num_articles:
-                print(f"Only found {len(articles)} matching articles with primary selectors, trying alternative approach...")
-                # Try alternative selectors
-                all_news_items = self.driver.find_elements(By.CSS_SELECTOR, "[data-module='NewsArticle']")
-                
-                for i, item in enumerate(all_news_items):
-                    try:
-                        title_element = item.find_element(By.CSS_SELECTOR, "a")
-                        title = title_element.text.strip()
-                        url = title_element.get_attribute("href")
-                        
-                        # Check if title contains the keyword (case-insensitive)
-                        if query.lower() not in title.lower():
-                            print(f"Skipping alternative article {i+1}: Title doesn't contain keyword '{query}' - {title[:50]}...")
-                            continue
-                        
-                        # Try to extract image for alternative approach too
-                        image_url = ""
-                        try:
-                            img_element = item.find_element(By.CSS_SELECTOR, "img")
-                            image_url = img_element.get_attribute("src")
-                            if not image_url:
-                                image_url = img_element.get_attribute("data-src")
-                        except:
-                            pass
-                        
-                        articles.append({
-                            'title': title,
-                            'link': url,
-                            'source': 'Bing News',
-                            'time': 'Recent',
-                            'snippet': '',
-                            'image_url': image_url
-                        })
-                        
-                        print(f"✓ Found matching alternative article {len(articles)}: {title[:50]}...")
-                        
-                        # Check if we have enough articles now
-                        if len(articles) >= max_search:
-                            print(f"Reached maximum search limit of {max_search} matching articles")
-                            break
-                        
-                    except Exception as e:
-                        print(f"Error extracting alternative article {i+1}: {e}")
-                        continue
+            if not results_loaded:
+                print("No standard news results found, trying general content...")
+                time.sleep(3)
             
-            print(f"\nTotal matching articles found: {len(articles)}")
+            # Load more dynamic content by scrolling
+            self._load_more_bing_results()
+            
+            # Extract articles using multiple selector strategies
+            articles = []
+            articles.extend(self._extract_bing_articles_method1(query, max_search))
+            
+            if len(articles) < num_articles:
+                print(f"Method 1 found {len(articles)} articles, trying additional methods...")
+                articles.extend(self._extract_bing_articles_method2(query, max_search - len(articles)))
+            
+            if len(articles) < num_articles:
+                print(f"Method 2 found {len(articles)} total articles, trying fallback method...")
+                articles.extend(self._extract_bing_articles_fallback(query, max_search - len(articles)))
+            
+            # Remove duplicates based on URL
+            seen_urls = set()
+            unique_articles = []
+            for article in articles:
+                if article['link'] and article['link'] not in seen_urls:
+                    seen_urls.add(article['link'])
+                    unique_articles.append(article)
+            
+            articles = unique_articles
+            print(f"\nTotal unique matching articles found: {len(articles)}")
             
             # If we have fewer than required articles, still proceed with what we have
             if len(articles) < num_articles:
@@ -567,13 +796,13 @@ class ArticleSearcher:
         print("="*60)
         
         try:
-            # Step 1: Get top trend
-            trend_name = self.get_top_trend()
+            # Step 1: Get next available trend (that doesn't exist in articles.json)
+            trend_name = self.get_next_available_trend()
             if not trend_name:
-                print("Could not get top trend. Exiting.")
+                print("Could not find any new trends to process. All trends already exist in articles.json.")
                 return
             
-            print(f"Top trend found: {trend_name}")
+            print(f"Next available trend found: {trend_name}")
             
             # Step 2: Search for articles using Bing News with Selenium
             print(f"\nSearching for articles about: {trend_name}")

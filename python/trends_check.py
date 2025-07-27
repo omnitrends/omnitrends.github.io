@@ -226,17 +226,21 @@ class GoogleTrendsScraper:
                 trend['search_volume_display'] = original_volume.replace('K+', '000+').replace('M+', '000000+') if original_volume != "N/A" else "N/A"
                 
                 filtered_trends.append(trend)
-                print(f"✓ Included: {trend_name} (Volume: {original_volume} -> {numeric_volume}, Status: {trend['active_status']})")
+                print(f"[+] Included: {trend_name} (Volume: {original_volume} -> {numeric_volume}, Status: {trend['active_status']})")
             else:
                 reason = []
                 if not is_english:
                     reason.append("not English")
                 if not is_active:
                     reason.append("not Active")
-                print(f"✗ Excluded: {trend_name} ({', '.join(reason)})")
+                print(f"[-] Excluded: {trend_name} ({', '.join(reason)})")
         
         # Sort by search volume in descending order, maintaining original rank as secondary sort
         filtered_trends.sort(key=lambda x: (-x['search_volume_numeric'], x['rank']))
+        
+        # Reassign ranks after sorting (1, 2, 3, etc.)
+        for index, trend in enumerate(filtered_trends, 1):
+            trend['rank'] = index
         
         print(f"\nFiltered and sorted {len(filtered_trends)} trends from {len(trends_data)} total trends")
         return filtered_trends

@@ -341,6 +341,11 @@ def update_json_with_metadata(excerpt, date, category):
         ordered_data['date'] = date
         ordered_data['category'] = category
         
+        # Extract keyword from trend_searched (remove "(news india)" if present)
+        trend_searched = data.get('trend_searched', '')
+        keyword = trend_searched.replace('(news india)', '').strip()
+        ordered_data['keyword'] = keyword
+        
         # Save updated JSON with proper ordering
         with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
             json.dump(ordered_data, f, indent=2, ensure_ascii=False)
@@ -349,6 +354,7 @@ def update_json_with_metadata(excerpt, date, category):
         print(f"  Excerpt: {excerpt}")
         print(f"  Date: {date}")
         print(f"  Category: {category}")
+        print(f"  Keyword: {keyword}")
         
     except Exception as e:
         print(f"Error updating JSON with metadata: {str(e)}")
