@@ -11,10 +11,10 @@ from dotenv import load_dotenv
 # Try to import Google Generative AI with better error handling
 try:
     import google.generativeai as genai
-    print("Google Generative AI imported successfully")
+    print("Google Generative AI imported successfully", flush=True)
 except ImportError as e:
-    print(f"Error importing Google Generative AI: {e}")
-    print("Please ensure google-generativeai is installed: pip install google-generativeai")
+    print(f"Error importing Google Generative AI: {e}", flush=True)
+    print("Please ensure google-generativeai is installed: pip install google-generativeai", flush=True)
     sys.exit(1)
 
 from PIL import Image
@@ -37,22 +37,22 @@ def load_articles():
     project_root = os.path.dirname(script_dir)  # Go up one level from python/ to project root
     temp_file_path = os.path.join(project_root, 'temp', 'article_analysis.json')
     
-    print(f"Looking for article_analysis.json at: {temp_file_path}")
+    print(f"Looking for article_analysis.json at: {temp_file_path}", flush=True)
     
     if not os.path.exists(temp_file_path):
-        print(f"ERROR: File not found at {temp_file_path}")
-        print(f"Current working directory: {os.getcwd()}")
-        print(f"Script directory: {script_dir}")
-        print(f"Project root: {project_root}")
+        print(f"ERROR: File not found at {temp_file_path}", flush=True)
+        print(f"Current working directory: {os.getcwd()}", flush=True)
+        print(f"Script directory: {script_dir}", flush=True)
+        print(f"Project root: {project_root}", flush=True)
         
         # List contents of temp directory for debugging
         temp_dir = os.path.join(project_root, 'temp')
         if os.path.exists(temp_dir):
-            print(f"Contents of temp directory ({temp_dir}):")
+            print(f"Contents of temp directory ({temp_dir}):", flush=True)
             for item in os.listdir(temp_dir):
-                print(f"  - {item}")
+                print(f"  - {item}", flush=True)
         else:
-            print(f"Temp directory does not exist: {temp_dir}")
+            print(f"Temp directory does not exist: {temp_dir}", flush=True)
         
         raise FileNotFoundError(f"article_analysis.json not found at {temp_file_path}")
     
@@ -102,7 +102,7 @@ Generate only the title, nothing else. Remember: The title MUST contain "{trend_
 
     response = model.generate_content(prompt)
     
-    print("Waiting 60 seconds before next API call...")
+    print("Waiting 60 seconds before next API call...", flush=True)
     time.sleep(60)
     
     return response.text.strip().title()
@@ -205,7 +205,7 @@ Generate ONLY the markdown article content, no explanations or meta-text."""
 
     response = model.generate_content(prompt)
     
-    print("Waiting 60 seconds before next API call...")
+    print("Waiting 60 seconds before next API call...", flush=True)
     time.sleep(60)
     
     return response.text
@@ -228,11 +228,11 @@ def get_random_image():
         all_images.extend(glob.glob(pattern))
     
     if not all_images:
-        print(f"No images found in temp folder: {temp_dir}")
+        print(f"No images found in temp folder: {temp_dir}", flush=True)
         if os.path.exists(temp_dir):
-            print(f"Contents of temp directory:")
+            print(f"Contents of temp directory:", flush=True)
             for item in os.listdir(temp_dir):
-                print(f"  - {item}")
+                print(f"  - {item}", flush=True)
         raise FileNotFoundError("No images found in temp folder")
     
     # Calculate dimensions for each image
@@ -244,7 +244,7 @@ def get_random_image():
                 dimension_product = width * height
                 image_dimensions.append((image_path, dimension_product))
         except Exception as e:
-            print(f"Warning: Could not process image {image_path}: {e}")
+            print(f"Warning: Could not process image {image_path}: {e}", flush=True)
             continue
     
     if not image_dimensions:
@@ -294,7 +294,7 @@ def generate_new_image(source_image_path):
     # Extract the generated image
     for part in response.candidates[0].content.parts:
         if part.text is not None:
-            print(part.text)
+            print(part.text, flush=True)
         elif part.inline_data is not None:
             generated_image = Image.open(BytesIO((part.inline_data.data)))
             return generated_image
@@ -334,7 +334,7 @@ def generate_excerpt():
         
         response = model.generate_content(prompt)
         
-        print("Waiting 60 seconds before next API call...")
+        print("Waiting 60 seconds before next API call...", flush=True)
         time.sleep(60)
         
         return response.text.strip()
@@ -378,7 +378,7 @@ def categorize_article():
         
         response = model.generate_content(prompt)
         
-        print("Waiting 60 seconds before next API call...")
+        print("Waiting 60 seconds before next API call...", flush=True)
         time.sleep(60)
         
         category = response.text.strip()
@@ -399,7 +399,7 @@ def categorize_article():
                 return "News"  # Default fallback
                 
     except Exception as e:
-        print(f"Error in categorization: {str(e)}")
+        print(f"Error in categorization: {str(e)}", flush=True)
         return "News"  # Default fallback category
 
 def update_json_with_metadata(excerpt, date, category):
@@ -437,78 +437,78 @@ def update_json_with_metadata(excerpt, date, category):
         with open(temp_file_path, 'w', encoding='utf-8') as f:
             json.dump(ordered_data, f, indent=2, ensure_ascii=False)
         
-        print(f"Updated JSON with:")
-        print(f"  Excerpt: {excerpt}")
-        print(f"  Date: {date}")
-        print(f"  Category: {category}")
-        print(f"  Keyword: {keyword}")
+        print(f"Updated JSON with:", flush=True)
+        print(f"  Excerpt: {excerpt}", flush=True)
+        print(f"  Date: {date}", flush=True)
+        print(f"  Category: {category}", flush=True)
+        print(f"  Keyword: {keyword}", flush=True)
         
     except Exception as e:
-        print(f"Error updating JSON with metadata: {str(e)}")
+        print(f"Error updating JSON with metadata: {str(e)}", flush=True)
 
 def main():
     try:
         # Load articles data
-        print("Loading articles...")
+        print("Loading articles...", flush=True)
         articles_data = load_articles()
         
         # Generate clickbait title
-        print("Generating clickbait title...")
+        print("Generating clickbait title...", flush=True)
         title = generate_clickbait_title(articles_data)
-        print(f"Generated title: {title}")
+        print(f"Generated title: {title}", flush=True)
         
         # Update JSON with title
-        print("Updating JSON with title...")
+        print("Updating JSON with title...", flush=True)
         title = update_json_with_title(title)
-        print("Added title to JSON")
+        print("Added title to JSON", flush=True)
         
         # Generate SEO-optimized article content
-        print("Generating SEO-optimized article content...")
+        print("Generating SEO-optimized article content...", flush=True)
         article_content = generate_article_content(articles_data, title)
         
         # Save article as markdown
         with open('temp/final.md', 'w', encoding='utf-8') as f:
             f.write(article_content)
-        print("SEO-optimized article saved as temp/final.md")
+        print("SEO-optimized article saved as temp/final.md", flush=True)
         
         # Generate excerpt from the final article
-        print("Generating excerpt...")
+        print("Generating excerpt...", flush=True)
         excerpt = generate_excerpt()
         
         # Get today's date
-        print("Getting today's date...")
+        print("Getting today's date...", flush=True)
         date = get_todays_date()
         
         # Categorize the article
-        print("Categorizing article...")
+        print("Categorizing article...", flush=True)
         category = categorize_article()
         
         # Update JSON with metadata
-        print("Updating JSON with metadata...")
+        print("Updating JSON with metadata...", flush=True)
         update_json_with_metadata(excerpt, date, category)
         
         # Get random image
-        print("Selecting random image...")
+        print("Selecting random image...", flush=True)
         source_image_path = get_random_image()
-        print(f"Selected image: {source_image_path}")
+        print(f"Selected image: {source_image_path}", flush=True)
         
         # Generate new image
-        print("Generating new image...")
+        print("Generating new image...", flush=True)
         new_image = generate_new_image(source_image_path)
         
         # Resize image
-        print("Resizing image...")
+        print("Resizing image...", flush=True)
         resized_image = resize_image(new_image)
         
         # Save final image
         resized_image.save('temp/final.jpg', 'JPEG', quality=95)
-        print("Image saved as temp/final.jpg (1200x630 px)")
+        print("Image saved as temp/final.jpg (1200x630 px)", flush=True)
         
-        print("Content generation completed successfully!")
-        print(f"Final title: {title}")
+        print("Content generation completed successfully!", flush=True)
+        print(f"Final title: {title}", flush=True)
         
     except Exception as e:
-        print(f"Error: {str(e)}")
+        print(f"Error: {str(e)}", flush=True)
 
 if __name__ == "__main__":
     main()
