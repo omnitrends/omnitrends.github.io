@@ -26,7 +26,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
     <!-- Manifest -->
-    <link rel="manifest" href="json/manifest.json">
+    <link rel="manifest" href="/json/manifest.json">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css" onload="console.log('Main CSS loaded successfully')" onerror="console.log('Main CSS failed to load')">
+    
+    <!-- Fallback CSS for critical styles -->
+    <style>
+        /* Fallback styles in case main CSS fails to load */
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6; 
+            color: #1f2937; 
+            background-color: #ffffff; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 1rem; 
+        }
+        .header { 
+            background-color: #ffffff; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .nav { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 1rem 0; 
+        }
+        .nav__logo h1 { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: #2563eb; 
+            margin: 0; 
+        }
+        .nav__list { 
+            display: flex; 
+            gap: 2rem; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .nav__link { 
+            font-weight: 500; 
+            color: #1f2937; 
+            text-decoration: none; 
+        }
+        .nav__link:hover { 
+            color: #2563eb; 
+        }
+        .footer { 
+            background-color: #1f2937; 
+            color: white; 
+            padding: 3rem 0 1rem; 
+        }
+        .footer__content { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 2rem; 
+            margin-bottom: 2rem; 
+        }
+        .footer__links { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+        .footer__links a { 
+            color: #d1d5db; 
+            text-decoration: none; 
+        }
+        .footer__links a:hover { 
+            color: white; 
+        }
+        @media (max-width: 768px) {
+            .nav__list { 
+                display: none; 
+            }
+        }
+    </style>
     
     <title>Page Not Found - OmniTrends</title>
     
@@ -289,7 +369,7 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
-                <a href="index.html" class="nav__logo">
+                <a href="/index.html" class="nav__logo">
                     <h1>OmniTrends</h1>
                 </a>
             </div>
@@ -297,33 +377,33 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="/index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link nav__dropdown-toggle">Categories <span class="nav__arrow">▼</span></a>
                         <ul class="nav__dropdown-menu">
-                            <li><a href="category/technology.html" class="nav__dropdown-link">Technology</a></li>
-                            <li><a href="category/lifestyle.html" class="nav__dropdown-link">Lifestyle</a></li>
-                            <li><a href="category/business.html" class="nav__dropdown-link">Business</a></li>
-                            <li><a href="category/innovation.html" class="nav__dropdown-link">Innovation</a></li>
-                            <li><a href="category/news.html" class="nav__dropdown-link">News</a></li>
-                            <li><a href="category/health.html" class="nav__dropdown-link">Health</a></li>
-                            <li><a href="category/entertainment.html" class="nav__dropdown-link">Entertainment</a></li>
-                            <li><a href="category/finance.html" class="nav__dropdown-link">Finance</a></li>
-                            <li><a href="category/science.html" class="nav__dropdown-link">Science</a></li>
-                            <li><a href="category/travel.html" class="nav__dropdown-link">Travel</a></li>
-                            <li><a href="category/food.html" class="nav__dropdown-link">Food</a></li>
-                            <li><a href="category/sports.html" class="nav__dropdown-link">Sports</a></li>
+                            <li><a href="/category/technology.html" class="nav__dropdown-link">Technology</a></li>
+                            <li><a href="/category/lifestyle.html" class="nav__dropdown-link">Lifestyle</a></li>
+                            <li><a href="/category/business.html" class="nav__dropdown-link">Business</a></li>
+                            <li><a href="/category/innovation.html" class="nav__dropdown-link">Innovation</a></li>
+                            <li><a href="/category/news.html" class="nav__dropdown-link">News</a></li>
+                            <li><a href="/category/health.html" class="nav__dropdown-link">Health</a></li>
+                            <li><a href="/category/entertainment.html" class="nav__dropdown-link">Entertainment</a></li>
+                            <li><a href="/category/finance.html" class="nav__dropdown-link">Finance</a></li>
+                            <li><a href="/category/science.html" class="nav__dropdown-link">Science</a></li>
+                            <li><a href="/category/travel.html" class="nav__dropdown-link">Travel</a></li>
+                            <li><a href="/category/food.html" class="nav__dropdown-link">Food</a></li>
+                            <li><a href="/category/sports.html" class="nav__dropdown-link">Sports</a></li>
                         </ul>
                     </li>
                     <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link nav__dropdown-toggle">Pages <span class="nav__arrow">▼</span></a>
                         <ul class="nav__dropdown-menu">
-                            <li><a href="pages/about.html" class="nav__dropdown-link">About</a></li>
-                            <li><a href="pages/contact.html" class="nav__dropdown-link">Contact</a></li>
-                            <li><a href="pages/privacy.html" class="nav__dropdown-link">Privacy Policy</a></li>
-                            <li><a href="pages/terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
-                            <li><a href="pages/disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
+                            <li><a href="/pages/about.html" class="nav__dropdown-link">About</a></li>
+                            <li><a href="/pages/contact.html" class="nav__dropdown-link">Contact</a></li>
+                            <li><a href="/pages/privacy.html" class="nav__dropdown-link">Privacy Policy</a></li>
+                            <li><a href="/pages/terms.html" class="nav__dropdown-link">Terms & Conditions</a></li>
+                            <li><a href="/pages/disclaimer.html" class="nav__dropdown-link">Disclaimer</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -348,7 +428,7 @@
                     Don't worry though – we'll help you find your way back to the latest trends and insights!
                 </p>
                 <div class="error-404__actions">
-                    <a href="index.html" class="error-404__button">
+                    <a href="/index.html" class="error-404__button">
                         Back to Home
                     </a>
                 </div>
@@ -366,7 +446,7 @@
                         <p class="suggestion-card__description">
                             Discover the most recent trends shaping technology, lifestyle, and innovation.
                         </p>
-                        <a href="index.html" class="suggestion-card__link">Explore Trends →</a>
+                        <a href="/index.html" class="suggestion-card__link">Explore Trends →</a>
                     </div>
                     
                     <div class="suggestion-card">
@@ -375,7 +455,7 @@
                         <p class="suggestion-card__description">
                             Stay updated with the latest in AI, blockchain, IoT, and emerging technologies.
                         </p>
-                        <a href="category/technology.html" class="suggestion-card__link">Read Tech Articles →</a>
+                        <a href="/category/technology.html" class="suggestion-card__link">Read Tech Articles →</a>
                     </div>
                     
                     <div class="suggestion-card">
@@ -384,7 +464,7 @@
                         <p class="suggestion-card__description">
                             Explore breakthrough discoveries and disruptive innovations changing our world.
                         </p>
-                        <a href="category/innovation.html" class="suggestion-card__link">Discover Innovation →</a>
+                        <a href="/category/innovation.html" class="suggestion-card__link">Discover Innovation →</a>
                     </div>
                     
                     <div class="suggestion-card">
@@ -393,7 +473,7 @@
                         <p class="suggestion-card__description">
                             Stay informed about business trends, market insights, and entrepreneurship strategies.
                         </p>
-                        <a href="category/business.html" class="suggestion-card__link">Explore Business →</a>
+                        <a href="/category/business.html" class="suggestion-card__link">Explore Business →</a>
                     </div>
                 </div>
             </div>
@@ -412,30 +492,30 @@
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Quick Links</h4>
                     <ul class="footer__links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
-                        <li><a href="pages/terms.html">Terms & Conditions</a></li>
-                        <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                        <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/pages/terms.html">Terms & Conditions</a></li>
+                        <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Categories</h4>
                     <ul class="footer__links">
-                        <li><a href="category/technology.html">Technology</a></li>
-                        <li><a href="category/lifestyle.html">Lifestyle</a></li>
-                        <li><a href="category/business.html">Business</a></li>
-                        <li><a href="category/innovation.html">Innovation</a></li>
-                        <li><a href="category/news.html">News</a></li>
-                        <li><a href="category/health.html">Health</a></li>
-                        <li><a href="category/entertainment.html">Entertainment</a></li>
-                        <li><a href="category/finance.html">Finance</a></li>
-                        <li><a href="category/science.html">Science</a></li>
-                        <li><a href="category/travel.html">Travel</a></li>
-                        <li><a href="category/food.html">Food</a></li>
-                        <li><a href="category/sports.html">Sports</a></li>
+                        <li><a href="/category/technology.html">Technology</a></li>
+                        <li><a href="/category/lifestyle.html">Lifestyle</a></li>
+                        <li><a href="/category/business.html">Business</a></li>
+                        <li><a href="/category/innovation.html">Innovation</a></li>
+                        <li><a href="/category/news.html">News</a></li>
+                        <li><a href="/category/health.html">Health</a></li>
+                        <li><a href="/category/entertainment.html">Entertainment</a></li>
+                        <li><a href="/category/finance.html">Finance</a></li>
+                        <li><a href="/category/science.html">Science</a></li>
+                        <li><a href="/category/travel.html">Travel</a></li>
+                        <li><a href="/category/food.html">Food</a></li>
+                        <li><a href="/category/sports.html">Sports</a></li>
                     </ul>
                 </div>
             </div>
@@ -447,7 +527,23 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js" onerror="console.log('Main JS failed to load, using fallback')"></script>
+    
+    <!-- Fallback JavaScript for critical functionality -->
+    <script>
+        // Fallback mobile navigation if main.js fails to load
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu && !window.mainJsLoaded) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('show');
+                    navToggle.classList.toggle('active');
+                });
+            }
+        });
+    </script>
     
     <script>
         // Add some interactive functionality for the 404 page
