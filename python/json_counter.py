@@ -1,5 +1,13 @@
+# -*- coding: utf-8 -*-
 import json
 import os
+import sys
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 def count_articles():
     """Count the number of elements in articles.json"""

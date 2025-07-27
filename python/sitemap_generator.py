@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Sitemap and Robots.txt Generator for OmniTrends
 Generates sitemap.xml and robots.txt files optimized for Google AdSense
@@ -6,9 +7,16 @@ Generates sitemap.xml and robots.txt files optimized for Google AdSense
 
 import os
 import json
+import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 
 class SitemapGenerator:
@@ -111,7 +119,7 @@ class SitemapGenerator:
         with open(sitemap_path, 'wb') as f:
             tree.write(f, encoding='utf-8', xml_declaration=True)
         
-        print(f"✓ Sitemap generated: {sitemap_path}")
+        print(f"[SUCCESS] Sitemap generated: {sitemap_path}")
         print(f"  Total URLs: {len(self.sitemap_urls)}")
     
     def generate_robots_txt(self):
@@ -171,11 +179,11 @@ Crawl-delay: 1
         with open(robots_path, 'w', encoding='utf-8') as f:
             f.write(robots_content)
         
-        print(f"✓ Robots.txt generated: {robots_path}")
+        print(f"[SUCCESS] Robots.txt generated: {robots_path}")
     
     def generate_all(self):
         """Generate both sitemap.xml and robots.txt"""
-        print("🚀 Starting sitemap and robots.txt generation...")
+        print("[STARTING] Starting sitemap and robots.txt generation...")
         print(f"   Base URL: {self.base_url}")
         print(f"   Root directory: {self.root_dir}")
         
@@ -183,7 +191,7 @@ Crawl-delay: 1
         self.sitemap_urls = []
         
         # Scan and add URLs
-        print("\n📂 Scanning website structure...")
+        print("\n[SCANNING] Scanning website structure...")
         self.scan_html_files()
         self.scan_articles()
         
@@ -191,11 +199,11 @@ Crawl-delay: 1
         self.sitemap_urls.sort(key=lambda x: float(x['priority']), reverse=True)
         
         # Generate files
-        print("\n📝 Generating files...")
+        print("\n[GENERATING] Generating files...")
         self.generate_sitemap_xml()
         self.generate_robots_txt()
         
-        print("\n✅ Generation complete!")
+        print("\n[COMPLETE] Generation complete!")
         print(f"   Sitemap: {self.base_url}/sitemap.xml")
         print(f"   Robots: {self.base_url}/robots.txt")
 

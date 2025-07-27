@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Article Search and Analysis Script
 Uses Bing News Search with Selenium to scrape articles and Gemini for analysis.
@@ -11,6 +12,10 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import random
+import sys
+
+# Set stdout to be unbuffered for real-time output
+sys.stdout.reconfigure(line_buffering=True)
 from urllib.parse import urljoin, urlparse, quote
 import re
 from datetime import datetime
@@ -26,6 +31,12 @@ from selenium.webdriver.chrome.service import Service
 from PIL import Image
 import io
 import base64
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 class ArticleSearcher:
     def __init__(self):
@@ -51,8 +62,9 @@ class ArticleSearcher:
             'Upgrade-Insecure-Requests': '1',
         }
         
-        # Create temp directory if it doesn't exist
-        self.temp_dir = "d:\\Coding\\omnitrends.github.io\\temp"
+        # Create temp directory if it doesn't exist (relative to script's parent directory)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        self.temp_dir = os.path.join(script_dir, "..", "temp")
         os.makedirs(self.temp_dir, exist_ok=True)
         
         # Initialize Selenium driver
@@ -69,12 +81,19 @@ class ArticleSearcher:
             chrome_options.add_argument("--window-size=1920,1080")
             chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
             
+            # Suppress Chrome logging to console
+            chrome_options.add_argument("--log-level=3")  # Suppress INFO, WARNING, and ERROR
+            chrome_options.add_argument("--silent")
+            chrome_options.add_argument("--disable-logging")
+            chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            chrome_options.add_experimental_option('useAutomationExtension', False)
+            
             service = Service(ChromeDriverManager().install())
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
-            print("✓ Selenium Chrome driver initialized successfully")
+            print("[SUCCESS] Selenium Chrome driver initialized successfully", flush=True)
             
         except Exception as e:
-            print(f"Error setting up Chrome driver: {e}")
+            print(f"Error setting up Chrome driver: {e}", flush=True)
             raise
     
     def close_driver(self):
@@ -86,7 +105,7 @@ class ArticleSearcher:
     def _load_more_bing_results(self):
         """Scroll down to load more dynamic content from Bing"""
         try:
-            print("Loading more results by scrolling...")
+            print("Loading more results by scrolling...", flush=True)
             initial_height = self.driver.execute_script("return document.body.scrollHeight")
             
             # Scroll down in multiple steps to trigger dynamic loading
@@ -101,14 +120,14 @@ class ArticleSearcher:
                     break  # No more content loaded
                 
                 initial_height = new_height
-                print(f"Scrolled {i+1}/5 - New content loaded")
+                print(f"Scrolled {i+1}/5 - New content loaded", flush=True)
             
             # Final wait for any last content
             time.sleep(2)
-            print("Dynamic content loading completed")
+            print("Dynamic content loading completed", flush=True)
             
         except Exception as e:
-            print(f"Error loading more results: {e}")
+            print(f"Error loading more results: {e}", flush=True)
             # Continue anyway
 
     def _matches_query(self, title, query):
@@ -142,7 +161,7 @@ class ArticleSearcher:
             for selector in selectors:
                 cards = self.driver.find_elements(By.CSS_SELECTOR, selector)
                 if cards:
-                    print(f"Method 1: Found {len(cards)} articles with selector {selector}")
+                    print(f"Method 1: Found {len(cards)} articles with selector {selector}", flush=True)
                     all_news_cards.extend(cards)
                     break
             
@@ -216,13 +235,13 @@ class ArticleSearcher:
                         'image_url': image_url
                     })
                     
-                    print(f"✓ Method 1 - Found article {len(articles)}: {title[:50]}...")
+                    print(f"[FOUND] Method 1 - Found article {len(articles)}: {title[:50]}...", flush=True)
                     
                 except Exception as e:
                     continue
                     
         except Exception as e:
-            print(f"Error in method 1: {e}")
+            print(f"Error in method 1: {e}", flush=True)
         
         return articles
 
@@ -236,7 +255,7 @@ class ArticleSearcher:
             for selector in selectors:
                 items = self.driver.find_elements(By.CSS_SELECTOR, selector)
                 if items:
-                    print(f"Method 2: Found {len(items)} articles with selector {selector}")
+                    print(f"Method 2: Found {len(items)} articles with selector {selector}", flush=True)
                     all_items.extend(items)
                     if len(all_items) > 20:  # Don't get too many
                         break
@@ -281,13 +300,13 @@ class ArticleSearcher:
                         'image_url': image_url
                     })
                     
-                    print(f"✓ Method 2 - Found article {len(articles)}: {title[:50]}...")
+                    print(f"[FOUND] Method 2 - Found article {len(articles)}: {title[:50]}...", flush=True)
                     
                 except Exception as e:
                     continue
                     
         except Exception as e:
-            print(f"Error in method 2: {e}")
+            print(f"Error in method 2: {e}", flush=True)
         
         return articles
 
@@ -295,11 +314,11 @@ class ArticleSearcher:
         """Fallback method - extract any links that might be articles"""
         articles = []
         try:
-            print("Method 3: Using fallback approach - searching all links...")
+            print("Method 3: Using fallback approach - searching all links...", flush=True)
             
             # Get all links on the page
             all_links = self.driver.find_elements(By.CSS_SELECTOR, "a")
-            print(f"Method 3: Found {len(all_links)} total links on page")
+            print(f"Method 3: Found {len(all_links)} total links on page", flush=True)
             
             for link in all_links:
                 if len(articles) >= max_articles:
@@ -325,13 +344,13 @@ class ArticleSearcher:
                             'image_url': ''
                         })
                         
-                        print(f"✓ Method 3 - Found article {len(articles)}: {title[:50]}...")
+                        print(f"[FOUND] Method 3 - Found article {len(articles)}: {title[:50]}...", flush=True)
                         
                 except Exception as e:
                     continue
                     
         except Exception as e:
-            print(f"Error in method 3: {e}")
+            print(f"Error in method 3: {e}", flush=True)
         
         return articles
     
@@ -346,7 +365,7 @@ class ArticleSearcher:
             
             # Check if it's a data URI (base64 encoded image)
             if image_url.startswith('data:'):
-                print(f"Processing base64 data URI for {filename}")
+                print(f"Processing base64 data URI for {filename}", flush=True)
                 try:
                     # Extract the base64 data
                     header, data = image_url.split(',', 1)
@@ -359,17 +378,17 @@ class ArticleSearcher:
                         if img.mode in ('RGBA', 'P'):
                             img = img.convert('RGB')
                         img.save(file_path, 'JPEG', quality=85)
-                        print(f"✓ Image saved from data URI: {filename}")
+                        print(f"[SUCCESS] Image saved from data URI: {filename}", flush=True)
                         return file_path
                     except Exception as img_error:
                         # If PIL fails, save as raw bytes
                         with open(file_path, 'wb') as f:
                             f.write(image_data)
-                        print(f"✓ Image saved (raw) from data URI: {filename}")
+                        print(f"[SUCCESS] Image saved (raw) from data URI: {filename}", flush=True)
                         return file_path
                         
                 except Exception as data_error:
-                    print(f"✗ Failed to process data URI for {filename}: {data_error}")
+                    print(f"[ERROR] Failed to process data URI for {filename}: {data_error}", flush=True)
                     return None
             
             # Handle regular HTTP/HTTPS URLs
@@ -389,21 +408,21 @@ class ArticleSearcher:
                     if img.mode in ('RGBA', 'P'):
                         img = img.convert('RGB')
                     img.save(file_path, 'JPEG', quality=85)
-                    print(f"✓ Image saved from URL: {filename}")
+                    print(f"[SUCCESS] Image saved from URL: {filename}")
                     return file_path
                 except Exception as img_error:
                     # If PIL fails, save as raw bytes
                     with open(file_path, 'wb') as f:
                         f.write(response.content)
-                    print(f"✓ Image saved (raw) from URL: {filename}")
+                    print(f"[SUCCESS] Image saved (raw) from URL: {filename}")
                     return file_path
             
             else:
-                print(f"✗ Unsupported image URL format for {filename}: {image_url[:50]}...")
+                print(f"[ERROR] Unsupported image URL format for {filename}: {image_url[:50]}...")
                 return None
                 
         except Exception as e:
-            print(f"✗ Failed to download image {filename}: {e}")
+            print(f"[ERROR] Failed to download image {filename}: {e}")
             return None
     
     def select_articles_with_images(self, articles, num_articles=3):
@@ -425,7 +444,7 @@ class ArticleSearcher:
         if len(articles_with_images) >= actual_num_articles:
             # If we have enough articles with images, just take the required number
             selected_articles = articles_with_images[:actual_num_articles]
-            print(f"✓ Selected {actual_num_articles} articles, all with featured images")
+            print(f"[SUCCESS] Selected {actual_num_articles} articles, all with featured images")
         elif len(articles_with_images) > 0:
             # We have some articles with images, but not enough
             # Take all articles with images first
@@ -435,17 +454,18 @@ class ArticleSearcher:
             remaining_slots = actual_num_articles - len(articles_with_images)
             selected_articles.extend(articles_without_images[:remaining_slots])
             
-            print(f"✓ Selected {len(selected_articles)} articles: {len(articles_with_images)} with images, {len(selected_articles) - len(articles_with_images)} without images")
+            print(f"[SUCCESS] Selected {len(selected_articles)} articles: {len(articles_with_images)} with images, {len(selected_articles) - len(articles_with_images)} without images")
         else:
             # No articles have images, return None to indicate failure
-            print(f"✗ No articles found with featured images out of {len(articles)} articles searched")
+            print(f"[WARNING] No articles found with featured images out of {len(articles)} articles searched")
             return None
         
         return selected_articles[:actual_num_articles]
     
     def check_keyword_exists(self, keyword):
         """Check if a keyword already exists in articles.json"""
-        articles_json_path = "d:\\Coding\\omnitrends.github.io\\json\\articles.json"
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        articles_json_path = os.path.join(script_dir, "..", "json", "articles.json")
         
         try:
             with open(articles_json_path, 'r', encoding='utf-8') as f:
@@ -471,7 +491,8 @@ class ArticleSearcher:
 
     def get_next_available_trend(self):
         """Get the next trend that doesn't already exist in articles.json"""
-        json_path = "d:\\Coding\\omnitrends.github.io\\json\\latest_trends.json"
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(script_dir, "..", "json", "latest_trends.json")
         
         try:
             with open(json_path, 'r', encoding='utf-8') as f:
@@ -505,7 +526,8 @@ class ArticleSearcher:
 
     def get_top_trend(self):
         """Get the trend with rank 1 from latest_trends.json (kept for backward compatibility)"""
-        json_path = "d:\\Coding\\omnitrends.github.io\\json\\latest_trends.json"
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(script_dir, "..", "json", "latest_trends.json")
         
         try:
             with open(json_path, 'r', encoding='utf-8') as f:
@@ -792,8 +814,10 @@ class ArticleSearcher:
     
     def run(self):
         """Main execution method"""
-        print("Starting Bing News Article Search and Analysis...")
-        print("="*60)
+        # Ensure all output is unbuffered
+        sys.stdout.flush()
+        print("Starting Bing News Article Search and Analysis...", flush=True)
+        print("="*60, flush=True)
         
         try:
             # Step 1: Get next available trend (that doesn't exist in articles.json)
@@ -802,11 +826,11 @@ class ArticleSearcher:
                 print("Could not find any new trends to process. All trends already exist in articles.json.")
                 return
             
-            print(f"Next available trend found: {trend_name}")
+            print(f"Next available trend found: {trend_name}", flush=True)
             
             # Step 2: Search for articles using Bing News with Selenium
-            print(f"\nSearching for articles about: {trend_name}")
-            print("Will search through articles to find at least 3 matching the keyword with at least 1 featured image...")
+            print(f"\nSearching for articles about: {trend_name}", flush=True)
+            print("Will search through articles to find at least 3 matching the keyword with at least 1 featured image...", flush=True)
             
             articles = self.search_articles_with_bing(trend_name, 3)
             
@@ -823,23 +847,23 @@ class ArticleSearcher:
                 print("No articles found. Exiting.")
                 return
             
-            print(f"\n✓ Selected {len(articles)} articles for analysis")
+            print(f"\n[SUCCESS] Selected {len(articles)} articles for analysis", flush=True)
             
             # Step 3: Fetch and analyze each article
             articles_data = []
             
             for i, article in enumerate(articles, 1):
-                print(f"\n--- Processing Article {i} ---")
-                print(f"Title: {article['title']}")
+                print(f"\n--- Processing Article {i} ---", flush=True)
+                print(f"Title: {article['title']}", flush=True)
                 
                 # Download featured image if available
                 image_path = None
                 if article.get('image_url'):
-                    print(f"Downloading featured image for article {i}...")
+                    print(f"Downloading featured image for article {i}...", flush=True)
                     image_filename = f"article_{i}.jpg"
                     image_path = self.download_image(article['image_url'], image_filename)
                 else:
-                    print(f"No featured image found for article {i}")
+                    print(f"No featured image found for article {i}", flush=True)
                 
                 # Fetch full content
                 content = self.fetch_article_content(article['link'], article['title'], article['source'])
@@ -857,9 +881,9 @@ class ArticleSearcher:
                     
                     articles_data.append(article_data)
                     
-                    print(f"✓ Article {i} analyzed successfully")
+                    print(f"[SUCCESS] Article {i} analyzed successfully", flush=True)
                 else:
-                    print(f"✗ Could not fetch content for article {i}")
+                    print(f"[ERROR] Could not fetch content for article {i}", flush=True)
                     
                     # Still save basic info even without content
                     article_data = {
@@ -874,12 +898,12 @@ class ArticleSearcher:
             # Step 4: Save results
             if articles_data:
                 self.save_article_analysis(trend_name, articles_data)
-                print(f"\n✓ Analysis complete! Results saved to temp/article_analysis.json")
+                print(f"\n[SUCCESS] Analysis complete! Results saved to temp/article_analysis.json", flush=True)
                 
                 # Show analysis summary
-                print(f"✓ Articles analyzed: {len(articles_data)} out of 3 articles")
+                print(f"[SUCCESS] Articles analyzed: {len(articles_data)} out of 3 articles", flush=True)
             else:
-                print("\n✗ No articles were successfully analyzed.")
+                print("\n[ERROR] No articles were successfully analyzed.", flush=True)
             
             print("\n" + "="*60)
             print("Bing News Article Search and Analysis Complete!")

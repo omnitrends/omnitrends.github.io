@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Google Trends Scraper for India - Last 4 Hours
 Scrapes trending topics from Google Trends India with search volumes and active status
@@ -7,6 +8,7 @@ Scrapes trending topics from Google Trends India with search volumes and active 
 import time
 import random
 import re
+import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -16,6 +18,12 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.chrome.service import Service
 import json
 from datetime import datetime
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 class GoogleTrendsScraper:
     def __init__(self):
@@ -293,9 +301,11 @@ class GoogleTrendsScraper:
             "trends": json_trends
         }
         
-        # Save to json folder
-        json_folder_path = "d:\\Coding\\omnitrends.github.io\\json"
-        full_path = f"{json_folder_path}\\{filename}"
+        # Save to json folder (relative to script's parent directory)
+        import os
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_folder_path = os.path.join(script_dir, "..", "json")
+        full_path = os.path.join(json_folder_path, filename)
         
         try:
             with open(full_path, 'w', encoding='utf-8') as f:

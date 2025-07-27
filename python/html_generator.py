@@ -1,8 +1,16 @@
+# -*- coding: utf-8 -*-
 import json
 import os
 import shutil
 import re
+import sys
 from datetime import datetime
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 def generate_slug(title):
     """Convert title to URL-friendly slug"""
@@ -289,8 +297,9 @@ def generate_html(article_data, content_html, slug):
 
 def move_image(slug):
     """Move and rename image from temp to images folder"""
-    temp_image_path = r'd:\Coding\omnitrends.github.io\temp\final.jpg'
-    target_image_path = rf'd:\Coding\omnitrends.github.io\images\{slug}.jpg'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    temp_image_path = os.path.join(script_dir, "..", "temp", "final.jpg")
+    target_image_path = os.path.join(script_dir, "..", "images", f"{slug}.jpg")
     
     if os.path.exists(temp_image_path):
         shutil.move(temp_image_path, target_image_path)
@@ -302,7 +311,8 @@ def move_image(slug):
 
 def update_articles_json(article_data, slug):
     """Update articles.json with new article entry"""
-    articles_json_path = r'd:\Coding\omnitrends.github.io\json\articles.json'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    articles_json_path = os.path.join(script_dir, "..", "json", "articles.json")
     
     # Read existing articles
     with open(articles_json_path, 'r', encoding='utf-8') as f:
@@ -342,9 +352,10 @@ def update_articles_json(article_data, slug):
 
 def main():
     """Main function to orchestrate the HTML generation process"""
-    # File paths
-    analysis_json_path = r'd:\Coding\omnitrends.github.io\temp\article_analysis.json'
-    final_md_path = r'd:\Coding\omnitrends.github.io\temp\final.md'
+    # File paths (relative to script's parent directory)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    analysis_json_path = os.path.join(script_dir, "..", "temp", "article_analysis.json")
+    final_md_path = os.path.join(script_dir, "..", "temp", "final.md")
     
     try:
         # Step 1: Read article analysis data
@@ -370,7 +381,7 @@ def main():
         html_content = generate_html(article_data, content_html, slug)
         
         # Write HTML file
-        html_file_path = rf'd:\Coding\omnitrends.github.io\articles\{slug}.html'
+        html_file_path = os.path.join(script_dir, "..", "articles", f"{slug}.html")
         with open(html_file_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
         print(f"HTML file created: {html_file_path}")
@@ -383,13 +394,13 @@ def main():
         print("Updating articles.json...")
         update_articles_json(article_data, slug)
         
-        print("\n✅ HTML generation completed successfully!")
-        print(f"📄 Article URL: articles/{slug}.html")
-        print(f"🖼️ Image: images/{slug}.jpg")
-        print(f"📊 JSON updated with new entry")
+        print("\n[SUCCESS] HTML generation completed successfully!")
+        print(f"[ARTICLE] Article URL: articles/{slug}.html")
+        print(f"[IMAGE] Image: images/{slug}.jpg")
+        print(f"[JSON] JSON updated with new entry")
         
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f"[ERROR] Error: {str(e)}")
         import traceback
         traceback.print_exc()
 

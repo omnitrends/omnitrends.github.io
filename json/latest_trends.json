@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-07-27T18:31:39.491993",
+  "timestamp": "2025-07-27T21:38:33.044654",
   "location": "India",
   "timeframe": "Last 4 hours",
   "filter_criteria": "English language + Active status only",
@@ -8,134 +8,134 @@
   "trends": [
     {
       "rank": 1,
-      "trend_name": "india vs england",
-      "search_volume": "500000+",
+      "trend_name": "ravindra jadeja",
+      "search_volume": "1000000+",
       "active_status": "Active"
     },
     {
       "rank": 2,
-      "trend_name": "vissel kobe vs barcelona",
-      "search_volume": "100000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 3,
-      "trend_name": "arsenal vs newcastle",
-      "search_volume": "50000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 4,
-      "trend_name": "shubman gill",
-      "search_volume": "20000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 5,
-      "trend_name": "washington sundar",
-      "search_volume": "20000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 6,
-      "trend_name": "vissel kobe vs fc barcelona lineups",
+      "trend_name": "oscar piastri",
       "search_volume": "10000+",
       "active_status": "Active"
     },
     {
-      "rank": 7,
-      "trend_name": "iim cat 2025 notification",
-      "search_volume": "5000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 8,
-      "trend_name": "tcs",
-      "search_volume": "5000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 9,
-      "trend_name": "arsenal",
-      "search_volume": "5000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 10,
-      "trend_name": "vissel kobe vs fc barcelona",
-      "search_volume": "5000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 11,
-      "trend_name": "india vs england live score",
-      "search_volume": "5000+",
-      "active_status": "Active"
-    },
-    {
-      "rank": 12,
-      "trend_name": "joan garcía",
+      "rank": 3,
+      "trend_name": "england vs spain",
       "search_volume": "2000+",
       "active_status": "Active"
     },
     {
-      "rank": 13,
-      "trend_name": "anthony elanga",
+      "rank": 4,
+      "trend_name": "kerala lottery results",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 5,
+      "trend_name": "viktor gyökeres arsenal",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 6,
+      "trend_name": "tcs layoff",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 7,
+      "trend_name": "iac vs edc",
       "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 8,
+      "trend_name": "sa champions vs aus champions",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 9,
+      "trend_name": "spa gp",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 10,
+      "trend_name": "uppsc ro aro",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 11,
+      "trend_name": "cat 2025 notification iimcat",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 12,
+      "trend_name": "trigger netflix",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 13,
+      "trend_name": "mohanlal",
+      "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 14,
-      "trend_name": "marcus rashford",
-      "search_volume": "1000+",
+      "trend_name": "charles leclerc",
+      "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 15,
-      "trend_name": "mom",
-      "search_volume": "1000+",
+      "trend_name": "anshul kamboj cricketer",
+      "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 16,
-      "trend_name": "paresh rawal hera pheri 3",
-      "search_volume": "1000+",
+      "trend_name": "lewis hamilton",
+      "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 17,
-      "trend_name": "tanzania vs senegal",
+      "trend_name": "shilpa shetty",
       "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 18,
-      "trend_name": "south africa vs australia champions",
+      "trend_name": "laughter chefs season 2",
       "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 19,
-      "trend_name": "brett lee",
+      "trend_name": "manchester time",
       "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 20,
-      "trend_name": "f1 schedule",
+      "trend_name": "luis diaz",
       "search_volume": "500+",
       "active_status": "Active"
     },
     {
       "rank": 21,
-      "trend_name": "joao felix",
-      "search_volume": "500+",
+      "trend_name": "india champions vs england champions",
+      "search_volume": "200+",
       "active_status": "Active"
     },
     {
       "rank": 22,
-      "trend_name": "fabrizio romano",
-      "search_volume": "500+",
+      "trend_name": "mammootty",
+      "search_volume": "200+",
       "active_status": "Active"
     }
   ]

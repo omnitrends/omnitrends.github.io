@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 import json
 import glob
 import random
 import os
+import sys
 import time
 from datetime import datetime
 from dotenv import load_dotenv
@@ -9,6 +11,12 @@ import google.generativeai as genai
 from PIL import Image
 from io import BytesIO
 import PIL.Image
+
+# Fix Unicode output issues on Windows
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
 # Load environment variables
 load_dotenv()
