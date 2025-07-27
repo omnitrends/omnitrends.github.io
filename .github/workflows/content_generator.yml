@@ -67,66 +67,164 @@ jobs:
       run: |
         cd python
         python trends_check.py
+        echo "trends_check.py completed"
+        ls -la ../temp/ || echo "temp directory not found"
       env:
         DISPLAY: :99
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Commit and push after trends_check
+      run: |
+        git add -A
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after trends_check - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after trends_check"
+        else
+          echo "No changes to commit after trends_check"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Pull latest changes before search_articles
+      run: |
+        git pull origin main
 
     - name: Run search_articles.py
       run: |
         cd python
         python search_articles.py
+        echo "search_articles.py completed"
+        ls -la ../temp/ || echo "temp directory not found"
+        if [ -f "../temp/article_analysis.json" ]; then
+          echo "article_analysis.json created successfully"
+          head -10 ../temp/article_analysis.json
+        else
+          echo "ERROR: article_analysis.json not found!"
+          exit 1
+        fi
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Commit and push after search_articles
+      run: |
+        git add -A
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after search_articles - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after search_articles"
+        else
+          echo "No changes to commit after search_articles"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Pull latest changes before content_generator
+      run: |
+        git pull origin main
 
     - name: Run content_generator.py
       run: |
         cd python
+        echo "Loading articles..."
+        if [ -f "../temp/article_analysis.json" ]; then
+          echo "article_analysis.json found, proceeding with content generation"
+        else
+          echo "ERROR: article_analysis.json not found!"
+          ls -la ../temp/ || echo "temp directory not found"
+          exit 1
+        fi
         python content_generator.py
+        echo "content_generator.py completed"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Commit and push after content_generator
+      run: |
+        git add -A
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after content_generator - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after content_generator"
+        else
+          echo "No changes to commit after content_generator"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Pull latest changes before html_generator
+      run: |
+        git pull origin main
 
     - name: Run html_generator.py
       run: |
         cd python
         python html_generator.py
+        echo "html_generator.py completed"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    - name: Commit and push after html_generator
+      run: |
+        git add -A
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after html_generator - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after html_generator"
+        else
+          echo "No changes to commit after html_generator"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Pull latest changes before clear_temp
+      run: |
+        git pull origin main
 
     - name: Run clear_temp.py
       run: |
         cd python
         python clear_temp.py
+        echo "clear_temp.py completed"
+
+    - name: Commit and push after clear_temp
+      run: |
+        git add -A
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after clear_temp - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after clear_temp"
+        else
+          echo "No changes to commit after clear_temp"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Pull latest changes before sitemap_generator
+      run: |
+        git pull origin main
 
     - name: Run sitemap_generator.py
       run: |
         cd python
         python sitemap_generator.py
+        echo "sitemap_generator.py completed"
 
-    - name: Check for changes
-      id: check_changes
+    - name: Commit and push after sitemap_generator
       run: |
         git add -A
-        if git diff --staged --quiet; then
-          echo "changes=false" >> $GITHUB_OUTPUT
-          echo "No changes to commit"
+        if ! git diff --staged --quiet; then
+          git commit -m "Update after sitemap_generator - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+          echo "Changes committed and pushed after sitemap_generator"
         else
-          echo "changes=true" >> $GITHUB_OUTPUT
-          echo "Changes detected"
+          echo "No changes to commit after sitemap_generator"
         fi
-
-    - name: Commit and push changes
-      if: steps.check_changes.outputs.changes == 'true'
-      run: |
-        git commit -m "Auto-generated content update - $(date '+%Y-%m-%d %H:%M:%S')"
-        git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
-    - name: Display completion message
+    - name: Final status check
       run: |
         echo "Content generation workflow completed successfully!"
-        if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
-          echo "Changes were committed and pushed to the repository."
-        else
-          echo "No changes were made to the repository."
-        fi
+        echo "All scripts have been executed and changes committed individually."
+        git log --oneline -5

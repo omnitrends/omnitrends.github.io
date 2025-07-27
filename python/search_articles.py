@@ -112,7 +112,7 @@ class ArticleSearcher:
             for i in range(5):  # Try scrolling 5 times
                 # Scroll to bottom
                 self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(6)  # Wait for content to load
+                time.sleep(15)  # Wait for content to load
                 
                 # Check if new content loaded
                 new_height = self.driver.execute_script("return document.body.scrollHeight")
