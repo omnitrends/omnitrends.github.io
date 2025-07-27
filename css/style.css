@@ -671,6 +671,28 @@ ul {
     margin: var(--spacing-lg) 0;
 }
 
+/* Article page specific styles */
+.article__image {
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.article__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article__body {
+    margin-top: var(--spacing-xl);
+}
+
+.article__body > p:first-child {
+    margin-top: 0;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Ensure better touch targets for mobile */

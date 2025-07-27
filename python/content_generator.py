@@ -3,6 +3,7 @@ import glob
 import random
 import os
 import time
+from datetime import datetime
 from dotenv import load_dotenv
 import google.generativeai as genai
 from PIL import Image
@@ -70,13 +71,26 @@ def update_json_with_title(title):
     with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    # Add title to each article
-    for article in data['articles']:
-        article['gemini_title'] = title
+    # Create ordered dictionary to maintain field order
+    ordered_data = {}
+    ordered_data['trend_searched'] = data.get('trend_searched')
+    ordered_data['total_articles'] = data.get('total_articles')
+    ordered_data['articles'] = data.get('articles')
     
-    # Save updated JSON
+    # Add gemini_title after articles array
+    ordered_data['gemini_title'] = title
+    
+    # Preserve any existing metadata fields
+    if 'excerpt' in data:
+        ordered_data['excerpt'] = data['excerpt']
+    if 'date' in data:
+        ordered_data['date'] = data['date']
+    if 'category' in data:
+        ordered_data['category'] = data['category']
+    
+    # Save updated JSON with proper ordering
     with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        json.dump(ordered_data, f, indent=2, ensure_ascii=False)
     
     return title
 
@@ -209,6 +223,136 @@ def resize_image(image, target_size=(1200, 630)):
     """Resize image to target dimensions"""
     return image.resize(target_size, Image.Resampling.LANCZOS)
 
+def generate_excerpt():
+    """Generate a short excerpt from final.md content"""
+    try:
+        with open('temp/final.md', 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Configure Gemini API
+        gemini_api_key = os.getenv('GEMINI_API_KEY')
+        if not gemini_api_key:
+            raise ValueError("GEMINI_API_KEY not found in .env file")
+        
+        genai.configure(api_key=gemini_api_key)
+        model = genai.GenerativeModel('gemini-2.5-flash')
+        
+        prompt = f"""Create a compelling 2-3 sentence excerpt from this article that would make Indian readers want to click and read more. 
+        
+        The excerpt should:
+        - Be 150-200 characters maximum
+        - Capture the main hook/interesting point
+        - Be engaging and clickable
+        - Sound natural and conversational for Indian audience
+        
+        Article content:
+        {content}
+        
+        Generate only the excerpt text, nothing else."""
+        
+        response = model.generate_content(prompt)
+        
+        print("Waiting 60 seconds before next API call...")
+        time.sleep(60)
+        
+        return response.text.strip()
+        
+    except Exception as e:
+        # Fallback excerpt if generation fails
+        return "Discover the shocking truth behind this trending topic that every Indian should know about!"
+
+def get_todays_date():
+    """Get today's date in format '01 June 2025'"""
+    today = datetime.now()
+    return today.strftime("%d %B %Y")
+
+def categorize_article():
+    """Categorize the article using Gemini into one of the 12 predefined categories"""
+    try:
+        with open('temp/final.md', 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Configure Gemini API
+        gemini_api_key = os.getenv('GEMINI_API_KEY')
+        if not gemini_api_key:
+            raise ValueError("GEMINI_API_KEY not found in .env file")
+        
+        genai.configure(api_key=gemini_api_key)
+        model = genai.GenerativeModel('gemini-2.5-flash')
+        
+        categories = ["Technology", "Lifestyle", "Business", "Innovation", "News", 
+                     "Health", "Entertainment", "Finance", "Science", "Travel", "Food", "Sports"]
+        
+        prompt = f"""You must categorize this article into ONE of these 12 categories. Choose the MOST appropriate category:
+
+        Categories: {', '.join(categories)}
+
+        Article content:
+        {content}
+
+        CRITICAL REQUIREMENT: You MUST respond with ONLY ONE category name from the list above. No explanations, no additional text, just the single category name.
+
+        Category:"""
+        
+        response = model.generate_content(prompt)
+        
+        print("Waiting 60 seconds before next API call...")
+        time.sleep(60)
+        
+        category = response.text.strip()
+        
+        # Validate that the response is one of the allowed categories
+        if category in categories:
+            return category
+        else:
+            # Fallback to most likely category based on content analysis
+            content_lower = content.lower()
+            if any(word in content_lower for word in ['football', 'sport', 'match', 'barcelona', 'kobe']):
+                return "Sports"
+            elif any(word in content_lower for word in ['tech', 'digital', 'streaming', 'app']):
+                return "Technology"
+            elif any(word in content_lower for word in ['business', 'market', 'economic']):
+                return "Business"
+            else:
+                return "News"  # Default fallback
+                
+    except Exception as e:
+        print(f"Error in categorization: {str(e)}")
+        return "News"  # Default fallback category
+
+def update_json_with_metadata(excerpt, date, category):
+    """Update article_analysis.json with excerpt, date, and category"""
+    try:
+        with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Create ordered dictionary to maintain field order
+        ordered_data = {}
+        ordered_data['trend_searched'] = data.get('trend_searched')
+        ordered_data['total_articles'] = data.get('total_articles')
+        ordered_data['articles'] = data.get('articles')
+        
+        # Add gemini_title just above excerpt (if it exists)
+        if 'gemini_title' in data:
+            ordered_data['gemini_title'] = data['gemini_title']
+        
+        # Add new metadata fields
+        ordered_data['excerpt'] = excerpt
+        ordered_data['date'] = date
+        ordered_data['category'] = category
+        
+        # Save updated JSON with proper ordering
+        with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
+            json.dump(ordered_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"Updated JSON with:")
+        print(f"  Excerpt: {excerpt}")
+        print(f"  Date: {date}")
+        print(f"  Category: {category}")
+        
+    except Exception as e:
+        print(f"Error updating JSON with metadata: {str(e)}")
+
 def main():
     try:
         # Load articles data
@@ -233,6 +377,22 @@ def main():
         with open('temp/final.md', 'w', encoding='utf-8') as f:
             f.write(article_content)
         print("SEO-optimized article saved as temp/final.md")
+        
+        # Generate excerpt from the final article
+        print("Generating excerpt...")
+        excerpt = generate_excerpt()
+        
+        # Get today's date
+        print("Getting today's date...")
+        date = get_todays_date()
+        
+        # Categorize the article
+        print("Categorizing article...")
+        category = categorize_article()
+        
+        # Update JSON with metadata
+        print("Updating JSON with metadata...")
+        update_json_with_metadata(excerpt, date, category)
         
         # Get random image
         print("Selecting random image...")
