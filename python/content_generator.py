@@ -163,7 +163,7 @@ REQUIREMENTS:
 1. Write in simple, conversational English that Indians understand easily
 2. Target Indian audience specifically with local context and references
 3. Make it sound completely human-written, not AI-generated
-4. 300-350 words total
+4. Strictly within 300-350 words maximum
 5. Structure for Google Discover and AdSense approval
 6. Use proper markdown formatting with headers (H1, H2, H3)
 
