@@ -65,10 +65,9 @@ jobs:
 
     - name: Run trends_check.py
       run: |
-        cd python
-        python trends_check.py
+        python python/trends_check.py
         echo "trends_check.py completed"
-        ls -la ../temp/ || echo "temp directory not found"
+        ls -la temp/ || echo "temp directory not found"
       env:
         DISPLAY: :99
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -92,13 +91,12 @@ jobs:
 
     - name: Run search_articles.py
       run: |
-        cd python
-        python search_articles.py
+        python python/search_articles.py
         echo "search_articles.py completed"
-        ls -la ../temp/ || echo "temp directory not found"
-        if [ -f "../temp/article_analysis.json" ]; then
+        ls -la temp/ || echo "temp directory not found"
+        if [ -f "temp/article_analysis.json" ]; then
           echo "article_analysis.json created successfully"
-          head -10 ../temp/article_analysis.json
+          head -10 temp/article_analysis.json
         else
           echo "ERROR: article_analysis.json not found!"
           exit 1
@@ -125,16 +123,15 @@ jobs:
 
     - name: Run content_generator.py
       run: |
-        cd python
         echo "Loading articles..."
-        if [ -f "../temp/article_analysis.json" ]; then
+        if [ -f "temp/article_analysis.json" ]; then
           echo "article_analysis.json found, proceeding with content generation"
         else
           echo "ERROR: article_analysis.json not found!"
-          ls -la ../temp/ || echo "temp directory not found"
+          ls -la temp/ || echo "temp directory not found"
           exit 1
         fi
-        python content_generator.py
+        python python/content_generator.py
         echo "content_generator.py completed"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -158,8 +155,7 @@ jobs:
 
     - name: Run html_generator.py
       run: |
-        cd python
-        python html_generator.py
+        python python/html_generator.py
         echo "html_generator.py completed"
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -183,8 +179,7 @@ jobs:
 
     - name: Run clear_temp.py
       run: |
-        cd python
-        python clear_temp.py
+        python python/clear_temp.py
         echo "clear_temp.py completed"
 
     - name: Commit and push after clear_temp
@@ -206,8 +201,7 @@ jobs:
 
     - name: Run sitemap_generator.py
       run: |
-        cd python
-        python sitemap_generator.py
+        python python/sitemap_generator.py
         echo "sitemap_generator.py completed"
 
     - name: Commit and push after sitemap_generator

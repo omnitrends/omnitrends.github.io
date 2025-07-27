@@ -23,7 +23,31 @@ load_dotenv()
 
 def load_articles():
     """Load articles from article_analysis.json"""
-    with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
+    # Get the script directory and construct path to temp directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)  # Go up one level from python/ to project root
+    temp_file_path = os.path.join(project_root, 'temp', 'article_analysis.json')
+    
+    print(f"Looking for article_analysis.json at: {temp_file_path}")
+    
+    if not os.path.exists(temp_file_path):
+        print(f"ERROR: File not found at {temp_file_path}")
+        print(f"Current working directory: {os.getcwd()}")
+        print(f"Script directory: {script_dir}")
+        print(f"Project root: {project_root}")
+        
+        # List contents of temp directory for debugging
+        temp_dir = os.path.join(project_root, 'temp')
+        if os.path.exists(temp_dir):
+            print(f"Contents of temp directory ({temp_dir}):")
+            for item in os.listdir(temp_dir):
+                print(f"  - {item}")
+        else:
+            print(f"Temp directory does not exist: {temp_dir}")
+        
+        raise FileNotFoundError(f"article_analysis.json not found at {temp_file_path}")
+    
+    with open(temp_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
@@ -76,7 +100,12 @@ Generate only the title, nothing else. Remember: The title MUST contain "{trend_
 
 def update_json_with_title(title):
     """Update article_analysis.json with generated title"""
-    with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
+    # Get the script directory and construct path to temp directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)  # Go up one level from python/ to project root
+    temp_file_path = os.path.join(project_root, 'temp', 'article_analysis.json')
+    
+    with open(temp_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Create ordered dictionary to maintain field order
@@ -97,7 +126,7 @@ def update_json_with_title(title):
         ordered_data['category'] = data['category']
     
     # Save updated JSON with proper ordering
-    with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
+    with open(temp_file_path, 'w', encoding='utf-8') as f:
         json.dump(ordered_data, f, indent=2, ensure_ascii=False)
     
     return title
@@ -174,13 +203,27 @@ Generate ONLY the markdown article content, no explanations or meta-text."""
 
 def get_random_image():
     """Get the image with largest dimensions from temp folder"""
-    image_patterns = ['temp/*.png', 'temp/*.jpg', 'temp/*.jpeg']
+    # Get the script directory and construct path to temp directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)  # Go up one level from python/ to project root
+    temp_dir = os.path.join(project_root, 'temp')
+    
+    image_patterns = [
+        os.path.join(temp_dir, '*.png'),
+        os.path.join(temp_dir, '*.jpg'), 
+        os.path.join(temp_dir, '*.jpeg')
+    ]
     all_images = []
     
     for pattern in image_patterns:
         all_images.extend(glob.glob(pattern))
     
     if not all_images:
+        print(f"No images found in temp folder: {temp_dir}")
+        if os.path.exists(temp_dir):
+            print(f"Contents of temp directory:")
+            for item in os.listdir(temp_dir):
+                print(f"  - {item}")
         raise FileNotFoundError("No images found in temp folder")
     
     # Calculate dimensions for each image
@@ -353,7 +396,12 @@ def categorize_article():
 def update_json_with_metadata(excerpt, date, category):
     """Update article_analysis.json with excerpt, date, and category"""
     try:
-        with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
+        # Get the script directory and construct path to temp directory
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)  # Go up one level from python/ to project root
+        temp_file_path = os.path.join(project_root, 'temp', 'article_analysis.json')
+        
+        with open(temp_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
         # Create ordered dictionary to maintain field order
@@ -377,7 +425,7 @@ def update_json_with_metadata(excerpt, date, category):
         ordered_data['keyword'] = keyword
         
         # Save updated JSON with proper ordering
-        with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
+        with open(temp_file_path, 'w', encoding='utf-8') as f:
             json.dump(ordered_data, f, indent=2, ensure_ascii=False)
         
         print(f"Updated JSON with:")
