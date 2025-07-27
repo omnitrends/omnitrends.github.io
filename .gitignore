@@ -88,12 +88,6 @@ Thumbs.db
 *.log
 logs/
 
-# Temporary files
-temp/
-tmp/
-*.tmp
-*.temp
-
 # Node.js (if applicable)
 node_modules/
 npm-debug.log*
