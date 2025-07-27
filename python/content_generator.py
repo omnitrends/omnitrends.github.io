@@ -285,6 +285,9 @@ def generate_new_image(source_image_path):
                      'Create a modern, professional news article featured image '
                      'that would be suitable for trending topics and news content. '
                      'Make it visually appealing and engaging for Indian readers. '
+                     'IMPORTANT: If the image contains human figures, ensure that all hands, feet, and fingers '
+                     'are anatomically correct and properly formed. Avoid any disfigured, distorted, or '
+                     'unnaturally shaped human body parts, especially hands, feet, and fingers. '
                      'Please generate an image.')
         
         print("Generating new image using Gemini vision model...", flush=True)
