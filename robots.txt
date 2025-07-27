@@ -1,12 +1,49 @@
+# Robots.txt for OmniTrends - Google AdSense Optimized
+
+# Allow all web crawlers access to all content
 User-agent: *
 Allow: /
 
-# Sitemap
+# Specifically allow Google bots (important for AdSense)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Block access to sensitive directories
+Disallow: /.git/
+Disallow: /.venv/
+Disallow: /temp/
+Disallow: /.zencoder/
+
+# Allow access to all other directories important for AdSense
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /json/
+Allow: /articles/
+Allow: /category/
+Allow: /pages/
+
+# Sitemap location
 Sitemap: https://omnitrends.github.io/sitemap.xml
 
-# Disallow admin or private areas (if any)
-# Disallow: /admin/
-# Disallow: /private/
-
-# Allow all search engines to crawl the site
-# This is optimized for Google Discover and AdSense approval
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
