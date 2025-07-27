@@ -48,17 +48,20 @@ jobs:
         
     - name: Verify and fix Google Generative AI installation
       run: |
-        # Try to import the package
+        # Try to import the packages
         if ! python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')" 2>/dev/null; then
           echo "Initial import failed, trying to reinstall..."
           pip uninstall -y google-generativeai google-genai google-ai-generativelanguage
           pip install --no-cache-dir google-generativeai>=0.8.5
           pip install --no-cache-dir google-ai-generativelanguage>=0.6.15
+          pip install --no-cache-dir google-genai>=1.27.0
         fi
         
-        # Verify installation
+        # Verify installations
         python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')"
+        python -c "from google import genai; print('Google GenAI client imported successfully')" || echo "Google GenAI client import failed - will fallback to original images"
         pip show google-generativeai
+        pip show google-genai
 
     - name: Set up environment variables
       run: |
@@ -93,13 +96,7 @@ jobs:
         DISPLAY: :99
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-    - name: Upload temp directory as artifact (after trends_check)
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: temp-after-trends-check
-        path: temp/
-        retention-days: 1
+
 
     - name: Run search_articles.py
       run: |

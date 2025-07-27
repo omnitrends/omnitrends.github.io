@@ -260,22 +260,69 @@ def get_random_image():
     return random.choice(max_dimension_images)
 
 def generate_new_image(source_image_path):
-    """Generate a new image using Gemini vision model (simplified approach)"""
-    # Configure Gemini API
-    gemini_api_key = os.getenv('GEMINI_API_KEY')
-    if not gemini_api_key:
-        raise ValueError("GEMINI_API_KEY not found in .env file")
-    
-    genai.configure(api_key=gemini_api_key)
-    
-    # For now, return the original image since image generation with Gemini
-    # requires specific model access that might not be available
-    # This is a fallback to prevent the workflow from failing
-    print("Image generation not available, using original image", flush=True)
-    
-    # Load and return the source image
-    image = PIL.Image.open(source_image_path)
-    return image
+    """Generate a new image using Gemini vision model with image-to-image generation"""
+    try:
+        # Configure Gemini API
+        gemini_api_key = os.getenv('GEMINI_API_KEY')
+        if not gemini_api_key:
+            raise ValueError("GEMINI_API_KEY not found in .env file")
+        
+        # Import the new Google GenAI client
+        from google import genai
+        from google.genai import types
+        from PIL import Image
+        from io import BytesIO
+        
+        # Load the source image
+        source_image = PIL.Image.open(source_image_path)
+        print(f"Loaded source image: {source_image_path}", flush=True)
+        
+        # Create the GenAI client
+        client = genai.Client(api_key=gemini_api_key)
+        
+        # Create a prompt for image generation that's relevant to news/trending topics
+        text_input = ('Generate an image based on this source image. '
+                     'Create a modern, professional news article featured image '
+                     'that would be suitable for trending topics and news content. '
+                     'Make it visually appealing and engaging for Indian readers. '
+                     'Please generate an image.')
+        
+        print("Generating new image using Gemini vision model...", flush=True)
+        
+        # Generate content with both text and image input
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-preview-image-generation",
+            contents=[text_input, source_image],
+            config=types.GenerateContentConfig(
+                response_modalities=['TEXT', 'IMAGE']
+            )
+        )
+        
+        print("Waiting 60 seconds before next API call...", flush=True)
+        time.sleep(60)
+        
+        # Process the response
+        for part in response.candidates[0].content.parts:
+            if part.text is not None:
+                print(f"Generated image description: {part.text}", flush=True)
+            elif part.inline_data is not None:
+                # Convert the generated image data to PIL Image
+                generated_image = Image.open(BytesIO(part.inline_data.data))
+                print("Successfully generated new image using Gemini vision model", flush=True)
+                return generated_image
+        
+        # If no image was generated, return None to indicate failure
+        print("No image was generated in response, image generation failed", flush=True)
+        return None
+        
+    except ImportError as e:
+        print(f"Import error for Google GenAI: {e}", flush=True)
+        print("Image generation not available, returning None", flush=True)
+        return None
+    except Exception as e:
+        print(f"Error generating image with Gemini: {e}", flush=True)
+        print("Image generation failed, returning None", flush=True)
+        return None
 
 def resize_image(image, target_size=(1200, 630)):
     """Resize image to target dimensions"""
@@ -471,6 +518,12 @@ def main():
         # Generate new image
         print("Generating new image...", flush=True)
         new_image = generate_new_image(source_image_path)
+        
+        # Check if image generation was successful
+        if new_image is None:
+            print("Image generation failed. Skipping article creation.", flush=True)
+            print("Article will be cleaned up later by clear_temp.py if needed.", flush=True)
+            return
         
         # Resize image
         print("Resizing image...", flush=True)
