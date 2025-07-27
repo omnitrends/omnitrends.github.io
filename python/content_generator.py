@@ -3,7 +3,6 @@ import glob
 import random
 import os
 import time
-from datetime import datetime
 from dotenv import load_dotenv
 import google.generativeai as genai
 from PIL import Image
@@ -34,6 +33,8 @@ def generate_clickbait_title(articles_data):
     
     prompt = f"""Create an eye-catching, clickbait title for an article about "{trend_topic}" that uses dark psychology principles to make Indian readers feel compelled to click. 
 
+CRITICAL REQUIREMENT: The title MUST contain the exact keyword "{trend_topic}" somewhere in it.
+
 Use these psychological triggers:
 - Fear of missing out (FOMO)
 - Curiosity gap (incomplete information that makes people want to know more)
@@ -48,39 +49,36 @@ The title should be:
 - Use simple, conversational English
 - Include power words like "Shocking", "Secret", "Revealed", "You Won't Believe", etc.
 - Make it sound urgent and exclusive
+- MUST include the exact keyword "{trend_topic}" in the title
 
-Examples of good clickbait titles:
-- "This Shocking Truth About [Topic] Will Change Everything for Indians"
-- "Secret Revealed: What Indians Don't Know About [Topic]"
-- "You Won't Believe What Happened When [Event] - Indian Perspective"
+Examples of good clickbait titles (replace [Topic] with "{trend_topic}"):
+- "This Shocking Truth About {trend_topic} Will Change Everything for Indians"
+- "Secret Revealed: What Indians Don't Know About {trend_topic}"
+- "You Won't Believe What Happened with {trend_topic} - Indian Perspective"
 
-Generate only the title, nothing else."""
+Generate only the title, nothing else. Remember: The title MUST contain "{trend_topic}"."""
 
     response = model.generate_content(prompt)
     
     print("Waiting 60 seconds before next API call...")
     time.sleep(60)
     
-    return response.text.strip()
+    return response.text.strip().title()
 
-def update_json_with_title_and_date(title):
-    """Update article_analysis.json with generated title and current date"""
+def update_json_with_title(title):
+    """Update article_analysis.json with generated title"""
     with open('temp/article_analysis.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    # Get current date in the specified format
-    current_date = datetime.now().strftime("%d %B %Y")
-    
-    # Add title and date to each article
+    # Add title to each article
     for article in data['articles']:
         article['gemini_title'] = title
-        article['date_generated'] = current_date
     
     # Save updated JSON
     with open('temp/article_analysis.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
-    return title, current_date
+    return title
 
 def generate_article_content(articles_data, title):
     """Generate an SEO-optimized article from all article analyses using Gemini"""
@@ -180,10 +178,14 @@ def generate_new_image(source_image_path):
     # Load the source image
     image = PIL.Image.open(source_image_path)
     
-    # Create a prompt for image generation based on the football theme
+    # Create a prompt for image generation with specific instructions for human figures
     text_input = ('Transform this image into a modern, dynamic sports-themed image. '
                  'Add vibrant colors, energy, and a professional look suitable for a sports article. '
-                 'Make it visually appealing and engaging for football fans.',)
+                 'Make it visually appealing and engaging for football fans. '
+                 'IMPORTANT: If there are human figures in the image, maintain proper human anatomy - '
+                 'keep all body parts in correct proportions, do not distort faces, hands, feet, or limbs. '
+                 'Preserve natural human body structure and proportions. '
+                 'Focus on enhancing colors, lighting, and background while keeping people looking realistic and natural.',)
     
     response = client.models.generate_content(
         model="gemini-2.0-flash-preview-image-generation",
@@ -218,10 +220,10 @@ def main():
         title = generate_clickbait_title(articles_data)
         print(f"Generated title: {title}")
         
-        # Update JSON with title and date
-        print("Updating JSON with title and date...")
-        title, date_generated = update_json_with_title_and_date(title)
-        print(f"Added title and date ({date_generated}) to JSON")
+        # Update JSON with title
+        print("Updating JSON with title...")
+        title = update_json_with_title(title)
+        print("Added title to JSON")
         
         # Generate SEO-optimized article content
         print("Generating SEO-optimized article content...")
@@ -251,7 +253,6 @@ def main():
         
         print("Content generation completed successfully!")
         print(f"Final title: {title}")
-        print(f"Date generated: {date_generated}")
         
     except Exception as e:
         print(f"Error: {str(e)}")
