@@ -177,11 +177,8 @@ STRUCTURE (in markdown):
 ### Second Key Point  
 ### Third Key Point (if needed)
 
-## What This Means for Indians
-(Explain local impact, relevance to Indian audience)
-
 ## Conclusion
-(Wrap up with actionable insights or future implications)
+(Wrap up with actionable insight, a thought‑provoking question, or a subtle FOMO/surprise element.)
 
 SEO REQUIREMENTS:
 - Use the main keyword "{trend_topic}" naturally 3-4 times
@@ -190,13 +187,15 @@ SEO REQUIREMENTS:
 - Use short paragraphs (2-3 sentences max)
 - Include questions to engage readers
 - Make it shareable and discussion-worthy
+- Use dark-psychology hooks (curiosity gaps, social proof, FOMO) to keep readers glued.
 
 TONE:
-- Conversational and friendly
+- Friendly, relatable, and slightly playful
 - Informative but not boring
 - Relatable to middle-class Indian families
 - Avoid complex jargon
 - Use common Indian English expressions
+- Make it shareable and discussion‑worthy
 
 Based on these articles:
 {combined_text}
