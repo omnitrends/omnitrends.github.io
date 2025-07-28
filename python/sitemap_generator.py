@@ -170,9 +170,6 @@ Allow: /pages/
 
 # Sitemap location
 Sitemap: {self.base_url}/sitemap.xml
-
-# Crawl delay (optional, helps with server load)
-Crawl-delay: 1
 """
         
         robots_path = self.root_dir / 'robots.txt'
