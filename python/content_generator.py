@@ -157,7 +157,7 @@ def generate_article_content(articles_data, title):
     
     trend_topic = articles_data.get('trend_searched', 'trending topic')
     
-    prompt = f"""Create a highly SEO-optimized, human-sounding article for Indian readers about "{trend_topic}". Use the title "{title}" as H1.
+    prompt = f"""You are an expert SEO copywriter who writes a highly SEO-optimized, human-sounding article for Indian readers about "{trend_topic}". Use the title "{title}" as H1.
 
 REQUIREMENTS:
 1. Write in simple, conversational English that Indians understand easily
