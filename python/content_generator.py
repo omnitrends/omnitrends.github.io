@@ -178,7 +178,7 @@ STRUCTURE (in markdown):
 ### Third Key Point (if needed)
 
 ## Conclusion
-(Wrap up with actionable insight, a thought‑provoking question, or a subtle FOMO/surprise element.)
+(Wrap up with actionable insight, a thought-provoking question, or a subtle FOMO/surprise element.)
 
 SEO REQUIREMENTS:
 - Use the main keyword "{trend_topic}" naturally 3-4 times
@@ -195,7 +195,7 @@ TONE:
 - Relatable to middle-class Indian families
 - Avoid complex jargon
 - Use common Indian English expressions
-- Make it shareable and discussion‑worthy
+- Make it shareable and discussion-worthy
 
 Based on these articles:
 {combined_text}
