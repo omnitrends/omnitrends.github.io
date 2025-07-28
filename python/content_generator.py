@@ -5,6 +5,7 @@ import random
 import os
 import sys
 import time
+import re
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -92,6 +93,7 @@ The title should be:
 - Include power words like "Shocking", "Secret", "Revealed", "You Won't Believe", etc.
 - Make it sound urgent and exclusive
 - MUST include the exact keyword "{trend_topic}" in the title
+- Do NOT use single asterisks (*) around words for emphasis
 
 Examples of good clickbait titles (replace [Topic] with "{trend_topic}"):
 - "This Shocking Truth About {trend_topic} Will Change Everything for Indians"
@@ -105,7 +107,13 @@ Generate only the title, nothing else. Remember: The title MUST contain "{trend_
     print("Waiting 60 seconds before next API call...", flush=True)
     time.sleep(60)
     
-    return response.text.strip().title()
+    # Post-process the title to remove single asterisks
+    title = response.text.strip()
+    
+    # Remove words wrapped in single asterisks (e.g., *word* becomes word)
+    title = re.sub(r'\*([^*]+)\*', r'\1', title)
+    
+    return title.title()
 
 def update_json_with_title(title):
     """Update article_analysis.json with generated title"""
@@ -166,6 +174,7 @@ REQUIREMENTS:
 4. Strictly within 300-350 words maximum
 5. Structure for Google Discover and AdSense approval
 6. Use proper markdown formatting with headers (H1, H2, H3)
+7. CRITICAL: Do NOT use single asterisks (*) around words for emphasis. Use regular text only.
 
 STRUCTURE (in markdown):
 # {title}
@@ -207,7 +216,13 @@ Generate ONLY the markdown article content, no explanations or meta-text."""
     print("Waiting 60 seconds before next API call...", flush=True)
     time.sleep(60)
     
-    return response.text
+    # Post-process the content to remove single asterisks
+    content = response.text
+    
+    # Remove words wrapped in single asterisks (e.g., *word* becomes word)
+    content = re.sub(r'\*([^*]+)\*', r'\1', content)
+    
+    return content
 
 def get_random_image():
     """Get the image with largest dimensions from temp folder"""
@@ -351,6 +366,7 @@ def generate_excerpt():
         - Capture the main hook/interesting point
         - Be engaging and clickable
         - Sound natural and conversational for Indian audience
+        - Do NOT use single asterisks (*) around words for emphasis
         
         Article content:
         {content}
@@ -362,7 +378,13 @@ def generate_excerpt():
         print("Waiting 60 seconds before next API call...", flush=True)
         time.sleep(60)
         
-        return response.text.strip()
+        # Post-process the excerpt to remove single asterisks
+        excerpt = response.text.strip()
+        
+        # Remove words wrapped in single asterisks (e.g., *word* becomes word)
+        excerpt = re.sub(r'\*([^*]+)\*', r'\1', excerpt)
+        
+        return excerpt
         
     except Exception as e:
         # Fallback excerpt if generation fails
