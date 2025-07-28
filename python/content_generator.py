@@ -74,33 +74,47 @@ def generate_clickbait_title(articles_data):
     # Get the trend topic
     trend_topic = articles_data.get('trend_searched', 'trending topic')
     
-    prompt = f"""Create an eye-catching, clickbait title for an article about "{trend_topic}" that uses dark psychology principles to make Indian readers feel compelled to click. 
+    prompt = f"""Create a compelling, SEO-optimized title for an article about "{trend_topic}" that attracts Indian readers while maintaining credibility and avoiding repetitive patterns.
 
 CRITICAL REQUIREMENT: The title MUST contain the exact keyword "{trend_topic}" somewhere in it.
 
-Use these psychological triggers:
-- Fear of missing out (FOMO)
-- Curiosity gap (incomplete information that makes people want to know more)
-- Social proof (what others are doing/saying)
-- Urgency (time-sensitive language)
-- Exclusivity (insider information, secrets)
-- Emotional triggers (shocking, surprising, controversial)
+TITLE VARIETY REQUIREMENTS:
+- Avoid overused words like "Shocking", "Secret", "Urgent" in every title
+- Vary the psychological approach for each article
+- Use different title structures and formats
+- Balance curiosity with credibility
+
+Choose ONE of these Google Discover-friendly approaches (rotate for variety):
+1. EDUCATIONAL: "Understanding {trend_topic}: A Guide for Indians"
+2. INFORMATIVE: "What Indians Should Know About {trend_topic}"
+3. ANALYTICAL: "How {trend_topic} Affects Indian Families Today"
+4. EXPLANATORY: "The {trend_topic} Situation: Facts for Indians"
+5. HELPFUL: "{trend_topic} Explained: What It Means for India"
+6. CONTEXTUAL: "{trend_topic} and Its Impact on Indian Society"
+7. FACTUAL: "Breaking Down {trend_topic}: Indian Perspective"
+8. PRACTICAL: "{trend_topic}: Essential Information for Indians"
 
 The title should be:
 - Maximum 60 characters for SEO
 - Target Indian audience specifically
 - Use simple, conversational English
-- Include power words like "Shocking", "Secret", "Revealed", "You Won't Believe", etc.
-- Make it sound urgent and exclusive
+- Avoid repetitive power words (shocking, secret, urgent, revealed)
+- Sound informative and trustworthy (Google Discover friendly)
 - MUST include the exact keyword "{trend_topic}" in the title
 - Do NOT use single asterisks (*) around words for emphasis
+- Create genuine interest without false urgency
+- Be factual and educational in tone
+- Avoid clickbait language that could hurt AdSense approval
+- Sound like a helpful news article or educational piece
 
-Examples of good clickbait titles (replace [Topic] with "{trend_topic}"):
-- "This Shocking Truth About {trend_topic} Will Change Everything for Indians"
-- "Secret Revealed: What Indians Don't Know About {trend_topic}"
-- "You Won't Believe What Happened with {trend_topic} - Indian Perspective"
+GOOGLE DISCOVER COMPLIANCE:
+- Avoid sensational language
+- Use authoritative, informative tone
+- Make titles that deliver on their promise
+- Focus on providing value to readers
+- Ensure family-friendly content approach
 
-Generate only the title, nothing else. Remember: The title MUST contain "{trend_topic}"."""
+Generate only the title, nothing else. Remember: The title MUST contain "{trend_topic}" and should be Google Discover and AdSense compliant."""
 
     response = model.generate_content(prompt)
     
@@ -165,51 +179,71 @@ def generate_article_content(articles_data, title):
     
     trend_topic = articles_data.get('trend_searched', 'trending topic')
     
-    prompt = f"""You are an expert SEO copywriter who writes a highly SEO-optimized, human-sounding article for Indian readers about "{trend_topic}". Use the title "{title}" as H1.
+    prompt = f"""You are an expert SEO copywriter who writes Google Discover and AdSense-approved articles for Indian readers about "{trend_topic}". Use the title "{title}" as H1.
 
-REQUIREMENTS:
+CRITICAL REQUIREMENTS:
 1. Write in simple, conversational English that Indians understand easily
 2. Target Indian audience specifically with local context and references
 3. Make it sound completely human-written, not AI-generated
-4. Strictly within 300-350 words maximum
+4. STRICTLY 300-350 words maximum (Google Discover optimization)
 5. Structure for Google Discover and AdSense approval
 6. Use proper markdown formatting with headers (H1, H2, H3)
 7. CRITICAL: Do NOT use single asterisks (*) before, after or around words for emphasis. Use regular text only.
 
-STRUCTURE (in markdown):
+GOOGLE DISCOVER & ADSENSE COMPLIANCE:
+- Avoid sensational or misleading claims
+- Provide factual, helpful information
+- Use authoritative tone without clickbait language
+- Include educational value in every paragraph
+- Avoid controversial or sensitive topics inappropriately
+- Ensure content matches title promise exactly
+- Use family-friendly language throughout
+
+STRUCTURE VARIETY (Choose ONE format to avoid repetition):
+
+FORMAT A - Informative:
 # {title}
+## Introduction (Why this matters to Indians - 2-3 sentences)
+## Key Information (Main facts and details)
+## What This Means for Indians (Practical implications)
+## Conclusion (Actionable takeaway or thoughtful question)
 
-## Introduction (2-3 sentences explaining why this matters to Indians)
+FORMAT B - Explanatory:
+# {title}
+## Background Context (Setting up the topic for Indian readers)
+## Current Situation (What's happening now)
+## Impact Analysis (How it affects Indian families/individuals)
+## Moving Forward (What to expect or do next)
 
-## Key Points (2-3 H3 subheadings with content)
-### First Key Point
-### Second Key Point  
-### Third Key Point (if needed)
+FORMAT C - Educational:
+# {title}
+## Understanding the Basics (Simple explanation for everyone)
+## Key Points to Remember (Important facts and figures)
+## Practical Applications (How this applies to daily life)
+## Final Thoughts (Summary with engaging question)
 
-## Conclusion
-(Wrap up with actionable insight, a thought-provoking question, or a subtle FOMO/surprise element.)
-
-SEO REQUIREMENTS:
+SEO & ENGAGEMENT REQUIREMENTS:
 - Use the main keyword "{trend_topic}" naturally 3-4 times
 - Include related keywords naturally
-- Write engaging meta-worthy content
+- Write engaging but factual content
 - Use short paragraphs (2-3 sentences max)
-- Include questions to engage readers
-- Make it shareable and discussion-worthy
-- Use dark-psychology hooks (curiosity gaps, social proof, FOMO) to keep readers glued.
+- Include 1-2 engaging questions for readers
+- Add specific Indian examples and context
+- Maintain reader interest without sensationalism
 
-TONE:
-- Friendly, relatable, and slightly playful
-- Informative but not boring
-- Relatable to middle-class Indian families
-- Avoid complex jargon
-- Use common Indian English expressions
-- Make it shareable and discussion-worthy
+TONE GUIDELINES:
+- Match the tone to the title's promise (avoid tonal inconsistency)
+- Be informative and helpful, not just attention-grabbing
+- Provide genuine value and insights
+- Use relatable examples from Indian context
+- Avoid false urgency or manufactured drama
+- Make it educational and trustworthy
+- Sound like a knowledgeable friend explaining something important
 
 Based on these articles:
 {combined_text}
 
-Generate ONLY the markdown article content, no explanations or meta-text."""
+Generate ONLY the markdown article content, no explanations or meta-text. Choose the most appropriate format (A, B, or C) based on the topic. Ensure content is valuable, factual, and AdSense-friendly."""
 
     response = model.generate_content(prompt)
     
