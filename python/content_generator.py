@@ -174,7 +174,7 @@ REQUIREMENTS:
 4. Strictly within 300-350 words maximum
 5. Structure for Google Discover and AdSense approval
 6. Use proper markdown formatting with headers (H1, H2, H3)
-7. CRITICAL: Do NOT use single asterisks (*) around words for emphasis. Use regular text only.
+7. CRITICAL: Do NOT use single asterisks (*) before, after or around words for emphasis. Use regular text only.
 
 STRUCTURE (in markdown):
 # {title}
