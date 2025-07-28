@@ -19,7 +19,7 @@
             "type": "image/png"
         }
     ],
-    "categories": ["news", "lifestyle", "technology", "business"],
+    "categories": ["news", "lifestyle", "technology", "business", "innovation", "health", "entertainment", "finance", "science", "travel", "food", "sports"],
     "lang": "en",
     "dir": "ltr"
 }
