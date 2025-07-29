@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-07-29T21:24:43.115611",
+  "location": "India",
+  "timeframe": "Last 4 hours",
+  "filter_criteria": "English language + Active status only",
+  "sort_order": "Descending by search volume",
+  "total_filtered_trends": 9,
+  "trends": [
+    {
+      "rank": 1,
+      "trend_name": "oppo reno 14 pro 5g price",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 2,
+      "trend_name": "wcl 2025 points table",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 3,
+      "trend_name": "suresh raina",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 4,
+      "trend_name": "jay leno",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 5,
+      "trend_name": "spider man brand new day movie",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 6,
+      "trend_name": "once upon a time in hollywood",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 7,
+      "trend_name": "katy perry",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 8,
+      "trend_name": "bumrah",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 9,
+      "trend_name": "euphoria",
+      "search_volume": "100+",
+      "active_status": "Active"
+    }
+  ]
+}
