@@ -1,72 +1,109 @@
-# -*- coding: utf-8 -*-
 import json
 import os
 import shutil
-import re
-import sys
 from datetime import datetime
+import markdown
 from PIL import Image
 
-# Fix Unicode output issues on Windows
-if sys.platform == "win32":
-    import codecs
-    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
-    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Get the project root directory (parent of python directory)
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-def generate_slug(title):
-    """Convert title to URL-friendly slug"""
-    # Convert to lowercase
-    slug = title.lower()
-    # Remove special characters and replace spaces with hyphens
-    slug = re.sub(r'[^\w\s-]', '', slug)
-    slug = re.sub(r'[-\s]+', '-', slug)
-    # Remove leading/trailing hyphens
-    slug = slug.strip('-')
-    return slug
+def read_id_from_keyword_selection():
+    """Read the id value from temp/keyword_selection.json"""
+    keyword_selection_path = os.path.join(PROJECT_ROOT, 'temp', 'keyword_selection.json')
+    try:
+        with open(keyword_selection_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('id')
+    except FileNotFoundError:
+        print(f"Error: {keyword_selection_path} not found")
+        return None
+    except json.JSONDecodeError:
+        print("Error: Invalid JSON in keyword_selection.json")
+        return None
 
-def markdown_to_html(markdown_content):
-    """Convert markdown content to HTML"""
-    lines = markdown_content.split('\n')
-    html_content = []
+def resize_final_image():
+    """Resize temp/final.jpg to 1200x630px and save it with the same name in the same location"""
+    image_path = os.path.join(PROJECT_ROOT, 'temp', 'final.jpg')
     
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
+    try:
+        # Open the image
+        with Image.open(image_path) as img:
+            # Resize to 1200x630px
+            resized_img = img.resize((1200, 630), Image.Resampling.LANCZOS)
             
-        # Handle headings
-        if line.startswith('# '):
-            continue  # Skip main title as it's handled separately
-        elif line.startswith('## '):
-            html_content.append(f'<h2>{line[3:]}</h2>')
-        elif line.startswith('### '):
-            html_content.append(f'<h3>{line[4:]}</h3>')
-        elif line.startswith('#### '):
-            html_content.append(f'<h4>{line[5:]}</h4>')
-        # Handle bold text
-        elif '**' in line:
-            line = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line)
-            html_content.append(f'<p>{line}</p>')
-        # Regular paragraphs
-        else:
-            html_content.append(f'<p>{line}</p>')
-    
-    return '\n                    '.join(html_content)
+            # Save the resized image with the same name and location
+            resized_img.save(image_path, 'JPEG', quality=95)
+            print(f"Successfully resized {image_path} to 1200x630px")
+            
+    except FileNotFoundError:
+        print(f"Error: {image_path} not found")
+    except Exception as e:
+        print(f"Error resizing image: {str(e)}")
 
-def generate_html(article_data, content_html, slug):
-    """Generate HTML file from template"""
-    title = article_data['gemini_title']
-    category = article_data['category']
-    date = article_data['date']
-    excerpt = article_data['excerpt']
+def rename_final_md_to_id(article_id):
+    """Rename temp/final.md to temp/{id}.md"""
+    if not article_id:
+        print("Error: No article ID provided")
+        return False
     
+    source_path = os.path.join(PROJECT_ROOT, 'temp', 'final.md')
+    target_path = os.path.join(PROJECT_ROOT, 'temp', f'{article_id}.md')
+    
+    try:
+        if os.path.exists(source_path):
+            shutil.move(source_path, target_path)
+            print(f"Renamed final.md to {article_id}.md")
+            return True
+        else:
+            print("Error: temp/final.md not found")
+            return False
+    except Exception as e:
+        print(f"Error renaming file: {e}")
+        return False
+
+def generate_html_from_markdown(article_id):
+    """Generate HTML file from temp/{id}.md and save to articles/{id}.html"""
+    if not article_id:
+        print("Error: No article ID provided")
+        return False
+    
+    # Read the keyword selection data
+    keyword_selection_path = os.path.join(PROJECT_ROOT, 'temp', 'keyword_selection.json')
+    try:
+        with open(keyword_selection_path, 'r', encoding='utf-8') as f:
+            article_data = json.load(f)
+    except Exception as e:
+        print(f"Error reading keyword_selection.json: {e}")
+        return False
+    
+    # Read the markdown content
+    md_path = os.path.join(PROJECT_ROOT, 'temp', f'{article_id}.md')
+    try:
+        with open(md_path, 'r', encoding='utf-8') as f:
+            md_content = f.read()
+    except Exception as e:
+        print(f"Error reading markdown file: {e}")
+        return False
+    
+    # Convert markdown to HTML
+    md = markdown.Markdown()
+    html_content = md.convert(md_content)
+    
+    # Extract keywords for meta tags
+    keywords = article_data.get('keyword', '').split()
+    keywords_str = ', '.join(keywords[:4])  # Limit to 4 keywords
+    
+    # Generate the complete HTML
     html_template = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="{excerpt}">
-    <meta name="keywords" content="{article_data['keyword']}, {category.lower()}, trends, news">
+    <meta name="description" content="{article_data.get('excerpt', '')}">
+    <meta name="keywords" content="{keywords_str}">
     <meta name="author" content="OmniTrends">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
@@ -74,24 +111,24 @@ def generate_html(article_data, content_html, slug):
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="{title} - OmniTrends">
+    <meta name="apple-mobile-web-app-title" content="{article_data.get('title', '')} - OmniTrends">
     <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://omnitrends.github.io/articles/{slug}.html">
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{excerpt}">
-    <meta property="og:image" content="https://omnitrends.github.io/images/{slug}.webp">
+    <meta property="og:url" content="https://omnitrends.github.io/articles/{article_id}.html">
+    <meta property="og:title" content="{article_data.get('title', '')}">
+    <meta property="og:description" content="{article_data.get('excerpt', '')}">
+    <meta property="og:image" content="https://omnitrends.github.io/images/{article_id}.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://omnitrends.github.io/articles/{slug}.html">
-    <meta property="twitter:title" content="{title}">
-    <meta property="twitter:description" content="{excerpt}">
-    <meta property="twitter:image" content="https://omnitrends.github.io/images/{slug}.webp">
+    <meta property="twitter:url" content="https://omnitrends.github.io/articles/{article_id}.html">
+    <meta property="twitter:title" content="{article_data.get('title', '')}">
+    <meta property="twitter:description" content="{article_data.get('excerpt', '')}">
+    <meta property="twitter:image" content="https://omnitrends.github.io/images/{article_id}.webp">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -111,16 +148,16 @@ def generate_html(article_data, content_html, slug):
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     
-    <title>{title} | OmniTrends</title>
+    <title>{article_data.get('title', '')} | OmniTrends</title>
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {{
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "{title}",
-        "description": "{excerpt}",
-        "image": "https://omnitrends.github.io/images/{slug}.webp",
+        "headline": "{article_data.get('title', '')}",
+        "description": "{article_data.get('excerpt', '')}",
+        "image": "https://omnitrends.github.io/images/{article_id}.webp",
         "author": {{
             "@type": "Organization",
             "name": "OmniTrends"
@@ -133,13 +170,13 @@ def generate_html(article_data, content_html, slug):
                 "url": "https://omnitrends.github.io/images/logo.png"
             }}
         }},
-        "datePublished": "{datetime.strptime(date, '%d %B %Y').strftime('%Y-%m-%d')}",
-        "dateModified": "{datetime.strptime(date, '%d %B %Y').strftime('%Y-%m-%d')}",
+        "datePublished": "{article_data.get('date', datetime.now().strftime('%Y-%m-%d'))}",
+        "dateModified": "{article_data.get('date', datetime.now().strftime('%Y-%m-%d'))}",
         "mainEntityOfPage": {{
             "@type": "WebPage",
-            "@id": "https://omnitrends.github.io/articles/{slug}.html"
+            "@id": "https://omnitrends.github.io/articles/{article_id}.html"
         }},
-        "articleSection": "{category}"
+        "articleSection": "{article_data.get('category', '')}"
     }}
     </script>
 </head>
@@ -201,11 +238,11 @@ def generate_html(article_data, content_html, slug):
         <div class="container">
             <div class="article-header__content">
                 <div class="article-meta">
-                    <a href="../category/{category.lower()}.html" class="article-category">{category}</a>
-                    <span class="article-date" id="article-date">{date}</span>
+                    <a href="../category/{article_data.get('category', '').lower()}.html" class="article-category">{article_data.get('category', '')}</a>
+                    <span class="article-date" id="article-date">{article_data.get('date', '')}</span>
                 </div>
-                <h1 class="article-title">{title}</h1>
-                <p class="article-description">{excerpt}</p>
+                <h1 class="article-title">{article_data.get('title', '')}</h1>
+                <p class="article-description">{article_data.get('excerpt', '')}</p>
             </div>
         </div>
     </section>
@@ -215,16 +252,16 @@ def generate_html(article_data, content_html, slug):
         <div class="container">
             <article class="article">
                 <div class="article__image">
-                    <img src="../images/{slug}.webp" alt="{title}" loading="lazy">
+                    <img src="../images/{article_id}.webp" alt="{article_data.get('title', '')}" loading="lazy">
                 </div>
                 
                 <div class="article__body">
-                    {content_html}
+                    {html_content}
                 </div>
 
                 <div class="article__footer">
                     <div class="article__tags">
-                        <span class="tag">{category}</span>
+                        <span class="tag">{article_data.get('category', '')}</span>
                         <span class="tag">Trends</span>
                         <span class="tag">News</span>
                     </div>
@@ -283,151 +320,321 @@ def generate_html(article_data, content_html, slug):
     <script src="../js/articles.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        // Initialize article page with data from articles.json
-        document.addEventListener('DOMContentLoaded', async function() {{
-            // Wait for articles to load
-            await loadArticlesData();
-            // Initialize this specific article page
-            initializeArticlePage('{slug}');
+        // Update the article date display
+        document.addEventListener('DOMContentLoaded', function() {{
+            const articleDate = document.getElementById('article-date');
+            if (articleDate) {{
+                const date = new Date('{article_data.get('date', '')}');
+                const options = {{ year: 'numeric', month: 'long', day: 'numeric' }};
+                articleDate.textContent = date.toLocaleDateString('en-US', options);
+            }}
         }});
     </script>
 </body>
 </html>'''
     
-    return html_template
-
-def move_image(slug):
-    """Convert JPG to WebP and move image from temp to images folder"""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    temp_image_path = os.path.join(script_dir, "..", "temp", "final.jpg")
-    target_image_path = os.path.join(script_dir, "..", "images", f"{slug}.webp")
-    
-    if os.path.exists(temp_image_path):
-        try:
-            # Ensure the images directory exists
-            images_dir = os.path.dirname(target_image_path)
-            os.makedirs(images_dir, exist_ok=True)
-            
-            # Open the JPG image
-            with Image.open(temp_image_path) as img:
-                # Convert and save as WebP
-                img.save(target_image_path, "WEBP", quality=85, optimize=True)
-            
-            # Remove the original JPG file from temp
-            os.remove(temp_image_path)
-            
-            print(f"Image converted to WebP and moved to: {target_image_path}")
-            return True
-        except Exception as e:
-            print(f"Error converting image: {e}")
-            return False
-    else:
-        print(f"Warning: Image not found at {temp_image_path}")
+    # Save the HTML file
+    html_path = os.path.join(PROJECT_ROOT, 'articles', f'{article_id}.html')
+    try:
+        with open(html_path, 'w', encoding='utf-8') as f:
+            f.write(html_template)
+        print(f"Generated HTML file: {article_id}.html")
+        return True
+    except Exception as e:
+        print(f"Error writing HTML file: {e}")
         return False
 
-def update_articles_json(article_data, slug):
-    """Update articles.json with new article entry"""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    articles_json_path = os.path.join(script_dir, "..", "json", "articles.json")
+def process_image_files(article_id):
+    """Rename temp/final.jpg to temp/{id}.jpg, convert to webp, and copy to images/"""
+    if not article_id:
+        print("Error: No article ID provided")
+        return False
     
-    # Read existing articles
-    with open(articles_json_path, 'r', encoding='utf-8') as f:
-        articles = json.load(f)
-    
-    # Check if article with same ID already exists
-    existing_ids = [article['id'] for article in articles]
-    if slug in existing_ids:
-        print(f"Article with ID '{slug}' already exists in articles.json. Skipping...")
-        return
-    
-    # Create new article entry
-    new_article = {
-        "id": slug,
-        "keyword": article_data['keyword'],
-        "title": article_data['gemini_title'],
-        "category": article_data['category'],
-        "date": article_data['date'],
-        "image": f"{slug}.webp",
-        "url": f"articles/{slug}.html",
-        "excerpt": article_data['excerpt'],
-        "featured": True  # Will be updated based on position
-    }
-    
-    # Insert at the beginning
-    articles.insert(0, new_article)
-    
-    # Update featured status - first 9 are featured
-    for i, article in enumerate(articles):
-        article['featured'] = i < 9
-    
-    # Write back to file
-    # Ensure the json directory exists
-    json_dir = os.path.dirname(articles_json_path)
-    os.makedirs(json_dir, exist_ok=True)
-    
-    with open(articles_json_path, 'w', encoding='utf-8') as f:
-        json.dump(articles, f, indent=4, ensure_ascii=False)
-    
-    print(f"Articles.json updated with new article: {slug}")
-
-def main():
-    """Main function to orchestrate the HTML generation process"""
-    # File paths (relative to script's parent directory)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    analysis_json_path = os.path.join(script_dir, "..", "temp", "article_analysis.json")
-    final_md_path = os.path.join(script_dir, "..", "temp", "final.md")
+    # Step 1: Rename temp/final.jpg to temp/{id}.jpg
+    source_jpg = os.path.join(PROJECT_ROOT, 'temp', 'final.jpg')
+    temp_jpg = os.path.join(PROJECT_ROOT, 'temp', f'{article_id}.jpg')
     
     try:
-        # Step 1: Read article analysis data
-        print("Reading article analysis data...")
-        with open(analysis_json_path, 'r', encoding='utf-8') as f:
-            article_data = json.load(f)
-        
-        # Step 2: Read markdown content
-        print("Reading markdown content...")
-        with open(final_md_path, 'r', encoding='utf-8') as f:
-            markdown_content = f.read()
-        
-        # Step 3: Generate slug from title
-        slug = generate_slug(article_data['gemini_title'])
-        print(f"Generated slug: {slug}")
-        
-        # Step 4: Convert markdown to HTML
-        print("Converting markdown to HTML...")
-        content_html = markdown_to_html(markdown_content)
-        
-        # Step 5: Generate HTML file
-        print("Generating HTML file...")
-        html_content = generate_html(article_data, content_html, slug)
-        
-        # Write HTML file
-        html_file_path = os.path.join(script_dir, "..", "articles", f"{slug}.html")
-        
-        # Ensure the articles directory exists
-        articles_dir = os.path.dirname(html_file_path)
-        os.makedirs(articles_dir, exist_ok=True)
-        
-        with open(html_file_path, 'w', encoding='utf-8') as f:
-            f.write(html_content)
-        print(f"HTML file created: {html_file_path}")
-        
-        # Step 6: Move and rename image
-        print("Moving image...")
-        move_image(slug)
-        
-        # Step 7: Update articles.json
-        print("Updating articles.json...")
-        update_articles_json(article_data, slug)
-        
-        print("\n[SUCCESS] HTML generation completed successfully!")
-        print(f"[ARTICLE] Article URL: articles/{slug}.html")
-        print(f"[IMAGE] Image: images/{slug}.webp")
-        print(f"[JSON] JSON updated with new entry")
-        
+        if os.path.exists(source_jpg):
+            shutil.move(source_jpg, temp_jpg)
+            print(f"Renamed final.jpg to {article_id}.jpg")
+        else:
+            print("Error: temp/final.jpg not found")
+            return False
     except Exception as e:
-        print(f"[ERROR] Error: {str(e)}")
-        import traceback
-        traceback.print_exc()
+        print(f"Error renaming JPG file: {e}")
+        return False
+    
+    # Step 2: Convert temp/{id}.jpg to temp/{id}.webp
+    temp_webp = os.path.join(PROJECT_ROOT, 'temp', f'{article_id}.webp')
+    
+    try:
+        with Image.open(temp_jpg) as img:
+            # Convert to RGB if necessary (for JPEG compatibility)
+            if img.mode in ('RGBA', 'LA', 'P'):
+                img = img.convert('RGB')
+            
+            # Save as WebP with high quality
+            img.save(temp_webp, 'WEBP', quality=85, optimize=True)
+            print(f"Converted {article_id}.jpg to {article_id}.webp")
+    except Exception as e:
+        print(f"Error converting to WebP: {e}")
+        return False
+    
+    # Step 3: Copy temp/{id}.webp to images/{id}.webp
+    final_webp = os.path.join(PROJECT_ROOT, 'images', f'{article_id}.webp')
+    
+    try:
+        shutil.copy2(temp_webp, final_webp)
+        print(f"Copied {article_id}.webp to images folder")
+        return True
+    except Exception as e:
+        print(f"Error copying WebP to images folder: {e}")
+        return False
+
+def update_articles_json():
+    """Copy element from temp/keyword_selection.json to top of json/articles.json"""
+    # Read the new article data
+    keyword_selection_path = os.path.join(PROJECT_ROOT, 'temp', 'keyword_selection.json')
+    try:
+        with open(keyword_selection_path, 'r', encoding='utf-8') as f:
+            new_article = json.load(f)
+    except Exception as e:
+        print(f"Error reading keyword_selection.json: {e}")
+        return False
+    
+    # Read existing articles.json
+    articles_path = os.path.join(PROJECT_ROOT, 'json', 'articles.json')
+    try:
+        with open(articles_path, 'r', encoding='utf-8') as f:
+            articles = json.load(f)
+    except FileNotFoundError:
+        articles = []
+    except Exception as e:
+        print(f"Error reading articles.json: {e}")
+        return False
+    
+    # Check if article already exists (avoid duplicates)
+    article_exists = any(article.get('id') == new_article.get('id') for article in articles)
+    
+    if not article_exists:
+        # Add new article to the top of the list
+        articles.insert(0, new_article)
+        
+        # Save updated articles.json
+        try:
+            with open(articles_path, 'w', encoding='utf-8') as f:
+                json.dump(articles, f, indent=4, ensure_ascii=False)
+            print("Updated articles.json with new article")
+            return True
+        except Exception as e:
+            print(f"Error writing articles.json: {e}")
+            return False
+    else:
+        print("Article already exists in articles.json")
+        return True
+
+def update_featured_articles():
+    """Ensure only top 9 articles are featured in json/articles.json"""
+    articles_path = os.path.join(PROJECT_ROOT, 'json', 'articles.json')
+    
+    try:
+        with open(articles_path, 'r', encoding='utf-8') as f:
+            articles = json.load(f)
+    except Exception as e:
+        print(f"Error reading articles.json: {e}")
+        return False
+    
+    # Update featured status - only top 9 should be featured
+    for i, article in enumerate(articles):
+        if i < 9:
+            article['featured'] = True
+        else:
+            article['featured'] = False
+    
+    # Save updated articles.json
+    try:
+        with open(articles_path, 'w', encoding='utf-8') as f:
+            json.dump(articles, f, indent=4, ensure_ascii=False)
+        print("Updated featured articles (top 9 are now featured)")
+        return True
+    except Exception as e:
+        print(f"Error writing articles.json: {e}")
+        return False
+
+def clear_temp_folder():
+    """Clear all files from the temp folder"""
+    temp_folder = os.path.join(PROJECT_ROOT, 'temp')
+    
+    try:
+        for filename in os.listdir(temp_folder):
+            file_path = os.path.join(temp_folder, filename)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+                print(f"Removed: {filename}")
+        print("Temp folder cleared successfully")
+        return True
+    except Exception as e:
+        print(f"Error clearing temp folder: {e}")
+        return False
+
+def generate_sitemap():
+    """Generate sitemap.xml for Google Search Console"""
+    base_url = "https://omnitrends.github.io"
+    sitemap_content = ['<?xml version="1.0" encoding="UTF-8"?>']
+    sitemap_content.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+    
+    # Add index.html
+    sitemap_content.append('  <url>')
+    sitemap_content.append(f'    <loc>{base_url}/index.html</loc>')
+    sitemap_content.append(f'    <lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod>')
+    sitemap_content.append('    <changefreq>daily</changefreq>')
+    sitemap_content.append('    <priority>1.0</priority>')
+    sitemap_content.append('  </url>')
+    
+    # Add 404.html
+    sitemap_content.append('  <url>')
+    sitemap_content.append(f'    <loc>{base_url}/404.html</loc>')
+    sitemap_content.append(f'    <lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod>')
+    sitemap_content.append('    <changefreq>monthly</changefreq>')
+    sitemap_content.append('    <priority>0.1</priority>')
+    sitemap_content.append('  </url>')
+    
+    # Add pages from pages folder
+    pages_folder = os.path.join(PROJECT_ROOT, 'pages')
+    try:
+        for filename in os.listdir(pages_folder):
+            if filename.endswith('.html'):
+                sitemap_content.append('  <url>')
+                sitemap_content.append(f'    <loc>{base_url}/pages/{filename}</loc>')
+                sitemap_content.append(f'    <lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod>')
+                sitemap_content.append('    <changefreq>monthly</changefreq>')
+                sitemap_content.append('    <priority>0.5</priority>')
+                sitemap_content.append('  </url>')
+    except Exception as e:
+        print(f"Error reading pages folder: {e}")
+    
+    # Add articles from articles folder
+    articles_folder = os.path.join(PROJECT_ROOT, 'articles')
+    try:
+        for filename in os.listdir(articles_folder):
+            if filename.endswith('.html'):
+                sitemap_content.append('  <url>')
+                sitemap_content.append(f'    <loc>{base_url}/articles/{filename}</loc>')
+                sitemap_content.append(f'    <lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod>')
+                sitemap_content.append('    <changefreq>weekly</changefreq>')
+                sitemap_content.append('    <priority>0.8</priority>')
+                sitemap_content.append('  </url>')
+    except Exception as e:
+        print(f"Error reading articles folder: {e}")
+    
+    # Add category pages
+    category_folder = os.path.join(PROJECT_ROOT, 'category')
+    try:
+        for filename in os.listdir(category_folder):
+            if filename.endswith('.html'):
+                sitemap_content.append('  <url>')
+                sitemap_content.append(f'    <loc>{base_url}/category/{filename}</loc>')
+                sitemap_content.append(f'    <lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod>')
+                sitemap_content.append('    <changefreq>weekly</changefreq>')
+                sitemap_content.append('    <priority>0.6</priority>')
+                sitemap_content.append('  </url>')
+    except Exception as e:
+        print(f"Error reading category folder: {e}")
+    
+    sitemap_content.append('</urlset>')
+    
+    # Save sitemap.xml
+    sitemap_path = os.path.join(PROJECT_ROOT, 'sitemap.xml')
+    try:
+        with open(sitemap_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(sitemap_content))
+        print("Generated sitemap.xml successfully")
+        return True
+    except Exception as e:
+        print(f"Error writing sitemap.xml: {e}")
+        return False
+
+def generate_robots_txt():
+    """Generate robots.txt file"""
+    robots_content = [
+        "User-agent: *",
+        "Allow: /",
+        "",
+        "# Disallow temp and development files",
+        "Disallow: /temp/",
+        "Disallow: /.venv/",
+        "Disallow: /.github/",
+        "Disallow: /python/",
+        "",
+        "# Sitemap location",
+        "Sitemap: https://omnitrends.github.io/sitemap.xml"
+    ]
+    
+    robots_path = os.path.join(PROJECT_ROOT, 'robots.txt')
+    try:
+        with open(robots_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(robots_content))
+        print("Generated robots.txt successfully")
+        return True
+    except Exception as e:
+        print(f"Error writing robots.txt: {e}")
+        return False
+
+def main():
+    """Main function to execute all steps"""
+    print("Starting HTML generation process...")
+    
+    # Step 1: Read ID from keyword_selection.json
+    article_id = read_id_from_keyword_selection()
+    if not article_id:
+        print("Failed to read article ID. Exiting.")
+        return False
+    
+    print(f"Processing article: {article_id}")
+    
+    # Step 2: Rename final.md to {id}.md
+    if not rename_final_md_to_id(article_id):
+        print("Failed to rename markdown file. Exiting.")
+        return False
+    
+    # Step 3: Generate HTML from markdown
+    if not generate_html_from_markdown(article_id):
+        print("Failed to generate HTML file. Exiting.")
+        return False
+    
+    # Step 4: Process image files
+    if not process_image_files(article_id):
+        print("Failed to process image files. Exiting.")
+        return False
+    
+    # Step 5: Update articles.json
+    if not update_articles_json():
+        print("Failed to update articles.json. Exiting.")
+        return False
+    
+    # Step 6: Update featured articles (only top 9)
+    if not update_featured_articles():
+        print("Failed to update featured articles. Exiting.")
+        return False
+    
+    # Step 7: Generate sitemap.xml
+    if not generate_sitemap():
+        print("Failed to generate sitemap.xml. Exiting.")
+        return False
+    
+    # Step 8: Generate robots.txt
+    if not generate_robots_txt():
+        print("Failed to generate robots.txt. Exiting.")
+        return False
+    
+    # Step 9: Clear temp folder
+    if not clear_temp_folder():
+        print("Failed to clear temp folder. Exiting.")
+        return False
+    
+    print("HTML generation process completed successfully!")
+    return True
 
 if __name__ == "__main__":
     main()

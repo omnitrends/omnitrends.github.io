@@ -2,250 +2,129 @@ name: Content Generator
 
 on:
   schedule:
-    # Run every 4 hours
-    - cron: '0 */3 * * *'
-  workflow_dispatch:
-    # Allow manual trigger
+    - cron: '0 */3 * * *'  # Runs every 3 hours
+  workflow_dispatch:  # Allow manual triggering
+
+permissions:
+  contents: write  # Needed to commit and push changes
 
 jobs:
   generate-content:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.PAT_TOKEN }}
-        fetch-depth: 0
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y wget unzip xvfb
-        
-        # Install Chrome
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-
-    - name: Setup ChromeDriver
-      run: |
-        # ChromeDriver will be automatically managed by webdriver-manager in the Python scripts
-        # Just ensure Chrome is available and add it to PATH
-        which google-chrome || echo "Chrome not found"
-        google-chrome --version
-
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r python/requirements.txt
-        
-    - name: Verify and fix Google Generative AI installation
-      run: |
-        # Try to import the packages
-        if ! python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')" 2>/dev/null; then
-          echo "Initial import failed, trying to reinstall..."
-          pip uninstall -y google-generativeai google-genai google-ai-generativelanguage
-          pip install --no-cache-dir google-generativeai>=0.8.5
-          pip install --no-cache-dir google-ai-generativelanguage>=0.6.15
-          pip install --no-cache-dir google-genai>=1.27.0
-        fi
-        
-        # Verify installations
-        python -c "import google.generativeai as genai; print('Google Generative AI imported successfully')"
-        python -c "from google import genai; print('Google GenAI client imported successfully')" || echo "Google GenAI client import failed - will fallback to original images"
-        pip show google-generativeai
-        pip show google-genai
-
-    - name: Set up environment variables
-      run: |
-        echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
-
-    - name: Create and verify temp directory
-      run: |
-        mkdir -p temp
-        echo "Temp directory created"
-        ls -la temp/
-        echo "Current working directory: $(pwd)"
-        echo "Directory structure:"
-        find . -type d -name temp -exec ls -la {} \;
-
-    - name: Configure Git
-      run: |
-        git config --global user.name "Content Generator Bot"
-        git config --global user.email "action@github.com"
-
-    - name: Pull latest changes
-      run: |
-        git pull origin main
-
-    - name: Run trends_check.py
-      run: |
-        python python/trends_check.py
-        echo "trends_check.py completed"
-        echo "=== Workspace status after trends_check ==="
-        ls -la temp/ || echo "temp directory not found"
-        pwd
-      env:
-        DISPLAY: :99
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
-
-
-    - name: Run search_articles.py
-      run: |
-        echo "=== Workspace status before search_articles ==="
-        ls -la temp/ || echo "temp directory not found"
-        python python/search_articles.py
-        echo "search_articles.py completed"
-        echo "=== Workspace status after search_articles ==="
-        ls -la temp/ || echo "temp directory not found"
-        if [ -f "temp/article_analysis.json" ]; then
-          echo "article_analysis.json created successfully"
-          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
-          head -10 temp/article_analysis.json
-        else
-          echo "ERROR: article_analysis.json not found!"
-          exit 1
-        fi
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
-    - name: Upload temp directory as artifact (after search_articles)
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: temp-after-search-articles
-        path: temp/
-        retention-days: 1
-
-    - name: Verify temp directory persistence
-      run: |
-        echo "=== Verifying temp directory persistence ==="
-        ls -la temp/ || echo "temp directory not found"
-        if [ -f "temp/article_analysis.json" ]; then
-          echo "✓ article_analysis.json still exists"
-          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
-          echo "File content preview:"
-          head -5 temp/article_analysis.json
-        else
-          echo "✗ article_analysis.json missing!"
-          echo "This indicates a workspace persistence issue."
-          echo "Current directory contents:"
-          ls -la
-          echo "Temp directory status:"
-          ls -la temp/ || echo "temp directory does not exist"
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg unzip
           
-          # Create temp directory if it doesn't exist
+          # Install Chrome
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium webdriver-manager python-dotenv google-genai pillow markdown
+
+      - name: Create temp directory
+        run: |
           mkdir -p temp
-          
-          # This shouldn't happen in the same job, but if it does, we need to fail
-          echo "ERROR: Workspace persistence failed. This should not happen within the same job."
-          exit 1
-        fi
 
-    - name: Run content_generator.py
-      run: |
-        echo "=== Workspace status before content_generator ==="
-        ls -la temp/ || echo "temp directory not found"
-        if [ -f "temp/article_analysis.json" ]; then
-          echo "✓ article_analysis.json found, proceeding with content generation"
-          echo "File size: $(stat -c%s temp/article_analysis.json) bytes"
-        else
-          echo "✗ ERROR: article_analysis.json not found!"
-          echo "Current directory contents:"
-          ls -la
-          echo "Temp directory contents:"
-          ls -la temp/ || echo "temp directory does not exist"
-          exit 1
-        fi
-        python python/content_generator.py
-        echo "content_generator.py completed"
-        echo "=== Workspace status after content_generator ==="
-        ls -la temp/ || echo "temp directory not found"
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
-    - name: Upload temp directory as artifact (after content_generator)
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: temp-after-content-generator
-        path: temp/
-        retention-days: 1
+      - name: Pull latest changes
+        run: |
+          git pull origin main
 
-    - name: Run html_generator.py
-      run: |
-        echo "=== Workspace status before html_generator ==="
-        ls -la temp/ || echo "temp directory not found"
-        python python/html_generator.py
-        echo "html_generator.py completed"
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Run trends check
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running trends_check.py..."
+          python python/trends_check.py
+        continue-on-error: false
 
-    - name: Run clear_temp.py
-      run: |
-        echo "=== Workspace status before clear_temp ==="
-        ls -la temp/ || echo "temp directory not found"
-        python python/clear_temp.py
-        echo "clear_temp.py completed"
-        echo "=== Workspace status after clear_temp ==="
-        ls -la temp/ || echo "temp directory not found"
+      - name: Run keyword selection
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running keyword_selection.py..."
+          python python/keyword_selection.py
+        continue-on-error: false
 
-    - name: Run sitemap_generator.py
-      run: |
-        python python/sitemap_generator.py
-        echo "sitemap_generator.py completed"
+      - name: Run content generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running content_generator.py..."
+          python python/content_generator.py
+        continue-on-error: false
 
-    - name: Check for changes and commit
-      id: check_changes
-      run: |
-        git add -A
-        if git diff --staged --quiet; then
-          echo "changes=false" >> $GITHUB_OUTPUT
-          echo "No changes to commit"
-        else
-          echo "changes=true" >> $GITHUB_OUTPUT
-          echo "Changes detected, preparing to commit"
-          git status --porcelain
-        fi
+      - name: Run image generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running image_generator.py..."
+          python python/image_generator.py
+        continue-on-error: false
 
-    - name: Commit and push all changes
-      if: steps.check_changes.outputs.changes == 'true'
-      run: |
-        git commit -m "Auto-generated content update - $(date '+%Y-%m-%d %H:%M:%S')"
-        git push origin main
-        echo "All changes committed and pushed successfully"
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Run HTML generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running html_generator.py..."
+          python python/html_generator.py
+        continue-on-error: false
 
-    - name: Upload final workspace as artifact
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: final-workspace
-        path: |
-          temp/
-          articles/
-          json/
-          images/
-          category/
-          index.html
-          sitemap.xml
-        retention-days: 7
+      - name: Check for changes
+        id: check-changes
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
 
-    - name: Final status check
-      run: |
-        echo "Content generation workflow completed successfully!"
-        if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
-          echo "Changes were committed and pushed to the repository."
-        else
-          echo "No changes were made to the repository."
-        fi
-        echo "Artifacts have been uploaded for debugging purposes."
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git commit -m "Auto-generated content: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+
+      - name: Clean up temp files
+        if: always()
+        run: |
+          # Keep temp directory but clean up temporary files if needed
+          # This ensures workspace persistence between steps while cleaning up
+          echo "Cleaning up completed"
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          if [ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]; then
+            echo "✅ Content generation completed successfully with changes"
+            echo "📝 New content has been generated and published"
+          else
+            echo "ℹ️ Content generation completed but no changes were made"
+            echo "🔄 No new content was needed at this time"
+          fi

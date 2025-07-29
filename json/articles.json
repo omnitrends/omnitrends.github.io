@@ -1,5 +1,38 @@
 [
     {
+        "id": "ana-de-armas-why-her-latest-action-shocks-india",
+        "keyword": "ana de armas",
+        "title": "Ana de Armas: Why Her Latest Action Shocks India",
+        "category": "Entertainment",
+        "date": "30 July 2025",
+        "image": "ana-de-armas-why-her-latest-action-shocks-india.webp",
+        "url": "articles/ana-de-armas-why-her-latest-action-shocks-india.html",
+        "excerpt": "Ana de Armas' shocking social media action involving Nicole Kidman amid Tom Cruise romance has India stunned. Know more!",
+        "featured": true
+    },
+    {
+        "id": "kyunki-saas-bhi-kabhi-bahu-thi-india-awaits-tulsis-return",
+        "keyword": "kyunki saas bhi kabhi bahu thi",
+        "title": "Kyunki Saas Bhi Kabhi Bahu Thi: India Awaits Tulsi's Return!",
+        "category": "Entertainment",
+        "date": "30 July 2025",
+        "image": "kyunki-saas-bhi-kabhi-bahu-thi-india-awaits-tulsis-return.webp",
+        "url": "articles/kyunki-saas-bhi-kabhi-bahu-thi-india-awaits-tulsis-return.html",
+        "excerpt": "India celebrates as Kyunki Saas Bhi Kabhi Bahu Thi returns after 25 years on Star Plus and JioCinema, reuniting fans with Tulsi Virani. Will this reboot reshape Indian television?",
+        "featured": true
+    },
+    {
+        "id": "australia-champions-vs-pakistan-indias-fiery-flashback-explored",
+        "keyword": "australia champions vs pakistan",
+        "title": "Australia Champions vs Pakistan: India's Fiery Flashback Explored.",
+        "category": "Sports",
+        "date": "30 July 2025",
+        "image": "australia-champions-vs-pakistan-indias-fiery-flashback-explored.webp",
+        "url": "articles/australia-champions-vs-pakistan-indias-fiery-flashback-explored.html",
+        "excerpt": "Indian fans are buzzing over recent World Championship of Legends matches. Why are results involving \"australia champions vs pakistan\" igniting fiery flashbacks? Discover the full story!",
+        "featured": true
+    },
+    {
         "id": "godfrey-phillips-bonus-shares-essential-info-for-indians",
         "keyword": "godfrey phillips bonus shares",
         "title": "Godfrey Phillips Bonus Shares: Essential Info For Indians",
@@ -74,7 +107,7 @@
         "image": "understanding-avatar-a-guide-for-indians.webp",
         "url": "articles/understanding-avatar-a-guide-for-indians.html",
         "excerpt": "\"Avatar\" captivated India, breaking box office records and touching millions. Ever wondered why Pandora's world resonated so deeply with Indian audiences?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "how-bengaluru-affects-indian-families-today",
@@ -85,7 +118,7 @@
         "image": "how-bengaluru-affects-indian-families-today.webp",
         "url": "articles/how-bengaluru-affects-indian-families-today.html",
         "excerpt": "Bengaluru offers big dreams, but how does its unique rhythm impact your family life? Explore the real costs, from finances to family dynamics, and how Indian families are adapting.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "understanding-zimbabwe-women-vs-ireland-women-a-guide-for-indians",
@@ -96,6 +129,6 @@
         "image": "understanding-zimbabwe-women-vs-ireland-women-a-guide-for-indians.webp",
         "url": "articles/understanding-zimbabwe-women-vs-ireland-women-a-guide-for-indians.html",
         "excerpt": "Why is India watching Zimbabwe vs Ireland women's cricket? It's more than just a match; it highlights our incredible global passion and the rise of women's sport!",
-        "featured": true
+        "featured": false
     }
 ]

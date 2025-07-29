@@ -19,6 +19,12 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import json
 from datetime import datetime
+import os
+
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Get the project root directory (parent of python directory)
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
 # Fix Unicode output issues on Windows
 if sys.platform == "win32":
@@ -304,11 +310,9 @@ class GoogleTrendsScraper:
             "trends": json_trends
         }
         
-        # Save to json folder (relative to script's parent directory)
-        import os
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        json_folder_path = os.path.join(script_dir, "..", "json")
-        full_path = os.path.join(json_folder_path, filename)
+        # Save to temp folder using absolute path
+        temp_folder_path = os.path.join(PROJECT_ROOT, "temp")
+        full_path = os.path.join(temp_folder_path, filename)
         
         try:
             with open(full_path, 'w', encoding='utf-8') as f:
