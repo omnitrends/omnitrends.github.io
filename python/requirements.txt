@@ -1,0 +1,26 @@
+# Requirements for OmniTrends Python Scripts
+# Generated based on all Python scripts in the python folder
+
+# Google Generative AI SDK
+# Used in: content_generator.py, image_generator.py
+google-genai>=0.8.0
+
+# Environment variables management
+# Used in: content_generator.py, image_generator.py
+python-dotenv>=1.0.0
+
+# Image processing library
+# Used in: html_generator.py, image_generator.py
+Pillow>=10.0.0
+
+# Markdown to HTML conversion
+# Used in: html_generator.py
+markdown>=3.5.0
+
+# Web scraping and browser automation
+# Used in: trends_check.py
+selenium>=4.15.0
+
+# Automatic ChromeDriver management
+# Used in: trends_check.py
+webdriver-manager>=4.0.0
