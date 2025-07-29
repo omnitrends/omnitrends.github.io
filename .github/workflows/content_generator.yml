@@ -40,9 +40,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install selenium webdriver-manager python-dotenv google-genai pillow markdown
 
-      - name: Create temp directory
+      - name: Create required directories
         run: |
           mkdir -p temp
+          mkdir -p articles
+          mkdir -p images
 
       - name: Configure Git
         run: |

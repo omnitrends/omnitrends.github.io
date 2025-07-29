@@ -333,6 +333,10 @@ def generate_html_from_markdown(article_id):
 </body>
 </html>'''
     
+    # Ensure articles directory exists
+    articles_dir = os.path.join(PROJECT_ROOT, 'articles')
+    os.makedirs(articles_dir, exist_ok=True)
+    
     # Save the HTML file
     html_path = os.path.join(PROJECT_ROOT, 'articles', f'{article_id}.html')
     try:
@@ -382,6 +386,10 @@ def process_image_files(article_id):
         return False
     
     # Step 3: Copy temp/{id}.webp to images/{id}.webp
+    # Ensure images directory exists
+    images_dir = os.path.join(PROJECT_ROOT, 'images')
+    os.makedirs(images_dir, exist_ok=True)
+    
     final_webp = os.path.join(PROJECT_ROOT, 'images', f'{article_id}.webp')
     
     try:
@@ -422,6 +430,10 @@ def update_articles_json():
         articles.insert(0, new_article)
         
         # Save updated articles.json
+        # Ensure json directory exists
+        json_dir = os.path.join(PROJECT_ROOT, 'json')
+        os.makedirs(json_dir, exist_ok=True)
+        
         try:
             with open(articles_path, 'w', encoding='utf-8') as f:
                 json.dump(articles, f, indent=4, ensure_ascii=False)
@@ -453,6 +465,10 @@ def update_featured_articles():
             article['featured'] = False
     
     # Save updated articles.json
+    # Ensure json directory exists
+    json_dir = os.path.join(PROJECT_ROOT, 'json')
+    os.makedirs(json_dir, exist_ok=True)
+    
     try:
         with open(articles_path, 'w', encoding='utf-8') as f:
             json.dump(articles, f, indent=4, ensure_ascii=False)
