@@ -1,0 +1,267 @@
+{
+  "sitemap": {
+    "generated": "2025-07-31T09:10:22+00:00",
+    "base_url": "https://omnitrends.github.io",
+    "total_urls": 30,
+    "urls": [
+      {
+        "loc": "https://omnitrends.github.io/",
+        "lastmod": "2025-07-27",
+        "changefreq": "daily",
+        "priority": 1.0,
+        "type": "homepage"
+      },
+      {
+        "loc": "https://omnitrends.github.io/pages/about.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "monthly",
+        "priority": 0.8,
+        "type": "page"
+      },
+      {
+        "loc": "https://omnitrends.github.io/pages/contact.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.7,
+        "type": "page"
+      },
+      {
+        "loc": "https://omnitrends.github.io/pages/privacy.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "yearly",
+        "priority": 0.5,
+        "type": "page"
+      },
+      {
+        "loc": "https://omnitrends.github.io/pages/terms.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "yearly",
+        "priority": 0.5,
+        "type": "page"
+      },
+      {
+        "loc": "https://omnitrends.github.io/pages/disclaimer.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "yearly",
+        "priority": 0.5,
+        "type": "page"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/technology.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Technology"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/lifestyle.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Lifestyle"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/business.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Business"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/innovation.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Innovation"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/news.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "News"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/health.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Health"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/entertainment.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Entertainment"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/finance.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Finance"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/science.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Science"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/travel.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Travel"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/food.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Food"
+      },
+      {
+        "loc": "https://omnitrends.github.io/category/sports.html",
+        "lastmod": "2025-07-27",
+        "changefreq": "weekly",
+        "priority": 0.8,
+        "type": "category",
+        "category_name": "Sports"
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/sensex-plunges-trump-tariffs-rock-indian-markets.html",
+        "lastmod": "2025-07-31",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Sensex Plunges: Trump Tariffs Rock Indian Markets!",
+        "category": "Finance",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown.html",
+        "lastmod": "2025-07-31",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Man United vs Bournemouth: Indian Fans Brace for Summer Series Showdown!",
+        "category": "Sports",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/messi-magic-returns-inter-miami-vs-atlas-battle.html",
+        "lastmod": "2025-07-31",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Messi Magic Returns: inter miami vs atlas Battle!",
+        "category": "Sports",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/cbse-class-10-sample-paper-ace-boards-with-new-pattern.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "CBSE Class 10 Sample Paper: Ace Boards with New Pattern!",
+        "category": "News",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/sportfreunde-siegen-vs-dortmund-india-awaits-football-thriller.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Sportfreunde Siegen vs Dortmund: India Awaits Football Thriller.",
+        "category": "Sports",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/trumps-india-shock-tariffs-imposed-trade-war-looms.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Trump's India Shock: Tariffs Imposed, Trade War Looms!",
+        "category": "Business",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/matt-henrys-magic-india-hails-new-zealands-match-winner.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "Matt Henry's Magic: India Hails New Zealand's Match-Winner!",
+        "category": "Sports",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/india-safe-russia-earthquakes-tsunami-warning-no-indian-ocean-threat.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "India Safe: russia earthquakes tsunami warning No Indian Ocean Threat.",
+        "category": "News",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/indias-coastal-calm-no-tsunami-threat-after-russia-quake.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.9,
+        "type": "article",
+        "title": "India's Coastal Calm: No Tsunami Threat After Russia Quake.",
+        "category": "News",
+        "featured": true
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/lottery-sambad-dreams-or-rupees-check-todays-winners.html",
+        "lastmod": "2025-07-30",
+        "changefreq": "monthly",
+        "priority": 0.7,
+        "type": "article",
+        "title": "Lottery Sambad: Dreams or Rupees? Check Today's Winners!",
+        "category": "News",
+        "featured": false
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/indias-wcl-2025-points-table-shock-semis-qualification.html",
+        "lastmod": "2025-07-29",
+        "changefreq": "monthly",
+        "priority": 0.7,
+        "type": "article",
+        "title": "India's WCL 2025 Points Table Shock: Semis Qualification!",
+        "category": "Sports",
+        "featured": false
+      },
+      {
+        "loc": "https://omnitrends.github.io/articles/oppo-reno-14-pro-5g-price-shocks-india-heres-why.html",
+        "lastmod": "2025-07-29",
+        "changefreq": "monthly",
+        "priority": 0.7,
+        "type": "article",
+        "title": "Oppo Reno 14 Pro 5G Price Shocks India: Here's Why!",
+        "category": "Technology",
+        "featured": false
+      }
+    ]
+  }
+}
