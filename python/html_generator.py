@@ -575,7 +575,6 @@ def generate_robots_txt():
     """Generate robots.txt file"""
     robots_content = [
         "User-agent: *",
-        "Allow: /",
         "",
         "# Disallow temp and development files",
         "Disallow: /temp/",
@@ -583,6 +582,7 @@ def generate_robots_txt():
         "Disallow: /.github/",
         "Disallow: /python/",
         "",
+        "Allow: /",
         "# Sitemap location",
         "Sitemap: https://omnitrends.github.io/sitemap.xml"
     ]
