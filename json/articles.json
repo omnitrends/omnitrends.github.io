@@ -1,5 +1,16 @@
 [
     {
+        "id": "man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown",
+        "keyword": "man united vs bournemouth",
+        "title": "Man United vs Bournemouth: Indian Fans Brace for Summer Series Showdown!",
+        "category": "Sports",
+        "date": "31 July 2025",
+        "image": "man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown.webp",
+        "url": "articles/man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown.html",
+        "excerpt": "Indian fans are buzzing for the Man United vs Bournemouth clash in the Premier League Summer Series. Tune in at 7 AM IST!",
+        "featured": true
+    },
+    {
         "id": "messi-magic-returns-inter-miami-vs-atlas-battle",
         "keyword": "inter miami vs atlas",
         "title": "Messi Magic Returns: inter miami vs atlas Battle!",
@@ -96,7 +107,7 @@
         "image": "indias-wcl-2025-points-table-shock-semis-qualification.webp",
         "url": "articles/indias-wcl-2025-points-table-shock-semis-qualification.html",
         "excerpt": "India's dramatic turnaround in the WCL 2025 points table has stunned fans, securing their semis spot! How did India, initially at the bottom, achieve this incredible feat?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "oppo-reno-14-pro-5g-price-shocks-india-heres-why",
