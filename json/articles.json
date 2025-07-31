@@ -1,5 +1,16 @@
 [
     {
+        "id": "india-vs-eng-oval-decider-hype-builds",
+        "keyword": "eng vs ind",
+        "title": "India vs Eng: Oval Decider Hype Builds!",
+        "category": "Sports",
+        "date": "31 July 2025",
+        "image": "india-vs-eng-oval-decider-hype-builds.webp",
+        "url": "articles/india-vs-eng-oval-decider-hype-builds.html",
+        "excerpt": "Oval hosts the eng vs ind series decider! Cricket fever grips India as the final Test promises an epic showdown. Will India make history?",
+        "featured": true
+    },
+    {
         "id": "sensex-plunges-trump-tariffs-rock-indian-markets",
         "keyword": "sensex",
         "title": "Sensex Plunges: Trump Tariffs Rock Indian Markets!",
@@ -96,7 +107,7 @@
         "image": "indias-coastal-calm-no-tsunami-threat-after-russia-quake.webp",
         "url": "articles/indias-coastal-calm-no-tsunami-threat-after-russia-quake.html",
         "excerpt": "A powerful Russia quake sparked global tsunami alerts. India's coastal regions, however, remain calm with no threat. Why are experts so confident?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "lottery-sambad-dreams-or-rupees-check-todays-winners",
