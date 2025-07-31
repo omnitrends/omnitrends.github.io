@@ -1,0 +1,9 @@
+# Force XML files to be served with correct MIME type
+<Files "sitemap.xml">
+    ForceType application/xml
+</Files>
+
+# Set proper headers for XML files
+<FilesMatch "\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+</FilesMatch>
