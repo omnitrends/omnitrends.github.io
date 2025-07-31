@@ -1,5 +1,16 @@
 [
     {
+        "id": "sensex-plunges-trump-tariffs-rock-indian-markets",
+        "keyword": "sensex",
+        "title": "Sensex Plunges: Trump Tariffs Rock Indian Markets!",
+        "category": "Finance",
+        "date": "31 July 2025",
+        "image": "sensex-plunges-trump-tariffs-rock-indian-markets.webp",
+        "url": "articles/sensex-plunges-trump-tariffs-rock-indian-markets.html",
+        "excerpt": "Trump tariffs hit hard! Sensex plunges, shaking investor confidence. Dive into the economic turmoil. What's next for Indian markets?",
+        "featured": true
+    },
+    {
         "id": "man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown",
         "keyword": "man united vs bournemouth",
         "title": "Man United vs Bournemouth: Indian Fans Brace for Summer Series Showdown!",
@@ -96,7 +107,7 @@
         "image": "lottery-sambad-dreams-or-rupees-check-todays-winners.webp",
         "url": "articles/lottery-sambad-dreams-or-rupees-check-todays-winners.html",
         "excerpt": "Lottery Sambad results are eagerly awaited daily, offering a chance at Rs 1 Crore across India's 13 legal lottery states. Check today's winning numbers now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "indias-wcl-2025-points-table-shock-semis-qualification",
