@@ -1,5 +1,16 @@
 [
     {
+        "id": "messi-magic-returns-inter-miami-vs-atlas-battle",
+        "keyword": "inter miami vs atlas",
+        "title": "Messi Magic Returns: inter miami vs atlas Battle!",
+        "category": "Sports",
+        "date": "31 July 2025",
+        "image": "messi-magic-returns-inter-miami-vs-atlas-battle.webp",
+        "url": "articles/messi-magic-returns-inter-miami-vs-atlas-battle.html",
+        "excerpt": "Indian fans eagerly anticipate the Inter Miami vs Atlas clash, streaming live at 5 AM IST. Lionel Messi's return after suspension sparks high interest. Don't miss the action!",
+        "featured": true
+    },
+    {
         "id": "cbse-class-10-sample-paper-ace-boards-with-new-pattern",
         "keyword": "cbse class 10 sample paper",
         "title": "CBSE Class 10 Sample Paper: Ace Boards with New Pattern!",
@@ -96,6 +107,6 @@
         "image": "oppo-reno-14-pro-5g-price-shocks-india-heres-why.webp",
         "url": "articles/oppo-reno-14-pro-5g-price-shocks-india-heres-why.html",
         "excerpt": "The Oppo Reno 14 Pro 5G price in India has stirred significant buzz, starting at ₹49,999. This premium segment launch with advanced cameras and performance is dominating discussions.",
-        "featured": true
+        "featured": false
     }
 ]
