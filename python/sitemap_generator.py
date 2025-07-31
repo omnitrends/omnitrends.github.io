@@ -73,15 +73,16 @@ def parse_article_date(date_string):
             # Parse the date
             parsed_date = datetime.strptime(date_string, '%d %B %Y')
             
-            # Convert to UTC timezone
-            parsed_date = parsed_date.replace(tzinfo=timezone.utc)
+            # Convert to UTC timezone and set to noon to avoid timezone issues
+            parsed_date = parsed_date.replace(hour=12, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
             
             return parsed_date.strftime('%Y-%m-%dT%H:%M:%S+00:00')
     except Exception:
         pass
     
-    # Fallback to current date
-    return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S+00:00')
+    # Fallback to current date at noon
+    current = datetime.now(timezone.utc).replace(hour=12, minute=0, second=0, microsecond=0)
+    return current.strftime('%Y-%m-%dT%H:%M:%S+00:00')
 
 def create_url_element(parent, loc, lastmod=None, changefreq=None, priority=None):
     """
@@ -131,15 +132,27 @@ def generate_sitemap():
     
     # 1. Add homepage (highest priority)
     index_path = os.path.join(PROJECT_ROOT, 'index.html')
-    index_lastmod = get_file_modification_date(index_path)
-    create_url_element(
-        urlset,
-        f"{BASE_URL}/",
-        lastmod=index_lastmod,
-        changefreq="daily",
-        priority=1.0
-    )
-    print("Added homepage to sitemap")
+    if os.path.exists(index_path):
+        index_lastmod = get_file_modification_date(index_path)
+        create_url_element(
+            urlset,
+            f"{BASE_URL}/",
+            lastmod=index_lastmod,
+            changefreq="daily",
+            priority=1.0
+        )
+        print("Added homepage to sitemap")
+    else:
+        # Add homepage even if file doesn't exist (for GitHub Pages)
+        current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S+00:00')
+        create_url_element(
+            urlset,
+            f"{BASE_URL}/",
+            lastmod=current_time,
+            changefreq="daily",
+            priority=1.0
+        )
+        print("Added homepage to sitemap (file not found, using current time)")
     
     # 2. Add main pages
     main_pages = [
@@ -235,7 +248,8 @@ def generate_sitemap():
     try:
         # Write with XML declaration and UTF-8 encoding
         with open(sitemap_path, 'wb') as f:
-            tree.write(f, encoding='utf-8', xml_declaration=True)
+            f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+            tree.write(f, encoding='utf-8', xml_declaration=False)
         
         print(f"\n✅ Sitemap successfully generated: {sitemap_path}")
         print(f"📊 Total URLs in sitemap: {len(urlset)}")
