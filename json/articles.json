@@ -1,5 +1,16 @@
 [
     {
+        "id": "fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic",
+        "keyword": "fc seoul vs barcelona",
+        "title": "FC Seoul vs Barcelona: Indian Fans Thrilled by Yamal Magic!",
+        "category": "Sports",
+        "date": "31 July 2025",
+        "image": "fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic.webp",
+        "url": "articles/fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic.html",
+        "excerpt": "Indian football fans are buzzing over FC Seoul vs Barcelona! Lamine Yamal's spectacular performance, including a brace and scoring in Messi's iconic No.10 shirt, captivated audiences. Don't miss the highlights!",
+        "featured": true
+    },
+    {
         "id": "india-vs-eng-oval-decider-hype-builds",
         "keyword": "eng vs ind",
         "title": "India vs Eng: Oval Decider Hype Builds!",
@@ -96,7 +107,7 @@
         "image": "india-safe-russia-earthquakes-tsunami-warning-no-indian-ocean-threat.webp",
         "url": "articles/india-safe-russia-earthquakes-tsunami-warning-no-indian-ocean-threat.html",
         "excerpt": "A recent Russia earthquake tsunami warning sparked concern, but Indian authorities confirm no threat to India or the Indian Ocean region. Stay informed.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "indias-coastal-calm-no-tsunami-threat-after-russia-quake",
