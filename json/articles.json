@@ -1,5 +1,16 @@
 [
     {
+        "id": "pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors",
+        "keyword": "pnb housing finance",
+        "title": "PNB Housing Finance Plummets: CEO Exit Shocks Indian Investors",
+        "category": "Finance",
+        "date": "01 August 2025",
+        "image": "pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors.webp",
+        "url": "articles/pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors.html",
+        "excerpt": "PNB Housing Finance shares plummeted post-CEO Girish Kousgi's unexpected exit. What does this leadership change mean for India's housing finance future?",
+        "featured": true
+    },
+    {
         "id": "shamar-joseph-why-india-cant-stop-talking-about-him",
         "keyword": "shamar joseph",
         "title": "Shamar Joseph: Why India Can't Stop Talking About Him.",
@@ -96,7 +107,7 @@
         "image": "messi-magic-returns-inter-miami-vs-atlas-battle.webp",
         "url": "articles/messi-magic-returns-inter-miami-vs-atlas-battle.html",
         "excerpt": "Indian fans eagerly anticipate the Inter Miami vs Atlas clash, streaming live at 5 AM IST. Lionel Messi's return after suspension sparks high interest. Don't miss the action!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "cbse-class-10-sample-paper-ace-boards-with-new-pattern",
