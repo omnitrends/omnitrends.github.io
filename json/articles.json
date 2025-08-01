@@ -1,5 +1,16 @@
 [
     {
+        "id": "shamar-joseph-why-india-cant-stop-talking-about-him",
+        "keyword": "shamar joseph",
+        "title": "Shamar Joseph: Why India Can't Stop Talking About Him.",
+        "category": "Sports",
+        "date": "01 August 2025",
+        "image": "shamar-joseph-why-india-cant-stop-talking-about-him.webp",
+        "url": "articles/shamar-joseph-why-india-cant-stop-talking-about-him.html",
+        "excerpt": "Shamar Joseph's inspiring journey and fiery Gabba heroics captivated India, earning him an IPL contract. What's next for this sensation?",
+        "featured": true
+    },
+    {
         "id": "pakistan-vs-west-indies-india-tunes-in",
         "keyword": "pakistan vs west indies",
         "title": "Pakistan vs West Indies: India Tunes In!",
@@ -96,7 +107,7 @@
         "image": "cbse-class-10-sample-paper-ace-boards-with-new-pattern.webp",
         "url": "articles/cbse-class-10-sample-paper-ace-boards-with-new-pattern.html",
         "excerpt": "CBSE Class 10 sample paper for 2025-26 exams is crucial, especially with the new biannual board exam system starting 2026. These papers reflect updated competency-based questions and revised marking schemes. Prepare strategically to ace your boards!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "sportfreunde-siegen-vs-dortmund-india-awaits-football-thriller",
