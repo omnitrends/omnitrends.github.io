@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omnitrends.github.io/sitemap-clean.xml
+Sitemap: https://omnitrends.github.io/sitemap.php
