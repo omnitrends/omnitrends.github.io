@@ -1,5 +1,16 @@
 [
     {
+        "id": "kalabhavan-navas-shocking-demise-rocks-indian-entertainment",
+        "keyword": "kalabhavan navas",
+        "title": "Kalabhavan Navas' Shocking Demise Rocks Indian Entertainment.",
+        "category": "Entertainment",
+        "date": "01 August 2025",
+        "image": "kalabhavan-navas-shocking-demise-rocks-indian-entertainment.webp",
+        "url": "articles/kalabhavan-navas-shocking-demise-rocks-indian-entertainment.html",
+        "excerpt": "The sudden passing of actor Kalabhavan Navas, 51, from a suspected heart attack at a Kochi hotel, has profoundly shocked the Indian entertainment industry. His demise, while filming, leaves fans and colleagues mourning. Discover more about his impactful legacy.",
+        "featured": true
+    },
+    {
         "id": "zak-crawley-sparks-india-fury-explosive-test-cricket-showdown",
         "keyword": "zak crawley",
         "title": "Zak Crawley Sparks India Fury: Explosive Test Cricket Showdown!",
@@ -96,7 +107,7 @@
         "image": "india-vs-eng-oval-decider-hype-builds.webp",
         "url": "articles/india-vs-eng-oval-decider-hype-builds.html",
         "excerpt": "Oval hosts the eng vs ind series decider! Cricket fever grips India as the final Test promises an epic showdown. Will India make history?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "sensex-plunges-trump-tariffs-rock-indian-markets",
