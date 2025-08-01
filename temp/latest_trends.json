@@ -1,0 +1,130 @@
+{
+  "timestamp": "2025-08-01T15:31:34.524414",
+  "location": "India",
+  "timeframe": "Last 4 hours",
+  "filter_criteria": "English language + Active status only",
+  "sort_order": "Descending by search volume",
+  "total_filtered_trends": 20,
+  "trends": [
+    {
+      "rank": 1,
+      "trend_name": "national awards 2025",
+      "search_volume": "20000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 2,
+      "trend_name": "harry brook",
+      "search_volume": "20000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 3,
+      "trend_name": "ollie pope",
+      "search_volume": "20000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 4,
+      "trend_name": "cbse result",
+      "search_volume": "10000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 5,
+      "trend_name": "rajesh kumar",
+      "search_volume": "5000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 6,
+      "trend_name": "coolie",
+      "search_volume": "5000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 7,
+      "trend_name": "bhagavanth kesari",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 8,
+      "trend_name": "housefull 5",
+      "search_volume": "2000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 9,
+      "trend_name": "mdsu",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 10,
+      "trend_name": "sitaare zameen par ott",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 11,
+      "trend_name": "surya grahan kab hai",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 12,
+      "trend_name": "leo",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 13,
+      "trend_name": "nasdaq",
+      "search_volume": "1000+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 14,
+      "trend_name": "siraj",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 15,
+      "trend_name": "son of sardar",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 16,
+      "trend_name": "ap dsc final key 2025",
+      "search_volume": "500+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 17,
+      "trend_name": "voter list 2025",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 18,
+      "trend_name": "2002 voter list",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 19,
+      "trend_name": "thammudu 2025 ott",
+      "search_volume": "200+",
+      "active_status": "Active"
+    },
+    {
+      "rank": 20,
+      "trend_name": "clat 2026 registration",
+      "search_volume": "200+",
+      "active_status": "Active"
+    }
+  ]
+}
