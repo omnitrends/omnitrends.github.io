@@ -1,5 +1,16 @@
 [
     {
+        "id": "pakistan-vs-west-indies-india-tunes-in",
+        "keyword": "pakistan vs west indies",
+        "title": "Pakistan vs West Indies: India Tunes In!",
+        "category": "Sports",
+        "date": "01 August 2025",
+        "image": "pakistan-vs-west-indies-india-tunes-in.webp",
+        "url": "articles/pakistan-vs-west-indies-india-tunes-in.html",
+        "excerpt": "Indian fans are keenly following the Pakistan vs West Indies series. Why? Indian Premier League stars and T20 World Cup implications make this series a must-watch!",
+        "featured": true
+    },
+    {
         "id": "champions-clash-south-africa-vs-australia-thriller-grips-india",
         "keyword": "south africa vs australia champions",
         "title": "Champions Clash: South Africa vs Australia Thriller Grips India!",
@@ -96,7 +107,7 @@
         "image": "sportfreunde-siegen-vs-dortmund-india-awaits-football-thriller.webp",
         "url": "articles/sportfreunde-siegen-vs-dortmund-india-awaits-football-thriller.html",
         "excerpt": "Indian football fans are buzzing over Sportfreunde Siegen vs Dortmund. Witness this exciting clash live; don't miss the European football action!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "trumps-india-shock-tariffs-imposed-trade-war-looms",
