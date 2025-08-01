@@ -1,5 +1,16 @@
 [
     {
+        "id": "zak-crawley-sparks-india-fury-explosive-test-cricket-showdown",
+        "keyword": "zak crawley",
+        "title": "Zak Crawley Sparks India Fury: Explosive Test Cricket Showdown!",
+        "category": "Sports",
+        "date": "01 August 2025",
+        "image": "zak-crawley-sparks-india-fury-explosive-test-cricket-showdown.webp",
+        "url": "articles/zak-crawley-sparks-india-fury-explosive-test-cricket-showdown.html",
+        "excerpt": "Zak Crawley's fiery on-field antics and record-breaking opening stands against India have sparked major debate. Will his aggressive approach continue?",
+        "featured": true
+    },
+    {
         "id": "adani-power-share-price-split-approved-why-it-dipped",
         "keyword": "adani power share price",
         "title": "Adani Power Share Price: Split Approved, Why It Dipped!",
@@ -96,7 +107,7 @@
         "image": "sensex-plunges-trump-tariffs-rock-indian-markets.webp",
         "url": "articles/sensex-plunges-trump-tariffs-rock-indian-markets.html",
         "excerpt": "Trump tariffs hit hard! Sensex plunges, shaking investor confidence. Dive into the economic turmoil. What's next for Indian markets?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "man-united-vs-bournemouth-indian-fans-brace-for-summer-series-showdown",
