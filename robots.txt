@@ -1,0 +1,11 @@
+User-agent: *
+
+# Disallow temp and development files
+Disallow: /temp/
+Disallow: /.venv/
+Disallow: /.github/
+Disallow: /python/
+
+Allow: /
+# Sitemap location
+Sitemap: https://omnitrends.github.io/sitemap.xml

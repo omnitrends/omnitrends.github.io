@@ -1,5 +1,16 @@
 [
     {
+        "id": "shah-rukh-khans-historic-national-film-awards-win-shocks-india",
+        "keyword": "shah rukh khan national film awards",
+        "title": "Shah Rukh Khan's Historic National Film Awards Win Shocks India!",
+        "category": "Entertainment",
+        "date": "01 August 2025",
+        "image": "shah-rukh-khans-historic-national-film-awards-win-shocks-india.webp",
+        "url": "articles/shah-rukh-khans-historic-national-film-awards-win-shocks-india.html",
+        "excerpt": "Shah Rukh Khan's historic first National Film Awards win for Jawan is trending, marking a monumental milestone after 33 years! Don't miss this incredible recognition.",
+        "featured": true
+    },
+    {
         "id": "kalabhavan-navas-shocking-demise-rocks-indian-entertainment",
         "keyword": "kalabhavan navas",
         "title": "Kalabhavan Navas' Shocking Demise Rocks Indian Entertainment.",
@@ -96,7 +107,7 @@
         "image": "fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic.webp",
         "url": "articles/fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic.html",
         "excerpt": "Indian football fans are buzzing over FC Seoul vs Barcelona! Lamine Yamal's spectacular performance, including a brace and scoring in Messi's iconic No.10 shirt, captivated audiences. Don't miss the highlights!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-vs-eng-oval-decider-hype-builds",
