@@ -1,5 +1,16 @@
 [
     {
+        "id": "pm-kisan-20th-installment-released-check-your-account-now",
+        "keyword": "pm kisan",
+        "title": "PM Kisan: 20th Installment Released! Check Your Account Now!",
+        "category": "Finance",
+        "date": "02 August 2025",
+        "image": "pm-kisan-20th-installment-released-check-your-account-now.webp",
+        "url": "articles/pm-kisan-20th-installment-released-check-your-account-now.html",
+        "excerpt": "Indian farmers rejoice! The 20th installment of PM Kisan is being released today, August 2, 2025, from Varanasi, directly benefitting nearly 10 crore farmers. Check your status now!",
+        "featured": true
+    },
+    {
         "id": "dow-jones-impact-indian-markets-brace-for-volatility",
         "keyword": "dow jones",
         "title": "Dow Jones Impact: Indian Markets Brace for Volatility.",
@@ -96,7 +107,7 @@
         "image": "champions-clash-south-africa-vs-australia-thriller-grips-india.webp",
         "url": "articles/champions-clash-south-africa-vs-australia-thriller-grips-india.html",
         "excerpt": "A thrilling South Africa vs Australia champions match has captivated Indian fans, with SA winning a semi-final nail-biter by 1 run! Don't miss the final clash.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "ibps-clerk-notification-2025-out-apply-now",
