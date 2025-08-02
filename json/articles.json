@@ -1,5 +1,16 @@
 [
     {
+        "id": "dow-jones-impact-indian-markets-brace-for-volatility",
+        "keyword": "dow jones",
+        "title": "Dow Jones Impact: Indian Markets Brace for Volatility.",
+        "category": "Finance",
+        "date": "02 August 2025",
+        "image": "dow-jones-impact-indian-markets-brace-for-volatility.webp",
+        "url": "articles/dow-jones-impact-indian-markets-brace-for-volatility.html",
+        "excerpt": "Dow Jones trends directly influence Indian markets. As global cues shift, will local indices hold steady? Track the impact!",
+        "featured": true
+    },
+    {
         "id": "shah-rukh-khans-historic-national-film-awards-win-shocks-india",
         "keyword": "shah rukh khan national film awards",
         "title": "Shah Rukh Khan's Historic National Film Awards Win Shocks India!",
@@ -96,7 +107,7 @@
         "image": "ibps-clerk-notification-2025-out-apply-now.webp",
         "url": "articles/ibps-clerk-notification-2025-out-apply-now.html",
         "excerpt": "The release of the IBPS Clerk Notification 2025 has ignited a nationwide buzz for banking aspirants. With 10277 Customer Service Associate vacancies in public sector banks, online applications open August 1st. Don't miss this massive career opportunity!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "fc-seoul-vs-barcelona-indian-fans-thrilled-by-yamal-magic",
