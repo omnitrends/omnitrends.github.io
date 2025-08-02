@@ -1,5 +1,16 @@
 [
     {
+        "id": "wcl-shocker-india-boycotts-sparks-outrage",
+        "keyword": "wcl",
+        "title": "WCL Shocker: India Boycotts, Sparks Outrage!",
+        "category": "Sports",
+        "date": "02 August 2025",
+        "image": "wcl-shocker-india-boycotts-sparks-outrage.webp",
+        "url": "articles/wcl-shocker-india-boycotts-sparks-outrage.html",
+        "excerpt": "India's shocking WCL boycott sparks nationwide outrage, igniting crucial questions about its implications. Find out why.",
+        "featured": true
+    },
+    {
         "id": "india-reacts-why-pak-vs-sa-final-ignites-passion",
         "keyword": "pak vs sa",
         "title": "India Reacts: Why pak vs sa Final Ignites Passion!",
@@ -96,7 +107,7 @@
         "image": "kalabhavan-navas-shocking-demise-rocks-indian-entertainment.webp",
         "url": "articles/kalabhavan-navas-shocking-demise-rocks-indian-entertainment.html",
         "excerpt": "The sudden passing of actor Kalabhavan Navas, 51, from a suspected heart attack at a Kochi hotel, has profoundly shocked the Indian entertainment industry. His demise, while filming, leaves fans and colleagues mourning. Discover more about his impactful legacy.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "zak-crawley-sparks-india-fury-explosive-test-cricket-showdown",
