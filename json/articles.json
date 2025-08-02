@@ -1,5 +1,16 @@
 [
     {
+        "id": "bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off",
+        "keyword": "bayern vs lyon",
+        "title": "Bayern vs Lyon: Indian Fans Erupt as Friendly Kicks Off!",
+        "category": "Sports",
+        "date": "02 August 2025",
+        "image": "bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.webp",
+        "url": "articles/bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.html",
+        "excerpt": "Indian fans are buzzing about the Bayern vs Lyon friendly, a highly anticipated pre-season clash at 7 PM IST today, featuring new signing Luis Díaz.",
+        "featured": true
+    },
+    {
         "id": "indias-hotstar-merger-what-this-means-for-you",
         "keyword": "hotstar",
         "title": "India's Hotstar Merger: What This Means For You.",
@@ -96,7 +107,7 @@
         "image": "adani-power-share-price-split-approved-why-it-dipped.webp",
         "url": "articles/adani-power-share-price-split-approved-why-it-dipped.html",
         "excerpt": "Adani Power share price dips after 1:5 split approval amid Q1 profit fall. What does this mean for your investment? Find out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors",
