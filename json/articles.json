@@ -1,5 +1,16 @@
 [
     {
+        "id": "indias-hotstar-merger-what-this-means-for-you",
+        "keyword": "hotstar",
+        "title": "India's Hotstar Merger: What This Means For You.",
+        "category": "Business",
+        "date": "02 August 2025",
+        "image": "indias-hotstar-merger-what-this-means-for-you.webp",
+        "url": "articles/indias-hotstar-merger-what-this-means-for-you.html",
+        "excerpt": "Hotstar's monumental merger with JioCinema to JioHotstar reshapes India's streaming landscape. Discover your new entertainment hub! What’s next for you?",
+        "featured": true
+    },
+    {
         "id": "juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash",
         "keyword": "juventus vs reggiana",
         "title": "Juventus vs Reggiana: Indian Fans Eye Today's Thrilling Pre-Season Clash!",
@@ -96,7 +107,7 @@
         "image": "pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors.webp",
         "url": "articles/pnb-housing-finance-plummets-ceo-exit-shocks-indian-investors.html",
         "excerpt": "PNB Housing Finance shares plummeted post-CEO Girish Kousgi's unexpected exit. What does this leadership change mean for India's housing finance future?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "shamar-joseph-why-india-cant-stop-talking-about-him",
