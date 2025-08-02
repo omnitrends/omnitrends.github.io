@@ -1,5 +1,16 @@
 [
     {
+        "id": "juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash",
+        "keyword": "juventus vs reggiana",
+        "title": "Juventus vs Reggiana: Indian Fans Eye Today's Thrilling Pre-Season Clash!",
+        "category": "Sports",
+        "date": "02 August 2025",
+        "image": "juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.webp",
+        "url": "articles/juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.html",
+        "excerpt": "Indian football fans eagerly anticipate the Juventus vs Reggiana pre-season friendly today, streaming free on Juventus.com at 2:30 PM IST. Don't miss the action!",
+        "featured": true
+    },
+    {
         "id": "pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today",
         "keyword": "pm kisan samman nidhi",
         "title": "PM Kisan Samman Nidhi: Big News! Farmers Get 20th Installment Today.",
@@ -96,7 +107,7 @@
         "image": "shamar-joseph-why-india-cant-stop-talking-about-him.webp",
         "url": "articles/shamar-joseph-why-india-cant-stop-talking-about-him.html",
         "excerpt": "Shamar Joseph's inspiring journey and fiery Gabba heroics captivated India, earning him an IPL contract. What's next for this sensation?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pakistan-vs-west-indies-india-tunes-in",
