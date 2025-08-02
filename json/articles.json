@@ -1,5 +1,16 @@
 [
     {
+        "id": "pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today",
+        "keyword": "pm kisan samman nidhi",
+        "title": "PM Kisan Samman Nidhi: Big News! Farmers Get 20th Installment Today.",
+        "category": "Finance",
+        "date": "02 August 2025",
+        "image": "pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.webp",
+        "url": "articles/pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.html",
+        "excerpt": "Farmers nationwide rejoice! The 20th PM Kisan Samman Nidhi installment, ₹20,500 crore for 9.7 crore farmers, is disbursed today by PM Modi from Varanasi. Are you a beneficiary? Check your status now!",
+        "featured": true
+    },
+    {
         "id": "pm-kisan-20th-installment-released-check-your-account-now",
         "keyword": "pm kisan",
         "title": "PM Kisan: 20th Installment Released! Check Your Account Now!",
@@ -96,7 +107,7 @@
         "image": "pakistan-vs-west-indies-india-tunes-in.webp",
         "url": "articles/pakistan-vs-west-indies-india-tunes-in.html",
         "excerpt": "Indian fans are keenly following the Pakistan vs West Indies series. Why? Indian Premier League stars and T20 World Cup implications make this series a must-watch!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "champions-clash-south-africa-vs-australia-thriller-grips-india",
