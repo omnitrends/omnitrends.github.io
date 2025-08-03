@@ -1,5 +1,16 @@
 [
     {
+        "id": "jamie-smith-englands-unstoppable-force-stuns-india-today",
+        "keyword": "jamie smith",
+        "title": "Jamie Smith: England's Unstoppable Force Stuns India Today!",
+        "category": "Sports",
+        "date": "03 August 2025",
+        "image": "jamie-smith-englands-unstoppable-force-stuns-india-today.webp",
+        "url": "articles/jamie-smith-englands-unstoppable-force-stuns-india-today.html",
+        "excerpt": "Jamie Smith's crucial unbeaten knock against India in the thrilling Oval Test keeps England’s hopes alive! Can he seal a famous victory?",
+        "featured": true
+    },
+    {
         "id": "harry-brooks-oval-blitz-indias-ipl-ban-backfires",
         "keyword": "harry brook",
         "title": "Harry Brook's Oval Blitz: India's IPL Ban Backfires!",
@@ -96,7 +107,7 @@
         "image": "bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.webp",
         "url": "articles/bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.html",
         "excerpt": "Indian fans are buzzing about the Bayern vs Lyon friendly, a highly anticipated pre-season clash at 7 PM IST today, featuring new signing Luis Díaz.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "indias-hotstar-merger-what-this-means-for-you",
