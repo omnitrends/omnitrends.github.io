@@ -1,5 +1,16 @@
 [
     {
+        "id": "son-heung-mins-final-tottenham-vs-newcastle-showdown",
+        "keyword": "tottenham vs newcastle",
+        "title": "Son Heung-min's Final Tottenham vs Newcastle Showdown!",
+        "category": "Sports",
+        "date": "03 August 2025",
+        "image": "son-heung-mins-final-tottenham-vs-newcastle-showdown.webp",
+        "url": "articles/son-heung-mins-final-tottenham-vs-newcastle-showdown.html",
+        "excerpt": "Indian fans are buzzing about Tottenham vs Newcastle. Son Heung-min's final Spurs game, a pre-season friendly in Seoul, makes it a must-watch event. Tune in!",
+        "featured": true
+    },
+    {
         "id": "neet-pg-2025-exam-concludes-results-awaited",
         "keyword": "neet pg 2025",
         "title": "NEET PG 2025: Exam Concludes, Results Awaited.",
@@ -96,7 +107,7 @@
         "image": "juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.webp",
         "url": "articles/juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.html",
         "excerpt": "Indian football fans eagerly anticipate the Juventus vs Reggiana pre-season friendly today, streaming free on Juventus.com at 2:30 PM IST. Don't miss the action!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today",
