@@ -1,5 +1,16 @@
 [
     {
+        "id": "man-united-vs-everton-india-awaits-summer-series-finale",
+        "keyword": "man united vs everton",
+        "title": "Man United vs Everton: India Awaits Summer Series Finale!",
+        "category": "Sports",
+        "date": "03 August 2025",
+        "image": "man-united-vs-everton-india-awaits-summer-series-finale.webp",
+        "url": "articles/man-united-vs-everton-india-awaits-summer-series-finale.html",
+        "excerpt": "Indian fans eagerly await the Man United vs Everton clash! Catch the Premier League Summer Series finale live, a crucial pre-season test for both clubs. Don't miss the action!",
+        "featured": true
+    },
+    {
         "id": "jamie-smith-englands-unstoppable-force-stuns-india-today",
         "keyword": "jamie smith",
         "title": "Jamie Smith: England's Unstoppable Force Stuns India Today!",
@@ -96,7 +107,7 @@
         "image": "india-reacts-why-pak-vs-sa-final-ignites-passion.webp",
         "url": "articles/india-reacts-why-pak-vs-sa-final-ignites-passion.html",
         "excerpt": "The WCL 2025 final, Pakistan Champions vs South Africa Champions, is sparking Indian interest. India Champions boycotted their semifinal against Pakistan due to geopolitical tensions, putting Pakistan directly in the final. This highlights national sentiment prioritising over sport. Witness the fallout.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off",
