@@ -1,5 +1,16 @@
 [
     {
+        "id": "neet-pg-2025-exam-concludes-results-awaited",
+        "keyword": "neet pg 2025",
+        "title": "NEET PG 2025: Exam Concludes, Results Awaited.",
+        "category": "Health",
+        "date": "03 August 2025",
+        "image": "neet-pg-2025-exam-concludes-results-awaited.webp",
+        "url": "articles/neet-pg-2025-exam-concludes-results-awaited.html",
+        "excerpt": "NEET PG 2025 exam concluded today. Indian medical aspirants eagerly await results by September 3, shaping crucial postgraduate admissions. Counselling details next.",
+        "featured": true
+    },
+    {
         "id": "feel-the-vibe-top-friendship-day-song-trends-rock-india",
         "keyword": "friendship day song",
         "title": "Feel the Vibe: Top friendship day song Trends Rock India.",
@@ -96,7 +107,7 @@
         "image": "pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.webp",
         "url": "articles/pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.html",
         "excerpt": "Farmers nationwide rejoice! The 20th PM Kisan Samman Nidhi installment, ₹20,500 crore for 9.7 crore farmers, is disbursed today by PM Modi from Varanasi. Are you a beneficiary? Check your status now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pm-kisan-20th-installment-released-check-your-account-now",
