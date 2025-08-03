@@ -1,5 +1,16 @@
 [
     {
+        "id": "alick-athanaze-indian-fans-react-to-rising-cricket-star",
+        "keyword": "alick athanaze",
+        "title": "Alick Athanaze: Indian Fans React to Rising Cricket Star",
+        "category": "Sports",
+        "date": "03 August 2025",
+        "image": "alick-athanaze-indian-fans-react-to-rising-cricket-star.webp",
+        "url": "articles/alick-athanaze-indian-fans-react-to-rising-cricket-star.html",
+        "excerpt": "Alick Athanaze's rising prominence against India, including a notable Test debut, is captivating Indian cricket fans. Will his talent shine in upcoming matches?",
+        "featured": true
+    },
+    {
         "id": "wcl-shocker-india-boycotts-sparks-outrage",
         "keyword": "wcl",
         "title": "WCL Shocker: India Boycotts, Sparks Outrage!",
@@ -96,7 +107,7 @@
         "image": "shah-rukh-khans-historic-national-film-awards-win-shocks-india.webp",
         "url": "articles/shah-rukh-khans-historic-national-film-awards-win-shocks-india.html",
         "excerpt": "Shah Rukh Khan's historic first National Film Awards win for Jawan is trending, marking a monumental milestone after 33 years! Don't miss this incredible recognition.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "kalabhavan-navas-shocking-demise-rocks-indian-entertainment",
