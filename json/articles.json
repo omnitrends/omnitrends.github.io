@@ -1,5 +1,16 @@
 [
     {
+        "id": "harry-brooks-oval-blitz-indias-ipl-ban-backfires",
+        "keyword": "harry brook",
+        "title": "Harry Brook's Oval Blitz: India's IPL Ban Backfires!",
+        "category": "Sports",
+        "date": "03 August 2025",
+        "image": "harry-brooks-oval-blitz-indias-ipl-ban-backfires.webp",
+        "url": "articles/harry-brooks-oval-blitz-indias-ipl-ban-backfires.html",
+        "excerpt": "Harry Brook's Oval masterclass makes India wonder. Did their IPL ban truly backfire, leaving fans wanting more? Explore the impact.",
+        "featured": true
+    },
+    {
         "id": "son-heung-mins-final-tottenham-vs-newcastle-showdown",
         "keyword": "tottenham vs newcastle",
         "title": "Son Heung-min's Final Tottenham vs Newcastle Showdown!",
@@ -96,7 +107,7 @@
         "image": "indias-hotstar-merger-what-this-means-for-you.webp",
         "url": "articles/indias-hotstar-merger-what-this-means-for-you.html",
         "excerpt": "Hotstar's monumental merger with JioCinema to JioHotstar reshapes India's streaming landscape. Discover your new entertainment hub! What’s next for you?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash",
