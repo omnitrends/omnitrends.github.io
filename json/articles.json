@@ -1,5 +1,16 @@
 [
     {
+        "id": "sahibzada-farhans-icc-ranking-surge-stuns-india",
+        "keyword": "sahibzada farhan",
+        "title": "Sahibzada Farhan's ICC Ranking Surge Stuns India!",
+        "category": "Sports",
+        "date": "04 August 2025",
+        "image": "sahibzada-farhans-icc-ranking-surge-stuns-india.webp",
+        "url": "articles/sahibzada-farhans-icc-ranking-surge-stuns-india.html",
+        "excerpt": "Pakistani batter Sahibzada Farhan's massive ICC T20I rankings jump to 97th, placing him in the top 100, is making waves, especially with India's Abhishek Sharma now topping the charts. What does this mean for cricket rivalry?",
+        "featured": true
+    },
+    {
         "id": "man-united-vs-everton-india-awaits-summer-series-finale",
         "keyword": "man united vs everton",
         "title": "Man United vs Everton: India Awaits Summer Series Finale!",
@@ -96,7 +107,7 @@
         "image": "wcl-shocker-india-boycotts-sparks-outrage.webp",
         "url": "articles/wcl-shocker-india-boycotts-sparks-outrage.html",
         "excerpt": "India's shocking WCL boycott sparks nationwide outrage, igniting crucial questions about its implications. Find out why.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-reacts-why-pak-vs-sa-final-ignites-passion",
