@@ -1,5 +1,16 @@
 [
     {
+        "id": "mohammed-siraj-oval-heroics-ignite-indias-cricket-fever",
+        "keyword": "mohammed siraj",
+        "title": "Mohammed Siraj: Oval Heroics Ignite India's Cricket Fever!",
+        "category": "Sports",
+        "date": "04 August 2025",
+        "image": "mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.webp",
+        "url": "articles/mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.html",
+        "excerpt": "Mohammed Siraj's sensational five-wicket haul at The Oval led India to a thrilling six-run victory, leveling the series 2-2. His heroics ignited celebrations nationwide! What a performance!",
+        "featured": true
+    },
+    {
         "id": "allahabad-university-admission-cuet-cutoff-released-act-fast",
         "keyword": "allahabad university admission",
         "title": "Allahabad University Admission: CUET Cutoff Released! Act Fast!",
@@ -96,7 +107,7 @@
         "image": "neet-pg-2025-exam-concludes-results-awaited.webp",
         "url": "articles/neet-pg-2025-exam-concludes-results-awaited.html",
         "excerpt": "NEET PG 2025 exam concluded today. Indian medical aspirants eagerly await results by September 3, shaping crucial postgraduate admissions. Counselling details next.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "feel-the-vibe-top-friendship-day-song-trends-rock-india",
