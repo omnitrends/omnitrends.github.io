@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>OmniTrends - Latest Trends &amp; Insights</title>
+    <subtitle>Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.</subtitle>
+    <link href="https://omnitrends.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://omnitrends.github.io/" rel="alternate" type="text/html"/>
+    <id>https://omnitrends.github.io/</id>
+    <updated>2025-08-04T00:00:00Z</updated>
+    <author>
+        <name>OmniTrends</name>
+        <uri>https://omnitrends.github.io/</uri>
+    </author>
+    <generator uri="https://omnitrends.github.io/" version="1.0">OmniTrends</generator>
+    <icon>https://omnitrends.github.io/favicon.ico</icon>
+    <logo>https://omnitrends.github.io/images/og-image.jpg</logo>
+    <rights>© 2025 OmniTrends. All rights reserved.</rights>
+
+    <!-- Featured Articles -->
+    <entry>
+        <title>Shubman Gill Crowned Man of the Series IND vs ENG!</title>
+        <link href="https://omnitrends.github.io/articles/shubman-gill-crowned-man-of-the-series-ind-vs-eng.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/shubman-gill-crowned-man-of-the-series-ind-vs-eng.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">Shubman Gill's stellar 754 runs, including four centuries, cemented his place as man of the series IND vs ENG, sparking immense pride across India. Discover how his captaincy led to a dramatic 2-2 series draw!</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Mohammed Siraj: Oval Heroics Ignite India's Cricket Fever!</title>
+        <link href="https://omnitrends.github.io/articles/mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">Mohammed Siraj's sensational five-wicket haul at The Oval led India to a thrilling six-run victory, leveling the series 2-2. His heroics ignited celebrations nationwide! What a performance!</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Allahabad University Admission: CUET Cutoff Released! Act Fast!</title>
+        <link href="https://omnitrends.github.io/articles/allahabad-university-admission-cuet-cutoff-released-act-fast.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/allahabad-university-admission-cuet-cutoff-released-act-fast.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">Allahabad University Admission is abuzz! CUET cutoff lists are out for various UG courses like B.Com, BBA, and BCA. Act fast; report to allotted centers.</summary>
+        <category term="News" label="News"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Shibu Soren: India Mourns Demise of Jharkhand's 'Dishom Guru'.</title>
+        <link href="https://omnitrends.github.io/articles/shibu-soren-india-mourns-demise-of-jharkhands-dishom-guru.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/shibu-soren-india-mourns-demise-of-jharkhands-dishom-guru.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">India mourns tribal stalwart Shibu Soren, former Jharkhand CM and JMM founder. His passing marks a significant moment in Indian politics.</summary>
+        <category term="News" label="News"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Nifty 50: India's Market at Crossroads, Brace for Impact!</title>
+        <link href="https://omnitrends.github.io/articles/nifty-50-indias-market-at-crossroads-brace-for-impact.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/nifty-50-indias-market-at-crossroads-brace-for-impact.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">Nifty 50 snaps losing streak! But FPI outflows, RBI policy, and Q1 earnings keep India's market at a crossroads. Prepare for moves!</summary>
+        <category term="Finance" label="Finance"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Sahibzada Farhan's ICC Ranking Surge Stuns India!</title>
+        <link href="https://omnitrends.github.io/articles/sahibzada-farhans-icc-ranking-surge-stuns-india.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/sahibzada-farhans-icc-ranking-surge-stuns-india.html</id>
+        <published>2025-08-04T00:00:00Z</published>
+        <updated>2025-08-04T00:00:00Z</updated>
+        <summary type="text">Pakistani batter Sahibzada Farhan's massive ICC T20I rankings jump to 97th, placing him in the top 100, is making waves, especially with India's Abhishek Sharma now topping the charts. What does this mean for cricket rivalry?</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Man United vs Everton: India Awaits Summer Series Finale!</title>
+        <link href="https://omnitrends.github.io/articles/man-united-vs-everton-india-awaits-summer-series-finale.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/man-united-vs-everton-india-awaits-summer-series-finale.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Indian fans eagerly await the Man United vs Everton clash! Catch the Premier League Summer Series finale live, a crucial pre-season test for both clubs. Don't miss the action!</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Jamie Smith: England's Unstoppable Force Stuns India Today!</title>
+        <link href="https://omnitrends.github.io/articles/jamie-smith-englands-unstoppable-force-stuns-india-today.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/jamie-smith-englands-unstoppable-force-stuns-india-today.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Jamie Smith's crucial unbeaten knock against India in the thrilling Oval Test keeps England's hopes alive! Can he seal a famous victory?</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Harry Brook's Oval Blitz: India's IPL Ban Backfires!</title>
+        <link href="https://omnitrends.github.io/articles/harry-brooks-oval-blitz-indias-ipl-ban-backfires.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/harry-brooks-oval-blitz-indias-ipl-ban-backfires.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Harry Brook's Oval masterclass makes India wonder. Did their IPL ban truly backfire, leaving fans wanting more? Explore the impact.</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Son Heung-min's Final Tottenham vs Newcastle Showdown!</title>
+        <link href="https://omnitrends.github.io/articles/son-heung-mins-final-tottenham-vs-newcastle-showdown.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/son-heung-mins-final-tottenham-vs-newcastle-showdown.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Indian fans are buzzing about Tottenham vs Newcastle. Son Heung-min's final Spurs game, a pre-season friendly in Seoul, makes it a must-watch event. Tune in!</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>NEET PG 2025: Exam Concludes, Results Awaited.</title>
+        <link href="https://omnitrends.github.io/articles/neet-pg-2025-exam-concludes-results-awaited.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/neet-pg-2025-exam-concludes-results-awaited.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">NEET PG 2025 exam concluded today. Indian medical aspirants eagerly await results by September 3, shaping crucial postgraduate admissions. Counselling details next.</summary>
+        <category term="Health" label="Health"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Feel the Vibe: Top friendship day song Trends Rock India.</title>
+        <link href="https://omnitrends.github.io/articles/feel-the-vibe-top-friendship-day-song-trends-rock-india.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/feel-the-vibe-top-friendship-day-song-trends-rock-india.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Bollywood's enduring celebration of Dosti makes "friendship day song" a perennial trend in India. Discover your perfect anthem for this Friendship Day!</summary>
+        <category term="Entertainment" label="Entertainment"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Friendship Day 2025: Your Emotional Friendship Day Photo Trends.</title>
+        <link href="https://omnitrends.github.io/articles/friendship-day-2025-your-emotional-friendship-day-photo-trends.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/friendship-day-2025-your-emotional-friendship-day-photo-trends.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Friendship Day photo trends are soaring in India as August 3rd approaches, with friends actively sharing heartfelt memories and creative visuals online. What will your Friendship Day photo say?</summary>
+        <category term="Lifestyle" label="Lifestyle"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Alick Athanaze: Indian Fans React to Rising Cricket Star</title>
+        <link href="https://omnitrends.github.io/articles/alick-athanaze-indian-fans-react-to-rising-cricket-star.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/alick-athanaze-indian-fans-react-to-rising-cricket-star.html</id>
+        <published>2025-08-03T00:00:00Z</published>
+        <updated>2025-08-03T00:00:00Z</updated>
+        <summary type="text">Alick Athanaze's rising prominence against India, including a notable Test debut, is captivating Indian cricket fans. Will his talent shine in upcoming matches?</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>WCL Shocker: India Boycotts, Sparks Outrage!</title>
+        <link href="https://omnitrends.github.io/articles/wcl-shocker-india-boycotts-sparks-outrage.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/wcl-shocker-india-boycotts-sparks-outrage.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">India's shocking WCL boycott sparks nationwide outrage, igniting crucial questions about its implications. Find out why.</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>India Reacts: Why pak vs sa Final Ignites Passion!</title>
+        <link href="https://omnitrends.github.io/articles/india-reacts-why-pak-vs-sa-final-ignites-passion.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/india-reacts-why-pak-vs-sa-final-ignites-passion.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">The WCL 2025 final, Pakistan Champions vs South Africa Champions, is sparking Indian interest. India Champions boycotted their semifinal against Pakistan due to geopolitical tensions, putting Pakistan directly in the final. This highlights national sentiment prioritising over sport. Witness the fallout.</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Bayern vs Lyon: Indian Fans Erupt as Friendly Kicks Off!</title>
+        <link href="https://omnitrends.github.io/articles/bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/bayern-vs-lyon-indian-fans-erupt-as-friendly-kicks-off.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">Indian fans are buzzing about the Bayern vs Lyon friendly, a highly anticipated pre-season clash at 7 PM IST today, featuring new signing Luis Díaz.</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>India's Hotstar Merger: What This Means For You.</title>
+        <link href="https://omnitrends.github.io/articles/indias-hotstar-merger-what-this-means-for-you.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/indias-hotstar-merger-what-this-means-for-you.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">Hotstar's monumental merger with JioCinema to JioHotstar reshapes India's streaming landscape. Discover your new entertainment hub! What's next for you?</summary>
+        <category term="Business" label="Business"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Juventus vs Reggiana: Indian Fans Eye Today's Thrilling Pre-Season Clash!</title>
+        <link href="https://omnitrends.github.io/articles/juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/juventus-vs-reggiana-indian-fans-eye-todays-thrilling-pre-season-clash.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">Indian football fans eagerly anticipate the Juventus vs Reggiana pre-season friendly today, streaming free on Juventus.com at 2:30 PM IST. Don't miss the action!</summary>
+        <category term="Sports" label="Sports"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+    <entry>
+        <title>PM Kisan Samman Nidhi: Big News! Farmers Get 20th Installment Today.</title>
+        <link href="https://omnitrends.github.io/articles/pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.html" rel="alternate" type="text/html"/>
+        <id>https://omnitrends.github.io/articles/pm-kisan-samman-nidhi-big-news-farmers-get-20th-installment-today.html</id>
+        <published>2025-08-02T00:00:00Z</published>
+        <updated>2025-08-02T00:00:00Z</updated>
+        <summary type="text">Farmers nationwide rejoice! The 20th PM Kisan Samman Nidhi installment, ₹20,500 crore for 9.7 crore farmers, is disbursed today by PM Modi from Varanasi. Are you a beneficiary? Check your status now!</summary>
+        <category term="Finance" label="Finance"/>
+        <author>
+            <name>OmniTrends</name>
+        </author>
+    </entry>
+
+</feed>
