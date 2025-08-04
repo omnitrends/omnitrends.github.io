@@ -1,5 +1,16 @@
 [
     {
+        "id": "nifty-50-indias-market-at-crossroads-brace-for-impact",
+        "keyword": "nifty 50",
+        "title": "Nifty 50: India's Market at Crossroads, Brace for Impact!",
+        "category": "Finance",
+        "date": "04 August 2025",
+        "image": "nifty-50-indias-market-at-crossroads-brace-for-impact.webp",
+        "url": "articles/nifty-50-indias-market-at-crossroads-brace-for-impact.html",
+        "excerpt": "Nifty 50 snaps losing streak! But FPI outflows, RBI policy, and Q1 earnings keep India's market at a crossroads. Prepare for moves!",
+        "featured": true
+    },
+    {
         "id": "sahibzada-farhans-icc-ranking-surge-stuns-india",
         "keyword": "sahibzada farhan",
         "title": "Sahibzada Farhan's ICC Ranking Surge Stuns India!",
@@ -96,7 +107,7 @@
         "image": "alick-athanaze-indian-fans-react-to-rising-cricket-star.webp",
         "url": "articles/alick-athanaze-indian-fans-react-to-rising-cricket-star.html",
         "excerpt": "Alick Athanaze's rising prominence against India, including a notable Test debut, is captivating Indian cricket fans. Will his talent shine in upcoming matches?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "wcl-shocker-india-boycotts-sparks-outrage",
