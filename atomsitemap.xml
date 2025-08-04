@@ -3,7 +3,7 @@
   <title>OmniTrends - Latest Trends &amp; Insights</title>
   <subtitle>Your source for the latest trends, insights, and discoveries across technology, lifestyle, and innovation.</subtitle>
   <link href="https://omnitrends.github.io/" rel="alternate" type="text/html"/>
-  <link href="https://omnitrends.github.io/atomsitemap" rel="self" type="application/atom+xml"/>
+  <link href="https://omnitrends.github.io/atomsitemap.xml" rel="self" type="application/atom+xml"/>
   <id>https://omnitrends.github.io/</id>
   <updated>2025-08-04T00:00:00Z</updated>
   <author>
