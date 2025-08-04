@@ -1,5 +1,16 @@
 [
     {
+        "id": "club-friendlies-fever-sweeps-india-catch-the-action",
+        "keyword": "club friendlies",
+        "title": "Club Friendlies Fever Sweeps India! Catch the Action.",
+        "category": "Sports",
+        "date": "04 August 2025",
+        "image": "club-friendlies-fever-sweeps-india-catch-the-action.webp",
+        "url": "articles/club-friendlies-fever-sweeps-india-catch-the-action.html",
+        "excerpt": "Indian football passion ignites! Global giants clash in thrilling club friendlies, captivating fans. Our clubs also prepare for epic battles. Don't miss the buzz!",
+        "featured": true
+    },
+    {
         "id": "liverpool-vs-athletic-club-reds-dominate-pre-season-double-header",
         "keyword": "liverpool vs athletic club",
         "title": "Liverpool vs Athletic Club: Reds Dominate Pre-Season Double-Header!",
@@ -96,7 +107,7 @@
         "image": "jamie-smith-englands-unstoppable-force-stuns-india-today.webp",
         "url": "articles/jamie-smith-englands-unstoppable-force-stuns-india-today.html",
         "excerpt": "Jamie Smith's crucial unbeaten knock against India in the thrilling Oval Test keeps England’s hopes alive! Can he seal a famous victory?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "harry-brooks-oval-blitz-indias-ipl-ban-backfires",
