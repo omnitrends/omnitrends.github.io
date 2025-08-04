@@ -1,5 +1,16 @@
 [
     {
+        "id": "shubman-gill-crowned-man-of-the-series-ind-vs-eng",
+        "keyword": "man of the series ind vs eng",
+        "title": "Shubman Gill Crowned Man of the Series IND vs ENG!",
+        "category": "Sports",
+        "date": "04 August 2025",
+        "image": "shubman-gill-crowned-man-of-the-series-ind-vs-eng.webp",
+        "url": "articles/shubman-gill-crowned-man-of-the-series-ind-vs-eng.html",
+        "excerpt": "Shubman Gill's stellar 754 runs, including four centuries, cemented his place as man of the series IND vs ENG, sparking immense pride across India. Discover how his captaincy led to a dramatic 2-2 series draw!",
+        "featured": true
+    },
+    {
         "id": "mohammed-siraj-oval-heroics-ignite-indias-cricket-fever",
         "keyword": "mohammed siraj",
         "title": "Mohammed Siraj: Oval Heroics Ignite India's Cricket Fever!",
@@ -96,7 +107,7 @@
         "image": "son-heung-mins-final-tottenham-vs-newcastle-showdown.webp",
         "url": "articles/son-heung-mins-final-tottenham-vs-newcastle-showdown.html",
         "excerpt": "Indian fans are buzzing about Tottenham vs Newcastle. Son Heung-min's final Spurs game, a pre-season friendly in Seoul, makes it a must-watch event. Tune in!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "neet-pg-2025-exam-concludes-results-awaited",
