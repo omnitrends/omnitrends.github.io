@@ -1,5 +1,16 @@
 [
     {
+        "id": "liverpool-vs-athletic-club-reds-dominate-pre-season-double-header",
+        "keyword": "liverpool vs athletic club",
+        "title": "Liverpool vs Athletic Club: Reds Dominate Pre-Season Double-Header!",
+        "category": "Sports",
+        "date": "04 August 2025",
+        "image": "liverpool-vs-athletic-club-reds-dominate-pre-season-double-header.webp",
+        "url": "articles/liverpool-vs-athletic-club-reds-dominate-pre-season-double-header.html",
+        "excerpt": "Indian fans are buzzing as Liverpool's dominant pre-season double-header against Athletic Club was broadcast live, fueling excitement for the Reds' upcoming Premier League title defense.",
+        "featured": true
+    },
+    {
         "id": "shubman-gill-crowned-man-of-the-series-ind-vs-eng",
         "keyword": "man of the series ind vs eng",
         "title": "Shubman Gill Crowned Man of the Series IND vs ENG!",
@@ -96,7 +107,7 @@
         "image": "harry-brooks-oval-blitz-indias-ipl-ban-backfires.webp",
         "url": "articles/harry-brooks-oval-blitz-indias-ipl-ban-backfires.html",
         "excerpt": "Harry Brook's Oval masterclass makes India wonder. Did their IPL ban truly backfire, leaving fans wanting more? Explore the impact.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "son-heung-mins-final-tottenham-vs-newcastle-showdown",
