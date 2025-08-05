@@ -1,5 +1,16 @@
 [
     {
+        "id": "uttarkashi-tragedy-cloudburst-fury-devastates-villages",
+        "keyword": "uttarkashi",
+        "title": "Uttarkashi Tragedy: Cloudburst Fury Devastates Villages",
+        "category": "News",
+        "date": "05 August 2025",
+        "image": "uttarkashi-tragedy-cloudburst-fury-devastates-villages.webp",
+        "url": "articles/uttarkashi-tragedy-cloudburst-fury-devastates-villages.html",
+        "excerpt": "Uttarkashi faces cloudburst fury: flash floods devastate villages, claiming lives and leaving many missing. Understand India's ongoing battle with Himalayan disasters.",
+        "featured": true
+    },
+    {
         "id": "satyapal-malik-passes-away-india-mourns-veteran-leader",
         "keyword": "satyapal malik",
         "title": "Satyapal Malik Passes Away: India Mourns Veteran Leader.",
@@ -96,7 +107,7 @@
         "image": "allahabad-university-admission-cuet-cutoff-released-act-fast.webp",
         "url": "articles/allahabad-university-admission-cuet-cutoff-released-act-fast.html",
         "excerpt": "Allahabad University Admission is abuzz! CUET cutoff lists are out for various UG courses like B.Com, BBA, and BCA. Act fast; report to allotted centers.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "shibu-soren-india-mourns-demise-of-jharkhands-dishom-guru",
