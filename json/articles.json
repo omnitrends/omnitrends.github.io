@@ -1,5 +1,16 @@
 [
     {
+        "id": "gpt-oss-indias-ai-powerhouse-unlocked",
+        "keyword": "gpt oss",
+        "title": "GPT OSS: India's AI Powerhouse Unlocked.",
+        "category": "Technology",
+        "date": "05 August 2025",
+        "image": "gpt-oss-indias-ai-powerhouse-unlocked.webp",
+        "url": "articles/gpt-oss-indias-ai-powerhouse-unlocked.html",
+        "excerpt": "Gpt oss fuels India's open-source AI revolution. Explore how these accessible models accelerate indigenous development and shape India's digital sovereignty.",
+        "featured": true
+    },
+    {
         "id": "uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury",
         "keyword": "uttarakhand flash floods",
         "title": "Uttarakhand Flash Floods: Cloudburst Unleashes Deadly Fury.",
@@ -96,7 +107,7 @@
         "image": "liverpool-vs-athletic-club-reds-dominate-pre-season-double-header.webp",
         "url": "articles/liverpool-vs-athletic-club-reds-dominate-pre-season-double-header.html",
         "excerpt": "Indian fans are buzzing as Liverpool's dominant pre-season double-header against Athletic Club was broadcast live, fueling excitement for the Reds' upcoming Premier League title defense.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "shubman-gill-crowned-man-of-the-series-ind-vs-eng",
