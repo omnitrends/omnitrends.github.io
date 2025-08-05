@@ -1,5 +1,16 @@
 [
     {
+        "id": "uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury",
+        "keyword": "uttarakhand flash floods",
+        "title": "Uttarakhand Flash Floods: Cloudburst Unleashes Deadly Fury.",
+        "category": "News",
+        "date": "05 August 2025",
+        "image": "uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury.webp",
+        "url": "articles/uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury.html",
+        "excerpt": "Devastating Uttarakhand flash floods hit Uttarkashi after a cloudburst, leaving scores missing. Understand India's urgent rescue operations now.",
+        "featured": true
+    },
+    {
         "id": "flash-floods-uttarakhand-uttarkashi-devastation-lives-lost-today",
         "keyword": "flash floods uttarakhand",
         "title": "Flash Floods Uttarakhand: Uttarkashi Devastation; Lives Lost Today.",
@@ -96,7 +107,7 @@
         "image": "shubman-gill-crowned-man-of-the-series-ind-vs-eng.webp",
         "url": "articles/shubman-gill-crowned-man-of-the-series-ind-vs-eng.html",
         "excerpt": "Shubman Gill's stellar 754 runs, including four centuries, cemented his place as man of the series IND vs ENG, sparking immense pride across India. Discover how his captaincy led to a dramatic 2-2 series draw!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "mohammed-siraj-oval-heroics-ignite-indias-cricket-fever",
