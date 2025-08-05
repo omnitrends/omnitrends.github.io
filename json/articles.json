@@ -1,5 +1,16 @@
 [
     {
+        "id": "flash-floods-uttarakhand-uttarkashi-devastation-lives-lost-today",
+        "keyword": "flash floods uttarakhand",
+        "title": "Flash Floods Uttarakhand: Uttarkashi Devastation; Lives Lost Today.",
+        "category": "News",
+        "date": "05 August 2025",
+        "image": "flash-floods-uttarakhand-uttarkashi-devastation-lives-lost-today.webp",
+        "url": "articles/flash-floods-uttarakhand-uttarkashi-devastation-lives-lost-today.html",
+        "excerpt": "Devastating flash floods Uttarakhand unleash chaos in Uttarkashi's Dharali. Lives lost, many feared missing; rescue efforts ongoing. Know the latest details.",
+        "featured": true
+    },
+    {
         "id": "uttarkashi-tragedy-cloudburst-fury-devastates-villages",
         "keyword": "uttarkashi",
         "title": "Uttarkashi Tragedy: Cloudburst Fury Devastates Villages",
@@ -96,7 +107,7 @@
         "image": "mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.webp",
         "url": "articles/mohammed-siraj-oval-heroics-ignite-indias-cricket-fever.html",
         "excerpt": "Mohammed Siraj's sensational five-wicket haul at The Oval led India to a thrilling six-run victory, leveling the series 2-2. His heroics ignited celebrations nationwide! What a performance!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "allahabad-university-admission-cuet-cutoff-released-act-fast",
