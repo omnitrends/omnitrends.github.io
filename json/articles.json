@@ -1,5 +1,16 @@
 [
     {
+        "id": "santos-vs-juventude-neymar-shines-indias-football-fever-soars",
+        "keyword": "santos vs juventude",
+        "title": "Santos vs Juventude: Neymar Shines, India's Football Fever Soars!",
+        "category": "Sports",
+        "date": "05 August 2025",
+        "image": "santos-vs-juventude-neymar-shines-indias-football-fever-soars.webp",
+        "url": "articles/santos-vs-juventude-neymar-shines-indias-football-fever-soars.html",
+        "excerpt": "Santos vs Juventude kicks off! India's football fever peaks as fans wonder: will legendary Neymar's spirit ignite Santos? Catch the thrill!",
+        "featured": true
+    },
+    {
         "id": "club-friendlies-fever-sweeps-india-catch-the-action",
         "keyword": "club friendlies",
         "title": "Club Friendlies Fever Sweeps India! Catch the Action.",
@@ -96,7 +107,7 @@
         "image": "man-united-vs-everton-india-awaits-summer-series-finale.webp",
         "url": "articles/man-united-vs-everton-india-awaits-summer-series-finale.html",
         "excerpt": "Indian fans eagerly await the Man United vs Everton clash! Catch the Premier League Summer Series finale live, a crucial pre-season test for both clubs. Don't miss the action!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "jamie-smith-englands-unstoppable-force-stuns-india-today",
