@@ -1,5 +1,16 @@
 [
     {
+        "id": "satyapal-malik-passes-away-india-mourns-veteran-leader",
+        "keyword": "satyapal malik",
+        "title": "Satyapal Malik Passes Away: India Mourns Veteran Leader.",
+        "category": "News",
+        "date": "05 August 2025",
+        "image": "satyapal-malik-passes-away-india-mourns-veteran-leader.webp",
+        "url": "articles/satyapal-malik-passes-away-india-mourns-veteran-leader.html",
+        "excerpt": "India mourns Satyapal Malik, former J&K Governor, who passed away at 79. His tenure saw Article 370 abrogation. Learn more about his legacy.",
+        "featured": true
+    },
+    {
         "id": "aditya-infotech-share-price-bumper-debut-sparks-investor-interest",
         "keyword": "aditya infotech share price",
         "title": "Aditya Infotech Share Price: Bumper Debut Sparks Investor Interest.",
@@ -96,7 +107,7 @@
         "image": "shibu-soren-india-mourns-demise-of-jharkhands-dishom-guru.webp",
         "url": "articles/shibu-soren-india-mourns-demise-of-jharkhands-dishom-guru.html",
         "excerpt": "India mourns tribal stalwart Shibu Soren, former Jharkhand CM and JMM founder. His passing marks a significant moment in Indian politics.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "nifty-50-indias-market-at-crossroads-brace-for-impact",
