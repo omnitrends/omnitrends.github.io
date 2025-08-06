@@ -1,5 +1,16 @@
 [
     {
+        "id": "pakistan-ceasefire-violations-indian-army-clarifies-confusion",
+        "keyword": "pakistan ceasefire violations",
+        "title": "Pakistan Ceasefire Violations: Indian Army Clarifies Confusion.",
+        "category": "News",
+        "date": "06 August 2025",
+        "image": "pakistan-ceasefire-violations-indian-army-clarifies-confusion.webp",
+        "url": "articles/pakistan-ceasefire-violations-indian-army-clarifies-confusion.html",
+        "excerpt": "Indian Army swiftly clarified recent Pakistan ceasefire violations reports, urging caution against unverified news. Stay informed on border security!",
+        "featured": true
+    },
+    {
         "id": "gpt-oss-indias-ai-powerhouse-unlocked",
         "keyword": "gpt oss",
         "title": "GPT OSS: India's AI Powerhouse Unlocked.",
@@ -96,7 +107,7 @@
         "image": "club-friendlies-fever-sweeps-india-catch-the-action.webp",
         "url": "articles/club-friendlies-fever-sweeps-india-catch-the-action.html",
         "excerpt": "Indian football passion ignites! Global giants clash in thrilling club friendlies, captivating fans. Our clubs also prepare for epic battles. Don't miss the buzz!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "liverpool-vs-athletic-club-reds-dominate-pre-season-double-header",
