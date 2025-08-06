@@ -1,5 +1,16 @@
 [
     {
+        "id": "dost-2025-your-college-seat-awaits",
+        "keyword": "dost",
+        "title": "DOST 2025: Your College Seat Awaits!",
+        "category": "News",
+        "date": "06 August 2025",
+        "image": "dost-2025-your-college-seat-awaits.webp",
+        "url": "articles/dost-2025-your-college-seat-awaits.html",
+        "excerpt": "DOST 2025 Special Phase seat allotment is out today! Check your results and complete crucial online self-reporting to secure your Telangana college admission now.",
+        "featured": true
+    },
+    {
         "id": "rbi-mpc-meeting-repo-rate-emis-unchanged-what-now",
         "keyword": "rbi mpc meeting repo rate",
         "title": "RBI MPC Meeting Repo Rate: EMIs Unchanged, What Now?",
@@ -96,7 +107,7 @@
         "image": "satyapal-malik-passes-away-india-mourns-veteran-leader.webp",
         "url": "articles/satyapal-malik-passes-away-india-mourns-veteran-leader.html",
         "excerpt": "India mourns Satyapal Malik, former J&K Governor, who passed away at 79. His tenure saw Article 370 abrogation. Learn more about his legacy.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "aditya-infotech-share-price-bumper-debut-sparks-investor-interest",
