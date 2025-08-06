@@ -1,5 +1,16 @@
 [
     {
+        "id": "nsdl-share-price-today-live-ipo-listing-surge",
+        "keyword": "nsdl share price today live",
+        "title": "NSDL Share Price Today Live: IPO Listing Surge!",
+        "category": "Finance",
+        "date": "06 August 2025",
+        "image": "nsdl-share-price-today-live-ipo-listing-surge.webp",
+        "url": "articles/nsdl-share-price-today-live-ipo-listing-surge.html",
+        "excerpt": "NSDL share price today live sees a strong 10% IPO listing surge! India's depository major debuts impressively. Should you invest? Find out now!",
+        "featured": true
+    },
+    {
         "id": "nsdl-listing-indias-blockbuster-debut-gains-alert-today",
         "keyword": "nsdl listing",
         "title": "NSDL Listing: India's Blockbuster Debut! Gains Alert Today.",
@@ -96,7 +107,7 @@
         "image": "putrada-ekadashi-vrat-katha-seeking-child-blessings-today.webp",
         "url": "articles/putrada-ekadashi-vrat-katha-seeking-child-blessings-today.html",
         "excerpt": "Putrada Ekadashi vrat katha: Millions observe this sacred fast today seeking child blessings and family prosperity. Uncover its timeless spiritual significance.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "santos-vs-juventude-neymar-shines-indias-football-fever-soars",
