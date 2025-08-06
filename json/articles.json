@@ -1,5 +1,16 @@
 [
     {
+        "id": "rbi-mpc-meeting-repo-rate-emis-unchanged-what-now",
+        "keyword": "rbi mpc meeting repo rate",
+        "title": "RBI MPC Meeting Repo Rate: EMIs Unchanged, What Now?",
+        "category": "Finance",
+        "date": "06 August 2025",
+        "image": "rbi-mpc-meeting-repo-rate-emis-unchanged-what-now.webp",
+        "url": "articles/rbi-mpc-meeting-repo-rate-emis-unchanged-what-now.html",
+        "excerpt": "RBI MPC meeting repo rate unchanged! What does this prolonged pause mean for your EMIs and India's economic outlook ahead?",
+        "featured": true
+    },
+    {
         "id": "nsdl-share-price-today-live-ipo-listing-surge",
         "keyword": "nsdl share price today live",
         "title": "NSDL Share Price Today Live: IPO Listing Surge!",
@@ -96,7 +107,7 @@
         "image": "aditya-infotech-share-price-bumper-debut-sparks-investor-interest.webp",
         "url": "articles/aditya-infotech-share-price-bumper-debut-sparks-investor-interest.html",
         "excerpt": "Aditya Infotech share price makes a blockbuster debut, soaring over 50%! Explore why this IPO captivated Indian investors.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "putrada-ekadashi-vrat-katha-seeking-child-blessings-today",
