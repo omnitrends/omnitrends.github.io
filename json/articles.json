@@ -1,5 +1,16 @@
 [
     {
+        "id": "aston-villa-vs-roma-indias-football-fever-explodes",
+        "keyword": "aston villa vs roma",
+        "title": "Aston Villa vs Roma: India's Football Fever Explodes!",
+        "category": "Sports",
+        "date": "06 August 2025",
+        "image": "aston-villa-vs-roma-indias-football-fever-explodes.webp",
+        "url": "articles/aston-villa-vs-roma-indias-football-fever-explodes.html",
+        "excerpt": "Indian fans are buzzing for the Aston Villa vs Roma pre-season friendly! Catch live action and see why this clash is unmissable.",
+        "featured": true
+    },
+    {
         "id": "arsenal-vs-villarreal-indias-pre-season-fever-today",
         "keyword": "arsenal vs villarreal",
         "title": "Arsenal vs Villarreal: India's Pre-Season Fever Today!",
@@ -96,7 +107,7 @@
         "image": "uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury.webp",
         "url": "articles/uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury.html",
         "excerpt": "Devastating Uttarakhand flash floods hit Uttarkashi after a cloudburst, leaving scores missing. Understand India's urgent rescue operations now.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "flash-floods-uttarakhand-uttarkashi-devastation-lives-lost-today",
