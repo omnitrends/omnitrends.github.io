@@ -1,5 +1,16 @@
 [
     {
+        "id": "nsdl-listing-indias-blockbuster-debut-gains-alert-today",
+        "keyword": "nsdl listing",
+        "title": "NSDL Listing: India's Blockbuster Debut! Gains Alert Today.",
+        "category": "Finance",
+        "date": "06 August 2025",
+        "image": "nsdl-listing-indias-blockbuster-debut-gains-alert-today.webp",
+        "url": "articles/nsdl-listing-indias-blockbuster-debut-gains-alert-today.html",
+        "excerpt": "NSDL listing generates excitement! India's depository titan debuted today, signaling robust gains. Will you benefit?",
+        "featured": true
+    },
+    {
         "id": "pakistan-ceasefire-violations-indian-army-clarifies-confusion",
         "keyword": "pakistan ceasefire violations",
         "title": "Pakistan Ceasefire Violations: Indian Army Clarifies Confusion.",
@@ -96,7 +107,7 @@
         "image": "santos-vs-juventude-neymar-shines-indias-football-fever-soars.webp",
         "url": "articles/santos-vs-juventude-neymar-shines-indias-football-fever-soars.html",
         "excerpt": "Santos vs Juventude kicks off! India's football fever peaks as fans wonder: will legendary Neymar's spirit ignite Santos? Catch the thrill!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "club-friendlies-fever-sweeps-india-catch-the-action",
