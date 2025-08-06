@@ -1,5 +1,16 @@
 [
     {
+        "id": "trump-tariffs-india-new-economic-shockwave-hits-delhi",
+        "keyword": "trump tariffs india",
+        "title": "Trump Tariffs India: New Economic Shockwave Hits Delhi.",
+        "category": "Business",
+        "date": "06 August 2025",
+        "image": "trump-tariffs-india-new-economic-shockwave-hits-delhi.webp",
+        "url": "articles/trump-tariffs-india-new-economic-shockwave-hits-delhi.html",
+        "excerpt": "Rising US pressure: Trump tariffs India threaten exports over Russian oil. Can India navigate this economic storm?",
+        "featured": true
+    },
+    {
         "id": "dost-2025-your-college-seat-awaits",
         "keyword": "dost",
         "title": "DOST 2025: Your College Seat Awaits!",
@@ -96,7 +107,7 @@
         "image": "uttarkashi-tragedy-cloudburst-fury-devastates-villages.webp",
         "url": "articles/uttarkashi-tragedy-cloudburst-fury-devastates-villages.html",
         "excerpt": "Uttarkashi faces cloudburst fury: flash floods devastate villages, claiming lives and leaving many missing. Understand India's ongoing battle with Himalayan disasters.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "satyapal-malik-passes-away-india-mourns-veteran-leader",
