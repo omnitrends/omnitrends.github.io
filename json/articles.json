@@ -1,5 +1,16 @@
 [
     {
+        "id": "nifty-plunges-trump-tariffs-rock-indian-market",
+        "keyword": "nifty",
+        "title": "Nifty Plunges: Trump Tariffs Rock Indian Market",
+        "category": "Finance",
+        "date": "07 August 2025",
+        "image": "nifty-plunges-trump-tariffs-rock-indian-market.webp",
+        "url": "articles/nifty-plunges-trump-tariffs-rock-indian-market.html",
+        "excerpt": "Trump's new tariffs triggered a significant Nifty plunge. Is your portfolio safe amid escalating trade tensions? Find out.",
+        "featured": true
+    },
+    {
         "id": "fluminense-vs-internacional-copa-quarterfinal-decider-grips-india",
         "keyword": "fluminense vs internacional",
         "title": "Fluminense vs Internacional: Copa Quarterfinal Decider Grips India!",
@@ -96,7 +107,7 @@
         "image": "nsdl-listing-indias-blockbuster-debut-gains-alert-today.webp",
         "url": "articles/nsdl-listing-indias-blockbuster-debut-gains-alert-today.html",
         "excerpt": "NSDL listing generates excitement! India's depository titan debuted today, signaling robust gains. Will you benefit?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pakistan-ceasefire-violations-indian-army-clarifies-confusion",
