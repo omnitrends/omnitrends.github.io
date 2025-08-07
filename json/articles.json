@@ -1,5 +1,16 @@
 [
     {
+        "id": "india-gripped-inter-miami-vs-pumas-unam-without-messi",
+        "keyword": "inter miami vs pumas unam",
+        "title": "India Gripped: Inter Miami vs Pumas UNAM Without Messi!",
+        "category": "Sports",
+        "date": "07 August 2025",
+        "image": "india-gripped-inter-miami-vs-pumas-unam-without-messi.webp",
+        "url": "articles/india-gripped-inter-miami-vs-pumas-unam-without-messi.html",
+        "excerpt": "Inter Miami vs Pumas UNAM grips India! Can Miami survive without Messi in this crucial Leagues Cup tie? Find out the latest buzz!",
+        "featured": true
+    },
+    {
         "id": "aston-villa-vs-roma-indias-football-fever-explodes",
         "keyword": "aston villa vs roma",
         "title": "Aston Villa vs Roma: India's Football Fever Explodes!",
@@ -96,7 +107,7 @@
         "image": "gpt-oss-indias-ai-powerhouse-unlocked.webp",
         "url": "articles/gpt-oss-indias-ai-powerhouse-unlocked.html",
         "excerpt": "Gpt oss fuels India's open-source AI revolution. Explore how these accessible models accelerate indigenous development and shape India's digital sovereignty.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "uttarakhand-flash-floods-cloudburst-unleashes-deadly-fury",
