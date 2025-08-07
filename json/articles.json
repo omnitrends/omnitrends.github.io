@@ -1,5 +1,16 @@
 [
     {
+        "id": "kn-584-lottery-results-out-keralas-new-crorepati",
+        "keyword": "kn584",
+        "title": "KN-584 Lottery Results Out: Kerala's New Crorepati!",
+        "category": "News",
+        "date": "07 August 2025",
+        "image": "kn-584-lottery-results-out-keralas-new-crorepati.webp",
+        "url": "articles/kn-584-lottery-results-out-keralas-new-crorepati.html",
+        "excerpt": "Kerala's much-awaited KN584 lottery results are out! One lucky winner is now a crorepati. Did your ticket win? Check now!",
+        "featured": true
+    },
+    {
         "id": "zimbabwe-vs-new-zealand-taylors-fightback-grips-india",
         "keyword": "zimbabwe vs new zealand",
         "title": "Zimbabwe vs New Zealand: Taylor's Fightback Grips India!",
@@ -96,7 +107,7 @@
         "image": "rbi-mpc-meeting-repo-rate-emis-unchanged-what-now.webp",
         "url": "articles/rbi-mpc-meeting-repo-rate-emis-unchanged-what-now.html",
         "excerpt": "RBI MPC meeting repo rate unchanged! What does this prolonged pause mean for your EMIs and India's economic outlook ahead?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "nsdl-share-price-today-live-ipo-listing-surge",
