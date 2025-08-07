@@ -1,5 +1,16 @@
 [
     {
+        "id": "al-nassr-vs-rio-ave-ronaldo-fires-up-india",
+        "keyword": "al-nassr vs rio ave",
+        "title": "Al-Nassr vs Rio Ave: Ronaldo Fires Up India!",
+        "category": "Sports",
+        "date": "07 August 2025",
+        "image": "al-nassr-vs-rio-ave-ronaldo-fires-up-india.webp",
+        "url": "articles/al-nassr-vs-rio-ave-ronaldo-fires-up-india.html",
+        "excerpt": "Al-Nassr vs Rio Ave buzz in India! Ronaldo’s electrifying performance in this clash has Indian fans captivated. Why the hype?",
+        "featured": true
+    },
+    {
         "id": "bayern-vs-tottenham-kanes-strike-electrifies-indian-fans",
         "keyword": "bayern vs tottenham",
         "title": "Bayern vs Tottenham: Kane's Strike Electrifies Indian Fans!",
@@ -96,7 +107,7 @@
         "image": "trump-tariffs-india-new-economic-shockwave-hits-delhi.webp",
         "url": "articles/trump-tariffs-india-new-economic-shockwave-hits-delhi.html",
         "excerpt": "Rising US pressure: Trump tariffs India threaten exports over Russian oil. Can India navigate this economic storm?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "dost-2025-your-college-seat-awaits",
