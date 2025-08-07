@@ -1,5 +1,16 @@
 [
     {
+        "id": "intel-ceo-trump-demands-ouster-over-china-ties",
+        "keyword": "intel ceo",
+        "title": "Intel CEO: Trump Demands Ouster Over China Ties.",
+        "category": "News",
+        "date": "07 August 2025",
+        "image": "intel-ceo-trump-demands-ouster-over-china-ties.webp",
+        "url": "articles/intel-ceo-trump-demands-ouster-over-china-ties.html",
+        "excerpt": "Trump demands intel ceo resign over China ties. How will this impact India's growing tech ambitions and crucial chip supply chain?",
+        "featured": true
+    },
+    {
         "id": "kn-584-lottery-results-out-keralas-new-crorepati",
         "keyword": "kn584",
         "title": "KN-584 Lottery Results Out: Kerala's New Crorepati!",
@@ -96,7 +107,7 @@
         "image": "dost-2025-your-college-seat-awaits.webp",
         "url": "articles/dost-2025-your-college-seat-awaits.html",
         "excerpt": "DOST 2025 Special Phase seat allotment is out today! Check your results and complete crucial online self-reporting to secure your Telangana college admission now.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "rbi-mpc-meeting-repo-rate-emis-unchanged-what-now",
