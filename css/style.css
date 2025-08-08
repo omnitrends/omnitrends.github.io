@@ -153,6 +153,7 @@ ul {
     padding: var(--spacing-md) 0;
 }
 
+.nav__logo h1,
 .nav__logo .site-logo {
     font-size: var(--font-size-2xl);
     font-weight: 700;
