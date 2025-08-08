@@ -49,6 +49,19 @@ const categoriesConfig = {
 // ===== UTILITY FUNCTIONS =====
 
 /**
+ * Truncate text to specified length with ellipsis
+ * @param {string} text - Text to truncate
+ * @param {number} maxLength - Maximum length of text
+ * @returns {string} Truncated text with ellipsis if needed
+ */
+function truncateText(text, maxLength) {
+    if (!text || text.length <= maxLength) {
+        return text;
+    }
+    return text.substring(0, maxLength).trim() + '...';
+}
+
+/**
  * Parse formatted date string to Date object
  * @param {string} dateStr - Date string in format "DD Month YYYY"
  * @returns {Date} Date object
@@ -200,10 +213,14 @@ function createArticleCard(article, basePath = '') {
     const imagePath = basePath ? `${basePath}images/${article.image}` : `images/${article.image}`;
     const articleUrl = basePath ? `${basePath}${article.url}` : article.url;
     
+    // Truncate title to 60 characters and excerpt to 150 characters
+    const truncatedTitle = truncateText(article.title, 60);
+    const truncatedExcerpt = truncateText(article.excerpt, 150);
+    
     return `
         <article class="article-card">
             <div class="article-card__image">
-                <img src="${imagePath}" alt="${article.title}" loading="lazy">
+                <img src="${imagePath}" alt="${truncatedTitle}" loading="lazy">
             </div>
             <div class="article-card__content">
                 <div class="article-card__meta">
@@ -211,9 +228,9 @@ function createArticleCard(article, basePath = '') {
                     <time class="article-card__date" datetime="${article.date}">${article.date}</time>
                 </div>
                 <h3 class="article-card__title">
-                    <a href="${articleUrl}">${article.title}</a>
+                    <a href="${articleUrl}">${truncatedTitle}</a>
                 </h3>
-                <p class="article-card__excerpt">${article.excerpt}</p>
+                <p class="article-card__excerpt">${truncatedExcerpt}</p>
                 <a href="${articleUrl}" class="article-card__link">Read More</a>
             </div>
         </article>
@@ -228,6 +245,10 @@ function createArticleCard(article, basePath = '') {
  * @returns {string} HTML string for coming soon card
  */
 function createComingSoonCard(category, title, excerpt) {
+    // Truncate title to 60 characters and excerpt to 150 characters
+    const truncatedTitle = truncateText(title, 60);
+    const truncatedExcerpt = truncateText(excerpt, 150);
+    
     return `
         <article class="article-card" style="opacity: 0.6;">
             <div class="article-card__image">
@@ -241,9 +262,9 @@ function createComingSoonCard(category, title, excerpt) {
                     <time class="article-card__date" datetime="2024-12-01">Coming Soon</time>
                 </div>
                 <h3 class="article-card__title">
-                    <a href="#" style="pointer-events: none;">${title}</a>
+                    <a href="#" style="pointer-events: none;">${truncatedTitle}</a>
                 </h3>
-                <p class="article-card__excerpt">${excerpt}</p>
+                <p class="article-card__excerpt">${truncatedExcerpt}</p>
             </div>
         </article>
     `;
@@ -507,8 +528,8 @@ function updateSearchFunctionality() {
         if (filteredArticles.length > 0) {
             searchResults.innerHTML = filteredArticles.map(article => `
                 <div class="search-result">
-                    <h4><a href="${article.url}">${article.title}</a></h4>
-                    <p>${article.excerpt}</p>
+                    <h4><a href="${article.url}">${truncateText(article.title, 60)}</a></h4>
+                    <p>${truncateText(article.excerpt, 150)}</p>
                     <span class="search-category">${article.category}</span>
                 </div>
             `).join('');
@@ -558,6 +579,7 @@ if (typeof module !== 'undefined' && module.exports) {
         articlesData,
         loadArticlesData,
         categoriesConfig,
+        truncateText,
         getArticlesByCategory,
         getLatestArticles,
         getFeaturedArticles,

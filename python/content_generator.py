@@ -72,7 +72,7 @@ def generate_article_title(keyword):
     Requirements:
     - Generate ONLY ONE title, not multiple options
     - Title must contain the exact keyword: "{keyword}"
-    - STRICT LIMIT: Maximum 9 words only
+    - STRICT LIMIT: Maximum 60 characters only
     - Focus on why this keyword is trending in Indian news today
     - Make it clickable and engaging for Indian audience
     - Use action words and emotional triggers
@@ -80,7 +80,7 @@ def generate_article_title(keyword):
     - Avoid clickbait but make it compelling
     - Respond with ONLY the final title, no explanations, no bullet points, no options
     
-    Generate the single best title (maximum 9 words):
+    Generate the single best title (maximum 60 characters):
     """
     
     try:
@@ -225,17 +225,17 @@ def generate_article_excerpt(keyword, title):
     - Do not repeat the title in the excerpt
     - Do not use inverted commas in the excerpt
     - Change the case of keyword if required
-    - STRICT LIMIT: Maximum 24 words only
+    - STRICT LIMIT: Maximum 150 characters only
     - Focus on why this keyword is trending in Indian news
     - Write for Indian audience in simple, clear English
     - Make it engaging and informative
     - Include a call-to-action or curiosity element
     - Make it Google Discover and AdSense friendly
-    - Summarize the key point that makes this newsworthy in India in maximum 24 words only
+    - Summarize the key point that makes this newsworthy in India in maximum 150 characters only
     - Avoid clickbait but make it compelling
     - Respond with ONLY the final excerpt, no explanations, no bullet points, no options
     
-    Based on current Indian news context, generate only the excerpt (maximum 24 words, no explanations):
+    Based on current Indian news context, generate only the excerpt (maximum 150 characters, no explanations):
     """
     
     try:
