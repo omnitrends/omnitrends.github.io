@@ -1,5 +1,16 @@
 [
     {
+        "id": "west-indies-vs-pakistan-indian-fans-rush-to-stream-live",
+        "keyword": "west indies vs pakistan",
+        "title": "West Indies vs Pakistan: Indian Fans Rush to Stream Live!",
+        "category": "Sports",
+        "date": "08 August 2025",
+        "image": "west-indies-vs-pakistan-indian-fans-rush-to-stream-live.webp",
+        "url": "articles/west-indies-vs-pakistan-indian-fans-rush-to-stream-live.html",
+        "excerpt": "West Indies vs Pakistan: Indian fans are flocking to FanCode for live ODI action! Don't miss Babar Azam and Rizwan's return. Catch the excitement now!",
+        "featured": true
+    },
+    {
         "id": "west-indies-vs-pakistan-cricket-scorecard-indias-big-buzz",
         "keyword": "west indies cricket team vs pakistan national cricket team match scorecard",
         "title": "West Indies vs Pakistan Cricket Scorecard: India's Big Buzz!",
@@ -96,7 +107,7 @@
         "image": "bayern-vs-tottenham-kanes-strike-electrifies-indian-fans.webp",
         "url": "articles/bayern-vs-tottenham-kanes-strike-electrifies-indian-fans.html",
         "excerpt": "Harry Kane's stunning strike in the Bayern vs Tottenham friendly has Indian fans electrified! Witness the excitement, find out why this clash trends.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "intel-ceo-trump-demands-ouster-over-china-ties",
