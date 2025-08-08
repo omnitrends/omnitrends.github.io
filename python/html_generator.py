@@ -186,7 +186,7 @@ def generate_html_from_markdown(article_id):
         <nav class="nav container">
             <div class="nav__brand">
                 <a href="../index.html" class="nav__logo">
-                    <h1>OmniTrends</h1>
+                    <div class="site-logo">OmniTrends</div>
                 </a>
             </div>
             

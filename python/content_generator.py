@@ -345,10 +345,8 @@ def save_article_to_file(keyword, title, excerpt, content):
         content (str): The generated article content
     """
     try:
-        # Create production-ready content with only one H1 title
-        formatted_content = f"""# {title}
-
-{content}
+        # Create production-ready content without H1 title (HTML template handles it)
+        formatted_content = f"""{content}
 """
         
         # Ensure the temp directory exists
