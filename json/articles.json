@@ -1,5 +1,16 @@
 [
     {
+        "id": "huma-qureshi-devastated-cousin-killed-over-delhi-parking",
+        "keyword": "huma qureshi",
+        "title": "Huma Qureshi Devastated: Cousin Killed Over Delhi Parking.",
+        "category": "News",
+        "date": "08 August 2025",
+        "image": "huma-qureshi-devastated-cousin-killed-over-delhi-parking.webp",
+        "url": "articles/huma-qureshi-devastated-cousin-killed-over-delhi-parking.html",
+        "excerpt": "Actress Huma Qureshi shattered: cousin killed tragically in a Delhi parking dispute. Why is this incident sparking outrage across India?",
+        "featured": true
+    },
+    {
         "id": "monterrey-vs-charlotte-indias-football-pulse-races",
         "keyword": "monterrey vs charlotte",
         "title": "Monterrey vs Charlotte: India's Football Pulse Races!",
@@ -96,7 +107,7 @@
         "image": "aston-villa-vs-roma-indias-football-fever-explodes.webp",
         "url": "articles/aston-villa-vs-roma-indias-football-fever-explodes.html",
         "excerpt": "Indian fans are buzzing for the Aston Villa vs Roma pre-season friendly! Catch live action and see why this clash is unmissable.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "arsenal-vs-villarreal-indias-pre-season-fever-today",
