@@ -1,5 +1,16 @@
 [
     {
+        "id": "pg-electroplast-plunge-profit-shock-guidance-cut",
+        "keyword": "pg electroplast",
+        "title": "PG Electroplast Plunge: Profit Shock & Guidance Cut.",
+        "category": "Finance",
+        "date": "08 August 2025",
+        "image": "pg-electroplast-plunge-profit-shock-guidance-cut.webp",
+        "url": "articles/pg-electroplast-plunge-profit-shock-guidance-cut.html",
+        "excerpt": "PG Electroplast stock plunges as Q1 profit drops 20% and FY26 guidance is sharply cut. Why did this Indian electronics giant face such a shock?",
+        "featured": true
+    },
+    {
         "id": "zimbabwe-vs-new-zealand-kiwis-decimate-india-reacts",
         "keyword": "zimbabwe vs new zealand",
         "title": "Zimbabwe vs New Zealand: Kiwis Decimate! India Reacts.",
@@ -96,7 +107,7 @@
         "image": "nifty-plunges-trump-tariffs-rock-indian-market.webp",
         "url": "articles/nifty-plunges-trump-tariffs-rock-indian-market.html",
         "excerpt": "Trump's new tariffs triggered a significant Nifty plunge. Is your portfolio safe amid escalating trade tensions? Find out.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "fluminense-vs-internacional-copa-quarterfinal-decider-grips-india",
