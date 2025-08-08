@@ -1,5 +1,16 @@
 [
     {
+        "id": "rachin-ravindra-viral-sensation-captures-indias-heart",
+        "keyword": "rachin ravindra",
+        "title": "Rachin Ravindra: Viral Sensation Captures India's Heart!",
+        "category": "Sports",
+        "date": "08 August 2025",
+        "image": "rachin-ravindra-viral-sensation-captures-indias-heart.webp",
+        "url": "articles/rachin-ravindra-viral-sensation-captures-indias-heart.html",
+        "excerpt": "Rachin Ravindra's Indian roots and Champions Trophy heroics have fans buzzing! His viral 'Indian at heart' moment clinched it. Why is he India's newest cricket sensation?",
+        "featured": true
+    },
+    {
         "id": "pg-electroplast-plunge-profit-shock-guidance-cut",
         "keyword": "pg electroplast",
         "title": "PG Electroplast Plunge: Profit Shock & Guidance Cut.",
@@ -96,7 +107,7 @@
         "image": "kn-584-lottery-results-out-keralas-new-crorepati.webp",
         "url": "articles/kn-584-lottery-results-out-keralas-new-crorepati.html",
         "excerpt": "Kerala's much-awaited KN584 lottery results are out! One lucky winner is now a crorepati. Did your ticket win? Check now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "nifty-plunges-trump-tariffs-rock-indian-market",
