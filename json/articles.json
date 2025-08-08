@@ -1,5 +1,16 @@
 [
     {
+        "id": "monterrey-vs-charlotte-indias-football-pulse-races",
+        "keyword": "monterrey vs charlotte",
+        "title": "Monterrey vs Charlotte: India's Football Pulse Races!",
+        "category": "Sports",
+        "date": "08 August 2025",
+        "image": "monterrey-vs-charlotte-indias-football-pulse-races.webp",
+        "url": "articles/monterrey-vs-charlotte-indias-football-pulse-races.html",
+        "excerpt": "Why is Monterrey vs Charlotte buzzing in Indian football? Experience Leagues Cup action live; a global spectacle gripping fans nationwide!",
+        "featured": true
+    },
+    {
         "id": "al-nassr-vs-rio-ave-ronaldo-fires-up-india",
         "keyword": "al-nassr vs rio ave",
         "title": "Al-Nassr vs Rio Ave: Ronaldo Fires Up India!",
@@ -96,7 +107,7 @@
         "image": "arsenal-vs-villarreal-indias-pre-season-fever-today.webp",
         "url": "articles/arsenal-vs-villarreal-indias-pre-season-fever-today.html",
         "excerpt": "India's football passion explodes for Arsenal vs Villarreal! Uncover why this pre-season fixture is captivating millions today.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "trump-tariffs-india-new-economic-shockwave-hits-delhi",
