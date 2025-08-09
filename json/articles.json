@@ -1,5 +1,16 @@
 [
     {
+        "id": "shocking-why-labubu-is-indias-most-feared-toy-now",
+        "keyword": "labubu",
+        "title": "Shocking! Why labubu is India's Most Feared Toy Now.",
+        "category": "News",
+        "date": "09 August 2025",
+        "image": "shocking-why-labubu-is-indias-most-feared-toy-now.webp",
+        "url": "articles/shocking-why-labubu-is-indias-most-feared-toy-now.html",
+        "excerpt": "Once a craze, Labubu is now linked to ancient demons and celebrity fears in India. Is this viral toy truly cursed? Know the shocking truth!",
+        "featured": true
+    },
+    {
         "id": "raksha-bandhan-muhurat-auspicious-timings-confirmed-now",
         "keyword": "rakshabandhan muhurat",
         "title": "Raksha Bandhan Muhurat: Auspicious Timings CONFIRMED Now!",
@@ -96,7 +107,7 @@
         "image": "kalyan-jewellers-share-shocks-investors-despite-soaring-q1-profit.webp",
         "url": "articles/kalyan-jewellers-share-shocks-investors-despite-soaring-q1-profit.html",
         "excerpt": "Kalyan Jewellers share defies expectations, falling post strong Q1 results. Explore India's latest investment puzzle!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "huma-qureshi-devastated-cousin-killed-over-delhi-parking",
