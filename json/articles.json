@@ -1,5 +1,16 @@
 [
     {
+        "id": "arsenal-vs-athletic-club-india-cheers-gunners-big-win",
+        "keyword": "arsenal vs athletic club",
+        "title": "Arsenal vs Athletic Club: India Cheers Gunners' Big Win!",
+        "category": "Sports",
+        "date": "09 August 2025",
+        "image": "arsenal-vs-athletic-club-india-cheers-gunners-big-win.webp",
+        "url": "articles/arsenal-vs-athletic-club-india-cheers-gunners-big-win.html",
+        "excerpt": "Arsenal vs Athletic Club: Gunners' dominant win excites India! Fans are buzzing about their favorite club's performance. Why is this victory so special for India's Gooners? Find out!",
+        "featured": true
+    },
+    {
         "id": "aiims-job-alert-3496-posts-out-act-fast",
         "keyword": "aiims",
         "title": "AIIMS Job Alert: 3,496 Posts Out! Act Fast!",
@@ -96,7 +107,7 @@
         "image": "rachin-ravindra-viral-sensation-captures-indias-heart.webp",
         "url": "articles/rachin-ravindra-viral-sensation-captures-indias-heart.html",
         "excerpt": "Rachin Ravindra's Indian roots and Champions Trophy heroics have fans buzzing! His viral 'Indian at heart' moment clinched it. Why is he India's newest cricket sensation?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pg-electroplast-plunge-profit-shock-guidance-cut",
