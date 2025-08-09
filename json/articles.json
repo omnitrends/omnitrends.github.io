@@ -1,5 +1,16 @@
 [
     {
+        "id": "man-united-vs-fiorentina-indias-fan-frenzy-explodes",
+        "keyword": "man united vs fiorentina",
+        "title": "Man United vs Fiorentina: India's Fan Frenzy Explodes!",
+        "category": "Sports",
+        "date": "09 August 2025",
+        "image": "man-united-vs-fiorentina-indias-fan-frenzy-explodes.webp",
+        "url": "articles/man-united-vs-fiorentina-indias-fan-frenzy-explodes.html",
+        "excerpt": "Man United vs Fiorentina heats up! Indian fans are buzzing for today's pre-season finale. New signings shine, plus a legendary return. Don't miss the drama!",
+        "featured": true
+    },
+    {
         "id": "shocking-why-labubu-is-indias-most-feared-toy-now",
         "keyword": "labubu",
         "title": "Shocking! Why labubu is India's Most Feared Toy Now.",
@@ -96,7 +107,7 @@
         "image": "zimbabwe-vs-new-zealand-kiwis-decimate-india-reacts.webp",
         "url": "articles/zimbabwe-vs-new-zealand-kiwis-decimate-india-reacts.html",
         "excerpt": "Zimbabwe vs New Zealand: Kiwis' dominant display, Brendan Taylor's return captivate Indian fans. What next for cricket?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "kalyan-jewellers-share-shocks-investors-despite-soaring-q1-profit",
