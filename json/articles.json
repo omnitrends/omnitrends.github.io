@@ -1,5 +1,16 @@
 [
     {
+        "id": "aiims-job-alert-3496-posts-out-act-fast",
+        "keyword": "aiims",
+        "title": "AIIMS Job Alert: 3,496 Posts Out! Act Fast!",
+        "category": "Health",
+        "date": "09 August 2025",
+        "image": "aiims-job-alert-3496-posts-out-act-fast.webp",
+        "url": "articles/aiims-job-alert-3496-posts-out-act-fast.html",
+        "excerpt": "Massive AIIMS recruitment for 3,496 posts creates a buzz across India! Explore why AIIMS careers offer unparalleled opportunities. Exams approaching!",
+        "featured": true
+    },
+    {
         "id": "man-united-vs-fiorentina-indias-fan-frenzy-explodes",
         "keyword": "man united vs fiorentina",
         "title": "Man United vs Fiorentina: India's Fan Frenzy Explodes!",
@@ -96,7 +107,7 @@
         "image": "pg-electroplast-plunge-profit-shock-guidance-cut.webp",
         "url": "articles/pg-electroplast-plunge-profit-shock-guidance-cut.html",
         "excerpt": "PG Electroplast stock plunges as Q1 profit drops 20% and FY26 guidance is sharply cut. Why did this Indian electronics giant face such a shock?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "zimbabwe-vs-new-zealand-kiwis-decimate-india-reacts",
