@@ -1,5 +1,16 @@
 [
     {
+        "id": "barcelona-vs-como-asias-new-giant-stuns-india",
+        "keyword": "barcelona vs como",
+        "title": "Barcelona vs Como: Asia's New Giant Stuns India!",
+        "category": "Sports",
+        "date": "10 August 2025",
+        "image": "barcelona-vs-como-asias-new-giant-stuns-india.webp",
+        "url": "articles/barcelona-vs-como-asias-new-giant-stuns-india.html",
+        "excerpt": "Indian fans are buzzing! Asia's new giant Como takes on Barcelona in a historic Joan Gamper Trophy clash. Witness this surprising Serie A side's rise now!",
+        "featured": true
+    },
+    {
         "id": "war-2-frenzy-hrithik-roshan-takes-india-by-storm",
         "keyword": "hrithik roshan",
         "title": "War 2 Frenzy: Hrithik Roshan Takes India By Storm!",
@@ -96,7 +107,7 @@
         "image": "arsenal-vs-athletic-club-india-cheers-gunners-big-win.webp",
         "url": "articles/arsenal-vs-athletic-club-india-cheers-gunners-big-win.html",
         "excerpt": "Arsenal vs Athletic Club: Gunners' dominant win excites India! Fans are buzzing about their favorite club's performance. Why is this victory so special for India's Gooners? Find out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "aiims-job-alert-3496-posts-out-act-fast",
