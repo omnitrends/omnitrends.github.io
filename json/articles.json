@@ -1,5 +1,16 @@
 [
     {
+        "id": "why-india-is-buzzing-over-bahia-vs-fluminense",
+        "keyword": "bahia vs fluminense",
+        "title": "Why India is Buzzing Over Bahia vs Fluminense!",
+        "category": "Sports",
+        "date": "10 August 2025",
+        "image": "why-india-is-buzzing-over-bahia-vs-fluminense.webp",
+        "url": "articles/why-india-is-buzzing-over-bahia-vs-fluminense.html",
+        "excerpt": "Indian football fans are hooked on the thrilling Bahia vs Fluminense 3-3 draw! This Brazilian football spectacle packed six goals. Did you catch the highlights?",
+        "featured": true
+    },
+    {
         "id": "aryna-sabalenka-why-her-bold-stand-captivates-indian-fans",
         "keyword": "aryna sabalenka",
         "title": "Aryna Sabalenka: Why Her Bold Stand Captivates Indian Fans!",
@@ -96,7 +107,7 @@
         "image": "casa-pia-vs-sporting-why-indias-football-fans-are-hooked.webp",
         "url": "articles/casa-pia-vs-sporting-why-indias-football-fans-are-hooked.html",
         "excerpt": "Indian football fans are hooked on Casa Pia vs Sporting! The Primeira Liga opener is trending. Why are we so invested in European football's rising stars?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "west-indies-vs-pakistan-indian-fans-rush-to-stream-live",
