@@ -1,5 +1,16 @@
 [
     {
+        "id": "kolkata-fatafat-why-india-awaits-todays-big-results",
+        "keyword": "kolkata fatafat",
+        "title": "Kolkata Fatafat: Why India Awaits Today's Big Results!",
+        "category": "News",
+        "date": "10 August 2025",
+        "image": "kolkata-fatafat-why-india-awaits-todays-big-results.webp",
+        "url": "articles/kolkata-fatafat-why-india-awaits-todays-big-results.html",
+        "excerpt": "Kolkata Fatafat's daily draw fuels immense excitement. Discover why today's results are eagerly anticipated across India, making it a trending topic!",
+        "featured": true
+    },
+    {
         "id": "why-india-is-buzzing-over-bahia-vs-fluminense",
         "keyword": "bahia vs fluminense",
         "title": "Why India is Buzzing Over Bahia vs Fluminense!",
@@ -96,7 +107,7 @@
         "image": "hassan-nawazs-debut-delight-pakistan-wins-india-reacts.webp",
         "url": "articles/hassan-nawazs-debut-delight-pakistan-wins-india-reacts.html",
         "excerpt": "Hassan Nawaz’s stunning debut for Pakistan, powering their win, has Indian cricket fans and experts keenly watching. What impact will this young talent have on future contests?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "casa-pia-vs-sporting-why-indias-football-fans-are-hooked",
