@@ -1,5 +1,16 @@
 [
     {
+        "id": "war-2-frenzy-hrithik-roshan-takes-india-by-storm",
+        "keyword": "hrithik roshan",
+        "title": "War 2 Frenzy: Hrithik Roshan Takes India By Storm!",
+        "category": "Entertainment",
+        "date": "10 August 2025",
+        "image": "war-2-frenzy-hrithik-roshan-takes-india-by-storm.webp",
+        "url": "articles/war-2-frenzy-hrithik-roshan-takes-india-by-storm.html",
+        "excerpt": "War 2 hype grips India! Hrithik Roshan and Jr. NTR's spy showdown ignites screens August 14. Are you ready for the ultimate action?",
+        "featured": true
+    },
+    {
         "id": "crystal-palace-vs-liverpool-india-gripped-by-wembley-battle",
         "keyword": "crystal palace vs liverpool",
         "title": "Crystal Palace vs Liverpool: India Gripped By Wembley Battle!",
@@ -96,7 +107,7 @@
         "image": "aiims-job-alert-3496-posts-out-act-fast.webp",
         "url": "articles/aiims-job-alert-3496-posts-out-act-fast.html",
         "excerpt": "Massive AIIMS recruitment for 3,496 posts creates a buzz across India! Explore why AIIMS careers offer unparalleled opportunities. Exams approaching!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "man-united-vs-fiorentina-indias-fan-frenzy-explodes",
