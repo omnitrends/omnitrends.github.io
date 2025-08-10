@@ -1,5 +1,16 @@
 [
     {
+        "id": "aryna-sabalenka-why-her-bold-stand-captivates-indian-fans",
+        "keyword": "aryna sabalenka",
+        "title": "Aryna Sabalenka: Why Her Bold Stand Captivates Indian Fans!",
+        "category": "Sports",
+        "date": "10 August 2025",
+        "image": "aryna-sabalenka-why-her-bold-stand-captivates-indian-fans.webp",
+        "url": "articles/aryna-sabalenka-why-her-bold-stand-captivates-indian-fans.html",
+        "excerpt": "Aryna Sabalenka's fierce spirit, akin to Indian legends Kohli & Tendulkar, has captivated fans. Her brave return after tragedy proves her champion's heart! Why is India rooting for her?",
+        "featured": true
+    },
+    {
         "id": "palermo-vs-man-city-live-india-final-pre-season-clash",
         "keyword": "palermo vs man city",
         "title": "Palermo vs Man City Live: India! Final Pre-Season Clash.",
@@ -96,7 +107,7 @@
         "image": "west-indies-vs-pakistan-indian-fans-rush-to-stream-live.webp",
         "url": "articles/west-indies-vs-pakistan-indian-fans-rush-to-stream-live.html",
         "excerpt": "West Indies vs Pakistan: Indian fans are flocking to FanCode for live ODI action! Don't miss Babar Azam and Rizwan's return. Catch the excitement now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "west-indies-vs-pakistan-cricket-scorecard-indias-big-buzz",
