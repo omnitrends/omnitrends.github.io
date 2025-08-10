@@ -1,5 +1,16 @@
 [
     {
+        "id": "aus-vs-sa-live-indias-thrilling-t20-battle-begins",
+        "keyword": "aus vs sa live",
+        "title": "aus vs sa live: India's Thrilling T20 Battle Begins!",
+        "category": "Sports",
+        "date": "10 August 2025",
+        "image": "aus-vs-sa-live-indias-thrilling-t20-battle-begins.webp",
+        "url": "articles/aus-vs-sa-live-indias-thrilling-t20-battle-begins.html",
+        "excerpt": "Cricket frenzy grips India! The Aus vs Sa live T20 series is underway, crucial prep for the T20 World Cup co-hosted by India. Don't miss this epic battle!",
+        "featured": true
+    },
+    {
         "id": "kolkata-fatafat-why-india-awaits-todays-big-results",
         "keyword": "kolkata fatafat",
         "title": "Kolkata Fatafat: Why India Awaits Today's Big Results!",
@@ -96,7 +107,7 @@
         "image": "raksha-bandhan-muhurat-auspicious-timings-confirmed-now.webp",
         "url": "articles/raksha-bandhan-muhurat-auspicious-timings-confirmed-now.html",
         "excerpt": "Rakshabandhan Muhurat: Auspicious timings for Aug 9 are confirmed! With no Bhadra impacting the day, celebrate a truly blessed Rakhi. Find your city's best time!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "hassan-nawazs-debut-delight-pakistan-wins-india-reacts",
