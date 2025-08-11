@@ -1,5 +1,16 @@
 [
     {
+        "id": "ibps-po-2025-call-letters-out-your-banking-dream-awaits",
+        "keyword": "ibps",
+        "title": "IBPS PO 2025: Call Letters OUT! Your Banking Dream Awaits!",
+        "category": "News",
+        "date": "11 August 2025",
+        "image": "ibps-po-2025-call-letters-out-your-banking-dream-awaits.webp",
+        "url": "articles/ibps-po-2025-call-letters-out-your-banking-dream-awaits.html",
+        "excerpt": "IBPS PO 2025 call letters released! Lakhs of Indian banking hopefuls are eagerly checking their status. Your exam journey begins. Download now!",
+        "featured": true
+    },
+    {
         "id": "jsw-cement-ipo-gmp-grey-market-premium-why-indias-watch",
         "keyword": "jsw cement ipo gmp grey market premium",
         "title": "JSW Cement IPO GMP Grey Market Premium: Why India's Watch!",
@@ -96,7 +107,7 @@
         "image": "aus-vs-sa-live-indias-thrilling-t20-battle-begins.webp",
         "url": "articles/aus-vs-sa-live-indias-thrilling-t20-battle-begins.html",
         "excerpt": "Cricket frenzy grips India! The Aus vs Sa live T20 series is underway, crucial prep for the T20 World Cup co-hosted by India. Don't miss this epic battle!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "kolkata-fatafat-why-india-awaits-todays-big-results",
