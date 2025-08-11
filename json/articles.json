@@ -1,5 +1,16 @@
 [
     {
+        "id": "ronaldo-engaged-india-erupts-in-celebration",
+        "keyword": "ronaldo",
+        "title": "Ronaldo Engaged? India Erupts in Celebration!",
+        "category": "Lifestyle",
+        "date": "11 August 2025",
+        "image": "ronaldo-engaged-india-erupts-in-celebration.webp",
+        "url": "articles/ronaldo-engaged-india-erupts-in-celebration.html",
+        "excerpt": "Global icon Ronaldo makes it official! India is abuzz with excitement over his engagement. See Georgina's stunning ring and fan reactions here!",
+        "featured": true
+    },
+    {
         "id": "ap-dsc-results-2025-your-wait-ends-latest-news-here",
         "keyword": "ap dsc results 2025",
         "title": "AP DSC Results 2025: Your Wait Ends! Latest News Here.",
@@ -96,7 +107,7 @@
         "image": "war-2-frenzy-hrithik-roshan-takes-india-by-storm.webp",
         "url": "articles/war-2-frenzy-hrithik-roshan-takes-india-by-storm.html",
         "excerpt": "War 2 hype grips India! Hrithik Roshan and Jr. NTR's spy showdown ignites screens August 14. Are you ready for the ultimate action?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "crystal-palace-vs-liverpool-india-gripped-by-wembley-battle",
