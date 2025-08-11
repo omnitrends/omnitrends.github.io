@@ -1,5 +1,16 @@
 [
     {
+        "id": "nsdl-share-price-ipo-jackpot-can-it-keep-gaining",
+        "keyword": "nsdl share price",
+        "title": "NSDL Share Price: IPO Jackpot! Can it Keep Gaining?",
+        "category": "Finance",
+        "date": "11 August 2025",
+        "image": "nsdl-share-price-ipo-jackpot-can-it-keep-gaining.webp",
+        "url": "articles/nsdl-share-price-ipo-jackpot-can-it-keep-gaining.html",
+        "excerpt": "NSDL share price continues its post-IPO surge, captivating Indian investors. Will this market success translate into sustainable long-term gains?",
+        "featured": true
+    },
+    {
         "id": "icmai-cma-results-out-your-career-awaits-check-now",
         "keyword": "icmai cma results",
         "title": "ICMAI CMA Results OUT: Your Career Awaits, Check Now!",
@@ -96,7 +107,7 @@
         "image": "why-india-is-buzzing-over-bahia-vs-fluminense.webp",
         "url": "articles/why-india-is-buzzing-over-bahia-vs-fluminense.html",
         "excerpt": "Indian football fans are hooked on the thrilling Bahia vs Fluminense 3-3 draw! This Brazilian football spectacle packed six goals. Did you catch the highlights?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "aryna-sabalenka-why-her-bold-stand-captivates-indian-fans",
