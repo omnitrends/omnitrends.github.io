@@ -1,5 +1,16 @@
 [
     {
+        "id": "mcc-neet-ug-delay-aspirants-future-in-limbo",
+        "keyword": "mcc",
+        "title": "MCC NEET UG Delay: Aspirants' Future in Limbo!",
+        "category": "News",
+        "date": "12 August 2025",
+        "image": "mcc-neet-ug-delay-aspirants-future-in-limbo.webp",
+        "url": "articles/mcc-neet-ug-delay-aspirants-future-in-limbo.html",
+        "excerpt": "NEET UG aspirants' future hangs. mcc delays results again, sparking nationwide frustration. When will students get clarity? Find out now!",
+        "featured": true
+    },
+    {
         "id": "south-africa-vs-australia-brevis-century-ignites-indias-t20-fever",
         "keyword": "south africa vs australia",
         "title": "South Africa vs Australia: Brevis Century Ignites India's T20 Fever",
@@ -96,7 +107,7 @@
         "image": "ibps-po-2025-call-letters-out-your-banking-dream-awaits.webp",
         "url": "articles/ibps-po-2025-call-letters-out-your-banking-dream-awaits.html",
         "excerpt": "IBPS PO 2025 call letters released! Lakhs of Indian banking hopefuls are eagerly checking their status. Your exam journey begins. Download now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "jsw-cement-ipo-gmp-grey-market-premium-why-indias-watch",
