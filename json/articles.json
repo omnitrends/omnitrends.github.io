@@ -1,5 +1,16 @@
 [
     {
+        "id": "león-vs-monterrey-indias-fiery-football-frenzy",
+        "keyword": "león vs monterrey",
+        "title": "León vs Monterrey: India's Fiery Football Frenzy!",
+        "category": "Sports",
+        "date": "12 August 2025",
+        "image": "león-vs-monterrey-indias-fiery-football-frenzy.webp",
+        "url": "articles/león-vs-monterrey-indias-fiery-football-frenzy.html",
+        "excerpt": "Indian football heats up! Fans are glued to the live León vs Monterrey Liga MX clash, now streaming. Will underdogs upset the favorite? Don't miss the drama!",
+        "featured": true
+    },
+    {
         "id": "why-jannik-sinners-cincinnati-return-thrills-india-today",
         "keyword": "jannik sinner",
         "title": "Why Jannik Sinner's Cincinnati Return Thrills India Today",
@@ -96,7 +107,7 @@
         "image": "orlando-city-vs-inter-miami-messis-absence-rocks-india.webp",
         "url": "articles/orlando-city-vs-inter-miami-messis-absence-rocks-india.html",
         "excerpt": "Lionel Messi’s absence from the Orlando City vs Inter Miami match is rocking India. Why is this fixture, sans Messi, now trending nationwide? Find out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "barcelona-vs-como-asias-new-giant-stuns-india",
