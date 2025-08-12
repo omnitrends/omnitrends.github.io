@@ -1,5 +1,16 @@
 [
     {
+        "id": "highway-infrastructure-share-price-ipos-sensational-debut",
+        "keyword": "highway infrastructure share price",
+        "title": "Highway Infrastructure Share Price: IPO's Sensational Debut!",
+        "category": "Finance",
+        "date": "12 August 2025",
+        "image": "highway-infrastructure-share-price-ipos-sensational-debut.webp",
+        "url": "articles/highway-infrastructure-share-price-ipos-sensational-debut.html",
+        "excerpt": "The Highway Infrastructure share price saw a sensational debut today, listing at a 67% premium! India's infra boom fuels investor frenzy. Will you ride this growth?",
+        "featured": true
+    },
+    {
         "id": "león-vs-monterrey-indias-fiery-football-frenzy",
         "keyword": "león vs monterrey",
         "title": "León vs Monterrey: India's Fiery Football Frenzy!",
@@ -96,7 +107,7 @@
         "image": "icmai-cma-results-out-your-career-awaits-check-now.webp",
         "url": "articles/icmai-cma-results-out-your-career-awaits-check-now.html",
         "excerpt": "The wait is over! ICMAI CMA results are live, shaping thousands of careers. This trending news defines futures across India. Your next big career move starts here!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "orlando-city-vs-inter-miami-messis-absence-rocks-india",
