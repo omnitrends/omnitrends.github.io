@@ -1,5 +1,16 @@
 [
     {
+        "id": "hang-seng-buzz-indias-investors-eye-this-today",
+        "keyword": "hang seng",
+        "title": "Hang Seng Buzz: India's Investors Eye This Today!",
+        "category": "Finance",
+        "date": "12 August 2025",
+        "image": "hang-seng-buzz-indias-investors-eye-this-today.webp",
+        "url": "articles/hang-seng-buzz-indias-investors-eye-this-today.html",
+        "excerpt": "The Hang Seng's current movements are vital for Indian investors. See how this key Asian index impacts Sensex and Nifty today. What's next for your portfolio?",
+        "featured": true
+    },
+    {
         "id": "highway-infrastructure-share-price-ipos-sensational-debut",
         "keyword": "highway infrastructure share price",
         "title": "Highway Infrastructure Share Price: IPO's Sensational Debut!",
@@ -96,7 +107,7 @@
         "image": "nsdl-share-price-ipo-jackpot-can-it-keep-gaining.webp",
         "url": "articles/nsdl-share-price-ipo-jackpot-can-it-keep-gaining.html",
         "excerpt": "NSDL share price continues its post-IPO surge, captivating Indian investors. Will this market success translate into sustainable long-term gains?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "icmai-cma-results-out-your-career-awaits-check-now",
