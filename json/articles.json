@@ -1,5 +1,16 @@
 [
     {
+        "id": "ravi-ghai-sachins-son-arjuns-engagement-shakes-india",
+        "keyword": "ravi ghai",
+        "title": "Ravi Ghai: Sachin's Son Arjun's Engagement Shakes India!",
+        "category": "Lifestyle",
+        "date": "13 August 2025",
+        "image": "ravi-ghai-sachins-son-arjuns-engagement-shakes-india.webp",
+        "url": "articles/ravi-ghai-sachins-son-arjuns-engagement-shakes-india.html",
+        "excerpt": "Arjun Tendulkar's engagement to Ravi Ghai's granddaughter Saaniya Chandok is the talk of India! Uncover why this prominent family connection is trending now.",
+        "featured": true
+    },
+    {
         "id": "goa-vs-al-seeb-roar-for-indias-afc-glory-today",
         "keyword": "goa vs al-seeb",
         "title": "Goa vs Al-Seeb: Roar for India's AFC Glory Today!",
@@ -96,7 +107,7 @@
         "image": "mcc-neet-ug-delay-aspirants-future-in-limbo.webp",
         "url": "articles/mcc-neet-ug-delay-aspirants-future-in-limbo.html",
         "excerpt": "NEET UG aspirants' future hangs. mcc delays results again, sparking nationwide frustration. When will students get clarity? Find out now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "south-africa-vs-australia-brevis-century-ignites-indias-t20-fever",
