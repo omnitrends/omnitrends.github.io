@@ -1,5 +1,16 @@
 [
     {
+        "id": "overseas-citizenship-of-india-new-jail-rule-shakes-oci-holders",
+        "keyword": "overseas citizenship of india",
+        "title": "Overseas Citizenship of India: New Jail Rule Shakes OCI Holders.",
+        "category": "News",
+        "date": "13 August 2025",
+        "image": "overseas-citizenship-of-india-new-jail-rule-shakes-oci-holders.webp",
+        "url": "articles/overseas-citizenship-of-india-new-jail-rule-shakes-oci-holders.html",
+        "excerpt": "Overseas Citizenship of India: Jail for 2+ years or serious charges can now cancel your OCI. Are you impacted by MHA's new strict rules?",
+        "featured": true
+    },
+    {
         "id": "har-ghar-tiranga-why-india-is-buzzing-this-august",
         "keyword": "har ghar tiranga",
         "title": "Har Ghar Tiranga: Why India is Buzzing This August!",
@@ -96,7 +107,7 @@
         "image": "hang-seng-buzz-indias-investors-eye-this-today.webp",
         "url": "articles/hang-seng-buzz-indias-investors-eye-this-today.html",
         "excerpt": "The Hang Seng's current movements are vital for Indian investors. See how this key Asian index impacts Sensex and Nifty today. What's next for your portfolio?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "highway-infrastructure-share-price-ipos-sensational-debut",
