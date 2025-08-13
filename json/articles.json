@@ -1,5 +1,16 @@
 [
     {
+        "id": "tottenhams-uefa-super-cup-quest-new-captain-india-hopes",
+        "keyword": "tottenham",
+        "title": "Tottenham's UEFA Super Cup Quest: New Captain, India Hopes!",
+        "category": "Sports",
+        "date": "13 August 2025",
+        "image": "tottenhams-uefa-super-cup-quest-new-captain-india-hopes.webp",
+        "url": "articles/tottenhams-uefa-super-cup-quest-new-captain-india-hopes.html",
+        "excerpt": "Tottenham’s UEFA Super Cup final ignites India! New captain, big hopes for glory. Will Spurs finally win? Get ready for the thrill!",
+        "featured": true
+    },
+    {
         "id": "ravi-ghai-sachins-son-arjuns-engagement-shakes-india",
         "keyword": "ravi ghai",
         "title": "Ravi Ghai: Sachin's Son Arjun's Engagement Shakes India!",
@@ -96,7 +107,7 @@
         "image": "wsg-tirol-vs-real-madrid-india-demands-live-football.webp",
         "url": "articles/wsg-tirol-vs-real-madrid-india-demands-live-football.html",
         "excerpt": "India's football passion surges! Today's wsg tirol vs real madrid friendly is a must-watch, highlighting the nation's demand for top live action. How will fans catch it?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "mcc-neet-ug-delay-aspirants-future-in-limbo",
