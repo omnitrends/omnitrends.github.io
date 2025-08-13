@@ -1,5 +1,16 @@
 [
     {
+        "id": "har-ghar-tiranga-why-india-is-buzzing-this-august",
+        "keyword": "har ghar tiranga",
+        "title": "Har Ghar Tiranga: Why India is Buzzing This August!",
+        "category": "News",
+        "date": "13 August 2025",
+        "image": "har-ghar-tiranga-why-india-is-buzzing-this-august.webp",
+        "url": "articles/har-ghar-tiranga-why-india-is-buzzing-this-august.html",
+        "excerpt": "India buzzes with Har Ghar Tiranga! As Independence Day nears, join millions hoisting our flag, uniting in patriotism. Share your Tiranga selfie and feel the national pride!",
+        "featured": true
+    },
+    {
         "id": "regaal-resources-ipo-gmp-why-indias-buzzing-today",
         "keyword": "regaal resources ipo gmp",
         "title": "Regaal Resources IPO GMP: Why India's Buzzing Today!",
@@ -96,7 +107,7 @@
         "image": "highway-infrastructure-share-price-ipos-sensational-debut.webp",
         "url": "articles/highway-infrastructure-share-price-ipos-sensational-debut.html",
         "excerpt": "The Highway Infrastructure share price saw a sensational debut today, listing at a 67% premium! India's infra boom fuels investor frenzy. Will you ride this growth?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "león-vs-monterrey-indias-fiery-football-frenzy",
