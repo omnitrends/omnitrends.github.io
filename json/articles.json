@@ -1,5 +1,16 @@
 [
     {
+        "id": "brace-yourself-indias-weather-today-triggers-red-alerts",
+        "keyword": "weather today",
+        "title": "Brace Yourself: India's Weather Today Triggers Red Alerts!",
+        "category": "News",
+        "date": "14 August 2025",
+        "image": "brace-yourself-indias-weather-today-triggers-red-alerts.webp",
+        "url": "articles/brace-yourself-indias-weather-today-triggers-red-alerts.html",
+        "excerpt": "India battles intense monsoon fury! IMD issues widespread red alerts. Know how the weather today impacts your city and crucial safety steps.",
+        "featured": true
+    },
+    {
         "id": "tottenhams-uefa-super-cup-quest-new-captain-india-hopes",
         "keyword": "tottenham",
         "title": "Tottenham's UEFA Super Cup Quest: New Captain, India Hopes!",
@@ -96,7 +107,7 @@
         "image": "monza-vs-inter-india-brace-for-pre-season-thriller.webp",
         "url": "articles/monza-vs-inter-india-brace-for-pre-season-thriller.html",
         "excerpt": "Indian fans brace for the monza vs inter pre-season thriller! Don't miss this captivating Italian football clash. Will your team triumph?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "wsg-tirol-vs-real-madrid-india-demands-live-football",
