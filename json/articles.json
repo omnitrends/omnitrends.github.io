@@ -1,5 +1,16 @@
 [
     {
+        "id": "coolie-movie-reviews-indias-latest-cinematic-firestorm",
+        "keyword": "coolie movie reviews",
+        "title": "Coolie Movie Reviews: India's Latest Cinematic Firestorm!",
+        "category": "Entertainment",
+        "date": "14 August 2025",
+        "image": "coolie-movie-reviews-indias-latest-cinematic-firestorm.webp",
+        "url": "articles/coolie-movie-reviews-indias-latest-cinematic-firestorm.html",
+        "excerpt": "Coolie movie reviews are splitting India! Rajinikanth's comeback film sparks fiery debate and huge box office numbers. What's the real verdict?",
+        "featured": true
+    },
+    {
         "id": "ibps-po-admit-card-2025-out-download-your-hall-ticket-now",
         "keyword": "ibps po admit card 2025",
         "title": "IBPS PO Admit Card 2025 Out! Download Your Hall Ticket Now.",
@@ -96,7 +107,7 @@
         "image": "goa-vs-al-seeb-roar-for-indias-afc-glory-today.webp",
         "url": "articles/goa-vs-al-seeb-roar-for-indias-afc-glory-today.html",
         "excerpt": "India awaits! The crucial goa vs al-seeb AFC Champions League Two clash today is vital for Indian football's continental dreams. Will FC Goa script history? Tune in now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "overseas-citizenship-of-india-new-jail-rule-shakes-oci-holders",
