@@ -1,5 +1,16 @@
 [
     {
+        "id": "79th-independence-day-of-india-nations-pride-ignites",
+        "keyword": "79th independence day of india",
+        "title": "79th independence day of india: Nation's Pride Ignites!",
+        "category": "News",
+        "date": "14 August 2025",
+        "image": "79th-independence-day-of-india-nations-pride-ignites.webp",
+        "url": "articles/79th-independence-day-of-india-nations-pride-ignites.html",
+        "excerpt": "India celebrates the 79th independence day of india tomorrow with immense pride. What does this milestone mean for the nation's journey forward? Discover more.",
+        "featured": true
+    },
+    {
         "id": "coolie-movie-reviews-indias-latest-cinematic-firestorm",
         "keyword": "coolie movie reviews",
         "title": "Coolie Movie Reviews: India's Latest Cinematic Firestorm!",
@@ -96,7 +107,7 @@
         "image": "ravi-ghai-sachins-son-arjuns-engagement-shakes-india.webp",
         "url": "articles/ravi-ghai-sachins-son-arjuns-engagement-shakes-india.html",
         "excerpt": "Arjun Tendulkar's engagement to Ravi Ghai's granddaughter Saaniya Chandok is the talk of India! Uncover why this prominent family connection is trending now.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "goa-vs-al-seeb-roar-for-indias-afc-glory-today",
