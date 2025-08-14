@@ -1,5 +1,16 @@
 [
     {
+        "id": "darshans-bail-cancelled-sc-orders-custody-now",
+        "keyword": "darshan",
+        "title": "Darshan's Bail Cancelled! SC Orders Custody Now.",
+        "category": "News",
+        "date": "14 August 2025",
+        "image": "darshans-bail-cancelled-sc-orders-custody-now.webp",
+        "url": "articles/darshans-bail-cancelled-sc-orders-custody-now.html",
+        "excerpt": "Actor Darshan's bail revoked by SC! India watches as the top court orders his custody in the Renukaswamy murder case. Why is this a landmark decision?",
+        "featured": true
+    },
+    {
         "id": "rajinikanths-coolie-movie-review-divides-india-read-why",
         "keyword": "movie review",
         "title": "Rajinikanth's Coolie Movie Review Divides India! Read Why",
@@ -96,7 +107,7 @@
         "image": "regaal-resources-ipo-gmp-why-indias-buzzing-today.webp",
         "url": "articles/regaal-resources-ipo-gmp-why-indias-buzzing-today.html",
         "excerpt": "Regaal Resources IPO GMP is soaring! With strong subscription and rising grey market premium, India's investors eye potential listing gains. What's next for this buzz?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "vivo-v60-5g-indias-game-changing-zeiss-camera-phone",
