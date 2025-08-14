@@ -1,5 +1,16 @@
 [
     {
+        "id": "unlock-indias-entertainment-bookmyshows-new-era-begins",
+        "keyword": "bookmyshow",
+        "title": "Unlock India's Entertainment! BookMyShow's New Era Begins.",
+        "category": "Entertainment",
+        "date": "14 August 2025",
+        "image": "unlock-indias-entertainment-bookmyshows-new-era-begins.webp",
+        "url": "articles/unlock-indias-entertainment-bookmyshows-new-era-begins.html",
+        "excerpt": "BookMyShow revolutionizes Indian entertainment! New RuPay partnership and booming live events sector highlight its dominance. What's next for India's ticketing giant?",
+        "featured": true
+    },
+    {
         "id": "brace-yourself-indias-weather-today-triggers-red-alerts",
         "keyword": "weather today",
         "title": "Brace Yourself: India's Weather Today Triggers Red Alerts!",
@@ -96,7 +107,7 @@
         "image": "gold-prices-india-drop-seize-this-festive-season-opportunity.webp",
         "url": "articles/gold-prices-india-drop-seize-this-festive-season-opportunity.html",
         "excerpt": "With gold prices India drop, the much-awaited festive season buying opportunity is here! Grab your favorite gold as rates ease after recent highs.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "monza-vs-inter-india-brace-for-pre-season-thriller",
