@@ -1,5 +1,16 @@
 [
     {
+        "id": "war-movie-review-rating-war-2-divides-india",
+        "keyword": "war movie review rating",
+        "title": "War Movie Review Rating: War 2 Divides India",
+        "category": "Entertainment",
+        "date": "14 August 2025",
+        "image": "war-movie-review-rating-war-2-divides-india.webp",
+        "url": "articles/war-movie-review-rating-war-2-divides-india.html",
+        "excerpt": "War 2 hits screens, but its war movie review rating has India divided. Why are audiences polarized? Dive in to know more!",
+        "featured": true
+    },
+    {
         "id": "darshans-bail-cancelled-sc-orders-custody-now",
         "keyword": "darshan",
         "title": "Darshan's Bail Cancelled! SC Orders Custody Now.",
@@ -96,7 +107,7 @@
         "image": "har-ghar-tiranga-why-india-is-buzzing-this-august.webp",
         "url": "articles/har-ghar-tiranga-why-india-is-buzzing-this-august.html",
         "excerpt": "India buzzes with Har Ghar Tiranga! As Independence Day nears, join millions hoisting our flag, uniting in patriotism. Share your Tiranga selfie and feel the national pride!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "regaal-resources-ipo-gmp-why-indias-buzzing-today",
