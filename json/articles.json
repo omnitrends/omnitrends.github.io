@@ -1,5 +1,16 @@
 [
     {
+        "id": "rajinikanths-coolie-movie-review-divides-india-read-why",
+        "keyword": "movie review",
+        "title": "Rajinikanth's Coolie Movie Review Divides India! Read Why",
+        "category": "Entertainment",
+        "date": "14 August 2025",
+        "image": "rajinikanths-coolie-movie-review-divides-india-read-why.webp",
+        "url": "articles/rajinikanths-coolie-movie-review-divides-india-read-why.html",
+        "excerpt": "Rajinikanth's Coolie movie review has sparked massive debates across India! Fans and critics are split. Why is this movie review trending? Dive in to uncover.",
+        "featured": true
+    },
+    {
         "id": "unlock-indias-entertainment-bookmyshows-new-era-begins",
         "keyword": "bookmyshow",
         "title": "Unlock India's Entertainment! BookMyShow's New Era Begins.",
@@ -96,7 +107,7 @@
         "image": "vivo-v60-5g-indias-game-changing-zeiss-camera-phone.webp",
         "url": "articles/vivo-v60-5g-indias-game-changing-zeiss-camera-phone.html",
         "excerpt": "The new vivo v60 5g is redefining photography in India! With its ZEISS camera and powerful features, it's set to capture stunning moments. Don't miss out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "gold-prices-india-drop-seize-this-festive-season-opportunity",
