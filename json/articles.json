@@ -1,5 +1,16 @@
 [
     {
+        "id": "coolie-movie-box-office-collection-why-indias-buzzing",
+        "keyword": "coolie movie box office collection",
+        "title": "Coolie Movie Box Office Collection: Why India's Buzzing!",
+        "category": "Entertainment",
+        "date": "15 August 2025",
+        "image": "coolie-movie-box-office-collection-why-indias-buzzing.webp",
+        "url": "articles/coolie-movie-box-office-collection-why-indias-buzzing.html",
+        "excerpt": "Coolie movie box office collection is skyrocketing! Rajinikanth's latest actioner grips India. Why is this cinematic phenomenon breaking records? Dive in!",
+        "featured": true
+    },
+    {
         "id": "india-rejoices-happy-independence-day-15-august-inspires-millions",
         "keyword": "happy independence day 15 august",
         "title": "India Rejoices! happy independence day 15 august Inspires Millions",
@@ -96,7 +107,7 @@
         "image": "rajinikanths-coolie-movie-review-divides-india-read-why.webp",
         "url": "articles/rajinikanths-coolie-movie-review-divides-india-read-why.html",
         "excerpt": "Rajinikanth's Coolie movie review has sparked massive debates across India! Fans and critics are split. Why is this movie review trending? Dive in to uncover.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "unlock-indias-entertainment-bookmyshows-new-era-begins",
