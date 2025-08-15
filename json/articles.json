@@ -1,5 +1,16 @@
 [
     {
+        "id": "indias-alaska-test-trump-putin-summit-tariff-war",
+        "keyword": "alaska",
+        "title": "India's Alaska Test: Trump-Putin Summit & Tariff War.",
+        "category": "News",
+        "date": "15 August 2025",
+        "image": "indias-alaska-test-trump-putin-summit-tariff-war.webp",
+        "url": "articles/indias-alaska-test-trump-putin-summit-tariff-war.html",
+        "excerpt": "As Trump meets Putin in Alaska today, India holds its breath! Will the summit ease US tariff threats over Russian oil? Delhi's global balancing act intensifies. Know more!",
+        "featured": true
+    },
+    {
         "id": "coolie-movie-box-office-collection-why-indias-buzzing",
         "keyword": "coolie movie box office collection",
         "title": "Coolie Movie Box Office Collection: Why India's Buzzing!",
@@ -96,7 +107,7 @@
         "image": "darshans-bail-cancelled-sc-orders-custody-now.webp",
         "url": "articles/darshans-bail-cancelled-sc-orders-custody-now.html",
         "excerpt": "Actor Darshan's bail revoked by SC! India watches as the top court orders his custody in the Renukaswamy murder case. Why is this a landmark decision?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "rajinikanths-coolie-movie-review-divides-india-read-why",
