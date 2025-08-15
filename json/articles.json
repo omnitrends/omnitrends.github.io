@@ -1,5 +1,16 @@
 [
     {
+        "id": "deadly-collapse-at-humayun-tomb-shock-grips-delhi",
+        "keyword": "humayun tomb",
+        "title": "Deadly Collapse at Humayun Tomb: Shock Grips Delhi.",
+        "category": "News",
+        "date": "15 August 2025",
+        "image": "deadly-collapse-at-humayun-tomb-shock-grips-delhi.webp",
+        "url": "articles/deadly-collapse-at-humayun-tomb-shock-grips-delhi.html",
+        "excerpt": "Deadly collapse near Humayun Tomb shocks Delhi! Rescue operations underway as casualties mount. What caused this tragedy so close to the heritage site?",
+        "featured": true
+    },
+    {
         "id": "indias-alaska-test-trump-putin-summit-tariff-war",
         "keyword": "alaska",
         "title": "India's Alaska Test: Trump-Putin Summit & Tariff War.",
@@ -96,7 +107,7 @@
         "image": "war-movie-review-rating-war-2-divides-india.webp",
         "url": "articles/war-movie-review-rating-war-2-divides-india.html",
         "excerpt": "War 2 hits screens, but its war movie review rating has India divided. Why are audiences polarized? Dive in to know more!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "darshans-bail-cancelled-sc-orders-custody-now",
