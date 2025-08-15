@@ -1,5 +1,16 @@
 [
     {
+        "id": "liverpools-season-kicks-off-indias-passion-ignites",
+        "keyword": "liverpool",
+        "title": "Liverpool's Season Kicks Off: India's Passion Ignites!",
+        "category": "Sports",
+        "date": "15 August 2025",
+        "image": "liverpools-season-kicks-off-indias-passion-ignites.webp",
+        "url": "articles/liverpools-season-kicks-off-indias-passion-ignites.html",
+        "excerpt": "Liverpool's new season sparks nationwide excitement in India. Witness the growing fan fever! Will this be their year to dominate?",
+        "featured": true
+    },
+    {
         "id": "niger-vs-south-africa-why-india-is-hooked-on-this-match",
         "keyword": "niger vs south africa",
         "title": "Niger vs South Africa: Why India is Hooked on This Match!",
@@ -96,7 +107,7 @@
         "image": "coolie-movie-reviews-indias-latest-cinematic-firestorm.webp",
         "url": "articles/coolie-movie-reviews-indias-latest-cinematic-firestorm.html",
         "excerpt": "Coolie movie reviews are splitting India! Rajinikanth's comeback film sparks fiery debate and huge box office numbers. What's the real verdict?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "ibps-po-admit-card-2025-out-download-your-hall-ticket-now",
