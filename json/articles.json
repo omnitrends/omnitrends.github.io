@@ -1,5 +1,16 @@
 [
     {
+        "id": "india-gears-up-flag-hoisting-time-on-15-august-2025",
+        "keyword": "flag hoisting time on 15 august 2025",
+        "title": "India Gears Up: Flag Hoisting Time on 15 August 2025!",
+        "category": "News",
+        "date": "15 August 2025",
+        "image": "india-gears-up-flag-hoisting-time-on-15-august-2025.webp",
+        "url": "articles/india-gears-up-flag-hoisting-time-on-15-august-2025.html",
+        "excerpt": "India celebrates Independence Day! Millions eagerly await the precise flag hoisting time on 15 August 2025. Witness this momentous national event.",
+        "featured": true
+    },
+    {
         "id": "india-independence-day-year-celebrate-79-years-of-freedom",
         "keyword": "india independence day year",
         "title": "India Independence Day Year: Celebrate 79 Years of Freedom!",
@@ -96,7 +107,7 @@
         "image": "brace-yourself-indias-weather-today-triggers-red-alerts.webp",
         "url": "articles/brace-yourself-indias-weather-today-triggers-red-alerts.html",
         "excerpt": "India battles intense monsoon fury! IMD issues widespread red alerts. Know how the weather today impacts your city and crucial safety steps.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "tottenhams-uefa-super-cup-quest-new-captain-india-hopes",
