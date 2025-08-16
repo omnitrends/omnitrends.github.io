@@ -1,5 +1,16 @@
 [
     {
+        "id": "premier-league-table-indias-top-clubs-fight-for-early-lead",
+        "keyword": "premier league table",
+        "title": "Premier League Table: India's Top Clubs Fight for Early Lead!",
+        "category": "Sports",
+        "date": "16 August 2025",
+        "image": "premier-league-table-indias-top-clubs-fight-for-early-lead.webp",
+        "url": "articles/premier-league-table-indias-top-clubs-fight-for-early-lead.html",
+        "excerpt": "India's football frenzy ignites! The early Premier League table is buzzing, as fans track their favourite clubs' fight for top spots. Who will lead?",
+        "featured": true
+    },
+    {
         "id": "indias-latest-news-why-every-update-matters-now",
         "keyword": "latest news",
         "title": "India's Latest News: Why Every Update Matters Now!",
@@ -96,7 +107,7 @@
         "image": "india-independence-day-year-celebrate-79-years-of-freedom.webp",
         "url": "articles/india-independence-day-year-celebrate-79-years-of-freedom.html",
         "excerpt": "India Independence Day year marks our 79th celebration of freedom! Join millions nationwide as 'Naya Bharat' ignites patriotic pride. Discover the inspiring vision!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "79th-independence-day-of-india-nations-pride-ignites",
