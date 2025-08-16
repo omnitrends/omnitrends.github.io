@@ -1,5 +1,16 @@
 [
     {
+        "id": "aus-vs-sa-t20i-decider-indias-cricket-thrill-live",
+        "keyword": "aus vs sa",
+        "title": "AUS vs SA: T20I Decider! India's Cricket Thrill Live!",
+        "category": "Sports",
+        "date": "16 August 2025",
+        "image": "aus-vs-sa-t20i-decider-indias-cricket-thrill-live.webp",
+        "url": "articles/aus-vs-sa-t20i-decider-indias-cricket-thrill-live.html",
+        "excerpt": "Thrilling aus vs sa T20I decider today! Series 1-1. Can Australia clinch it or will Proteas dominate after Brevis's heroics? Catch it live in India!",
+        "featured": true
+    },
+    {
         "id": "urgent-bank-holidays-today-are-banks-closed-for-you",
         "keyword": "bank holidays",
         "title": "Urgent: Bank Holidays Today! Are Banks Closed for You?",
@@ -96,7 +107,7 @@
         "image": "india-rejoices-happy-independence-day-15-august-inspires-millions.webp",
         "url": "articles/india-rejoices-happy-independence-day-15-august-inspires-millions.html",
         "excerpt": "India rejoices! Happy Independence Day 15 August ignites national pride as PM Modi's historic address unveils key reforms and a 'Viksit Bharat' vision. Discover India's path forward!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-gears-up-flag-hoisting-time-on-15-august-2025",
