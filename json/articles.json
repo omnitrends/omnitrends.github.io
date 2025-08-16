@@ -1,5 +1,16 @@
 [
     {
+        "id": "urgent-bank-holidays-today-are-banks-closed-for-you",
+        "keyword": "bank holidays",
+        "title": "Urgent: Bank Holidays Today! Are Banks Closed for You?",
+        "category": "Finance",
+        "date": "16 August 2025",
+        "image": "urgent-bank-holidays-today-are-banks-closed-for-you.webp",
+        "url": "articles/urgent-bank-holidays-today-are-banks-closed-for-you.html",
+        "excerpt": "Urgent: Bank holidays are trending! Before you visit, check if banks are closed in your state today. Get the latest India-wide list and plan ahead!",
+        "featured": true
+    },
+    {
         "id": "premier-league-table-indias-top-clubs-fight-for-early-lead",
         "keyword": "premier league table",
         "title": "Premier League Table: India's Top Clubs Fight for Early Lead!",
@@ -96,7 +107,7 @@
         "image": "india-gears-up-flag-hoisting-time-on-15-august-2025.webp",
         "url": "articles/india-gears-up-flag-hoisting-time-on-15-august-2025.html",
         "excerpt": "India celebrates Independence Day! Millions eagerly await the precise flag hoisting time on 15 August 2025. Witness this momentous national event.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-independence-day-year-celebrate-79-years-of-freedom",
