@@ -1,5 +1,16 @@
 [
     {
+        "id": "barcelona-shakes-la-liga-indias-eyes-on-new-stars",
+        "keyword": "barcelona",
+        "title": "Barcelona Shakes La Liga: India's Eyes on New Stars!",
+        "category": "Sports",
+        "date": "16 August 2025",
+        "image": "barcelona-shakes-la-liga-indias-eyes-on-new-stars.webp",
+        "url": "articles/barcelona-shakes-la-liga-indias-eyes-on-new-stars.html",
+        "excerpt": "Barcelona's title defense begins! New stars like Rashford excite Indian fans. Catch La Liga action and see if they retain glory. Don't miss the thrill!",
+        "featured": true
+    },
+    {
         "id": "mallorca-vs-barcelona-la-liga-opener-shakes-india",
         "keyword": "mallorca vs barcelona",
         "title": "Mallorca vs Barcelona: La Liga Opener Shakes India!",
@@ -96,7 +107,7 @@
         "image": "niger-vs-south-africa-why-india-is-hooked-on-this-match.webp",
         "url": "articles/niger-vs-south-africa-why-india-is-hooked-on-this-match.html",
         "excerpt": "India watches closely as Niger vs South Africa dynamics shape Africa's future. Why is New Delhi keenly following this crucial regional interplay? Discover the hidden stakes!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "deadly-collapse-at-humayun-tomb-shock-grips-delhi",
