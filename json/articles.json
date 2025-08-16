@@ -1,5 +1,16 @@
 [
     {
+        "id": "mallorca-vs-barcelona-la-liga-opener-shakes-india",
+        "keyword": "mallorca vs barcelona",
+        "title": "Mallorca vs Barcelona: La Liga Opener Shakes India!",
+        "category": "Sports",
+        "date": "16 August 2025",
+        "image": "mallorca-vs-barcelona-la-liga-opener-shakes-india.webp",
+        "url": "articles/mallorca-vs-barcelona-la-liga-opener-shakes-india.html",
+        "excerpt": "Indian fans, La Liga kicks off! Watch Mallorca vs Barcelona as defending champions begin their campaign. Don't miss this thrilling opener live on FanCode!",
+        "featured": true
+    },
+    {
         "id": "rcd-mallorca-vs-fc-barcelona-timeline-why-indias-hooked",
         "keyword": "rcd mallorca vs fc barcelona timeline",
         "title": "RCD Mallorca vs FC Barcelona Timeline: Why India's Hooked!",
@@ -96,7 +107,7 @@
         "image": "deadly-collapse-at-humayun-tomb-shock-grips-delhi.webp",
         "url": "articles/deadly-collapse-at-humayun-tomb-shock-grips-delhi.html",
         "excerpt": "Deadly collapse near Humayun Tomb shocks Delhi! Rescue operations underway as casualties mount. What caused this tragedy so close to the heritage site?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "indias-alaska-test-trump-putin-summit-tariff-war",
