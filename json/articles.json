@@ -1,5 +1,16 @@
 [
     {
+        "id": "indias-latest-news-why-every-update-matters-now",
+        "keyword": "latest news",
+        "title": "India's Latest News: Why Every Update Matters Now!",
+        "category": "News",
+        "date": "16 August 2025",
+        "image": "indias-latest-news-why-every-update-matters-now.webp",
+        "url": "articles/indias-latest-news-why-every-update-matters-now.html",
+        "excerpt": "India's rapid advancements in policy, tech, and economy make tracking the latest news crucial. Understand how these changes impact your future!",
+        "featured": true
+    },
+    {
         "id": "liverpools-season-kicks-off-indias-passion-ignites",
         "keyword": "liverpool",
         "title": "Liverpool's Season Kicks Off: India's Passion Ignites!",
@@ -96,7 +107,7 @@
         "image": "79th-independence-day-of-india-nations-pride-ignites.webp",
         "url": "articles/79th-independence-day-of-india-nations-pride-ignites.html",
         "excerpt": "India celebrates the 79th independence day of india tomorrow with immense pride. What does this milestone mean for the nation's journey forward? Discover more.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "coolie-movie-reviews-indias-latest-cinematic-firestorm",
