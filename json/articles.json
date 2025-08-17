@@ -1,5 +1,16 @@
 [
     {
+        "id": "milan-vs-bari-leão-injury-stuns-india",
+        "keyword": "milan vs bari",
+        "title": "Milan vs Bari: Leão Injury Stuns India!",
+        "category": "Sports",
+        "date": "17 August 2025",
+        "image": "milan-vs-bari-leão-injury-stuns-india.webp",
+        "url": "articles/milan-vs-bari-leão-injury-stuns-india.html",
+        "excerpt": "Rafael Leão's injury during the Milan vs Bari Coppa Italia clash sends shockwaves among Indian fans. Will this impact AC Milan's season? Get the full story!",
+        "featured": true
+    },
+    {
         "id": "cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene",
         "keyword": "cp radhakrishnan",
         "title": "CP Radhakrishnan: NDA's VP Pick Ignites India's Political Scene",
@@ -96,7 +107,7 @@
         "image": "mallorca-vs-barcelona-la-liga-opener-shakes-india.webp",
         "url": "articles/mallorca-vs-barcelona-la-liga-opener-shakes-india.html",
         "excerpt": "Indian fans, La Liga kicks off! Watch Mallorca vs Barcelona as defending champions begin their campaign. Don't miss this thrilling opener live on FanCode!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "rcd-mallorca-vs-fc-barcelona-timeline-why-indias-hooked",
