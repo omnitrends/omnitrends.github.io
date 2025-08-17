@@ -1,5 +1,16 @@
 [
     {
+        "id": "elvish-yadavs-home-under-attack-shots-fired-in-gurugram",
+        "keyword": "elvish yadav",
+        "title": "Elvish Yadav's Home Under Attack: Shots Fired in Gurugram!",
+        "category": "News",
+        "date": "17 August 2025",
+        "image": "elvish-yadavs-home-under-attack-shots-fired-in-gurugram.webp",
+        "url": "articles/elvish-yadavs-home-under-attack-shots-fired-in-gurugram.html",
+        "excerpt": "Shocking! Shots fired at Elvish Yadav's Gurugram residence. Masked men opened fire, but Elvish was not home. Police probe ongoing. What's next for the YouTuber?",
+        "featured": true
+    },
+    {
         "id": "india-catches-mls-fire-messi-son-ignite-football-passion",
         "keyword": "mls",
         "title": "India Catches MLS Fire: Messi, Son Ignite Football Passion",
@@ -96,7 +107,7 @@
         "image": "premier-league-table-indias-top-clubs-fight-for-early-lead.webp",
         "url": "articles/premier-league-table-indias-top-clubs-fight-for-early-lead.html",
         "excerpt": "India's football frenzy ignites! The early Premier League table is buzzing, as fans track their favourite clubs' fight for top spots. Who will lead?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "indias-latest-news-why-every-update-matters-now",
