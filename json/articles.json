@@ -1,5 +1,16 @@
 [
     {
+        "id": "man-united-vs-arsenal-indias-fiery-rivalry-returns-today",
+        "keyword": "man united vs arsenal",
+        "title": "Man United vs Arsenal: India's Fiery Rivalry Returns Today!",
+        "category": "Sports",
+        "date": "17 August 2025",
+        "image": "man-united-vs-arsenal-indias-fiery-rivalry-returns-today.webp",
+        "url": "articles/man-united-vs-arsenal-indias-fiery-rivalry-returns-today.html",
+        "excerpt": "The highly anticipated Man United vs Arsenal clash grips India! Millions are set for today's epic Premier League battle. Who will claim victory?",
+        "featured": true
+    },
+    {
         "id": "chelsea-vs-crystal-palace-indias-pl-battleground-heats-up",
         "keyword": "chelsea vs crystal palace",
         "title": "Chelsea vs Crystal Palace: India's PL Battleground Heats Up!",
@@ -96,7 +107,7 @@
         "image": "kerala-lottery-result-today-live-see-if-you-won.webp",
         "url": "articles/kerala-lottery-result-today-live-see-if-you-won.html",
         "excerpt": "Millions across India eagerly await the Kerala lottery result today! Check your numbers now for a chance to win life-changing prizes. Will fortune smile on you?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "aus-vs-sa-t20i-decider-indias-cricket-thrill-live",
