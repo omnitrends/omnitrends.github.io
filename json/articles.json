@@ -1,5 +1,16 @@
 [
     {
+        "id": "chelsea-vs-crystal-palace-indias-pl-battleground-heats-up",
+        "keyword": "chelsea vs crystal palace",
+        "title": "Chelsea vs Crystal Palace: India's PL Battleground Heats Up!",
+        "category": "Sports",
+        "date": "17 August 2025",
+        "image": "chelsea-vs-crystal-palace-indias-pl-battleground-heats-up.webp",
+        "url": "articles/chelsea-vs-crystal-palace-indias-pl-battleground-heats-up.html",
+        "excerpt": "India's Premier League excitement peaks! Chelsea vs Crystal Palace clash today as champions meet FA Cup holders. Don't miss this thrilling season opener live on JioHotstar!",
+        "featured": true
+    },
+    {
         "id": "parag-agrawals-stunning-ai-comeback-india-takes-note",
         "keyword": "parag agrawal",
         "title": "Parag Agrawal's stunning AI comeback: India takes note.",
@@ -96,7 +107,7 @@
         "image": "aus-vs-sa-t20i-decider-indias-cricket-thrill-live.webp",
         "url": "articles/aus-vs-sa-t20i-decider-indias-cricket-thrill-live.html",
         "excerpt": "Thrilling aus vs sa T20I decider today! Series 1-1. Can Australia clinch it or will Proteas dominate after Brevis's heroics? Catch it live in India!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "urgent-bank-holidays-today-are-banks-closed-for-you",
