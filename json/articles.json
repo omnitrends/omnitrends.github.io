@@ -1,5 +1,16 @@
 [
     {
+        "id": "cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene",
+        "keyword": "cp radhakrishnan",
+        "title": "CP Radhakrishnan: NDA's VP Pick Ignites India's Political Scene",
+        "category": "News",
+        "date": "17 August 2025",
+        "image": "cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene.webp",
+        "url": "articles/cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene.html",
+        "excerpt": "CP Radhakrishnan's nomination as NDA's Vice President candidate has India's political scene buzzing. What does this strategic move mean for the nation's future? Explore now.",
+        "featured": true
+    },
+    {
         "id": "man-united-vs-arsenal-indias-fiery-rivalry-returns-today",
         "keyword": "man united vs arsenal",
         "title": "Man United vs Arsenal: India's Fiery Rivalry Returns Today!",
@@ -96,7 +107,7 @@
         "image": "rcd-mallorca-vs-fc-barcelona-timeline-why-indias-hooked.webp",
         "url": "articles/rcd-mallorca-vs-fc-barcelona-timeline-why-indias-hooked.html",
         "excerpt": "The RCD Mallorca vs FC Barcelona timeline excites Indian fans! Relive key matches & dramatic moments. Why's this La Liga clash trending? Find out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "kerala-lottery-result-today-live-see-if-you-won",
