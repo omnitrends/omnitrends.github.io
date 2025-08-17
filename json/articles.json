@@ -1,5 +1,16 @@
 [
     {
+        "id": "india-catches-mls-fire-messi-son-ignite-football-passion",
+        "keyword": "mls",
+        "title": "India Catches MLS Fire: Messi, Son Ignite Football Passion",
+        "category": "Sports",
+        "date": "17 August 2025",
+        "image": "india-catches-mls-fire-messi-son-ignite-football-passion.webp",
+        "url": "articles/india-catches-mls-fire-messi-son-ignite-football-passion.html",
+        "excerpt": "MLS is sparking a football revolution in India! Messi's move electrifies fans, boosting viewership. Are Indian audiences ready for this new football wave?",
+        "featured": true
+    },
+    {
         "id": "inter-miami-vs-la-galaxy-indias-verdict-on-messi-magic",
         "keyword": "inter miami vs la galaxy",
         "title": "inter miami vs la galaxy: India's Verdict on Messi Magic!",
@@ -96,7 +107,7 @@
         "image": "indias-latest-news-why-every-update-matters-now.webp",
         "url": "articles/indias-latest-news-why-every-update-matters-now.html",
         "excerpt": "India's rapid advancements in policy, tech, and economy make tracking the latest news crucial. Understand how these changes impact your future!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "liverpools-season-kicks-off-indias-passion-ignites",
