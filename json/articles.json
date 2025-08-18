@@ -1,5 +1,16 @@
 [
     {
+        "id": "sensex-nifty-stock-market-surges-gst-rating-lift-india",
+        "keyword": "sensex nifty stock market",
+        "title": "Sensex Nifty Stock Market Surges: GST & Rating Lift India!",
+        "category": "Finance",
+        "date": "18 August 2025",
+        "image": "sensex-nifty-stock-market-surges-gst-rating-lift-india.webp",
+        "url": "articles/sensex-nifty-stock-market-surges-gst-rating-lift-india.html",
+        "excerpt": "Indian Sensex Nifty stock market soars! PM Modi's GST reforms and S&P's rating upgrade ignite investor confidence. Is your portfolio positioned for growth?",
+        "featured": true
+    },
+    {
         "id": "maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally",
         "keyword": "maruti share price",
         "title": "Maruti Share Price Rockets! GST Cut Hopes Spark Indian Rally",
@@ -96,7 +107,7 @@
         "image": "elvish-yadavs-home-under-attack-shots-fired-in-gurugram.webp",
         "url": "articles/elvish-yadavs-home-under-attack-shots-fired-in-gurugram.html",
         "excerpt": "Shocking! Shots fired at Elvish Yadav's Gurugram residence. Masked men opened fire, but Elvish was not home. Police probe ongoing. What's next for the YouTuber?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-catches-mls-fire-messi-son-ignite-football-passion",
