@@ -1,5 +1,16 @@
 [
     {
+        "id": "mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury",
+        "keyword": "mumbai red alert heavy rainfall",
+        "title": "Mumbai Red Alert Heavy Rainfall: City Fights Monsoon Fury",
+        "category": "News",
+        "date": "18 August 2025",
+        "image": "mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury.webp",
+        "url": "articles/mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury.html",
+        "excerpt": "As a mumbai red alert heavy rainfall grips Mumbai, the city faces severe waterlogging and travel disruptions. Stay informed on the monsoon's impact.",
+        "featured": true
+    },
+    {
         "id": "mumbai-rains-news-city-braces-for-monsoon-fury",
         "keyword": "mumbai rains news",
         "title": "Mumbai Rains News: City Braces for Monsoon Fury",
@@ -96,7 +107,7 @@
         "image": "inter-miami-vs-la-galaxy-indias-verdict-on-messi-magic.webp",
         "url": "articles/inter-miami-vs-la-galaxy-indias-verdict-on-messi-magic.html",
         "excerpt": "Inter Miami vs LA Galaxy clash grips India! Messi magic continues to trend. Why is this match captivating Indian football fans? Find out!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "barcelona-shakes-la-liga-indias-eyes-on-new-stars",
