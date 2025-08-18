@@ -1,5 +1,16 @@
 [
     {
+        "id": "airtel-network-outage-india-faces-major-connectivity-chaos",
+        "keyword": "airtel network outage",
+        "title": "Airtel Network Outage: India Faces Major Connectivity Chaos",
+        "category": "News",
+        "date": "18 August 2025",
+        "image": "airtel-network-outage-india-faces-major-connectivity-chaos.webp",
+        "url": "articles/airtel-network-outage-india-faces-major-connectivity-chaos.html",
+        "excerpt": "An Airtel network outage crippled India, disrupting calls & data for millions nationwide. Widespread chaos on Monday! Check if your service is down.",
+        "featured": true
+    },
+    {
         "id": "airtel-down-millions-suffer-what-caused-indias-blackout",
         "keyword": "airtel",
         "title": "Airtel Down: Millions Suffer! What Caused India's Blackout?",
@@ -96,7 +107,7 @@
         "image": "chelsea-vs-crystal-palace-indias-pl-battleground-heats-up.webp",
         "url": "articles/chelsea-vs-crystal-palace-indias-pl-battleground-heats-up.html",
         "excerpt": "India's Premier League excitement peaks! Chelsea vs Crystal Palace clash today as champions meet FA Cup holders. Don't miss this thrilling season opener live on JioHotstar!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "parag-agrawals-stunning-ai-comeback-india-takes-note",
