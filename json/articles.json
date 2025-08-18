@@ -1,5 +1,16 @@
 [
     {
+        "id": "south-africa-vs-uganda-why-indian-football-fans-are-hooked",
+        "keyword": "south africa vs uganda",
+        "title": "South Africa vs Uganda: Why Indian Football Fans Are Hooked!",
+        "category": "Sports",
+        "date": "18 August 2025",
+        "image": "south-africa-vs-uganda-why-indian-football-fans-are-hooked.webp",
+        "url": "articles/south-africa-vs-uganda-why-indian-football-fans-are-hooked.html",
+        "excerpt": "Indian football fans are glued to the African Nations Championship! Why is the South Africa vs Uganda clash today at 10:30 PM IST a must-watch? Find out now!",
+        "featured": true
+    },
+    {
         "id": "airtel-network-outage-india-faces-major-connectivity-chaos",
         "keyword": "airtel network outage",
         "title": "Airtel Network Outage: India Faces Major Connectivity Chaos",
@@ -96,7 +107,7 @@
         "image": "man-united-vs-arsenal-indias-fiery-rivalry-returns-today.webp",
         "url": "articles/man-united-vs-arsenal-indias-fiery-rivalry-returns-today.html",
         "excerpt": "The highly anticipated Man United vs Arsenal clash grips India! Millions are set for today's epic Premier League battle. Who will claim victory?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "chelsea-vs-crystal-palace-indias-pl-battleground-heats-up",
