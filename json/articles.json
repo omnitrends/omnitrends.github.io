@@ -1,5 +1,16 @@
 [
     {
+        "id": "mumbai-rains-news-city-braces-for-monsoon-fury",
+        "keyword": "mumbai rains news",
+        "title": "Mumbai Rains News: City Braces for Monsoon Fury",
+        "category": "News",
+        "date": "18 August 2025",
+        "image": "mumbai-rains-news-city-braces-for-monsoon-fury.webp",
+        "url": "articles/mumbai-rains-news-city-braces-for-monsoon-fury.html",
+        "excerpt": "Mumbai rains news: City faces monsoon fury with alerts issued. Expect disruptions; check advisories for safe travel. Stay informed!",
+        "featured": true
+    },
+    {
         "id": "milan-vs-bari-leão-injury-stuns-india",
         "keyword": "milan vs bari",
         "title": "Milan vs Bari: Leão Injury Stuns India!",
@@ -96,7 +107,7 @@
         "image": "barcelona-shakes-la-liga-indias-eyes-on-new-stars.webp",
         "url": "articles/barcelona-shakes-la-liga-indias-eyes-on-new-stars.html",
         "excerpt": "Barcelona's title defense begins! New stars like Rashford excite Indian fans. Catch La Liga action and see if they retain glory. Don't miss the thrill!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "mallorca-vs-barcelona-la-liga-opener-shakes-india",
