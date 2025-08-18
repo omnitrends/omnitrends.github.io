@@ -1,5 +1,16 @@
 [
     {
+        "id": "maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally",
+        "keyword": "maruti share price",
+        "title": "Maruti Share Price Rockets! GST Cut Hopes Spark Indian Rally",
+        "category": "Finance",
+        "date": "18 August 2025",
+        "image": "maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally.webp",
+        "url": "articles/maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally.html",
+        "excerpt": "Maruti share price jumps as GST cut expectations build. Is this a new rally for Indian auto stocks? Discover insights now!",
+        "featured": true
+    },
+    {
         "id": "mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury",
         "keyword": "mumbai red alert heavy rainfall",
         "title": "Mumbai Red Alert Heavy Rainfall: City Fights Monsoon Fury",
@@ -96,7 +107,7 @@
         "image": "india-catches-mls-fire-messi-son-ignite-football-passion.webp",
         "url": "articles/india-catches-mls-fire-messi-son-ignite-football-passion.html",
         "excerpt": "MLS is sparking a football revolution in India! Messi's move electrifies fans, boosting viewership. Are Indian audiences ready for this new football wave?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "inter-miami-vs-la-galaxy-indias-verdict-on-messi-magic",
