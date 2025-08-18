@@ -1,5 +1,16 @@
 [
     {
+        "id": "airtel-down-millions-suffer-what-caused-indias-blackout",
+        "keyword": "airtel",
+        "title": "Airtel Down: Millions Suffer! What Caused India's Blackout?",
+        "category": "News",
+        "date": "18 August 2025",
+        "image": "airtel-down-millions-suffer-what-caused-indias-blackout.webp",
+        "url": "articles/airtel-down-millions-suffer-what-caused-indias-blackout.html",
+        "excerpt": "Airtel users across India face widespread network outage today! Calls and data disrupted, causing massive frustration. What truly caused this unprecedented telecom blackout?",
+        "featured": true
+    },
+    {
         "id": "sensex-nifty-stock-market-surges-gst-rating-lift-india",
         "keyword": "sensex nifty stock market",
         "title": "Sensex Nifty Stock Market Surges: GST & Rating Lift India!",
@@ -96,7 +107,7 @@
         "image": "parag-agrawals-stunning-ai-comeback-india-takes-note.webp",
         "url": "articles/parag-agrawals-stunning-ai-comeback-india-takes-note.html",
         "excerpt": "Parag Agrawal's new AI venture, Parallel Web Systems, has India talking! After Twitter, his innovative comeback promises to redefine AI. What's next?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "elvish-yadavs-home-under-attack-shots-fired-in-gurugram",
