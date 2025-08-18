@@ -1,5 +1,16 @@
 [
     {
+        "id": "why-cincinnati-opens-final-drama-grips-indian-fans",
+        "keyword": "cincinnati open",
+        "title": "Why Cincinnati Open's Final Drama Grips Indian Fans!",
+        "category": "Sports",
+        "date": "18 August 2025",
+        "image": "why-cincinnati-opens-final-drama-grips-indian-fans.webp",
+        "url": "articles/why-cincinnati-opens-final-drama-grips-indian-fans.html",
+        "excerpt": "Cincinnati Open's final drama between Alcaraz and Sinner gripped India! Why were fans glued? Unpack the thrilling moments.",
+        "featured": true
+    },
+    {
         "id": "south-africa-vs-uganda-why-indian-football-fans-are-hooked",
         "keyword": "south africa vs uganda",
         "title": "South Africa vs Uganda: Why Indian Football Fans Are Hooked!",
@@ -96,7 +107,7 @@
         "image": "cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene.webp",
         "url": "articles/cp-radhakrishnan-ndas-vp-pick-ignites-indias-political-scene.html",
         "excerpt": "CP Radhakrishnan's nomination as NDA's Vice President candidate has India's political scene buzzing. What does this strategic move mean for the nation's future? Explore now.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "man-united-vs-arsenal-indias-fiery-rivalry-returns-today",
