@@ -1,5 +1,16 @@
 [
     {
+        "id": "rain-fury-grips-india-widespread-school-holiday-due-to-rain",
+        "keyword": "school holiday due to rain",
+        "title": "Rain Fury Grips India: Widespread school holiday due to rain.",
+        "category": "News",
+        "date": "19 August 2025",
+        "image": "rain-fury-grips-india-widespread-school-holiday-due-to-rain.webp",
+        "url": "articles/rain-fury-grips-india-widespread-school-holiday-due-to-rain.html",
+        "excerpt": "Monsoon mayhem forces widespread school holiday due to rain across India. Stay safe, stay updated!",
+        "featured": true
+    },
+    {
         "id": "nbems-neet-pg-2025-your-results-are-live-check-now",
         "keyword": "nbems neet pg 2025",
         "title": "nbems neet pg 2025: Your Results Are LIVE! Check Now.",
@@ -96,7 +107,7 @@
         "image": "airtel-network-outage-india-faces-major-connectivity-chaos.webp",
         "url": "articles/airtel-network-outage-india-faces-major-connectivity-chaos.html",
         "excerpt": "An Airtel network outage crippled India, disrupting calls & data for millions nationwide. Widespread chaos on Monday! Check if your service is down.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "airtel-down-millions-suffer-what-caused-indias-blackout",
