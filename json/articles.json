@@ -1,5 +1,16 @@
 [
     {
+        "id": "travis-heads-india-headache-four-wickets-resurface",
+        "keyword": "travis head",
+        "title": "Travis Head's India Headache: Four Wickets Resurface!",
+        "category": "Sports",
+        "date": "19 August 2025",
+        "image": "travis-heads-india-headache-four-wickets-resurface.webp",
+        "url": "articles/travis-heads-india-headache-four-wickets-resurface.html",
+        "excerpt": "Travis Head's four-wicket haul sparks fresh concern in India! Is his all-round threat the new headache for Team India? Unpack the impact!",
+        "featured": true
+    },
+    {
         "id": "severe-rainfall-alert-mumbais-monsoon-fury-unleashes",
         "keyword": "severe rainfall alert",
         "title": "Severe rainfall alert: Mumbai's monsoon fury unleashes!",
@@ -96,7 +107,7 @@
         "image": "maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally.webp",
         "url": "articles/maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally.html",
         "excerpt": "Maruti share price jumps as GST cut expectations build. Is this a new rally for Indian auto stocks? Discover insights now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury",
