@@ -1,5 +1,16 @@
 [
     {
+        "id": "al-nassr-vs-al-ittihad-ronaldo-benzema-battle-live-for-india",
+        "keyword": "al-nassr vs al-ittihad",
+        "title": "Al Nassr vs Al Ittihad: Ronaldo, Benzema Battle Live for India!",
+        "category": "Sports",
+        "date": "19 August 2025",
+        "image": "al-nassr-vs-al-ittihad-ronaldo-benzema-battle-live-for-india.webp",
+        "url": "articles/al-nassr-vs-al-ittihad-ronaldo-benzema-battle-live-for-india.html",
+        "excerpt": "Al Nassr vs Al Ittihad, with Ronaldo vs Benzema, ignites Indian football fever! Don't miss this epic Saudi Super Cup clash captivating millions. Catch it live!",
+        "featured": true
+    },
+    {
         "id": "travis-heads-india-headache-four-wickets-resurface",
         "keyword": "travis head",
         "title": "Travis Head's India Headache: Four Wickets Resurface!",
@@ -96,7 +107,7 @@
         "image": "sensex-nifty-stock-market-surges-gst-rating-lift-india.webp",
         "url": "articles/sensex-nifty-stock-market-surges-gst-rating-lift-india.html",
         "excerpt": "Indian Sensex Nifty stock market soars! PM Modi's GST reforms and S&P's rating upgrade ignite investor confidence. Is your portfolio positioned for growth?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "maruti-share-price-rockets-gst-cut-hopes-spark-indian-rally",
