@@ -1,5 +1,16 @@
 [
     {
+        "id": "severe-rainfall-alert-mumbais-monsoon-fury-unleashes",
+        "keyword": "severe rainfall alert",
+        "title": "Severe rainfall alert: Mumbai's monsoon fury unleashes!",
+        "category": "News",
+        "date": "19 August 2025",
+        "image": "severe-rainfall-alert-mumbais-monsoon-fury-unleashes.webp",
+        "url": "articles/severe-rainfall-alert-mumbais-monsoon-fury-unleashes.html",
+        "excerpt": "Mumbai reels under monsoon fury! A severe rainfall alert triggers widespread closures and chaos. Stay updated: is your area affected by the intense downpour?",
+        "featured": true
+    },
+    {
         "id": "irctc-chaos-ticket-booking-trouble-know-before-you-go",
         "keyword": "irctc",
         "title": "IRCTC Chaos: Ticket Booking Trouble? Know Before You Go!",
@@ -96,7 +107,7 @@
         "image": "mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury.webp",
         "url": "articles/mumbai-red-alert-heavy-rainfall-city-fights-monsoon-fury.html",
         "excerpt": "As a mumbai red alert heavy rainfall grips Mumbai, the city faces severe waterlogging and travel disruptions. Stay informed on the monsoon's impact.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "mumbai-rains-news-city-braces-for-monsoon-fury",
