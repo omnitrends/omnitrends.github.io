@@ -1,5 +1,16 @@
 [
     {
+        "id": "china-india-taiwan-india-confronts-a-pivotal-shift",
+        "keyword": "china india taiwan",
+        "title": "China India Taiwan: India Confronts a Pivotal Shift",
+        "category": "News",
+        "date": "20 August 2025",
+        "image": "china-india-taiwan-india-confronts-a-pivotal-shift.webp",
+        "url": "articles/china-india-taiwan-india-confronts-a-pivotal-shift.html",
+        "excerpt": "Amidst rising tensions, the China India Taiwan dynamic is reshaping India's strategic outlook. How will Delhi navigate this crucial geopolitical challenge?",
+        "featured": true
+    },
+    {
         "id": "real-madrids-la-liga-reign-begins-india-ready-to-roar",
         "keyword": "real madrid",
         "title": "Real Madrid's La Liga Reign Begins! India Ready to Roar",
@@ -96,7 +107,7 @@
         "image": "why-cincinnati-opens-final-drama-grips-indian-fans.webp",
         "url": "articles/why-cincinnati-opens-final-drama-grips-indian-fans.html",
         "excerpt": "Cincinnati Open's final drama between Alcaraz and Sinner gripped India! Why were fans glued? Unpack the thrilling moments.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "south-africa-vs-uganda-why-indian-football-fans-are-hooked",
