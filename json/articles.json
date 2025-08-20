@@ -1,5 +1,16 @@
 [
     {
+        "id": "realme-p4-pro-5g-indias-latest-powerhouse-unleashed",
+        "keyword": "realme p4 pro 5g",
+        "title": "realme p4 pro 5g: India's Latest Powerhouse Unleashed!",
+        "category": "Technology",
+        "date": "20 August 2025",
+        "image": "realme-p4-pro-5g-indias-latest-powerhouse-unleashed.webp",
+        "url": "articles/realme-p4-pro-5g-indias-latest-powerhouse-unleashed.html",
+        "excerpt": "The realme P4 Pro 5G is setting India ablaze! With its 7000mAh battery, HyperVision AI chip for unparalleled gaming, and amazing cameras. See why everyone's talking!",
+        "featured": true
+    },
+    {
         "id": "germany-women-vs-ireland-women-wc-qualifier-sparks-indian-buzz",
         "keyword": "germany women vs ireland women",
         "title": "Germany Women vs Ireland Women: WC Qualifier Sparks Indian Buzz",
@@ -96,7 +107,7 @@
         "image": "nbems-neet-pg-2025-your-results-are-live-check-now.webp",
         "url": "articles/nbems-neet-pg-2025-your-results-are-live-check-now.html",
         "excerpt": "The wait is over for nbems neet pg 2025 aspirants! Results are LIVE. Check your scores and counselling updates now – your medical career awaits!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "al-nassr-vs-al-ittihad-ronaldo-benzema-battle-live-for-india",
