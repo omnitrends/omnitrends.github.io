@@ -1,5 +1,16 @@
 [
     {
+        "id": "rekha-gupta-attacked-delhi-cms-shocking-public-ordeal",
+        "keyword": "rekha gupta",
+        "title": "Rekha Gupta Attacked: Delhi CM's Shocking Public Ordeal",
+        "category": "News",
+        "date": "20 August 2025",
+        "image": "rekha-gupta-attacked-delhi-cms-shocking-public-ordeal.webp",
+        "url": "articles/rekha-gupta-attacked-delhi-cms-shocking-public-ordeal.html",
+        "excerpt": "Shocking attack on Delhi CM Rekha Gupta at public event. India reels from the news. What led to this major political controversy?",
+        "featured": true
+    },
+    {
         "id": "fluminense-vs-américa-de-cali-indias-betting-fever-heats",
         "keyword": "fluminense vs américa de cali",
         "title": "Fluminense vs América de Cali: India's Betting Fever Heats",
@@ -96,7 +107,7 @@
         "image": "irctc-chaos-ticket-booking-trouble-know-before-you-go.webp",
         "url": "articles/irctc-chaos-ticket-booking-trouble-know-before-you-go.html",
         "excerpt": "IRCTC booking chaos continues! Facing trouble securing tickets? Understand why millions are frustrated and equip yourself with crucial tips for seamless train travel.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "grab-free-apple-music-airtel-prepaid-surprises-india",
