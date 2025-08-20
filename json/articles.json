@@ -1,5 +1,16 @@
 [
     {
+        "id": "monsoon-onslaught-indias-extreme-rainfall-alert",
+        "keyword": "extreme rainfall alert",
+        "title": "Monsoon Onslaught: India's extreme rainfall alert!",
+        "category": "News",
+        "date": "20 August 2025",
+        "image": "monsoon-onslaught-indias-extreme-rainfall-alert.webp",
+        "url": "articles/monsoon-onslaught-indias-extreme-rainfall-alert.html",
+        "excerpt": "Extreme rainfall alert issued nationwide! IMD warns of intense monsoon activity causing disruption. Is your region next? Be prepared.",
+        "featured": true
+    },
+    {
         "id": "rekha-gupta-attacked-delhi-cms-shocking-public-ordeal",
         "keyword": "rekha gupta",
         "title": "Rekha Gupta Attacked: Delhi CM's Shocking Public Ordeal",
@@ -96,7 +107,7 @@
         "image": "severe-rainfall-alert-mumbais-monsoon-fury-unleashes.webp",
         "url": "articles/severe-rainfall-alert-mumbais-monsoon-fury-unleashes.html",
         "excerpt": "Mumbai reels under monsoon fury! A severe rainfall alert triggers widespread closures and chaos. Stay updated: is your area affected by the intense downpour?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "irctc-chaos-ticket-booking-trouble-know-before-you-go",
