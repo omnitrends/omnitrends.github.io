@@ -1,5 +1,16 @@
 [
     {
+        "id": "pimpri-chinchwad-floods-city-battles-rising-waters-evacuates",
+        "keyword": "pimpri-chinchwad floods",
+        "title": "Pimpri-Chinchwad Floods: City Battles Rising Waters, Evacuates",
+        "category": "News",
+        "date": "20 August 2025",
+        "image": "pimpri-chinchwad-floods-city-battles-rising-waters-evacuates.webp",
+        "url": "articles/pimpri-chinchwad-floods-city-battles-rising-waters-evacuates.html",
+        "excerpt": "As Pimpri-Chinchwad floods grip the city, hundreds evacuate amidst heavy dam water release. How is PCMC ensuring safety? Find out.",
+        "featured": true
+    },
+    {
         "id": "monsoon-onslaught-indias-extreme-rainfall-alert",
         "keyword": "extreme rainfall alert",
         "title": "Monsoon Onslaught: India's extreme rainfall alert!",
@@ -96,7 +107,7 @@
         "image": "travis-heads-india-headache-four-wickets-resurface.webp",
         "url": "articles/travis-heads-india-headache-four-wickets-resurface.html",
         "excerpt": "Travis Head's four-wicket haul sparks fresh concern in India! Is his all-round threat the new headache for Team India? Unpack the impact!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "severe-rainfall-alert-mumbais-monsoon-fury-unleashes",
