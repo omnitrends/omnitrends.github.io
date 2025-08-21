@@ -1,5 +1,16 @@
 [
     {
+        "id": "bse-share-price-plunges-sebis-derivatives-shock",
+        "keyword": "bse share price",
+        "title": "BSE Share Price Plunges: SEBI's Derivatives Shock!",
+        "category": "Finance",
+        "date": "21 August 2025",
+        "image": "bse-share-price-plunges-sebis-derivatives-shock.webp",
+        "url": "articles/bse-share-price-plunges-sebis-derivatives-shock.html",
+        "excerpt": "BSE share price plummets! SEBI's derivatives shake-up sends shockwaves. What does this market upheaval mean for your investments in India?",
+        "featured": true
+    },
+    {
         "id": "la-galaxy-vs-pachuca-india-gripped-by-leagues-cup-thriller",
         "keyword": "la galaxy vs pachuca",
         "title": "LA Galaxy vs Pachuca: India Gripped by Leagues Cup Thriller!",
@@ -96,7 +107,7 @@
         "image": "rekha-gupta-attacked-delhi-cms-shocking-public-ordeal.webp",
         "url": "articles/rekha-gupta-attacked-delhi-cms-shocking-public-ordeal.html",
         "excerpt": "Shocking attack on Delhi CM Rekha Gupta at public event. India reels from the news. What led to this major political controversy?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "fluminense-vs-américa-de-cali-indias-betting-fever-heats",
