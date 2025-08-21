@@ -1,5 +1,16 @@
 [
     {
+        "id": "live-india-watches-netherlands-women-vs-ireland-women-t20",
+        "keyword": "netherlands women vs ireland women",
+        "title": "Live: India Watches netherlands women vs ireland women T20",
+        "category": "Sports",
+        "date": "21 August 2025",
+        "image": "live-india-watches-netherlands-women-vs-ireland-women-t20.webp",
+        "url": "articles/live-india-watches-netherlands-women-vs-ireland-women-t20.html",
+        "excerpt": "Catch the nail-biting ICC Qualifier as netherlands women vs ireland women battle it out! Why is India keenly watching this T20 clash? Find out now!",
+        "featured": true
+    },
+    {
         "id": "bse-share-price-plunges-sebis-derivatives-shock",
         "keyword": "bse share price",
         "title": "BSE Share Price Plunges: SEBI's Derivatives Shock!",
@@ -96,7 +107,7 @@
         "image": "monsoon-onslaught-indias-extreme-rainfall-alert.webp",
         "url": "articles/monsoon-onslaught-indias-extreme-rainfall-alert.html",
         "excerpt": "Extreme rainfall alert issued nationwide! IMD warns of intense monsoon activity causing disruption. Is your region next? Be prepared.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "rekha-gupta-attacked-delhi-cms-shocking-public-ordeal",
