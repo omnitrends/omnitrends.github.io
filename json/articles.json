@@ -1,5 +1,16 @@
 [
     {
+        "id": "flood-situation-near-krishna-river-india-on-high-alert",
+        "keyword": "flood situation near krishna river",
+        "title": "Flood Situation Near Krishna River: India on High Alert",
+        "category": "News",
+        "date": "21 August 2025",
+        "image": "flood-situation-near-krishna-river-india-on-high-alert.webp",
+        "url": "articles/flood-situation-near-krishna-river-india-on-high-alert.html",
+        "excerpt": "The flood situation near Krishna river is critical! Heavy rains upstream have caused high water levels, with barrages discharging massive flows. Stay safe and informed as authorities issue warnings.",
+        "featured": true
+    },
+    {
         "id": "inter-miami-vs-tigres-uanl-why-indias-hooked-today",
         "keyword": "inter miami vs tigres uanl",
         "title": "inter miami vs tigres uanl: Why India's Hooked Today!",
@@ -96,7 +107,7 @@
         "image": "china-india-taiwan-india-confronts-a-pivotal-shift.webp",
         "url": "articles/china-india-taiwan-india-confronts-a-pivotal-shift.html",
         "excerpt": "Amidst rising tensions, the China India Taiwan dynamic is reshaping India's strategic outlook. How will Delhi navigate this crucial geopolitical challenge?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "real-madrids-la-liga-reign-begins-india-ready-to-roar",
