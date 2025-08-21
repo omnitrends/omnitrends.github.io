@@ -1,5 +1,16 @@
 [
     {
+        "id": "millie-bobby-brown-adopts-baby-girl-india-rejoices",
+        "keyword": "millie bobby brown",
+        "title": "Millie Bobby Brown: Adopts Baby Girl! India Rejoices.",
+        "category": "Entertainment",
+        "date": "21 August 2025",
+        "image": "millie-bobby-brown-adopts-baby-girl-india-rejoices.webp",
+        "url": "articles/millie-bobby-brown-adopts-baby-girl-india-rejoices.html",
+        "excerpt": "Millie Bobby Brown's heartwarming adoption of a baby girl has resonated deeply. Why is India celebrating this global star's family joy?",
+        "featured": true
+    },
+    {
         "id": "zupee-ludo-shocker-indias-real-money-games-halt",
         "keyword": "zupee ludo",
         "title": "Zupee Ludo Shocker: India's Real Money Games Halt!",
@@ -96,7 +107,7 @@
         "image": "germany-women-vs-ireland-women-wc-qualifier-sparks-indian-buzz.webp",
         "url": "articles/germany-women-vs-ireland-women-wc-qualifier-sparks-indian-buzz.html",
         "excerpt": "Germany Women vs Ireland Women: WC qualifier sparks Indian buzz. Rising women's football interest fuels fan excitement. Why is India watching closely?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "pimpri-chinchwad-floods-city-battles-rising-waters-evacuates",
