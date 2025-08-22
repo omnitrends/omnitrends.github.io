@@ -1,5 +1,16 @@
 [
     {
+        "id": "wbjee-2025-result-out-sc-ends-delay-counselling-soon",
+        "keyword": "wbjee",
+        "title": "WBJEE 2025 Result OUT! SC Ends Delay, Counselling Soon.",
+        "category": "News",
+        "date": "22 August 2025",
+        "image": "wbjee-2025-result-out-sc-ends-delay-counselling-soon.webp",
+        "url": "articles/wbjee-2025-result-out-sc-ends-delay-counselling-soon.html",
+        "excerpt": "Big news for WBJEE 2025 aspirants! SC clears result delay, counselling starts soon. Get ready for your engineering journey. Latest updates here!",
+        "featured": true
+    },
+    {
         "id": "tony-de-zorzi-india-eyes-his-aus-odi-masterclass-today",
         "keyword": "tony de zorzi",
         "title": "Tony de Zorzi: India Eyes His Aus ODI Masterclass Today!",
@@ -96,7 +107,7 @@
         "image": "la-galaxy-vs-pachuca-india-gripped-by-leagues-cup-thriller.webp",
         "url": "articles/la-galaxy-vs-pachuca-india-gripped-by-leagues-cup-thriller.html",
         "excerpt": "Indian fans witnessed the LA Galaxy vs Pachuca Leagues Cup quarter-final live! Morning kick-off and Apple TV streaming made this thrilling 2-1 win unmissable. Relive the action!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "flood-situation-near-krishna-river-india-on-high-alert",
