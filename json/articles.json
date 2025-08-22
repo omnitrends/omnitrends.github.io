@@ -1,5 +1,16 @@
 [
     {
+        "id": "shocking-jaswinder-bhalla-punjabi-icon-passes-away-at-65",
+        "keyword": "jaswinder bhalla",
+        "title": "Shocking! Jaswinder Bhalla, Punjabi Icon, Passes Away at 65",
+        "category": "News",
+        "date": "22 August 2025",
+        "image": "shocking-jaswinder-bhalla-punjabi-icon-passes-away-at-65.webp",
+        "url": "articles/shocking-jaswinder-bhalla-punjabi-icon-passes-away-at-65.html",
+        "excerpt": "India deeply saddened: Jaswinder Bhalla, Punjabi comedy icon, passes away at 65. His immense contribution to entertainment made him a household name. Explore his legacy.",
+        "featured": true
+    },
+    {
         "id": "chennai-weather-alert-monsoon-boost-brings-heavier-rains",
         "keyword": "chennai weather",
         "title": "Chennai Weather Alert: Monsoon Boost Brings Heavier Rains!",
@@ -96,7 +107,7 @@
         "image": "inter-miami-vs-tigres-uanl-why-indias-hooked-today.webp",
         "url": "articles/inter-miami-vs-tigres-uanl-why-indias-hooked-today.html",
         "excerpt": "Inter Miami vs Tigres UANL in Leagues Cup! Is Messi playing? India's hooked on this high-stakes Quarterfinal. Don't miss the drama!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "fenerbahçe-vs-benfica-ucl-playoff-sparks-india-fever",
