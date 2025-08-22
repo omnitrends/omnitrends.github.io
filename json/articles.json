@@ -1,5 +1,16 @@
 [
     {
+        "id": "chennai-weather-alert-monsoon-boost-brings-heavier-rains",
+        "keyword": "chennai weather",
+        "title": "Chennai Weather Alert: Monsoon Boost Brings Heavier Rains!",
+        "category": "News",
+        "date": "22 August 2025",
+        "image": "chennai-weather-alert-monsoon-boost-brings-heavier-rains.webp",
+        "url": "articles/chennai-weather-alert-monsoon-boost-brings-heavier-rains.html",
+        "excerpt": "Chennai weather: Monsoon brings heavier rains from Aug 22! Stay informed on the IMD's forecast and safety tips. What's next for your area?",
+        "featured": true
+    },
+    {
         "id": "crystal-palace-vs-fredrikstad-eze-saga-grips-indian-fans",
         "keyword": "crystal palace vs fredrikstad",
         "title": "Crystal Palace vs Fredrikstad: Eze Saga Grips Indian Fans!",
@@ -96,7 +107,7 @@
         "image": "fenerbahçe-vs-benfica-ucl-playoff-sparks-india-fever.webp",
         "url": "articles/fenerbahçe-vs-benfica-ucl-playoff-sparks-india-fever.html",
         "excerpt": "Why is Fenerbahçe vs Benfica trending in India? UCL playoff excitement grips fans! Don't miss the drama unfold.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "realme-p4-pro-5g-indias-latest-powerhouse-unleashed",
