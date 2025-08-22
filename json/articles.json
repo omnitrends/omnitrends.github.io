@@ -1,5 +1,16 @@
 [
     {
+        "id": "chelseas-triumph-pl-battles-transfers-ignite-indian-fans",
+        "keyword": "chelsea",
+        "title": "Chelsea's Triumph: PL Battles & Transfers Ignite Indian Fans!",
+        "category": "Sports",
+        "date": "22 August 2025",
+        "image": "chelseas-triumph-pl-battles-transfers-ignite-indian-fans.webp",
+        "url": "articles/chelseas-triumph-pl-battles-transfers-ignite-indian-fans.html",
+        "excerpt": "Chelsea's new Premier League campaign sparks buzz in India! Fans are gripped by their latest transfers and thrilling match action. What will the Blues achieve this season?",
+        "featured": true
+    },
+    {
         "id": "west-ham-vs-chelsea-fc-timeline-indias-crucial-derby",
         "keyword": "west ham vs chelsea f.c. timeline",
         "title": "West Ham vs Chelsea F.C. Timeline: India's Crucial Derby!",
@@ -96,7 +107,7 @@
         "image": "millie-bobby-brown-adopts-baby-girl-india-rejoices.webp",
         "url": "articles/millie-bobby-brown-adopts-baby-girl-india-rejoices.html",
         "excerpt": "Millie Bobby Brown's heartwarming adoption of a baby girl has resonated deeply. Why is India celebrating this global star's family joy?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "zupee-ludo-shocker-indias-real-money-games-halt",
