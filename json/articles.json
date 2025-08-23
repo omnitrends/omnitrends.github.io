@@ -1,5 +1,16 @@
 [
     {
+        "id": "weather-chennai-orange-alert-heavy-rains-pound-city",
+        "keyword": "weather chennai",
+        "title": "Weather Chennai: Orange Alert! Heavy Rains Pound City.",
+        "category": "News",
+        "date": "23 August 2025",
+        "image": "weather-chennai-orange-alert-heavy-rains-pound-city.webp",
+        "url": "articles/weather-chennai-orange-alert-heavy-rains-pound-city.html",
+        "excerpt": "Heavy rains and thunderstorms lashed Chennai on August 22, triggering an orange alert. Waterlogging reported across the city. What's next for weather chennai?",
+        "featured": true
+    },
+    {
         "id": "chelseas-triumph-pl-battles-transfers-ignite-indian-fans",
         "keyword": "chelsea",
         "title": "Chelsea's Triumph: PL Battles & Transfers Ignite Indian Fans!",
@@ -96,7 +107,7 @@
         "image": "crystal-palace-vs-fredrikstad-eze-saga-grips-indian-fans.webp",
         "url": "articles/crystal-palace-vs-fredrikstad-eze-saga-grips-indian-fans.html",
         "excerpt": "Crystal Palace vs Fredrikstad: Eze's dramatic move to Arsenal sparks major buzz among Indian fans. His absence from the pitch speaks volumes! Will he join?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "millie-bobby-brown-adopts-baby-girl-india-rejoices",
