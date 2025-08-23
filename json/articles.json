@@ -1,5 +1,16 @@
 [
     {
+        "id": "al-nassr-shakes-india-ronaldos-historic-clash-awaits",
+        "keyword": "al nassr",
+        "title": "Al Nassr Shakes India! Ronaldo's Historic Clash Awaits.",
+        "category": "Sports",
+        "date": "23 August 2025",
+        "image": "al-nassr-shakes-india-ronaldos-historic-clash-awaits.webp",
+        "url": "articles/al-nassr-shakes-india-ronaldos-historic-clash-awaits.html",
+        "excerpt": "Al Nassr drawn with FC Goa in ACL Two! Could Ronaldo play in India? This historic clash for Al Nassr has fans eagerly awaiting CR7's potential arrival.",
+        "featured": true
+    },
+    {
         "id": "man-city-vs-tottenham-battle-for-top-spot-india-live",
         "keyword": "man city vs tottenham",
         "title": "Man City vs Tottenham: Battle for Top Spot! India Live!",
@@ -96,7 +107,7 @@
         "image": "lungi-ngidis-fifer-vs-aus-india-hails-dominant-pace.webp",
         "url": "articles/lungi-ngidis-fifer-vs-aus-india-hails-dominant-pace.html",
         "excerpt": "Lungi Ngidi's sensational fifer demolished Australia, securing a dominant series win! Indian cricket enthusiasts are taking note. Don't miss the details!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "wbjee-2025-result-out-sc-ends-delay-counselling-soon",
