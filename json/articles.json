@@ -1,5 +1,16 @@
 [
     {
+        "id": "barca-battle-tonight-india-holds-breath-for-la-liga-epic",
+        "keyword": "barca",
+        "title": "Barca Battle Tonight! India Holds Breath for La Liga Epic.",
+        "category": "Sports",
+        "date": "23 August 2025",
+        "image": "barca-battle-tonight-india-holds-breath-for-la-liga-epic.webp",
+        "url": "articles/barca-battle-tonight-india-holds-breath-for-la-liga-epic.html",
+        "excerpt": "India's football fever spikes! Tonight, FC Barca faces a huge La Liga challenge. Can Barca win this epic battle? Don't miss the thrilling action unfold!",
+        "featured": true
+    },
+    {
         "id": "atlético-madrid-vs-elche-india-electrified-by-tonights-clash",
         "keyword": "atlético madrid vs elche",
         "title": "Atlético Madrid vs Elche: India Electrified by Tonight's Clash!",
@@ -96,7 +107,7 @@
         "image": "west-ham-vs-chelsea-fc-timeline-indias-crucial-derby.webp",
         "url": "articles/west-ham-vs-chelsea-fc-timeline-indias-crucial-derby.html",
         "excerpt": "India gears up for the London derby! West Ham vs Chelsea F.C. timeline reveals intense battles. Why this rivalry matters to Indian fans now?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "ssc-gov-in-phase-13-re-exam-city-slips-out-urgent-check",
