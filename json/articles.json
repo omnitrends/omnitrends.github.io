@@ -1,5 +1,16 @@
 [
     {
+        "id": "bihar-bhumi-घर-बठ-सधर-जमन-खतम-हग-ववद",
+        "keyword": "bihar bhumi",
+        "title": "Bihar Bhumi: घर बैठे सुधारें जमीन, खत्म होंगे विवाद!",
+        "category": "Technology",
+        "date": "23 August 2025",
+        "image": "bihar-bhumi-घर-बठ-सधर-जमन-खतम-हग-ववद.webp",
+        "url": "articles/bihar-bhumi-घर-बठ-सधर-जमन-खतम-हग-ववद.html",
+        "excerpt": "Bihar Bhumi is transforming land records! Now update documents from home, ending disputes easily. Discover how this Maha Abhiyan benefits you.",
+        "featured": true
+    },
+    {
         "id": "weather-chennai-orange-alert-heavy-rains-pound-city",
         "keyword": "weather chennai",
         "title": "Weather Chennai: Orange Alert! Heavy Rains Pound City.",
@@ -96,7 +107,7 @@
         "image": "chennai-weather-alert-monsoon-boost-brings-heavier-rains.webp",
         "url": "articles/chennai-weather-alert-monsoon-boost-brings-heavier-rains.html",
         "excerpt": "Chennai weather: Monsoon brings heavier rains from Aug 22! Stay informed on the IMD's forecast and safety tips. What's next for your area?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "crystal-palace-vs-fredrikstad-eze-saga-grips-indian-fans",
