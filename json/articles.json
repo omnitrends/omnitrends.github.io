@@ -1,5 +1,16 @@
 [
     {
+        "id": "dc-united-vs-inter-miami-why-indias-hooked-on-mls-today",
+        "keyword": "d.c. united vs inter miami",
+        "title": "d.c. united vs inter miami: Why India's Hooked on MLS Today!",
+        "category": "Sports",
+        "date": "24 August 2025",
+        "image": "dc-united-vs-inter-miami-why-indias-hooked-on-mls-today.webp",
+        "url": "articles/dc-united-vs-inter-miami-why-indias-hooked-on-mls-today.html",
+        "excerpt": "D.C. United vs Inter Miami: India is watching this MLS thriller! Messi's rested, but can the Herons secure a win? Stream it on Apple TV!",
+        "featured": true
+    },
+    {
         "id": "barca-battle-tonight-india-holds-breath-for-la-liga-epic",
         "keyword": "barca",
         "title": "Barca Battle Tonight! India Holds Breath for La Liga Epic.",
@@ -96,7 +107,7 @@
         "image": "chelseas-triumph-pl-battles-transfers-ignite-indian-fans.webp",
         "url": "articles/chelseas-triumph-pl-battles-transfers-ignite-indian-fans.html",
         "excerpt": "Chelsea's new Premier League campaign sparks buzz in India! Fans are gripped by their latest transfers and thrilling match action. What will the Blues achieve this season?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "west-ham-vs-chelsea-fc-timeline-indias-crucial-derby",
