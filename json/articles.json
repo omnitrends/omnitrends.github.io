@@ -1,5 +1,16 @@
 [
     {
+        "id": "la-galaxy-vs-colorado-why-indias-football-fever-peaks-today",
+        "keyword": "la galaxy vs colorado",
+        "title": "LA Galaxy vs Colorado: Why India's Football Fever Peaks Today!",
+        "category": "Sports",
+        "date": "24 August 2025",
+        "image": "la-galaxy-vs-colorado-why-indias-football-fever-peaks-today.webp",
+        "url": "articles/la-galaxy-vs-colorado-why-indias-football-fever-peaks-today.html",
+        "excerpt": "Indian football fans buzz! Watch LA Galaxy vs Colorado live today. Eurosport brings MLS action; explore why this clash excites India's growing global football passion!",
+        "featured": true
+    },
+    {
         "id": "dc-united-vs-inter-miami-why-indias-hooked-on-mls-today",
         "keyword": "d.c. united vs inter miami",
         "title": "d.c. united vs inter miami: Why India's Hooked on MLS Today!",
@@ -96,7 +107,7 @@
         "image": "weather-chennai-orange-alert-heavy-rains-pound-city.webp",
         "url": "articles/weather-chennai-orange-alert-heavy-rains-pound-city.html",
         "excerpt": "Heavy rains and thunderstorms lashed Chennai on August 22, triggering an orange alert. Waterlogging reported across the city. What's next for weather chennai?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "chelseas-triumph-pl-battles-transfers-ignite-indian-fans",
