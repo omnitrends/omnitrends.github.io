@@ -1,5 +1,16 @@
 [
     {
+        "id": "bigg-boss-19-tanya-mittals-fiery-entry-india-hooked",
+        "keyword": "tanya mittal",
+        "title": "Bigg Boss 19: Tanya Mittal's Fiery Entry, India Hooked!",
+        "category": "Entertainment",
+        "date": "24 August 2025",
+        "image": "bigg-boss-19-tanya-mittals-fiery-entry-india-hooked.webp",
+        "url": "articles/bigg-boss-19-tanya-mittals-fiery-entry-india-hooked.html",
+        "excerpt": "Tanya Mittal, influencer and entrepreneur, ignited Bigg Boss 19 with her fiery entry! Her bold moves and Salman banter have India hooked. What drama awaits?",
+        "featured": true
+    },
+    {
         "id": "fulham-vs-man-united-must-win-for-utd-watch-live-india",
         "keyword": "fulham vs man united",
         "title": "Fulham vs Man United: MUST-WIN for Utd! Watch Live India",
@@ -96,7 +107,7 @@
         "image": "al-nassr-shakes-india-ronaldos-historic-clash-awaits.webp",
         "url": "articles/al-nassr-shakes-india-ronaldos-historic-clash-awaits.html",
         "excerpt": "Al Nassr drawn with FC Goa in ACL Two! Could Ronaldo play in India? This historic clash for Al Nassr has fans eagerly awaiting CR7's potential arrival.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "man-city-vs-tottenham-battle-for-top-spot-india-live",
