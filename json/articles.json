@@ -1,5 +1,16 @@
 [
     {
+        "id": "cameron-greens-explosive-century-shocks-india",
+        "keyword": "cameron green",
+        "title": "Cameron Green's Explosive Century Shocks India!",
+        "category": "Sports",
+        "date": "24 August 2025",
+        "image": "cameron-greens-explosive-century-shocks-india.webp",
+        "url": "articles/cameron-greens-explosive-century-shocks-india.html",
+        "excerpt": "Cameron Green's electrifying 47-ball century vs SA today! A batting masterclass making waves. What does this mean for his IPL future and India?",
+        "featured": true
+    },
+    {
         "id": "australia-vs-south-africa-india-stunned-by-proteas-sweep-bid",
         "keyword": "australia vs south africa",
         "title": "australia vs south africa: India Stunned by Proteas' Sweep Bid!",
@@ -96,7 +107,7 @@
         "image": "amazon-warriors-vs-antigua-barbuda-falcons-clash.webp",
         "url": "articles/amazon-warriors-vs-antigua-barbuda-falcons-clash.html",
         "excerpt": "Indian fans are gripped! The Amazon Warriors vs Antigua & Barbuda Falcons CPL clash saw Tahir's fifer seal a huge win. Did you see the new team's challenge?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "bihar-bhumi-घर-बठ-सधर-जमन-खतम-हग-ववद",
