@@ -1,5 +1,16 @@
 [
     {
+        "id": "parineeti-chopra-baby-on-the-way-indias-hearts-soar",
+        "keyword": "parineeti chopra",
+        "title": "Parineeti Chopra: Baby On The Way! India's Hearts Soar",
+        "category": "Entertainment",
+        "date": "25 August 2025",
+        "image": "parineeti-chopra-baby-on-the-way-indias-hearts-soar.webp",
+        "url": "articles/parineeti-chopra-baby-on-the-way-indias-hearts-soar.html",
+        "excerpt": "India's hearts soar! Parineeti Chopra and Raghav Chadha confirm their first pregnancy today. Their little universe is on its way. See the sweet announcement!",
+        "featured": true
+    },
+    {
         "id": "ttd-land-scandal-rocks-andhra-devotees-demand-answers",
         "keyword": "ttd",
         "title": "TTD Land Scandal Rocks Andhra: Devotees Demand Answers",
@@ -96,7 +107,7 @@
         "image": "australia-vs-south-africa-india-stunned-by-proteas-sweep-bid.webp",
         "url": "articles/australia-vs-south-africa-india-stunned-by-proteas-sweep-bid.html",
         "excerpt": "India keenly watches as Proteas dominate Australia vs South Africa! A historic clean sweep looms. Can the Aussies avoid whitewash?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "la-galaxy-vs-colorado-why-indias-football-fever-peaks-today",
