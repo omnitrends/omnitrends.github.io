@@ -1,5 +1,16 @@
 [
     {
+        "id": "historic-mca-unveiling-gavaskar-pawar-statues-stir-nation",
+        "keyword": "mca",
+        "title": "Historic MCA Unveiling: Gavaskar-Pawar Statues Stir Nation!",
+        "category": "Sports",
+        "date": "25 August 2025",
+        "image": "historic-mca-unveiling-gavaskar-pawar-statues-stir-nation.webp",
+        "url": "articles/historic-mca-unveiling-gavaskar-pawar-statues-stir-nation.html",
+        "excerpt": "The MCA's historic unveiling of Gavaskar and Pawar statues, with a new museum, has Indian cricket fans buzzing! Explore this iconic tribute now.",
+        "featured": true
+    },
+    {
         "id": "parineeti-chopra-baby-on-the-way-indias-hearts-soar",
         "keyword": "parineeti chopra",
         "title": "Parineeti Chopra: Baby On The Way! India's Hearts Soar",
@@ -96,7 +107,7 @@
         "image": "cameron-greens-explosive-century-shocks-india.webp",
         "url": "articles/cameron-greens-explosive-century-shocks-india.html",
         "excerpt": "Cameron Green's electrifying 47-ball century vs SA today! A batting masterclass making waves. What does this mean for his IPL future and India?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "australia-vs-south-africa-india-stunned-by-proteas-sweep-bid",
