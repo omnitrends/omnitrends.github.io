@@ -1,5 +1,16 @@
 [
     {
+        "id": "red-alert-today-weather-india-braces-for-extreme-monsoon",
+        "keyword": "today weather",
+        "title": "Red Alert! Today weather: India braces for extreme monsoon.",
+        "category": "News",
+        "date": "25 August 2025",
+        "image": "red-alert-today-weather-india-braces-for-extreme-monsoon.webp",
+        "url": "articles/red-alert-today-weather-india-braces-for-extreme-monsoon.html",
+        "excerpt": "Today weather: Monsoon fury grips India! Red alerts issued for heavy rains across states. Are you prepared for the relentless downpour ahead?",
+        "featured": true
+    },
+    {
         "id": "armaan-maliks-miracle-baby-court-drama-grips-india",
         "keyword": "armaan malik",
         "title": "Armaan Malik's Miracle Baby! Court Drama Grips India",
@@ -96,7 +107,7 @@
         "image": "barca-battle-tonight-india-holds-breath-for-la-liga-epic.webp",
         "url": "articles/barca-battle-tonight-india-holds-breath-for-la-liga-epic.html",
         "excerpt": "India's football fever spikes! Tonight, FC Barca faces a huge La Liga challenge. Can Barca win this epic battle? Don't miss the thrilling action unfold!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "atlético-madrid-vs-elche-india-electrified-by-tonights-clash",
