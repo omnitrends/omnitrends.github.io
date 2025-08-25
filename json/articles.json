@@ -1,5 +1,16 @@
 [
     {
+        "id": "daniil-medvedevs-us-open-fightback-grips-india",
+        "keyword": "daniil medvedev",
+        "title": "Daniil Medvedev's US Open Fightback Grips India!",
+        "category": "Sports",
+        "date": "25 August 2025",
+        "image": "daniil-medvedevs-us-open-fightback-grips-india.webp",
+        "url": "articles/daniil-medvedevs-us-open-fightback-grips-india.html",
+        "excerpt": "Daniil Medvedev is mounting an epic US Open comeback from 2 sets down! Indian fans, don't miss this nail-biting battle. Watch live!",
+        "featured": true
+    },
+    {
         "id": "red-alert-today-weather-india-braces-for-extreme-monsoon",
         "keyword": "today weather",
         "title": "Red Alert! Today weather: India braces for extreme monsoon.",
@@ -96,7 +107,7 @@
         "image": "dc-united-vs-inter-miami-why-indias-hooked-on-mls-today.webp",
         "url": "articles/dc-united-vs-inter-miami-why-indias-hooked-on-mls-today.html",
         "excerpt": "D.C. United vs Inter Miami: India is watching this MLS thriller! Messi's rested, but can the Herons secure a win? Stream it on Apple TV!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "barca-battle-tonight-india-holds-breath-for-la-liga-epic",
