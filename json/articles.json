@@ -1,5 +1,16 @@
 [
     {
+        "id": "ttd-land-scandal-rocks-andhra-devotees-demand-answers",
+        "keyword": "ttd",
+        "title": "TTD Land Scandal Rocks Andhra: Devotees Demand Answers",
+        "category": "News",
+        "date": "25 August 2025",
+        "image": "ttd-land-scandal-rocks-andhra-devotees-demand-answers.webp",
+        "url": "articles/ttd-land-scandal-rocks-andhra-devotees-demand-answers.html",
+        "excerpt": "TTD embroiled in a land swap controversy in Andhra! Devotees demand answers amidst scam allegations. Will justice prevail for sacred lands?",
+        "featured": true
+    },
+    {
         "id": "daniil-medvedevs-us-open-fightback-grips-india",
         "keyword": "daniil medvedev",
         "title": "Daniil Medvedev's US Open Fightback Grips India!",
@@ -96,7 +107,7 @@
         "image": "la-galaxy-vs-colorado-why-indias-football-fever-peaks-today.webp",
         "url": "articles/la-galaxy-vs-colorado-why-indias-football-fever-peaks-today.html",
         "excerpt": "Indian football fans buzz! Watch LA Galaxy vs Colorado live today. Eurosport brings MLS action; explore why this clash excites India's growing global football passion!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "dc-united-vs-inter-miami-why-indias-hooked-on-mls-today",
