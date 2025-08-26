@@ -1,5 +1,16 @@
 [
     {
+        "id": "hartalika-teej-katha-unveiling-devotions-power-today",
+        "keyword": "teej katha",
+        "title": "Hartalika Teej Katha: Unveiling Devotion's Power Today",
+        "category": "Lifestyle",
+        "date": "26 August 2025",
+        "image": "hartalika-teej-katha-unveiling-devotions-power-today.webp",
+        "url": "articles/hartalika-teej-katha-unveiling-devotions-power-today.html",
+        "excerpt": "Hartalika Teej is celebrated today! The sacred teej katha inspiring millions is trending. Uncover its timeless power for devotion and marital bliss.",
+        "featured": true
+    },
+    {
         "id": "osmania-university-cm-revanths-1000-cr-boost-for-global-heights",
         "keyword": "osmania university",
         "title": "Osmania University: CM Revanth's ₹1000 Cr Boost for Global Heights!",
@@ -96,7 +107,7 @@
         "image": "historic-mca-unveiling-gavaskar-pawar-statues-stir-nation.webp",
         "url": "articles/historic-mca-unveiling-gavaskar-pawar-statues-stir-nation.html",
         "excerpt": "The MCA's historic unveiling of Gavaskar and Pawar statues, with a new museum, has Indian cricket fans buzzing! Explore this iconic tribute now.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "parineeti-chopra-baby-on-the-way-indias-hearts-soar",
