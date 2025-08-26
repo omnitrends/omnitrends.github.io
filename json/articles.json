@@ -1,5 +1,16 @@
 [
     {
+        "id": "maruti-e-vitara-price-indias-ev-revolution-begins",
+        "keyword": "e vitara price",
+        "title": "Maruti e Vitara Price: India's EV Revolution Begins!",
+        "category": "News",
+        "date": "26 August 2025",
+        "image": "maruti-e-vitara-price-indias-ev-revolution-begins.webp",
+        "url": "articles/maruti-e-vitara-price-indias-ev-revolution-begins.html",
+        "excerpt": "PM Modi flags off Maruti's e Vitara! The awaited e Vitara price, starting at Rs 17 Lakh, is poised to reshape India's EV journey. Ready for the electric revolution?",
+        "featured": true
+    },
+    {
         "id": "vikram-solar-share-price-ipo-debuts-will-it-shine",
         "keyword": "vikram solar share price",
         "title": "Vikram Solar Share Price: IPO Debuts, Will It Shine?",
@@ -96,7 +107,7 @@
         "image": "ttd-land-scandal-rocks-andhra-devotees-demand-answers.webp",
         "url": "articles/ttd-land-scandal-rocks-andhra-devotees-demand-answers.html",
         "excerpt": "TTD embroiled in a land swap controversy in Andhra! Devotees demand answers amidst scam allegations. Will justice prevail for sacred lands?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "daniil-medvedevs-us-open-fightback-grips-india",
