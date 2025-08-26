@@ -1,5 +1,16 @@
 [
     {
+        "id": "flamengo-vs-vitória-indias-football-fever-explodes",
+        "keyword": "flamengo vs vitória",
+        "title": "Flamengo vs Vitória: India's Football Fever Explodes!",
+        "category": "Sports",
+        "date": "26 August 2025",
+        "image": "flamengo-vs-vitória-indias-football-fever-explodes.webp",
+        "url": "articles/flamengo-vs-vitória-indias-football-fever-explodes.html",
+        "excerpt": "Indian football fans are buzzing! The recent Flamengo vs Vitória thrashing has ignited discussions. Why is Brazil's fiery football captivating India? Discover now!",
+        "featured": true
+    },
+    {
         "id": "venus-williams-45-still-inspiring-india-at-us-open-2025",
         "keyword": "venus williams",
         "title": "Venus Williams: 45 & Still Inspiring India at US Open 2025!",
@@ -96,7 +107,7 @@
         "image": "red-alert-today-weather-india-braces-for-extreme-monsoon.webp",
         "url": "articles/red-alert-today-weather-india-braces-for-extreme-monsoon.html",
         "excerpt": "Today weather: Monsoon fury grips India! Red alerts issued for heavy rains across states. Are you prepared for the relentless downpour ahead?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "armaan-maliks-miracle-baby-court-drama-grips-india",
