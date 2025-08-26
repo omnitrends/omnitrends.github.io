@@ -1,5 +1,16 @@
 [
     {
+        "id": "taylor-swift-engaged-indian-fans-go-wild-today",
+        "keyword": "taylor swift",
+        "title": "Taylor Swift Engaged! Indian Fans Go Wild Today.",
+        "category": "Entertainment",
+        "date": "26 August 2025",
+        "image": "taylor-swift-engaged-indian-fans-go-wild-today.webp",
+        "url": "articles/taylor-swift-engaged-indian-fans-go-wild-today.html",
+        "excerpt": "Indian Swifties are ecstatic! Taylor Swift and Travis Kelce confirmed their engagement, igniting a massive celebration across the nation. Why is India buzzing?",
+        "featured": true
+    },
+    {
         "id": "hartalika-teej-katha-unveiling-devotions-power-today",
         "keyword": "teej katha",
         "title": "Hartalika Teej Katha: Unveiling Devotion's Power Today",
@@ -96,7 +107,7 @@
         "image": "bigg-boss-19-timing-ott-first-twist-unveiled-watch-now.webp",
         "url": "articles/bigg-boss-19-timing-ott-first-twist-unveiled-watch-now.html",
         "excerpt": "Bigg Boss 19 timing gets an OTT-first reveal! Watch Salman Khan's show 90 minutes early on JioHotstar. Don't miss this game-changer!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "historic-mca-unveiling-gavaskar-pawar-statues-stir-nation",
