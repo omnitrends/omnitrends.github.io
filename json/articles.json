@@ -1,5 +1,16 @@
 [
     {
+        "id": "venus-williams-45-still-inspiring-india-at-us-open-2025",
+        "keyword": "venus williams",
+        "title": "Venus Williams: 45 & Still Inspiring India at US Open 2025!",
+        "category": "Sports",
+        "date": "26 August 2025",
+        "image": "venus-williams-45-still-inspiring-india-at-us-open-2025.webp",
+        "url": "articles/venus-williams-45-still-inspiring-india-at-us-open-2025.html",
+        "excerpt": "Venus Williams, 45, at US Open 2025! Her enduring spirit and fight inspire India, where her legacy fuels dreams. Don't miss the action!",
+        "featured": true
+    },
+    {
         "id": "newcastle-meltdown-isak-demands-exit-faces-liverpool-today",
         "keyword": "newcastle",
         "title": "Newcastle Meltdown: Isak Demands Exit, Faces Liverpool Today!",
@@ -96,7 +107,7 @@
         "image": "armaan-maliks-miracle-baby-court-drama-grips-india.webp",
         "url": "articles/armaan-maliks-miracle-baby-court-drama-grips-india.html",
         "excerpt": "YouTuber Armaan Malik's family saga intensifies! A miracle baby amidst court drama over multiple marriages has India gripped. What’s next for the vlogger?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "bigg-boss-19-tanya-mittals-fiery-entry-india-hooked",
