@@ -1,5 +1,16 @@
 [
     {
+        "id": "osmania-university-cm-revanths-1000-cr-boost-for-global-heights",
+        "keyword": "osmania university",
+        "title": "Osmania University: CM Revanth's ₹1000 Cr Boost for Global Heights!",
+        "category": "News",
+        "date": "26 August 2025",
+        "image": "osmania-university-cm-revanths-1000-cr-boost-for-global-heights.webp",
+        "url": "articles/osmania-university-cm-revanths-1000-cr-boost-for-global-heights.html",
+        "excerpt": "Osmania University receives CM Revanth's ₹1000 Cr boost for global standards. Will this propel it to Oxford-level excellence? Discover its future!",
+        "featured": true
+    },
+    {
         "id": "maruti-e-vitara-price-indias-ev-revolution-begins",
         "keyword": "e vitara price",
         "title": "Maruti e Vitara Price: India's EV Revolution Begins!",
@@ -96,7 +107,7 @@
         "image": "parineeti-chopra-baby-on-the-way-indias-hearts-soar.webp",
         "url": "articles/parineeti-chopra-baby-on-the-way-indias-hearts-soar.html",
         "excerpt": "India's hearts soar! Parineeti Chopra and Raghav Chadha confirm their first pregnancy today. Their little universe is on its way. See the sweet announcement!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "ttd-land-scandal-rocks-andhra-devotees-demand-answers",
