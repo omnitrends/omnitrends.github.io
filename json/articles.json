@@ -1,5 +1,16 @@
 [
     {
+        "id": "amazon-warriors-vs-st-lucia-kings-shepherds-blitz-goes-vain",
+        "keyword": "amazon warriors vs st lucia kings",
+        "title": "Amazon Warriors vs St Lucia Kings: Shepherd's Blitz Goes Vain!",
+        "category": "Sports",
+        "date": "27 August 2025",
+        "image": "amazon-warriors-vs-st-lucia-kings-shepherds-blitz-goes-vain.webp",
+        "url": "articles/amazon-warriors-vs-st-lucia-kings-shepherds-blitz-goes-vain.html",
+        "excerpt": "RCB star Romario Shepherd's fiery 73* for Amazon Warriors vs St Lucia Kings thrilled, but was his blitz enough to secure victory? Cricket fans, find out!",
+        "featured": true
+    },
+    {
         "id": "alert-today-share-market-holiday-for-ganesh-chaturthi",
         "keyword": "today share market holiday",
         "title": "ALERT! today share market holiday for Ganesh Chaturthi!",
@@ -96,7 +107,7 @@
         "image": "vikram-solar-share-price-ipo-debuts-will-it-shine.webp",
         "url": "articles/vikram-solar-share-price-ipo-debuts-will-it-shine.html",
         "excerpt": "Vikram Solar share price makes a modest debut post-oversubscribed IPO today! What does this mean for India's renewable energy future?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "flamengo-vs-vitória-indias-football-fever-explodes",
