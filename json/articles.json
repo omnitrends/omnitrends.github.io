@@ -1,5 +1,16 @@
 [
     {
+        "id": "dj-under-fire-indias-festival-ban-threatens-livelihoods",
+        "keyword": "dj",
+        "title": "DJ Under Fire: India's Festival Ban Threatens Livelihoods",
+        "category": "News",
+        "date": "27 August 2025",
+        "image": "dj-under-fire-indias-festival-ban-threatens-livelihoods.webp",
+        "url": "articles/dj-under-fire-indias-festival-ban-threatens-livelihoods.html",
+        "excerpt": "DJ operators face ruin as festival bans hit India, threatening thousands of livelihoods. Can tradition silence the beats and a vital industry? Find out more!",
+        "featured": true
+    },
+    {
         "id": "wolves-vs-west-ham-larsens-brace-stuns-hammers-in-cup-thriller",
         "keyword": "wolves vs west ham",
         "title": "Wolves vs West Ham: Larsen's Brace Stuns Hammers in Cup Thriller!",
@@ -96,7 +107,7 @@
         "image": "newcastle-meltdown-isak-demands-exit-faces-liverpool-today.webp",
         "url": "articles/newcastle-meltdown-isak-demands-exit-faces-liverpool-today.html",
         "excerpt": "Newcastle reels! Isak's exit demands and a 2-3 loss to Liverpool spark crisis. Indian fans, what next for the Toon?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "rivalry-rekindled-newcastle-united-fc-vs-liverpool-fc-timeline",
