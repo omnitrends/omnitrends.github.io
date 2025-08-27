@@ -1,5 +1,16 @@
 [
     {
+        "id": "alert-today-share-market-holiday-for-ganesh-chaturthi",
+        "keyword": "today share market holiday",
+        "title": "ALERT! today share market holiday for Ganesh Chaturthi!",
+        "category": "Finance",
+        "date": "27 August 2025",
+        "image": "alert-today-share-market-holiday-for-ganesh-chaturthi.webp",
+        "url": "articles/alert-today-share-market-holiday-for-ganesh-chaturthi.html",
+        "excerpt": "Indian markets observe today share market holiday for Ganesh Chaturthi! Investors are buzzing about this festive break's impact. Stay updated on market insights!",
+        "featured": true
+    },
+    {
         "id": "ganesh-chaturthi-wish-why-millions-are-sharing-joy-today",
         "keyword": "ganesh chaturthi wish",
         "title": "Ganesh Chaturthi Wish: Why Millions Are Sharing Joy Today!",
@@ -96,7 +107,7 @@
         "image": "flamengo-vs-vitória-indias-football-fever-explodes.webp",
         "url": "articles/flamengo-vs-vitória-indias-football-fever-explodes.html",
         "excerpt": "Indian football fans are buzzing! The recent Flamengo vs Vitória thrashing has ignited discussions. Why is Brazil's fiery football captivating India? Discover now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "venus-williams-45-still-inspiring-india-at-us-open-2025",
