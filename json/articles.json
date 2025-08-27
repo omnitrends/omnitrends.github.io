@@ -1,5 +1,16 @@
 [
     {
+        "id": "live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india",
+        "keyword": "kenya vs papua new guinea",
+        "title": "LIVE: Kenya vs Papua New Guinea - ICC Cricket Thriller Grips India",
+        "category": "Sports",
+        "date": "27 August 2025",
+        "image": "live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india.webp",
+        "url": "articles/live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india.html",
+        "excerpt": "Cricket fever grips India! Kenya vs Papua New Guinea clash in ICC Challenge League A, streaming LIVE on FanCode. Who will win this key battle?",
+        "featured": true
+    },
+    {
         "id": "amazon-warriors-vs-st-lucia-kings-shepherds-blitz-goes-vain",
         "keyword": "amazon warriors vs st lucia kings",
         "title": "Amazon Warriors vs St Lucia Kings: Shepherd's Blitz Goes Vain!",
@@ -96,7 +107,7 @@
         "image": "maruti-e-vitara-price-indias-ev-revolution-begins.webp",
         "url": "articles/maruti-e-vitara-price-indias-ev-revolution-begins.html",
         "excerpt": "PM Modi flags off Maruti's e Vitara! The awaited e Vitara price, starting at Rs 17 Lakh, is poised to reshape India's EV journey. Ready for the electric revolution?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "vikram-solar-share-price-ipo-debuts-will-it-shine",
