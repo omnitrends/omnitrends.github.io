@@ -1,5 +1,16 @@
 [
     {
+        "id": "neet-pg-exam-aiq-merit-list-out-counselling-alert",
+        "keyword": "neet pg exam",
+        "title": "NEET PG Exam: AIQ Merit List OUT! Counselling Alert!",
+        "category": "News",
+        "date": "28 August 2025",
+        "image": "neet-pg-exam-aiq-merit-list-out-counselling-alert.webp",
+        "url": "articles/neet-pg-exam-aiq-merit-list-out-counselling-alert.html",
+        "excerpt": "NEET PG exam aspirants, big news! AIQ Merit List is LIVE. Counselling alerts are here. Secure your future; check key dates and steps now!",
+        "featured": true
+    },
+    {
         "id": "india-watches-antigua-barbuda-falcons-vs-trinbago-knight-riders-dominate",
         "keyword": "antigua & barbuda falcons vs trinbago knight riders",
         "title": "India Watches: Antigua & Barbuda Falcons vs Trinbago Knight Riders Dominate!",
@@ -96,7 +107,7 @@
         "image": "alert-today-share-market-holiday-for-ganesh-chaturthi.webp",
         "url": "articles/alert-today-share-market-holiday-for-ganesh-chaturthi.html",
         "excerpt": "Indian markets observe today share market holiday for Ganesh Chaturthi! Investors are buzzing about this festive break's impact. Stay updated on market insights!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "ganesh-chaturthi-wish-why-millions-are-sharing-joy-today",
