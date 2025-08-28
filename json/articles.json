@@ -1,5 +1,16 @@
 [
     {
+        "id": "india-watches-antigua-barbuda-falcons-vs-trinbago-knight-riders-dominate",
+        "keyword": "antigua & barbuda falcons vs trinbago knight riders",
+        "title": "India Watches: Antigua & Barbuda Falcons vs Trinbago Knight Riders Dominate!",
+        "category": "Sports",
+        "date": "28 August 2025",
+        "image": "india-watches-antigua-barbuda-falcons-vs-trinbago-knight-riders-dominate.webp",
+        "url": "articles/india-watches-antigua-barbuda-falcons-vs-trinbago-knight-riders-dominate.html",
+        "excerpt": "Indian cricket buffs, get ready! The Antigua & Barbuda Falcons vs Trinbago Knight Riders clash ignites CPL 2025. Can SRK's team dominate? Tune in!",
+        "featured": true
+    },
+    {
         "id": "la-galaxy-vs-seattle-sounders-india-awaits-messi-final-rival",
         "keyword": "la galaxy vs seattle sounders",
         "title": "LA Galaxy vs Seattle Sounders: India Awaits Messi Final Rival!",
@@ -96,7 +107,7 @@
         "image": "ganesh-chaturthi-wish-why-millions-are-sharing-joy-today.webp",
         "url": "articles/ganesh-chaturthi-wish-why-millions-are-sharing-joy-today.html",
         "excerpt": "Today, every Ganesh Chaturthi wish unites India in devotion! Dive into the vibrant celebrations and see what makes this day so special.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "dj-under-fire-indias-festival-ban-threatens-livelihoods",
