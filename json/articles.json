@@ -1,5 +1,16 @@
 [
     {
+        "id": "uefa-ucl-draw-early-final-kick-off-excites-india",
+        "keyword": "uefa",
+        "title": "UEFA: UCL Draw & Early Final Kick-off Excites India!",
+        "category": "Sports",
+        "date": "28 August 2025",
+        "image": "uefa-ucl-draw-early-final-kick-off-excites-india.webp",
+        "url": "articles/uefa-ucl-draw-early-final-kick-off-excites-india.html",
+        "excerpt": "UEFA Champions League draw today 9:30 PM IST! Future finals now kick off earlier, thrilling Indian fans. Tune in to see who battles for Europe's top prize!",
+        "featured": true
+    },
+    {
         "id": "pkl-roars-back-indias-kabaddi-fever-hits-peak-today",
         "keyword": "pkl",
         "title": "PKL Roars Back! India's Kabaddi Fever Hits Peak Today.",
@@ -96,7 +107,7 @@
         "image": "canada-vs-namibia-live-who-dominates-odi-today.webp",
         "url": "articles/canada-vs-namibia-live-who-dominates-odi-today.html",
         "excerpt": "Canada vs Namibia: ICC CWC League 2 clash! Namibia won the toss and elected to bowl. Catch live updates from this crucial ODI. Who will dominate?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india",
