@@ -1,5 +1,16 @@
 [
     {
+        "id": "pkl-roars-back-indias-kabaddi-fever-hits-peak-today",
+        "keyword": "pkl",
+        "title": "PKL Roars Back! India's Kabaddi Fever Hits Peak Today.",
+        "category": "Sports",
+        "date": "28 August 2025",
+        "image": "pkl-roars-back-indias-kabaddi-fever-hits-peak-today.webp",
+        "url": "articles/pkl-roars-back-indias-kabaddi-fever-hits-peak-today.html",
+        "excerpt": "Kabaddi's roar returns! PKL Season 12 begins tomorrow, promising unprecedented action and new formats. India is ready! Are you?",
+        "featured": true
+    },
+    {
         "id": "jersey-vs-papua-new-guinea-cricket-thriller-shocks-india",
         "keyword": "jersey vs papua new guinea",
         "title": "jersey vs papua new guinea: Cricket Thriller Shocks India!",
@@ -96,7 +107,7 @@
         "image": "live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india.webp",
         "url": "articles/live-kenya-vs-papua-new-guinea-icc-cricket-thriller-grips-india.html",
         "excerpt": "Cricket fever grips India! Kenya vs Papua New Guinea clash in ICC Challenge League A, streaming LIVE on FanCode. Who will win this key battle?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "amazon-warriors-vs-st-lucia-kings-shepherds-blitz-goes-vain",
