@@ -1,5 +1,16 @@
 [
     {
+        "id": "al-taawoun-vs-al-nassr-ronaldos-battle-ignites-india-today",
+        "keyword": "al-taawoun vs al-nassr",
+        "title": "Al-Taawoun vs Al-Nassr: Ronaldo's Battle Ignites India Today!",
+        "category": "Sports",
+        "date": "29 August 2025",
+        "image": "al-taawoun-vs-al-nassr-ronaldos-battle-ignites-india-today.webp",
+        "url": "articles/al-taawoun-vs-al-nassr-ronaldos-battle-ignites-india-today.html",
+        "excerpt": "Cristiano Ronaldo's Al-Nassr battles Al-Taawoun in today's Saudi Pro League opener! Millions of Indian fans are watching. Catch the high-octane action now!",
+        "featured": true
+    },
+    {
         "id": "asia-cup-battle-pakistan-national-cricket-team-vs-afghanistan-national-cricket-team-match-scorecard",
         "keyword": "pakistan national cricket team vs afghanistan national cricket team match scorecard",
         "title": "Asia Cup Battle! pakistan national cricket team vs afghanistan national cricket team match scorecard",
@@ -96,7 +107,7 @@
         "image": "pkl-roars-back-indias-kabaddi-fever-hits-peak-today.webp",
         "url": "articles/pkl-roars-back-indias-kabaddi-fever-hits-peak-today.html",
         "excerpt": "Kabaddi's roar returns! PKL Season 12 begins tomorrow, promising unprecedented action and new formats. India is ready! Are you?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "jersey-vs-papua-new-guinea-cricket-thriller-shocks-india",
