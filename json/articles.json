@@ -1,5 +1,16 @@
 [
     {
+        "id": "reliance-industries-agm-big-ai-jio-ipo-reveal-shakes-india",
+        "keyword": "reliance industries agm",
+        "title": "Reliance Industries AGM: Big AI & Jio IPO Reveal Shakes India!",
+        "category": "Business",
+        "date": "29 August 2025",
+        "image": "reliance-industries-agm-big-ai-jio-ipo-reveal-shakes-india.webp",
+        "url": "articles/reliance-industries-agm-big-ai-jio-ipo-reveal-shakes-india.html",
+        "excerpt": "Reliance Industries AGM 2025: Jio IPO in H1 2026, new AI subsidiary, and Google-Meta AI partnerships set to transform India's tech landscape. What's next?",
+        "featured": true
+    },
+    {
         "id": "sri-lanka-vs-zimbabwe-live-india-eyes-asia-cup-fight",
         "keyword": "sri lanka vs zimbabwe",
         "title": "Sri Lanka vs Zimbabwe LIVE: India Eyes Asia Cup Fight!",
@@ -96,7 +107,7 @@
         "image": "neet-pg-exam-aiq-merit-list-out-counselling-alert.webp",
         "url": "articles/neet-pg-exam-aiq-merit-list-out-counselling-alert.html",
         "excerpt": "NEET PG exam aspirants, big news! AIQ Merit List is LIVE. Counselling alerts are here. Secure your future; check key dates and steps now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "india-watches-antigua-barbuda-falcons-vs-trinbago-knight-riders-dominate",
