@@ -1,5 +1,16 @@
 [
     {
+        "id": "sports-day-2025-india-honors-heroes-ignites-passion-today",
+        "keyword": "sports day 2025",
+        "title": "Sports Day 2025: India Honors Heroes, Ignites Passion Today!",
+        "category": "Sports",
+        "date": "29 August 2025",
+        "image": "sports-day-2025-india-honors-heroes-ignites-passion-today.webp",
+        "url": "articles/sports-day-2025-india-honors-heroes-ignites-passion-today.html",
+        "excerpt": "India celebrates National Sports Day 2025 today! Honoring legends, fostering future champions, and promoting fitness nationwide. Discover how India is igniting its sporting spirit!",
+        "featured": true
+    },
+    {
         "id": "besiktas-fires-solskjaer-indian-fans-demand-answers-now",
         "keyword": "besiktas",
         "title": "Besiktas Fires Solskjaer: Indian Fans Demand Answers Now!",
@@ -96,7 +107,7 @@
         "image": "inter-miami-vs-orlando-city-messi-mania-grips-india.webp",
         "url": "articles/inter-miami-vs-orlando-city-messi-mania-grips-india.html",
         "excerpt": "Indian football fans eagerly await Inter Miami vs Orlando City in the Leagues Cup semi-final! Messi's return ignites passion. Will his magic prevail?",
-        "featured": true
+        "featured": false
     },
     {
         "id": "grimsby-town-vs-man-united-india-awaits-historic-cup-shocker",
