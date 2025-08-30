@@ -1,5 +1,16 @@
 [
     {
+        "id": "donald-trumps-tariffs-indias-bold-response-shakes-global-trade",
+        "keyword": "donald trump",
+        "title": "Donald Trump's Tariffs: India's Bold Response Shakes Global Trade.",
+        "category": "Business",
+        "date": "30 August 2025",
+        "image": "donald-trumps-tariffs-indias-bold-response-shakes-global-trade.webp",
+        "url": "articles/donald-trumps-tariffs-indias-bold-response-shakes-global-trade.html",
+        "excerpt": "India confronts Donald Trump's new 50% tariffs over Russian oil. Can Modi's 'Swadeshi' strategy mitigate the trade war's impact? Find out more.",
+        "featured": true
+    },
+    {
         "id": "pro-kabaddi-season-12-indias-passion-ignites-in-vizag",
         "keyword": "pro kabaddi",
         "title": "Pro Kabaddi Season 12: India's Passion Ignites in Vizag!",
@@ -96,7 +107,7 @@
         "image": "sports-day-2025-india-honors-heroes-ignites-passion-today.webp",
         "url": "articles/sports-day-2025-india-honors-heroes-ignites-passion-today.html",
         "excerpt": "India celebrates National Sports Day 2025 today! Honoring legends, fostering future champions, and promoting fitness nationwide. Discover how India is igniting its sporting spirit!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "besiktas-fires-solskjaer-indian-fans-demand-answers-now",
