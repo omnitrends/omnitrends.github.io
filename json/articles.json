@@ -1,5 +1,16 @@
 [
     {
+        "id": "pro-kabaddi-season-12-indias-passion-ignites-in-vizag",
+        "keyword": "pro kabaddi",
+        "title": "Pro Kabaddi Season 12: India's Passion Ignites in Vizag!",
+        "category": "Sports",
+        "date": "30 August 2025",
+        "image": "pro-kabaddi-season-12-indias-passion-ignites-in-vizag.webp",
+        "url": "articles/pro-kabaddi-season-12-indias-passion-ignites-in-vizag.html",
+        "excerpt": "Pro Kabaddi Season 12 electrifies Vizag! India's passion for the sport explodes as fierce rivalries ignite. Catch the action as PKL returns!",
+        "featured": true
+    },
+    {
         "id": "apple-iphone-17-pro-max-price-164-lakh-india-debate",
         "keyword": "apple iphone 17 pro max price",
         "title": "Apple iPhone 17 Pro Max Price: ₹1.64 Lakh India Debate!",
@@ -96,7 +107,7 @@
         "image": "besiktas-fires-solskjaer-indian-fans-demand-answers-now.webp",
         "url": "articles/besiktas-fires-solskjaer-indian-fans-demand-answers-now.html",
         "excerpt": "Besiktas stuns the football world, sacking Solskjaer! Indian fans are buzzing; why this shock exit? Unpack the drama now!",
-        "featured": true
+        "featured": false
     },
     {
         "id": "metro-in-dino-why-india-is-hooked-stream-now-on-netflix",
