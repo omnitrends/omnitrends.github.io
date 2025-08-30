@@ -1,5 +1,16 @@
 [
     {
+        "id": "is-trump-dead-india-gripped-by-trending-health-rumors",
+        "keyword": "is trump dead",
+        "title": "is trump dead? India gripped by trending health rumors.",
+        "category": "News",
+        "date": "30 August 2025",
+        "image": "is-trump-dead-india-gripped-by-trending-health-rumors.webp",
+        "url": "articles/is-trump-dead-india-gripped-by-trending-health-rumors.html",
+        "excerpt": "Is Trump dead? India's internet is buzzing with viral health rumors and VP Vance's comments. Unravel the truth behind the trending speculation now!",
+        "featured": true
+    },
+    {
         "id": "donald-trumps-tariffs-indias-bold-response-shakes-global-trade",
         "keyword": "donald trump",
         "title": "Donald Trump's Tariffs: India's Bold Response Shakes Global Trade.",
@@ -96,7 +107,7 @@
         "image": "skn-patriots-vs-st-lucia-kings-cpl-thriller-grips-india.webp",
         "url": "articles/skn-patriots-vs-st-lucia-kings-cpl-thriller-grips-india.html",
         "excerpt": "SKN Patriots vs St Lucia Kings: CPL's latest thriller grips Indian fans! Witness the electrifying action and see why India is buzzing about this nail-biting encounter.",
-        "featured": true
+        "featured": false
     },
     {
         "id": "sports-day-2025-india-honors-heroes-ignites-passion-today",
